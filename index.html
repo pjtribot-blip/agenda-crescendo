@@ -64,17 +64,30 @@
   }
   .brand {
     display: flex;
-    align-items: baseline;
-    gap: 16px;
+    align-items: center;
+    gap: 20px;
   }
-  .brand-mark {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 14px;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    color: var(--gold-deep);
+  .brand-logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
     border-right: 1px solid var(--rule);
-    padding-right: 16px;
+    padding-right: 20px;
+  }
+  .brand-logo img {
+    display: block;
+    height: 50px;
+    width: auto;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
   h1.title {
     margin: 0;
@@ -87,6 +100,21 @@
     font-style: italic;
     color: var(--gold-deep);
     font-weight: 500;
+  }
+  .beta-badge {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    background: rgba(184, 137, 63, .08);
+    border: 1px solid var(--gold-light);
+    padding: 3px 8px;
+    border-radius: 2px;
+    line-height: 1;
+    align-self: center;
   }
   .subtitle {
     margin: 4px 0 0;
@@ -163,6 +191,20 @@
     text-transform: uppercase;
   }
   .results-count strong { color: var(--gold-deep); font-size: 14px; }
+  .back-link {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .back-link:hover {
+    color: var(--gold-deep);
+    border-bottom-color: var(--gold-light);
+    text-decoration: none;
+  }
 
   /* ---------- Layout ---------- */
   main {
@@ -376,27 +418,57 @@
   /* ---------- Footer ---------- */
   footer {
     border-top: 1px solid var(--rule);
-    padding: 24px 32px;
-    background: var(--paper);
-    font-size: 12px;
+    padding: 40px 32px 36px;
+    background: var(--ivory-soft);
     color: var(--ink-soft);
+    text-align: center;
   }
   footer .footer-inner {
-    max-width: 1400px;
+    max-width: 720px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-tagline {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+  .footer-tagline a {
+    color: var(--gold-deep);
+    border-bottom: 1px solid var(--gold-light);
+    padding-bottom: 1px;
+  }
+  .footer-tagline a:hover { color: var(--ink); border-color: var(--gold); text-decoration: none; }
+  .footer-copyright {
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: .04em;
+  }
+  .footer-legal {
+    font-size: 11px;
+    color: #9a8e74;
+    letter-spacing: .04em;
+    font-style: italic;
   }
 
   /* ---------- Mobile ---------- */
   @media (max-width: 900px) {
     header.masthead { padding: 16px 18px; position: static; }
     .masthead-inner { gap: 12px; }
-    h1.title { font-size: 26px; }
+    .brand { gap: 14px; }
+    .brand-logo { padding-right: 14px; }
+    .brand-logo img { height: 36px; }
+    h1.title { font-size: 24px; }
+    .title-row { gap: 8px; }
+    .beta-badge { font-size: 9px; padding: 2px 6px; }
+    .subtitle { font-size: 15px; }
     .meta { text-align: left; }
     .filter-bar { padding: 12px 18px; position: static; }
+    .back-link { width: 100%; text-align: right; }
     main {
       grid-template-columns: 1fr;
       padding: 16px 18px 32px;
@@ -407,6 +479,8 @@
     .concert { grid-template-columns: 64px 1fr; gap: 12px; }
     .concert-date .day { font-size: 28px; }
     .concert-body h3 { font-size: 18px; }
+    footer { padding: 32px 18px 28px; }
+    .footer-tagline { font-size: 16px; }
   }
 
   /* ---------- Loading ---------- */
@@ -424,9 +498,14 @@
 <header class="masthead">
   <div class="masthead-inner">
     <div class="brand">
-      <span class="brand-mark">Crescendo Magazine</span>
-      <div>
-        <h1 class="title">Agenda <em>Crescendo</em></h1>
+      <a class="brand-logo" href="https://www.crescendo-magazine.be" target="_blank" rel="noopener" aria-label="Crescendo Magazine">
+        <img src="assets/logo-crescendo.jpg" alt="Crescendo Magazine" />
+      </a>
+      <div class="brand-text">
+        <div class="title-row">
+          <h1 class="title">Agenda <em>Crescendo</em></h1>
+          <span class="beta-badge" aria-label="version bêta">Beta</span>
+        </div>
         <p class="subtitle">Concerts de musique classique — Belgique &amp; Eurorégion</p>
       </div>
     </div>
@@ -447,6 +526,7 @@
     <select id="f-composer"><option value="">Tous compositeurs</option></select>
     <button class="filter-reset" id="f-reset" type="button">Réinitialiser</button>
     <span class="results-count"><strong id="results-count">0</strong> résultat<span id="results-plural">s</span></span>
+    <a class="back-link" href="https://www.crescendo-magazine.be" target="_blank" rel="noopener">← Retour à Crescendo Magazine</a>
   </div>
 </div>
 
@@ -473,8 +553,9 @@
 
 <footer>
   <div class="footer-inner">
-    <div>© Crescendo Magazine — agenda éditorial expérimental</div>
-    <div>Données mises à jour quotidiennement · <a href="https://crescendo-magazine.be" target="_blank" rel="noopener">crescendo-magazine.be</a></div>
+    <div class="footer-tagline">Agenda Crescendo — un service de <a href="https://www.crescendo-magazine.be" target="_blank" rel="noopener">Crescendo Magazine</a></div>
+    <div class="footer-copyright">© 2026 Crescendo Magazine</div>
+    <div class="footer-legal">Mentions légales et politique de confidentialité — à venir</div>
   </div>
 </footer>
 
