@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agenda Crescendo — concerts classiques en Belgique &amp; Eurorégion</title>
+<meta name="description" content="L'agenda des concerts de musique classique en Belgique, Hauts-de-France et Luxembourg. Une initiative Crescendo Magazine." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root {
+    --ivory: #faf6ee;
+    --ivory-soft: #f3ecdb;
+    --paper: #fffaf0;
+    --gold: #b8893f;
+    --gold-deep: #8e6624;
+    --gold-light: #d9b97a;
+    --ink: #1f1a13;
+    --ink-soft: #4a4136;
+    --rule: #d6c9aa;
+    --shadow: 0 1px 2px rgba(31, 26, 19, .04), 0 8px 24px rgba(31, 26, 19, .06);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .serif {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: .005em;
+  }
+
+  a { color: var(--gold-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; text-decoration-color: var(--gold-light); text-underline-offset: 3px; }
+
+  /* ---------- Header ---------- */
+  header.masthead {
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 28px 32px 22px;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  .masthead-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .brand-mark {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14px;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    border-right: 1px solid var(--rule);
+    padding-right: 16px;
+  }
+  h1.title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: .01em;
+    line-height: 1.1;
+  }
+  .title em {
+    font-style: italic;
+    color: var(--gold-deep);
+    font-weight: 500;
+  }
+  .subtitle {
+    margin: 4px 0 0;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-soft);
+  }
+  .meta {
+    text-align: right;
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: .04em;
+  }
+  .meta strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Filter bar ---------- */
+  .filter-bar {
+    background: var(--ivory-soft);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 32px;
+    position: sticky;
+    top: 96px;
+    z-index: 400;
+  }
+  .filter-bar-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .filter-bar input,
+  .filter-bar select {
+    font: inherit;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--paper);
+    color: var(--ink);
+    min-width: 0;
+  }
+  .filter-bar input:focus,
+  .filter-bar select:focus {
+    outline: 2px solid var(--gold-light);
+    outline-offset: -1px;
+    border-color: var(--gold);
+  }
+  .filter-bar input.search {
+    flex: 1 1 220px;
+    min-width: 200px;
+  }
+  .filter-bar select { flex: 0 1 auto; cursor: pointer; }
+  .filter-reset {
+    font: inherit;
+    font-size: 12px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-deep);
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .filter-reset:hover { background: var(--gold); color: var(--paper); }
+  .results-count {
+    margin-left: auto;
+    font-size: 12px;
+    letter-spacing: .04em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .results-count strong { color: var(--gold-deep); font-size: 14px; }
+
+  /* ---------- Layout ---------- */
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 32px 48px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  /* ---------- Map ---------- */
+  .map-wrap {
+    position: sticky;
+    top: 168px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+  #map {
+    width: 100%;
+    height: calc(100vh - 200px);
+    min-height: 480px;
+    background: var(--ivory);
+  }
+  .map-legend {
+    padding: 10px 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-soft);
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    background: var(--ivory-soft);
+  }
+  .map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    border: 1.5px solid var(--paper);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  }
+
+  /* Custom Leaflet marker */
+  .crescendo-marker {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--paper);
+    box-shadow: 0 0 0 1.5px var(--gold-deep), 0 2px 4px rgba(0,0,0,.2);
+    transition: transform .15s ease;
+  }
+  .crescendo-marker.be { background: var(--gold); }
+  .crescendo-marker.fr { background: #6b8e9a; }
+  .crescendo-marker.lu { background: #8a5a3b; }
+  .crescendo-marker:hover { transform: scale(1.3); }
+  .crescendo-marker.active {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 2px var(--ink), 0 2px 6px rgba(0,0,0,.3);
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 2px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+  .leaflet-popup-content { margin: 12px 14px; font-family: "Inter", sans-serif; font-size: 13px; }
+  .leaflet-popup-content h4 {
+    margin: 0 0 4px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .leaflet-popup-content .pop-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .leaflet-popup-content .pop-count {
+    color: var(--gold-deep);
+    font-weight: 600;
+  }
+  .leaflet-popup-tip { background: var(--paper); }
+
+  /* ---------- Concert list ---------- */
+  .list-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .list-head h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .list-head .hint {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-soft);
+  }
+
+  .concert-list { list-style: none; margin: 0; padding: 0; }
+
+  .concert {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    transition: background-color .15s ease;
+  }
+  .concert:hover { background: var(--ivory-soft); }
+  .concert.highlight { background: var(--ivory-soft); box-shadow: inset 3px 0 0 var(--gold); padding-left: 12px; }
+
+  .concert-date {
+    text-align: center;
+    border-right: 1px solid var(--rule);
+    padding-right: 14px;
+  }
+  .concert-date .day {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .concert-date .month {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: var(--gold-deep);
+    margin-top: 4px;
+  }
+  .concert-date .time {
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    letter-spacing: .04em;
+  }
+
+  .concert-body h3 {
+    margin: 0 0 4px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .concert-venue {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--gold-deep);
+    margin-bottom: 8px;
+  }
+  .concert-venue .sep { color: var(--rule); margin: 0 6px; }
+  .concert-venue .city { color: var(--ink-soft); }
+  .concert-program {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  .concert-perf {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .concert-perf strong { color: var(--ink); font-weight: 500; }
+  .composer-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .chip {
+    font-size: 11px;
+    padding: 3px 9px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    color: var(--ink-soft);
+    letter-spacing: .02em;
+  }
+  .concert-link {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--gold-deep);
+    border-bottom: 1px solid var(--gold-light);
+    padding-bottom: 2px;
+  }
+  .concert-link:hover { color: var(--ink); border-color: var(--gold); text-decoration: none; }
+
+  .empty-state {
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 24px 32px;
+    background: var(--paper);
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+  footer .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 900px) {
+    header.masthead { padding: 16px 18px; position: static; }
+    .masthead-inner { gap: 12px; }
+    h1.title { font-size: 26px; }
+    .meta { text-align: left; }
+    .filter-bar { padding: 12px 18px; position: static; }
+    main {
+      grid-template-columns: 1fr;
+      padding: 16px 18px 32px;
+      gap: 20px;
+    }
+    .map-wrap { position: static; }
+    #map { height: 360px; min-height: 0; }
+    .concert { grid-template-columns: 64px 1fr; gap: 12px; }
+    .concert-date .day { font-size: 28px; }
+    .concert-body h3 { font-size: 18px; }
+  }
+
+  /* ---------- Loading ---------- */
+  .loading {
+    padding: 32px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark">Crescendo Magazine</span>
+      <div>
+        <h1 class="title">Agenda <em>Crescendo</em></h1>
+        <p class="subtitle">Concerts de musique classique — Belgique &amp; Eurorégion</p>
+      </div>
+    </div>
+    <div class="meta">
+      <div><strong id="meta-count">—</strong> concerts</div>
+      <div><strong id="meta-venues">—</strong> salles · BE · FR · LU</div>
+      <div>Mis à jour <span id="meta-updated">—</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <input class="search" id="f-search" type="search" placeholder="Rechercher (œuvre, ensemble, soliste…)" />
+    <select id="f-country"><option value="">Tous pays</option></select>
+    <select id="f-city"><option value="">Toutes villes</option></select>
+    <select id="f-month"><option value="">Tous mois</option></select>
+    <select id="f-composer"><option value="">Tous compositeurs</option></select>
+    <button class="filter-reset" id="f-reset" type="button">Réinitialiser</button>
+    <span class="results-count"><strong id="results-count">0</strong> résultat<span id="results-plural">s</span></span>
+  </div>
+</div>
+
+<main>
+  <section class="map-wrap" aria-label="Carte des salles">
+    <div id="map"></div>
+    <div class="map-legend">
+      <span><span class="legend-dot" style="background:var(--gold)"></span> Belgique</span>
+      <span><span class="legend-dot" style="background:#6b8e9a"></span> France</span>
+      <span><span class="legend-dot" style="background:#8a5a3b"></span> Luxembourg</span>
+    </div>
+  </section>
+
+  <section aria-label="Liste des concerts">
+    <div class="list-head">
+      <h2>Programme</h2>
+      <span class="hint">Cliquez un concert ou un point sur la carte</span>
+    </div>
+    <ul class="concert-list" id="concert-list">
+      <li class="loading">Chargement de l'agenda…</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© Crescendo Magazine — agenda éditorial expérimental</div>
+    <div>Données mises à jour quotidiennement · <a href="https://crescendo-magazine.be" target="_blank" rel="noopener">crescendo-magazine.be</a></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(() => {
+  const COUNTRY_LABEL = { BE: 'Belgique', FR: 'France', LU: 'Luxembourg' };
+  const MONTH_LABEL = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+  const MONTH_FULL = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+
+  const state = {
+    venues: [],
+    venuesById: new Map(),
+    concerts: [],
+    filtered: [],
+    map: null,
+    markers: new Map(),
+    selectedVenueId: null,
+  };
+
+  // ---------- Data loading ----------
+  async function loadData() {
+    const [venuesRes, concertsRes] = await Promise.all([
+      fetch('data/venues.json'),
+      fetch('data/concerts.json'),
+    ]);
+    if (!venuesRes.ok) throw new Error('venues.json indisponible');
+    if (!concertsRes.ok) throw new Error('concerts.json indisponible');
+    state.venues = await venuesRes.json();
+    state.venuesById = new Map(state.venues.map(v => [v.id, v]));
+    const concertsPayload = await concertsRes.json();
+    state.concerts = (concertsPayload.concerts || [])
+      .filter(c => state.venuesById.has(c.venueId))
+      .sort((a, b) => a.date.localeCompare(b.date));
+    return concertsPayload.generated;
+  }
+
+  // ---------- Map ----------
+  function initMap() {
+    state.map = L.map('map', {
+      center: [50.85, 4.7],
+      zoom: 7,
+      scrollWheelZoom: false,
+      zoomControl: true,
+    });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> · &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 18,
+    }).addTo(state.map);
+
+    state.venues.forEach(v => {
+      const icon = L.divIcon({
+        className: '',
+        html: `<div class="crescendo-marker ${v.country.toLowerCase()}" data-venue="${v.id}"></div>`,
+        iconSize: [18, 18],
+        iconAnchor: [9, 9],
+      });
+      const marker = L.marker([v.lat, v.lng], { icon, title: v.name })
+        .on('click', () => selectVenue(v.id))
+        .addTo(state.map);
+      marker.bindPopup(() => buildPopup(v));
+      state.markers.set(v.id, marker);
+    });
+
+    // Re-enable scroll-zoom only after click (editorial pages get scroll-jacked otherwise)
+    state.map.on('click', () => state.map.scrollWheelZoom.enable());
+    state.map.on('mouseout', () => state.map.scrollWheelZoom.disable());
+  }
+
+  function buildPopup(venue) {
+    const upcoming = state.concerts.filter(c => c.venueId === venue.id);
+    const next = upcoming[0];
+    return `
+      <div>
+        <div class="pop-meta">${COUNTRY_LABEL[venue.country] || venue.country} · ${venue.city}</div>
+        <h4>${escape(venue.name)}</h4>
+        <div class="pop-count">${upcoming.length} concert${upcoming.length > 1 ? 's' : ''} programmé${upcoming.length > 1 ? 's' : ''}</div>
+        ${next ? `<div style="margin-top:6px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:14px">Prochain : ${escape(next.title)} (${formatDateShort(next.date)})</div>` : ''}
+        <div style="margin-top:8px"><a href="${venue.website}" target="_blank" rel="noopener">Site officiel ↗</a></div>
+      </div>
+    `;
+  }
+
+  function selectVenue(venueId) {
+    state.selectedVenueId = venueId;
+    document.querySelectorAll('.crescendo-marker').forEach(el => el.classList.remove('active'));
+    const el = document.querySelector(`.crescendo-marker[data-venue="${venueId}"]`);
+    if (el) el.classList.add('active');
+    render();
+    const firstMatch = document.querySelector(`.concert[data-venue="${venueId}"]`);
+    if (firstMatch) firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // ---------- Filters ----------
+  function buildFilterOptions() {
+    // Countries (from venues that actually have concerts)
+    const used = new Set(state.concerts.map(c => state.venuesById.get(c.venueId)?.country).filter(Boolean));
+    const countries = Array.from(used).sort();
+    fillSelect('f-country', countries.map(c => ({ value: c, label: COUNTRY_LABEL[c] || c })));
+
+    // Cities
+    const cities = Array.from(new Set(state.concerts.map(c => state.venuesById.get(c.venueId)?.city).filter(Boolean))).sort();
+    fillSelect('f-city', cities.map(c => ({ value: c, label: c })));
+
+    // Months (sorted by date, deduped to YYYY-MM)
+    const months = Array.from(new Set(state.concerts.map(c => c.date.slice(0, 7)))).sort();
+    fillSelect('f-month', months.map(m => ({ value: m, label: formatMonthLabel(m) })));
+
+    // Composers
+    const composers = new Set();
+    state.concerts.forEach(c => (c.composers || []).forEach(x => composers.add(x)));
+    fillSelect('f-composer', Array.from(composers).sort().map(c => ({ value: c, label: c })));
+  }
+
+  function fillSelect(id, options) {
+    const sel = document.getElementById(id);
+    const placeholder = sel.options[0];
+    sel.innerHTML = '';
+    sel.appendChild(placeholder);
+    options.forEach(o => {
+      const opt = document.createElement('option');
+      opt.value = o.value;
+      opt.textContent = o.label;
+      sel.appendChild(opt);
+    });
+  }
+
+  function applyFilters() {
+    const q = (document.getElementById('f-search').value || '').trim().toLowerCase();
+    const country = document.getElementById('f-country').value;
+    const city = document.getElementById('f-city').value;
+    const month = document.getElementById('f-month').value;
+    const composer = document.getElementById('f-composer').value;
+
+    state.filtered = state.concerts.filter(c => {
+      const v = state.venuesById.get(c.venueId);
+      if (!v) return false;
+      if (country && v.country !== country) return false;
+      if (city && v.city !== city) return false;
+      if (month && !c.date.startsWith(month)) return false;
+      if (composer && !(c.composers || []).includes(composer)) return false;
+      if (state.selectedVenueId && c.venueId !== state.selectedVenueId) return false;
+      if (q) {
+        const hay = [
+          c.title, c.program, c.ensemble, c.conductor,
+          (c.soloists || []).join(' '),
+          (c.composers || []).join(' '),
+          v.name, v.city,
+        ].filter(Boolean).join(' ').toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }
+
+  function resetFilters() {
+    ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+    state.selectedVenueId = null;
+    document.querySelectorAll('.crescendo-marker').forEach(el => el.classList.remove('active'));
+    render();
+  }
+
+  // ---------- Render ----------
+  function render() {
+    applyFilters();
+    const list = document.getElementById('concert-list');
+    list.innerHTML = '';
+
+    document.getElementById('results-count').textContent = state.filtered.length;
+    document.getElementById('results-plural').style.display = state.filtered.length > 1 ? '' : 'none';
+
+    if (state.filtered.length === 0) {
+      list.innerHTML = '<li class="empty-state">Aucun concert ne correspond à votre recherche.<br>Essayez de réinitialiser les filtres.</li>';
+      return;
+    }
+
+    state.filtered.forEach(c => {
+      const v = state.venuesById.get(c.venueId);
+      const li = document.createElement('li');
+      li.className = 'concert';
+      if (state.selectedVenueId === c.venueId) li.classList.add('highlight');
+      li.dataset.venue = c.venueId;
+
+      const d = parseDate(c.date);
+      li.innerHTML = `
+        <div class="concert-date">
+          <div class="day">${d.getDate()}</div>
+          <div class="month">${MONTH_LABEL[d.getMonth()]} ${d.getFullYear()}</div>
+          ${c.time ? `<div class="time">${escape(c.time)}</div>` : ''}
+        </div>
+        <div class="concert-body">
+          <h3>${escape(c.title)}</h3>
+          <div class="concert-venue">${escape(v.name)} <span class="sep">/</span> <span class="city">${escape(v.city)}, ${COUNTRY_LABEL[v.country] || v.country}</span></div>
+          ${c.program ? `<div class="concert-program">${escape(c.program)}</div>` : ''}
+          ${renderPerformers(c)}
+          ${renderComposers(c)}
+          ${c.url ? `<a class="concert-link" href="${escape(c.url)}" target="_blank" rel="noopener">Voir sur le site →</a>` : ''}
+        </div>
+      `;
+
+      li.addEventListener('click', (ev) => {
+        // Don't hijack actual link clicks
+        if (ev.target.closest('a')) return;
+        focusVenue(c.venueId);
+      });
+
+      list.appendChild(li);
+    });
+  }
+
+  function renderPerformers(c) {
+    const parts = [];
+    if (c.ensemble) parts.push(`<strong>${escape(c.ensemble)}</strong>`);
+    if (c.conductor) parts.push(`dir. ${escape(c.conductor)}`);
+    if (c.soloists && c.soloists.length) parts.push(c.soloists.map(escape).join(', '));
+    if (parts.length === 0) return '';
+    return `<div class="concert-perf">${parts.join(' · ')}</div>`;
+  }
+
+  function renderComposers(c) {
+    if (!c.composers || c.composers.length === 0) return '';
+    return `<div class="composer-chips">${c.composers.map(x => `<span class="chip">${escape(x)}</span>`).join('')}</div>`;
+  }
+
+  function focusVenue(venueId) {
+    const v = state.venuesById.get(venueId);
+    if (!v || !state.map) return;
+    state.map.flyTo([v.lat, v.lng], Math.max(state.map.getZoom(), 9), { duration: .6 });
+    const marker = state.markers.get(venueId);
+    if (marker) marker.openPopup();
+  }
+
+  // ---------- Helpers ----------
+  function parseDate(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  function formatDateShort(iso) {
+    const d = parseDate(iso);
+    return `${d.getDate()} ${MONTH_LABEL[d.getMonth()]}`;
+  }
+  function formatMonthLabel(ym) {
+    const [y, m] = ym.split('-').map(Number);
+    return `${MONTH_FULL[m - 1]} ${y}`;
+  }
+  function escape(s) {
+    if (s == null) return '';
+    return String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  }
+  function formatGenerated(iso) {
+    if (!iso) return '—';
+    try {
+      const d = new Date(iso);
+      return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+    } catch { return '—'; }
+  }
+
+  // ---------- Bootstrap ----------
+  async function init() {
+    try {
+      const generated = await loadData();
+      document.getElementById('meta-count').textContent = state.concerts.length;
+      document.getElementById('meta-venues').textContent = state.venues.length;
+      document.getElementById('meta-updated').textContent = formatGenerated(generated);
+      initMap();
+      buildFilterOptions();
+      render();
+
+      ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer'].forEach(id => {
+        document.getElementById(id).addEventListener('input', () => render());
+      });
+      document.getElementById('f-reset').addEventListener('click', resetFilters);
+    } catch (err) {
+      console.error(err);
+      document.getElementById('concert-list').innerHTML =
+        `<li class="empty-state">Impossible de charger les données.<br><small>${escape(err.message)}</small></li>`;
+    }
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "agenda-crescendo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agenda des concerts de musique classique en Belgique et Eurorégion — Crescendo Magazine",
+  "scripts": {
+    "scrape": "node scripts/aggregate.js"
+  },
+  "author": "Pierre-Jean Tribot — Crescendo Magazine",
+  "license": "UNLICENSED"
+}
