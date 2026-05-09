@@ -19,7 +19,7 @@
     "program": "Concert Croissant #13",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-09T19:53:04.944Z"
+    "scraped_at": "2026-05-09T20:10:54.823Z"
   },
   {
     "id": "bozar-2026-05-13-belgian-national-orchestra-montague-rendall-desandre",
@@ -42,7 +42,7 @@
     "program": "An evening with Mozart and Rossini",
     "price_min": 26,
     "price_max": 64,
-    "scraped_at": "2026-05-09T19:53:06.893Z"
+    "scraped_at": "2026-05-09T20:10:55.137Z"
   },
   {
     "id": "bozar-2026-05-16-koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
@@ -66,7 +66,7 @@
     "program": "Martinu, Stravinsky & Ravel",
     "price_min": 40,
     "price_max": 98,
-    "scraped_at": "2026-05-09T19:53:05.580Z"
+    "scraped_at": "2026-05-09T20:10:55.120Z"
   },
   {
     "id": "bozar-2026-05-21-victor-julien-laferriere-0",
@@ -87,7 +87,7 @@
     "program": "Bach, Kodály & Casals",
     "price_min": 30,
     "price_max": 30,
-    "scraped_at": "2026-05-09T19:53:08.683Z"
+    "scraped_at": "2026-05-09T20:10:58.816Z"
   },
   {
     "id": "bozar-2026-06-02-la-fonte-musica",
@@ -115,7 +115,7 @@
     "program": "Anchor che col partire",
     "price_min": 38,
     "price_max": 38,
-    "scraped_at": "2026-05-09T19:53:09.485Z"
+    "scraped_at": "2026-05-09T20:11:00.881Z"
   },
   {
     "id": "bozar-2026-06-07-giorgi-gigashvili-echo-rising-star",
@@ -138,7 +138,7 @@
     "program": "Concert Croissant #14",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-09T19:53:09.243Z"
+    "scraped_at": "2026-05-09T20:11:00.222Z"
   },
   {
     "id": "bozar-2026-06-08-concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
@@ -153,7 +153,7 @@
     "program": null,
     "price_min": 19,
     "price_max": 96,
-    "scraped_at": "2026-05-09T19:53:10.013Z"
+    "scraped_at": "2026-05-09T20:11:01.603Z"
   },
   {
     "id": "bozar-2026-06-10-concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
@@ -168,7 +168,7 @@
     "program": null,
     "price_min": 23,
     "price_max": 108,
-    "scraped_at": "2026-05-09T19:53:09.981Z"
+    "scraped_at": "2026-05-09T20:11:01.466Z"
   },
   {
     "id": "bozar-2026-06-11-orchestra-age-enlightenment-sir-simon-rattle",
@@ -190,7 +190,7 @@
     "price_min": 40,
     "price_max": 98,
     "cancelled": true,
-    "scraped_at": "2026-05-09T19:53:11.848Z"
+    "scraped_at": "2026-05-09T20:11:01.594Z"
   },
   {
     "id": "bozar-2026-06-12-belgian-national-orchestra-hermus-vondracek",
@@ -212,7 +212,7 @@
     "program": "Flamboyance",
     "price_min": 22,
     "price_max": 56,
-    "scraped_at": "2026-05-09T19:53:14.271Z"
+    "scraped_at": "2026-05-09T20:11:03.972Z"
   },
   {
     "id": "bozar-2026-06-13-lea-desandre-jupiter-ensemble-1",
@@ -236,7 +236,7 @@
     "program": "Chasing Rainbows",
     "price_min": 32,
     "price_max": 56,
-    "scraped_at": "2026-05-09T19:53:14.545Z"
+    "scraped_at": "2026-05-09T20:11:02.617Z"
   },
   {
     "id": "bozar-2026-06-21-belgian-national-orchestra-cottis-gatto",
@@ -262,7 +262,7 @@
     "program": "Fête de la Musique",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-09T19:53:14.669Z"
+    "scraped_at": "2026-05-09T20:11:04.397Z"
   },
   {
     "id": "bozar-2026-09-11-belgian-national-orchestra-halls-vinnitskaya",
@@ -285,7 +285,7 @@
     "program": "Mahler's Titan",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:16.763Z"
+    "scraped_at": "2026-05-09T20:11:06.314Z"
   },
   {
     "id": "bozar-2026-10-02-la-tempete",
@@ -306,7 +306,7 @@
     "program": "Monteverdi. Vespro della Beata Vergine",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:15.193Z"
+    "scraped_at": "2026-05-09T20:11:05.069Z"
   },
   {
     "id": "bozar-2026-10-04-beatrice-rana-0",
@@ -327,7 +327,7 @@
     "program": "Bach, Clementi & Schumann",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:16.632Z"
+    "scraped_at": "2026-05-09T20:11:06.391Z"
   },
   {
     "id": "bozar-2026-10-08-cleveland-orchestra-welser-most-schultz",
@@ -350,7 +350,7 @@
     "program": "Brahms 2 & Strauss. Vier letzte Lieder",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-09T19:53:18.665Z"
+    "scraped_at": "2026-05-09T20:11:08.323Z"
   },
   {
     "id": "bozar-2026-10-11-belgian-national-orchestra-petrenko-kobekina",
@@ -372,7 +372,7 @@
     "program": "Rachmaninov 2",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:18.768Z"
+    "scraped_at": "2026-05-09T20:11:07.083Z"
   },
   {
     "id": "bozar-2026-10-18-goya-quartet",
@@ -393,7 +393,7 @@
     "program": "Ravel, Holst & Janáček",
     "price_min": 28,
     "price_max": 28,
-    "scraped_at": "2026-05-09T19:53:18.686Z"
+    "scraped_at": "2026-05-09T20:11:08.280Z"
   },
   {
     "id": "bozar-2026-10-20-janine-jansen-denis-kozhukhin-3",
@@ -414,7 +414,7 @@
     "program": "Beethoven & Prokofiev",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:20.642Z"
+    "scraped_at": "2026-05-09T20:11:10.209Z"
   },
   {
     "id": "bozar-2026-10-23-belgian-national-orchestra-franck-kamei",
@@ -436,7 +436,7 @@
     "program": "Brahms & Tchaikovsky",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:20.617Z"
+    "scraped_at": "2026-05-09T20:11:10.005Z"
   },
   {
     "id": "bozar-2026-10-30-camerata-salzburg-vox-luminis",
@@ -462,7 +462,7 @@
     "program": "Mozart. Requiem",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:20.632Z"
+    "scraped_at": "2026-05-09T20:11:10.106Z"
   },
   {
     "id": "bozar-2026-11-07-pavel-kolesnikov",
@@ -481,7 +481,7 @@
     "program": "Chopin. Nocturnes",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:21.204Z"
+    "scraped_at": "2026-05-09T20:11:10.799Z"
   },
   {
     "id": "bozar-2026-11-14-city-birmingham-symphony-orchestra-chorus",
@@ -506,7 +506,7 @@
     "program": "Britten. War Requiem",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-09T19:53:21.196Z"
+    "scraped_at": "2026-05-09T20:11:10.878Z"
   },
   {
     "id": "bozar-2026-11-15-quatuor-diotima-0",
@@ -528,7 +528,7 @@
     "program": "Thorvaldsdottir, Saariaho, Tjøgersen & Verrières",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-09T19:53:22.611Z"
+    "scraped_at": "2026-05-09T20:11:12.303Z"
   },
   {
     "id": "bozar-2026-11-18-apollos-fire-jeanine-de-bique",
@@ -547,7 +547,7 @@
     "program": "Echoes Across the Atlantic",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:24.389Z"
+    "scraped_at": "2026-05-09T20:11:14.113Z"
   },
   {
     "id": "bozar-2026-12-10-die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
@@ -569,7 +569,7 @@
     "program": "Schubert & Schumann",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:24.530Z"
+    "scraped_at": "2026-05-09T20:11:14.338Z"
   },
   {
     "id": "bozar-2026-12-15-grigory-sokolov-14",
@@ -588,7 +588,7 @@
     "program": "* * * : programme à déterminer",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:24.356Z"
+    "scraped_at": "2026-05-09T20:11:14.192Z"
   },
   {
     "id": "bozar-2026-12-18-cappella-mediterranea-nederlands-kamerkoor",
@@ -613,7 +613,7 @@
     "program": "Bach. Weihnachtsoratorium",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-09T19:53:25.101Z"
+    "scraped_at": "2026-05-09T20:11:15.022Z"
   },
   {
     "id": "bozar-2027-01-10-freiburger-barockorchester-jeanine-de-bique",
@@ -634,7 +634,7 @@
     "program": "Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-09T19:53:25.117Z"
+    "scraped_at": "2026-05-09T20:11:14.921Z"
   },
   {
     "id": "bozar-2027-01-14-london-philharmonic-orchestra-bihlmaier",
@@ -657,7 +657,7 @@
     "program": "Grieg & Sibelius",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-09T19:53:26.504Z"
+    "scraped_at": "2026-05-09T20:11:16.613Z"
   },
   {
     "id": "bozar-2027-01-17-cuarteto-casals-0",
@@ -678,7 +678,7 @@
     "program": "Haydn & Schubert",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-09T19:53:28.303Z"
+    "scraped_at": "2026-05-09T20:11:17.320Z"
   },
   {
     "id": "bozar-2027-01-21-les-talens-lyriques-christophe-rousset",
@@ -702,7 +702,7 @@
     "program": "Pergolesi. Stabat Mater",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:27.072Z"
+    "scraped_at": "2026-05-09T20:11:17.283Z"
   },
   {
     "id": "bozar-2027-01-22-lithuanian-national-symphony-orchestra-grigorian-montvidas",
@@ -725,7 +725,7 @@
     "program": "Wagner, Čiurlionis, Puccini & Ponchielli",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:28.496Z"
+    "scraped_at": "2026-05-09T20:11:18.477Z"
   },
   {
     "id": "bozar-2027-01-24-belgian-national-orchestra-hermus-meeuwsen",
@@ -747,7 +747,7 @@
     "program": "Between Fire and Faith",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:29.063Z"
+    "scraped_at": "2026-05-09T20:11:19.159Z"
   },
   {
     "id": "bozar-2027-01-31-collegium-vocale-gent-herreweghe",
@@ -772,7 +772,7 @@
     "program": "Bach. H-Moll Messe",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-09T19:53:29.069Z"
+    "scraped_at": "2026-05-09T20:11:19.147Z"
   },
   {
     "id": "bozar-2027-02-09-brodsky-quartet",
@@ -791,7 +791,7 @@
     "program": "Beethoven",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-09T19:53:29.997Z"
+    "scraped_at": "2026-05-09T20:11:19.304Z"
   },
   {
     "id": "bozar-2027-02-12-orchestre-national-de-lyon-szeps-znaider",
@@ -813,7 +813,7 @@
     "program": "Shostakovich & Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-09T19:53:31.560Z"
+    "scraped_at": "2026-05-09T20:11:21.622Z"
   },
   {
     "id": "bozar-2027-02-23-angela-hewitt",
@@ -834,7 +834,7 @@
     "program": "Scarlatti, Bach & Chopin",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:32.262Z"
+    "scraped_at": "2026-05-09T20:11:22.385Z"
   },
   {
     "id": "bozar-2027-02-26-belgian-national-orchestra-schonwandt-kolesnikov",
@@ -857,7 +857,7 @@
     "program": "Symphonie fantastique",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:31.587Z"
+    "scraped_at": "2026-05-09T20:11:21.695Z"
   },
   {
     "id": "bozar-2027-02-28-pygmalion-raphael-pichon",
@@ -875,7 +875,7 @@
     "program": "Vertigo – Imaginary Vespers",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-09T19:53:34.270Z"
+    "scraped_at": "2026-05-09T20:11:23.753Z"
   },
   {
     "id": "bozar-2027-03-02-schumann-quartett",
@@ -896,7 +896,7 @@
     "program": "Beethoven, Brahms & Shaw",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-09T19:53:34.616Z"
+    "scraped_at": "2026-05-09T20:11:24.579Z"
   },
   {
     "id": "bozar-2027-03-07-belgian-national-orchestra-hermus-gavrylyuk",
@@ -918,7 +918,7 @@
     "program": "Youth & Destiny",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:34.634Z"
+    "scraped_at": "2026-05-09T20:11:24.759Z"
   },
   {
     "id": "bozar-2027-03-19-helene-grimaud",
@@ -938,7 +938,7 @@
     "program": "The last testament",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:35.189Z"
+    "scraped_at": "2026-05-09T20:11:25.444Z"
   },
   {
     "id": "bozar-2027-03-20-london-symphony-orchestra-pappano-vengerov",
@@ -960,7 +960,7 @@
     "program": "Beethoven & Chostakovitch 8",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-09T19:53:35.203Z"
+    "scraped_at": "2026-05-09T20:11:25.429Z"
   },
   {
     "id": "bozar-2027-04-04-budapest-festival-orchestra-fischer",
@@ -985,7 +985,7 @@
     "program": "Beethoven 9",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-09T19:53:35.196Z"
+    "scraped_at": "2026-05-09T20:11:25.353Z"
   },
   {
     "id": "bozar-2027-04-20-sheku-kanneh-mason-benjamin-grosvenor",
@@ -1007,7 +1007,7 @@
     "program": "Beethoven, Boulanger & Rachmaninov",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-09T19:53:37.489Z"
+    "scraped_at": "2026-05-09T20:11:28.167Z"
   },
   {
     "id": "bozar-2027-04-22-brock-rene-jacobs",
@@ -1035,7 +1035,7 @@
     "program": "Salieri. Falstaff",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-09T19:53:37.500Z"
+    "scraped_at": "2026-05-09T20:11:28.140Z"
   },
   {
     "id": "bozar-2027-05-02-orchestre-des-champs-elysees-philippe-herreweghe-0",
@@ -1061,6 +1061,6 @@
     "program": "Mozart. Clarinet Concerto & Mass in c",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-09T19:53:35.770Z"
+    "scraped_at": "2026-05-09T20:11:26.036Z"
   }
 ]
