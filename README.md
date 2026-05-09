@@ -88,14 +88,72 @@ agenda-crescendo/
 - [x] `data/concerts.json` — 20 concerts de démo réalistes
 - [x] `README.md`, `.gitignore`, `package.json`
 
-## Phase 2 — Scrapers (à venir)
+## Phase 2 — Scrapers (en cours)
 
-- [ ] Un scraper Node.js par source (`scripts/scrapers/<source>.js`)
-- [ ] Script d'agrégation `scripts/aggregate.js` → `data/concerts.json`
-- [ ] GitHub Actions quotidienne à 04h UTC (`scrape-nightly.yml`)
-- [ ] Normalisation des champs : titre, date ISO, heure, ensemble, chef,
-      solistes, compositeurs, programme, URL d'origine
-- [ ] Stratégie anti-doublons (Bach mentionné 17 fois ≠ 17 concerts)
+### Sources actives
+
+| Source | Statut | Approche | Couverture |
+|---|---|---|---|
+| Bozar | ✅ opérationnel | HTML + cheerio (Drupal `section=527`, filtre taxonomique côté client) | ~50 concerts classiques sur 13 mois |
+| Les 16 autres | ⏳ à venir | À choisir source par source | — |
+
+### Pipeline
+
+- Chaque scraper expose `async scrape<Source>()` qui retourne un tableau
+  d'objets normalisés (schéma documenté ci-dessous).
+- `scripts/aggregate.js` exécute toutes les sources en série, conserve
+  les données précédentes pour une source qui plante (pas de perte de
+  catalogue à cause d'une page momentanément KO), trie par date et
+  écrit `data/concerts.json` (tableau pur, plus le wrapper de la Phase 1).
+- `data/composers-reference.json` fournit la liste de référence
+  (~115 entrées avec aliases) pour canoniser et matcher les compositeurs
+  cités dans les programmes.
+- `.github/workflows/scrape-nightly.yml` lance `node scripts/aggregate.js`,
+  puis commit `data/concerts.json` si le diff est non vide. Cron à 04h UTC
+  désactivé tant que tous les scrapers ne sont pas validés ; lancement
+  manuel via l'onglet **Actions → Run workflow**.
+
+### Schéma d'un concert
+
+```json
+{
+  "id": "bozar-2026-06-15-mahler-symphonie-2",
+  "source": "bozar",
+  "venue_id": "bozar",
+  "title": "Mahler — Symphonie n°2 'Résurrection'",
+  "date": "2026-06-15",
+  "time": "20:00",
+  "url": "https://www.bozar.be/fr/calendrier/...",
+  "composers": ["Mahler"],
+  "performers": ["Belgian National Orchestra", "Hugh Wolff (direction)"],
+  "program": "Mahler — Symphonie n°2",
+  "price_min": 26,
+  "price_max": 64,
+  "cancelled": false,
+  "scraped_at": "2026-05-09T04:00:00Z"
+}
+```
+
+Champs obligatoires : `id`, `source`, `venue_id`, `title`, `date`, `url`.
+Champs best-effort : `time`, `composers`, `performers`, `program`,
+`price_min`, `price_max`. Si un champ n'est pas trouvable, `null` (pas
+d'invention).
+
+### Tester un scraper en local
+
+```bash
+npm install
+npm run scrape:bozar      # exporte le résultat brut sur stdout
+npm run scrape            # exécute aggregate.js → data/concerts.json
+python3 -m http.server 8000   # voir le résultat sur localhost:8000
+```
+
+### Reste à faire
+
+- [ ] 16 scrapers supplémentaires (priorité : La Monnaie, Flagey,
+      Concertgebouw Brugge, Philharmonie Luxembourg, OPRL)
+- [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
+- [ ] Activer le cron une fois 5+ sources stabilisées
 
 ## Phase 3 — Élargissements
 

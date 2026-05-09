@@ -395,6 +395,13 @@
     color: var(--ink-soft);
     letter-spacing: .02em;
   }
+  .concert-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 4px;
+  }
   .concert-link {
     display: inline-block;
     font-size: 11px;
@@ -405,6 +412,35 @@
     padding-bottom: 2px;
   }
   .concert-link:hover { color: var(--ink); border-color: var(--gold); text-decoration: none; }
+  .price {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .concert.is-cancelled .concert-program,
+  .concert.is-cancelled h3,
+  .concert.is-cancelled .concert-perf {
+    text-decoration: line-through;
+    text-decoration-color: var(--gold-light);
+    color: var(--ink-soft);
+  }
+  .cancelled-badge {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #a32f2f;
+    background: rgba(163, 47, 47, .08);
+    border: 1px solid rgba(163, 47, 47, .3);
+    padding: 2px 6px;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-right: 6px;
+    text-decoration: none !important;
+  }
 
   .empty-state {
     padding: 48px 24px;
@@ -577,6 +613,8 @@
   };
 
   // ---------- Data loading ----------
+  // Le format produit par scripts/aggregate.js est un tableau pur ; le format
+  // de démo Phase 1 était { generated, concerts: [...] }. On accepte les deux.
   async function loadData() {
     const [venuesRes, concertsRes] = await Promise.all([
       fetch('data/venues.json'),
@@ -587,10 +625,37 @@
     state.venues = await venuesRes.json();
     state.venuesById = new Map(state.venues.map(v => [v.id, v]));
     const concertsPayload = await concertsRes.json();
-    state.concerts = (concertsPayload.concerts || [])
+    const arr = Array.isArray(concertsPayload) ? concertsPayload : (concertsPayload.concerts || []);
+    const generated = Array.isArray(concertsPayload) ? null : concertsPayload.generated;
+    state.concerts = arr
+      .map(normalizeConcert)
       .filter(c => state.venuesById.has(c.venueId))
       .sort((a, b) => a.date.localeCompare(b.date));
-    return concertsPayload.generated;
+    return generated || mostRecentScrapedAt(arr);
+  }
+
+  // Compatibilité ascendante : les concerts produits par les scrapers utilisent
+  // venue_id / performers ; les concerts de démo Phase 1 utilisaient venueId,
+  // ensemble, conductor, soloists. On normalise vers une forme commune.
+  function normalizeConcert(c) {
+    const venueId = c.venue_id ?? c.venueId;
+    const performers = Array.isArray(c.performers) && c.performers.length
+      ? c.performers
+      : [c.ensemble, c.conductor && `dir. ${c.conductor}`, ...(c.soloists || [])].filter(Boolean);
+    return {
+      ...c,
+      venueId,
+      performers,
+      composers: c.composers || [],
+    };
+  }
+
+  function mostRecentScrapedAt(concerts) {
+    let max = null;
+    for (const c of concerts) {
+      if (c.scraped_at && (!max || c.scraped_at > max)) max = c.scraped_at;
+    }
+    return max;
   }
 
   // ---------- Map ----------
@@ -627,7 +692,9 @@
   }
 
   function buildPopup(venue) {
-    const upcoming = state.concerts.filter(c => c.venueId === venue.id);
+    const upcoming = state.filtered.length
+      ? state.filtered.filter(c => c.venueId === venue.id)
+      : state.concerts.filter(c => c.venueId === venue.id);
     const next = upcoming[0];
     return `
       <div>
@@ -740,9 +807,11 @@
       const li = document.createElement('li');
       li.className = 'concert';
       if (state.selectedVenueId === c.venueId) li.classList.add('highlight');
+      if (c.cancelled) li.classList.add('is-cancelled');
       li.dataset.venue = c.venueId;
 
       const d = parseDate(c.date);
+      const priceHtml = renderPrice(c);
       li.innerHTML = `
         <div class="concert-date">
           <div class="day">${d.getDate()}</div>
@@ -750,12 +819,15 @@
           ${c.time ? `<div class="time">${escape(c.time)}</div>` : ''}
         </div>
         <div class="concert-body">
-          <h3>${escape(c.title)}</h3>
+          <h3>${c.cancelled ? '<span class="cancelled-badge">Annulé</span> ' : ''}${escape(c.title)}</h3>
           <div class="concert-venue">${escape(v.name)} <span class="sep">/</span> <span class="city">${escape(v.city)}, ${COUNTRY_LABEL[v.country] || v.country}</span></div>
           ${c.program ? `<div class="concert-program">${escape(c.program)}</div>` : ''}
           ${renderPerformers(c)}
           ${renderComposers(c)}
-          ${c.url ? `<a class="concert-link" href="${escape(c.url)}" target="_blank" rel="noopener">Voir sur le site →</a>` : ''}
+          <div class="concert-footer">
+            ${c.url ? `<a class="concert-link" href="${escape(c.url)}" target="_blank" rel="noopener">Voir sur le site →</a>` : ''}
+            ${priceHtml}
+          </div>
         </div>
       `;
 
@@ -770,12 +842,21 @@
   }
 
   function renderPerformers(c) {
-    const parts = [];
-    if (c.ensemble) parts.push(`<strong>${escape(c.ensemble)}</strong>`);
-    if (c.conductor) parts.push(`dir. ${escape(c.conductor)}`);
-    if (c.soloists && c.soloists.length) parts.push(c.soloists.map(escape).join(', '));
-    if (parts.length === 0) return '';
+    if (!c.performers || c.performers.length === 0) return '';
+    // Premier interprète mis en valeur (en général l'ensemble ou le récitaliste)
+    const [first, ...rest] = c.performers;
+    const parts = [`<strong>${escape(first)}</strong>`];
+    if (rest.length) parts.push(rest.map(escape).join(' · '));
     return `<div class="concert-perf">${parts.join(' · ')}</div>`;
+  }
+
+  function renderPrice(c) {
+    if (c.price_min == null && c.price_max == null) return '';
+    if (c.price_min != null && c.price_max != null && c.price_min !== c.price_max) {
+      return `<span class="price">${c.price_min}–${c.price_max} €</span>`;
+    }
+    const v = c.price_min ?? c.price_max;
+    return `<span class="price">${v} €</span>`;
   }
 
   function renderComposers(c) {

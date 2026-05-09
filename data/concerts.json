@@ -1,266 +1,1066 @@
-{
-  "generated": "2026-05-09T04:00:00Z",
-  "source": "demo",
-  "concerts": [
-    {
-      "id": "demo-001",
-      "venueId": "bozar",
-      "title": "Brahms — Symphonie n°4",
-      "date": "2026-05-15",
-      "time": "20:00",
-      "ensemble": "Belgian National Orchestra",
-      "conductor": "Hugh Wolff",
-      "soloists": [],
-      "composers": ["Brahms", "Schumann"],
-      "program": "Schumann : Concerto pour piano — Brahms : Symphonie n°4",
-      "url": "https://www.bozar.be/fr/calendar/brahms-symphonie-4"
-    },
-    {
-      "id": "demo-002",
-      "venueId": "lamonnaie",
-      "title": "Don Giovanni",
-      "date": "2026-05-18",
-      "time": "19:30",
-      "ensemble": "Symphonic Orchestra & Chorus of La Monnaie",
-      "conductor": "Alain Altinoglu",
-      "soloists": ["Andrè Schuen", "Federica Lombardi"],
-      "composers": ["Mozart"],
-      "program": "Wolfgang Amadeus Mozart — Don Giovanni",
-      "url": "https://www.lamonnaiedemunt.be/fr/program"
-    },
-    {
-      "id": "demo-003",
-      "venueId": "flagey",
-      "title": "Quatuor Danel",
-      "date": "2026-05-21",
-      "time": "20:15",
-      "ensemble": "Quatuor Danel",
-      "conductor": null,
-      "soloists": [],
-      "composers": ["Chostakovitch", "Beethoven"],
-      "program": "Chostakovitch : Quatuor n°8 — Beethoven : Quatuor op. 132",
-      "url": "https://www.flagey.be/fr/programme"
-    },
-    {
-      "id": "demo-004",
-      "venueId": "oprl",
-      "title": "Mahler — Symphonie n°2 « Résurrection »",
-      "date": "2026-05-22",
-      "time": "20:00",
-      "ensemble": "Orchestre Philharmonique Royal de Liège",
-      "conductor": "Gergely Madaras",
-      "soloists": ["Karen Cargill", "Sophie Karthäuser"],
-      "composers": ["Mahler"],
-      "program": "Gustav Mahler — Symphonie n°2",
-      "url": "https://www.oprl.be/fr/concerts"
-    },
-    {
-      "id": "demo-005",
-      "venueId": "orw",
-      "title": "Tosca",
-      "date": "2026-05-24",
-      "time": "20:00",
-      "ensemble": "Orchestre de l'Opéra Royal de Wallonie",
-      "conductor": "Speranza Scappucci",
-      "soloists": ["Anna Pirozzi", "Roberto Aronica"],
-      "composers": ["Puccini"],
-      "program": "Giacomo Puccini — Tosca",
-      "url": "https://www.operaliege.be/fr"
-    },
-    {
-      "id": "demo-006",
-      "venueId": "grandmanege",
-      "title": "Récital Renaud Capuçon",
-      "date": "2026-05-25",
-      "time": "20:00",
-      "ensemble": "Orchestre de Chambre de Namur",
-      "conductor": null,
-      "soloists": ["Renaud Capuçon"],
-      "composers": ["Mozart", "Mendelssohn"],
-      "program": "Mozart : Concerto K. 219 — Mendelssohn : Concerto en mi mineur",
-      "url": "https://www.grandmanege.be/fr/agenda"
-    },
-    {
-      "id": "demo-007",
-      "venueId": "mars",
-      "title": "Vivaldi — Les Quatre Saisons",
-      "date": "2026-05-28",
-      "time": "20:00",
-      "ensemble": "Il Gardellino",
-      "conductor": null,
-      "soloists": ["Shunske Sato"],
-      "composers": ["Vivaldi"],
-      "program": "Antonio Vivaldi — Les Quatre Saisons",
-      "url": "https://www.surmars.be/fr/programme"
-    },
-    {
-      "id": "demo-008",
-      "venueId": "pba",
-      "title": "Récital Boris Giltburg",
-      "date": "2026-05-29",
-      "time": "20:00",
-      "ensemble": null,
-      "conductor": null,
-      "soloists": ["Boris Giltburg"],
-      "composers": ["Rachmaninov", "Chopin"],
-      "program": "Rachmaninov : Études-Tableaux — Chopin : Ballades",
-      "url": "https://www.pba.be/fr"
-    },
-    {
-      "id": "demo-009",
-      "venueId": "biereau",
-      "title": "Ensemble Clematis",
-      "date": "2026-05-30",
-      "time": "20:30",
-      "ensemble": "Ensemble Clematis",
-      "conductor": "Stéphanie de Failly",
-      "soloists": [],
-      "composers": ["Biber", "Schmelzer"],
-      "program": "Biber : Battalia — Schmelzer : Sonates",
-      "url": "https://www.fermedubiereau.be/agenda"
-    },
-    {
-      "id": "demo-010",
-      "venueId": "mctournai",
-      "title": "Trio Karénine",
-      "date": "2026-06-02",
-      "time": "20:00",
-      "ensemble": "Trio Karénine",
-      "conductor": null,
-      "soloists": [],
-      "composers": ["Schubert", "Ravel"],
-      "program": "Schubert : Trio op. 100 — Ravel : Trio en la mineur",
-      "url": "https://www.maisonculturetournai.com/agenda"
-    },
-    {
-      "id": "demo-011",
-      "venueId": "triangel",
-      "title": "Quatuor Akilone",
-      "date": "2026-06-04",
-      "time": "20:00",
-      "ensemble": "Quatuor Akilone",
-      "conductor": null,
-      "soloists": [],
-      "composers": ["Haydn", "Bartók"],
-      "program": "Haydn : Quatuor op. 76 n°3 — Bartók : Quatuor n°4",
-      "url": "https://www.triangel.cc/programm"
-    },
-    {
-      "id": "demo-012",
-      "venueId": "concertgebouwbrugge",
-      "title": "Collegium Vocale Gent — Bach",
-      "date": "2026-06-06",
-      "time": "20:00",
-      "ensemble": "Collegium Vocale Gent",
-      "conductor": "Philippe Herreweghe",
-      "soloists": ["Dorothee Mields"],
-      "composers": ["Bach"],
-      "program": "J.S. Bach — Messe en si mineur BWV 232",
-      "url": "https://www.concertgebouw.be/fr/agenda"
-    },
-    {
-      "id": "demo-013",
-      "venueId": "desingel",
-      "title": "Antwerp Symphony Orchestra",
-      "date": "2026-06-08",
-      "time": "20:00",
-      "ensemble": "Antwerp Symphony Orchestra",
-      "conductor": "Elim Chan",
-      "soloists": ["Lukáš Vondráček"],
-      "composers": ["Rachmaninov", "Stravinsky"],
-      "program": "Rachmaninov : Concerto n°3 — Stravinsky : Le Sacre du Printemps",
-      "url": "https://www.desingel.be/nl/programma"
-    },
-    {
-      "id": "demo-014",
-      "venueId": "bijloke",
-      "title": "B'Rock Orchestra — Haendel",
-      "date": "2026-06-10",
-      "time": "20:00",
-      "ensemble": "B'Rock Orchestra",
-      "conductor": "René Jacobs",
-      "soloists": ["Lucile Richardot"],
-      "composers": ["Haendel"],
-      "program": "Georg Friedrich Haendel — Theodora",
-      "url": "https://www.debijloke.be/nl/agenda"
-    },
-    {
-      "id": "demo-015",
-      "venueId": "cchasselt",
-      "title": "Symphonieorkest Vlaanderen",
-      "date": "2026-06-12",
-      "time": "20:00",
-      "ensemble": "Symphonieorkest Vlaanderen",
-      "conductor": "Kristiina Poska",
-      "soloists": [],
-      "composers": ["Sibelius", "Nielsen"],
-      "program": "Sibelius : Symphonie n°2 — Nielsen : Helios Ouverture",
-      "url": "https://www.ccha.be/nl/programma"
-    },
-    {
-      "id": "demo-016",
-      "venueId": "muziekodroom",
-      "title": "Hermes Ensemble",
-      "date": "2026-06-13",
-      "time": "20:00",
-      "ensemble": "Hermes Ensemble",
-      "conductor": "Koen Kessels",
-      "soloists": [],
-      "composers": ["Adès", "Reich"],
-      "program": "Création contemporaine — Adès & Reich",
-      "url": "https://www.muziekodroom.be/agenda"
-    },
-    {
-      "id": "demo-017",
-      "venueId": "nouveausiecle",
-      "title": "Orchestre National de Lille — Beethoven",
-      "date": "2026-06-15",
-      "time": "20:00",
-      "ensemble": "Orchestre National de Lille",
-      "conductor": "Alexandre Bloch",
-      "soloists": ["Bertrand Chamayou"],
-      "composers": ["Beethoven"],
-      "program": "Beethoven : Concerto pour piano n°5 « L'Empereur » — Symphonie n°7",
-      "url": "https://www.onlille.com/saison"
-    },
-    {
-      "id": "demo-018",
-      "venueId": "operalille",
-      "title": "La Bohème",
-      "date": "2026-06-17",
-      "time": "19:30",
-      "ensemble": "Orchestre de l'Opéra de Lille",
-      "conductor": "Antonello Manacorda",
-      "soloists": ["Adriana González", "Bogdan Volkov"],
-      "composers": ["Puccini"],
-      "program": "Giacomo Puccini — La Bohème",
-      "url": "https://www.opera-lille.fr/saison"
-    },
-    {
-      "id": "demo-019",
-      "venueId": "altourcoing",
-      "title": "Les Indes Galantes",
-      "date": "2026-06-19",
-      "time": "20:00",
-      "ensemble": "La Grande Écurie et la Chambre du Roy",
-      "conductor": "Jean-Claude Malgoire",
-      "soloists": ["Sophie Marin-Degor"],
-      "composers": ["Rameau"],
-      "program": "Jean-Philippe Rameau — Les Indes Galantes (extraits)",
-      "url": "https://www.atelierlyriquedetourcoing.fr/saison"
-    },
-    {
-      "id": "demo-020",
-      "venueId": "philharmonielux",
-      "title": "Orchestre Philharmonique du Luxembourg",
-      "date": "2026-06-21",
-      "time": "20:00",
-      "ensemble": "Orchestre Philharmonique du Luxembourg",
-      "conductor": "Gustavo Gimeno",
-      "soloists": ["Khatia Buniatishvili"],
-      "composers": ["Tchaïkovski", "Chostakovitch"],
-      "program": "Tchaïkovski : Concerto n°1 — Chostakovitch : Symphonie n°5",
-      "url": "https://www.philharmonie.lu/fr/programme"
-    }
-  ]
-}
+[
+  {
+    "id": "bozar-2026-05-10-jingzhi-zhang",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Jingzhi Zhang",
+    "date": "2026-05-10",
+    "time": "11:00",
+    "url": "https://www.bozar.be/fr/calendrier/jingzhi-zhang",
+    "composers": [
+      "Bernd Alois Zimmermann",
+      "Brahms",
+      "Paganini"
+    ],
+    "performers": [
+      "Jingzhi Zhang (violon)",
+      "Christia Hudziy (piano)"
+    ],
+    "program": "Concert Croissant #13",
+    "price_min": 16,
+    "price_max": 16,
+    "scraped_at": "2026-05-09T19:53:04.944Z"
+  },
+  {
+    "id": "bozar-2026-05-13-belgian-national-orchestra-montague-rendall-desandre",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Montague Rendall & Desandre",
+    "date": "2026-05-13",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-montague-rendall-desandre",
+    "composers": [
+      "Mozart",
+      "Rossini"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Sasha Scolnik-Brower (direction)",
+      "Lea Desandre (mezzo-soprano)",
+      "Huw Montague Rendall (baryton)"
+    ],
+    "program": "An evening with Mozart and Rossini",
+    "price_min": 26,
+    "price_max": 64,
+    "scraped_at": "2026-05-09T19:53:06.893Z"
+  },
+  {
+    "id": "bozar-2026-05-16-koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Koninklijk Concertgebouworkest Amsterdam, Rouvali & Gabetta",
+    "date": "2026-05-16",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
+    "composers": [
+      "Dvořák",
+      "Bohuslav Martinů",
+      "Stravinsky",
+      "Ravel"
+    ],
+    "performers": [
+      "Koninklijk Concertgebouworkest",
+      "Santtu-Matias Rouvali (direction)",
+      "Sol Gabetta (violoncelle)"
+    ],
+    "program": "Martinu, Stravinsky & Ravel",
+    "price_min": 40,
+    "price_max": 98,
+    "scraped_at": "2026-05-09T19:53:05.580Z"
+  },
+  {
+    "id": "bozar-2026-05-21-victor-julien-laferriere-0",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Victor Julien-Laferrière",
+    "date": "2026-05-21",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/victor-julien-laferriere-0",
+    "composers": [
+      "Bach",
+      "Kodály",
+      "Pablo Casals"
+    ],
+    "performers": [
+      "Victor Julien-Laferrière (violoncelle)"
+    ],
+    "program": "Bach, Kodály & Casals",
+    "price_min": 30,
+    "price_max": 30,
+    "scraped_at": "2026-05-09T19:53:08.683Z"
+  },
+  {
+    "id": "bozar-2026-06-02-la-fonte-musica",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "La Fonte Musica",
+    "date": "2026-06-02",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/la-fonte-musica",
+    "composers": [
+      "Cipriano de Rore",
+      "Riccardo Rognoni",
+      "Philippus De Monte",
+      "Antonio Cabezón de",
+      "Girolamo Dalla Casa",
+      "Orazio Vecchi",
+      "Giovanni Battista Bovicelli",
+      "Gabrieli",
+      "Lassus"
+    ],
+    "performers": [
+      "La Fonte Musica (ensemble)",
+      "Michele Pasotti (direction musicale)"
+    ],
+    "program": "Anchor che col partire",
+    "price_min": 38,
+    "price_max": 38,
+    "scraped_at": "2026-05-09T19:53:09.485Z"
+  },
+  {
+    "id": "bozar-2026-06-07-giorgi-gigashvili-echo-rising-star",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Giorgi Gigashvili – ECHO Rising Star",
+    "date": "2026-06-07",
+    "time": "11:00",
+    "url": "https://www.bozar.be/fr/calendrier/giorgi-gigashvili-echo-rising-star",
+    "composers": [
+      "Clara Schumann",
+      "Schumann",
+      "Natalie Beridze",
+      "Mendelssohn",
+      "Fanny Mendelssohn"
+    ],
+    "performers": [
+      "Giorgi Gigashvili (piano)"
+    ],
+    "program": "Concert Croissant #14",
+    "price_min": 16,
+    "price_max": 16,
+    "scraped_at": "2026-05-09T19:53:09.243Z"
+  },
+  {
+    "id": "bozar-2026-06-08-concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Concert des lauréats  - Concours Reine Elisabeth | Violoncelle 2026",
+    "date": "2026-06-08",
+    "time": "20:15",
+    "url": "https://www.bozar.be/fr/calendrier/concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
+    "composers": [],
+    "performers": [],
+    "program": null,
+    "price_min": 19,
+    "price_max": 96,
+    "scraped_at": "2026-05-09T19:53:10.013Z"
+  },
+  {
+    "id": "bozar-2026-06-10-concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Concert de clôture - Concours Reine Elisabeth | Violoncelle 2026",
+    "date": "2026-06-10",
+    "time": "20:15",
+    "url": "https://www.bozar.be/fr/calendrier/concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
+    "composers": [],
+    "performers": [],
+    "program": null,
+    "price_min": 23,
+    "price_max": 108,
+    "scraped_at": "2026-05-09T19:53:09.981Z"
+  },
+  {
+    "id": "bozar-2026-06-11-orchestra-age-enlightenment-sir-simon-rattle",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Orchestra of the Age of Enlightenment & Sir Simon Rattle",
+    "date": "2026-06-11",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/orchestra-age-enlightenment-sir-simon-rattle",
+    "composers": [
+      "Berlioz"
+    ],
+    "performers": [
+      "Orchestra of the Age of Enlightenment",
+      "Simon Rattle (direction)",
+      "Timothy Ridout (violon alto)"
+    ],
+    "program": "Berlioz. Symphonie fantastique",
+    "price_min": 40,
+    "price_max": 98,
+    "cancelled": true,
+    "scraped_at": "2026-05-09T19:53:11.848Z"
+  },
+  {
+    "id": "bozar-2026-06-12-belgian-national-orchestra-hermus-vondracek",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Hermus & Vondráček",
+    "date": "2026-06-12",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-hermus-vondracek",
+    "composers": [
+      "Rachmaninov",
+      "Stravinsky"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Antony Hermus (direction)",
+      "Lukáš Vondráček (piano)"
+    ],
+    "program": "Flamboyance",
+    "price_min": 22,
+    "price_max": 56,
+    "scraped_at": "2026-05-09T19:53:14.271Z"
+  },
+  {
+    "id": "bozar-2026-06-13-lea-desandre-jupiter-ensemble-1",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Lea Desandre & Jupiter Ensemble",
+    "date": "2026-06-13",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/lea-desandre-jupiter-ensemble-1",
+    "composers": [
+      "Julie Andrews"
+    ],
+    "performers": [
+      "Jupiter ensemble",
+      "Thomas Dunford (direction musicale)",
+      "Lea Desandre (mezzo-soprano)",
+      "Sophie Daneman (mise en scène)",
+      "Hubert Barrère (costumes)",
+      "Bertrand Couderc (lumière)"
+    ],
+    "program": "Chasing Rainbows",
+    "price_min": 32,
+    "price_max": 56,
+    "scraped_at": "2026-05-09T19:53:14.545Z"
+  },
+  {
+    "id": "bozar-2026-06-21-belgian-national-orchestra-cottis-gatto",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Cottis & Gatto",
+    "date": "2026-06-21",
+    "time": "15:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-cottis-gatto",
+    "composers": [
+      "R. Strauss",
+      "Stravinsky",
+      "Anna Thorvaldsdottir",
+      "Beethoven",
+      "Pēteris Vasks",
+      "Berlioz"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Jessica Cottis (direction)",
+      "Lorenzo Gatto (violon)"
+    ],
+    "program": "Fête de la Musique",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-09T19:53:14.669Z"
+  },
+  {
+    "id": "bozar-2026-09-11-belgian-national-orchestra-halls-vinnitskaya",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Halls & Vinnitskaya",
+    "date": "2026-09-11",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-halls-vinnitskaya",
+    "composers": [
+      "Anna Thorvaldsdottir",
+      "Schumann",
+      "Mahler"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Matthew Halls (conductor)",
+      "Anna Vinnitskaya (piano)"
+    ],
+    "program": "Mahler's Titan",
+    "price_min": 24,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:16.763Z"
+  },
+  {
+    "id": "bozar-2026-10-02-la-tempete",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "La Tempête",
+    "date": "2026-10-02",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/la-tempete",
+    "composers": [
+      "Monteverdi",
+      "Verdi"
+    ],
+    "performers": [
+      "La Tempête (vocal ensemble and orchestra)",
+      "Simon-Pierre Bestion (music director)"
+    ],
+    "program": "Monteverdi. Vespro della Beata Vergine",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:15.193Z"
+  },
+  {
+    "id": "bozar-2026-10-04-beatrice-rana-0",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Beatrice Rana",
+    "date": "2026-10-04",
+    "time": "19:00",
+    "url": "https://www.bozar.be/fr/calendrier/beatrice-rana-0",
+    "composers": [
+      "Bach",
+      "Clementi",
+      "Schumann"
+    ],
+    "performers": [
+      "Beatrice Rana (piano)"
+    ],
+    "program": "Bach, Clementi & Schumann",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:16.632Z"
+  },
+  {
+    "id": "bozar-2026-10-08-cleveland-orchestra-welser-most-schultz",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "The Cleveland Orchestra, Welser-Möst & Schultz",
+    "date": "2026-10-08",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/cleveland-orchestra-welser-most-schultz",
+    "composers": [
+      "Liszt",
+      "R. Strauss",
+      "Brahms"
+    ],
+    "performers": [
+      "The Cleveland Orchestra",
+      "Franz Welser-Möst (conductor)",
+      "Golda Schultz (soprano)"
+    ],
+    "program": "Brahms 2 & Strauss. Vier letzte Lieder",
+    "price_min": 56,
+    "price_max": 138,
+    "scraped_at": "2026-05-09T19:53:18.665Z"
+  },
+  {
+    "id": "bozar-2026-10-11-belgian-national-orchestra-petrenko-kobekina",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Petrenko & Kobekina",
+    "date": "2026-10-11",
+    "time": "15:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-petrenko-kobekina",
+    "composers": [
+      "Dvořák",
+      "Rachmaninov"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Vasily Petrenko (conductor)",
+      "Anastasia Kobekina (cello)"
+    ],
+    "program": "Rachmaninov 2",
+    "price_min": 22,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:18.768Z"
+  },
+  {
+    "id": "bozar-2026-10-18-goya-quartet",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "GoYa Quartet",
+    "date": "2026-10-18",
+    "time": "17:00",
+    "url": "https://www.bozar.be/fr/calendrier/goya-quartet",
+    "composers": [
+      "Holst",
+      "Ravel",
+      "Janáček"
+    ],
+    "performers": [
+      "GoYa Quartet"
+    ],
+    "program": "Ravel, Holst & Janáček",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-09T19:53:18.686Z"
+  },
+  {
+    "id": "bozar-2026-10-20-janine-jansen-denis-kozhukhin-3",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Janine Jansen & Denis Kozhukhin",
+    "date": "2026-10-20",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/janine-jansen-denis-kozhukhin-3",
+    "composers": [
+      "Beethoven",
+      "Prokofiev"
+    ],
+    "performers": [
+      "Janine Jansen (violin)",
+      "Denis Kozhukhin (piano)"
+    ],
+    "program": "Beethoven & Prokofiev",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:20.642Z"
+  },
+  {
+    "id": "bozar-2026-10-23-belgian-national-orchestra-franck-kamei",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Franck & Kamei",
+    "date": "2026-10-23",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-franck-kamei",
+    "composers": [
+      "Brahms",
+      "Tchaïkovski"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Mikko Franck (conductor)",
+      "Masaya Kamei (piano)"
+    ],
+    "program": "Brahms & Tchaikovsky",
+    "price_min": 24,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:20.617Z"
+  },
+  {
+    "id": "bozar-2026-10-30-camerata-salzburg-vox-luminis",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Camerata Salzburg & Vox Luminis",
+    "date": "2026-10-30",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/camerata-salzburg-vox-luminis",
+    "composers": [
+      "Haydn",
+      "Mozart"
+    ],
+    "performers": [
+      "Vox Luminis (vocal ensemble)",
+      "Camerata Salzburg",
+      "Lionel Meunier (music director)",
+      "Gwendoline Blondeel (soprano)",
+      "Maria-Henriette Reinhold (alto)",
+      "Raffaele Giordani (tenor)",
+      "Sebastian Myrus (bass)"
+    ],
+    "program": "Mozart. Requiem",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:20.632Z"
+  },
+  {
+    "id": "bozar-2026-11-07-pavel-kolesnikov",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Pavel Kolesnikov",
+    "date": "2026-11-07",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/pavel-kolesnikov",
+    "composers": [
+      "Chopin"
+    ],
+    "performers": [
+      "Pavel Kolesnikov (piano)"
+    ],
+    "program": "Chopin. Nocturnes",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:21.204Z"
+  },
+  {
+    "id": "bozar-2026-11-14-city-birmingham-symphony-orchestra-chorus",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "City of Birmingham Symphony Orchestra & Chorus",
+    "date": "2026-11-14",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/city-birmingham-symphony-orchestra-chorus",
+    "composers": [
+      "Britten"
+    ],
+    "performers": [
+      "City of Birmingham Symphony Orchestra",
+      "City of Birmingham Symphony Chorus (choir)",
+      "Trinity Boys Choir (choir)",
+      "Kazuki Yamada (conductor)",
+      "Irina Lungu (soprano)",
+      "Andrew Staples (tenor)",
+      "Christian Gerhaher (baritone)"
+    ],
+    "program": "Britten. War Requiem",
+    "price_min": 42,
+    "price_max": 100,
+    "scraped_at": "2026-05-09T19:53:21.196Z"
+  },
+  {
+    "id": "bozar-2026-11-15-quatuor-diotima-0",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Quatuor Diotima",
+    "date": "2026-11-15",
+    "time": "17:00",
+    "url": "https://www.bozar.be/fr/calendrier/quatuor-diotima-0",
+    "composers": [
+      "Anna Thorvaldsdottir",
+      "Saariaho",
+      "Kristine Tjøgersen",
+      "Frédéric Verrières"
+    ],
+    "performers": [
+      "Quatuor Diotima"
+    ],
+    "program": "Thorvaldsdottir, Saariaho, Tjøgersen & Verrières",
+    "price_min": 32,
+    "price_max": 32,
+    "scraped_at": "2026-05-09T19:53:22.611Z"
+  },
+  {
+    "id": "bozar-2026-11-18-apollos-fire-jeanine-de-bique",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Apollo’s Fire & Jeanine De Bique",
+    "date": "2026-11-18",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/apollos-fire-jeanine-de-bique",
+    "composers": [],
+    "performers": [
+      "Apollo’s Fire (baroque ensemble)",
+      "Jeannette Sorrell (artistic direction , harpsichord)",
+      "Jeanine De Bique (soprano)"
+    ],
+    "program": "Echoes Across the Atlantic",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:24.389Z"
+  },
+  {
+    "id": "bozar-2026-12-10-die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Die Deutsche Kammerphilharmonie Bremen, Järvi & Mørk",
+    "date": "2026-12-10",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
+    "composers": [
+      "Schubert",
+      "Schumann"
+    ],
+    "performers": [
+      "Die Deutsche Kammerphilharmonie Bremen",
+      "Paavo Järvi (conductor)",
+      "Truls Mørk (cello)"
+    ],
+    "program": "Schubert & Schumann",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:24.530Z"
+  },
+  {
+    "id": "bozar-2026-12-15-grigory-sokolov-14",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Grigory Sokolov",
+    "date": "2026-12-15",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/grigory-sokolov-14",
+    "composers": [
+      "* * *"
+    ],
+    "performers": [
+      "Grigory Sokolov (piano)"
+    ],
+    "program": "* * * : programme à déterminer",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:24.356Z"
+  },
+  {
+    "id": "bozar-2026-12-18-cappella-mediterranea-nederlands-kamerkoor",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Cappella Mediterranea & Nederlands Kamerkoor",
+    "date": "2026-12-18",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/cappella-mediterranea-nederlands-kamerkoor",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Cappella Mediterranea",
+      "Leonardo García Alarcón (conductor)",
+      "Nederlands Kamerkoor (choir)",
+      "Sophie Junker (soprano)",
+      "Christopher Lowrey (alto)",
+      "Valerio Contaldo (tenor)",
+      "Andreas Wolf (bass)"
+    ],
+    "program": "Bach. Weihnachtsoratorium",
+    "price_min": 28,
+    "price_max": 66,
+    "scraped_at": "2026-05-09T19:53:25.101Z"
+  },
+  {
+    "id": "bozar-2027-01-10-freiburger-barockorchester-jeanine-de-bique",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Freiburger Barockorchester & Jeanine De Bique",
+    "date": "2027-01-10",
+    "time": "19:00",
+    "url": "https://www.bozar.be/fr/calendrier/freiburger-barockorchester-jeanine-de-bique",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [
+      "Freiburger Barockorchester",
+      "Gottfried von der Goltz (conductor)",
+      "Jeanine De Bique (soprano)"
+    ],
+    "program": "Mozart",
+    "price_min": 28,
+    "price_max": 66,
+    "scraped_at": "2026-05-09T19:53:25.117Z"
+  },
+  {
+    "id": "bozar-2027-01-14-london-philharmonic-orchestra-bihlmaier",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "London Philharmonic Orchestra & Bihlmaier",
+    "date": "2027-01-14",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/london-philharmonic-orchestra-bihlmaier",
+    "composers": [
+      "Grieg",
+      "Sibelius",
+      "Andrea Tarrodi"
+    ],
+    "performers": [
+      "London Philharmonic Orchestra",
+      "Anja Bihlmaier (conductor)",
+      "Benjamin Grosvenor (piano)"
+    ],
+    "program": "Grieg & Sibelius",
+    "price_min": 42,
+    "price_max": 100,
+    "scraped_at": "2026-05-09T19:53:26.504Z"
+  },
+  {
+    "id": "bozar-2027-01-17-cuarteto-casals-0",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Cuarteto Casals",
+    "date": "2027-01-17",
+    "time": "17:00",
+    "url": "https://www.bozar.be/fr/calendrier/cuarteto-casals-0",
+    "composers": [
+      "Haydn",
+      "Raquel García-Tomás",
+      "Schubert"
+    ],
+    "performers": [
+      "Cuarteto Casals"
+    ],
+    "program": "Haydn & Schubert",
+    "price_min": 34,
+    "price_max": 34,
+    "scraped_at": "2026-05-09T19:53:28.303Z"
+  },
+  {
+    "id": "bozar-2027-01-21-les-talens-lyriques-christophe-rousset",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Les Talens Lyriques & Christophe Rousset",
+    "date": "2027-01-21",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/les-talens-lyriques-christophe-rousset",
+    "composers": [
+      "Pergolesi",
+      "Leonardo Leo",
+      "Giovanni Battista Ferrandini"
+    ],
+    "performers": [
+      "Les Talens Lyriques",
+      "Christophe Rousset (conductor , harpsichord)",
+      "Key'mon Murrah (countertenor)",
+      "Irina Sherazadishvili (mezzo-soprano)"
+    ],
+    "program": "Pergolesi. Stabat Mater",
+    "price_min": 34,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:27.072Z"
+  },
+  {
+    "id": "bozar-2027-01-22-lithuanian-national-symphony-orchestra-grigorian-montvidas",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Lithuanian National Symphony Orchestra, Grigorian & Montvidas",
+    "date": "2027-01-22",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/lithuanian-national-symphony-orchestra-grigorian-montvidas",
+    "composers": [
+      "Mikalojus Konstantinas Čiurlionis",
+      "Joseph Jongen"
+    ],
+    "performers": [
+      "Lithuanian National Symphony Orchestra",
+      "Giedrė Šlekytė (conductor)",
+      "Asmik Grigorian (soprano)",
+      "Edgaras Montvidas (tenor)"
+    ],
+    "program": "Wagner, Čiurlionis, Puccini & Ponchielli",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:28.496Z"
+  },
+  {
+    "id": "bozar-2027-01-24-belgian-national-orchestra-hermus-meeuwsen",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Hermus & Meeuwsen",
+    "date": "2027-01-24",
+    "time": "15:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-hermus-meeuwsen",
+    "composers": [
+      "Beethoven",
+      "Bruckner"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Antony Hermus (conductor)",
+      "Nikola Meeuwsen (piano)"
+    ],
+    "program": "Between Fire and Faith",
+    "price_min": 24,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:29.063Z"
+  },
+  {
+    "id": "bozar-2027-01-31-collegium-vocale-gent-herreweghe",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Collegium Vocale Gent & Herreweghe",
+    "date": "2027-01-31",
+    "time": "19:00",
+    "url": "https://www.bozar.be/fr/calendrier/collegium-vocale-gent-herreweghe",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Collegium Vocale Gent (vocal ensemble and orchestra)",
+      "Philippe Herreweghe (conductor)",
+      "Marie Luise Werneburg (soprano)",
+      "Hana Blažíková (soprano)",
+      "Alex Potter (alto)",
+      "Guy Cutting (tenor)",
+      "Johannes Kammler (bass)"
+    ],
+    "program": "Bach. H-Moll Messe",
+    "price_min": 28,
+    "price_max": 66,
+    "scraped_at": "2026-05-09T19:53:29.069Z"
+  },
+  {
+    "id": "bozar-2027-02-09-brodsky-quartet",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Brodsky Quartet",
+    "date": "2027-02-09",
+    "time": "19:30",
+    "url": "https://www.bozar.be/fr/calendrier/brodsky-quartet",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Brodsky Quartet"
+    ],
+    "program": "Beethoven",
+    "price_min": 34,
+    "price_max": 34,
+    "scraped_at": "2026-05-09T19:53:29.997Z"
+  },
+  {
+    "id": "bozar-2027-02-12-orchestre-national-de-lyon-szeps-znaider",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Orchestre National de Lyon & Szeps-Znaider",
+    "date": "2027-02-12",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/orchestre-national-de-lyon-szeps-znaider",
+    "composers": [
+      "Mozart",
+      "Chostakovitch"
+    ],
+    "performers": [
+      "Orchestre National de Lyon",
+      "Nikolaj Szeps-Znaider (conductor)",
+      "Inon Barnatan (piano)"
+    ],
+    "program": "Shostakovich & Mozart",
+    "price_min": 28,
+    "price_max": 66,
+    "scraped_at": "2026-05-09T19:53:31.560Z"
+  },
+  {
+    "id": "bozar-2027-02-23-angela-hewitt",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Angela Hewitt",
+    "date": "2027-02-23",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/angela-hewitt",
+    "composers": [
+      "D. Scarlatti",
+      "Bach",
+      "Chopin"
+    ],
+    "performers": [
+      "Angela Hewitt (piano)"
+    ],
+    "program": "Scarlatti, Bach & Chopin",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:32.262Z"
+  },
+  {
+    "id": "bozar-2027-02-26-belgian-national-orchestra-schonwandt-kolesnikov",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Schønwandt & Kolesnikov",
+    "date": "2027-02-26",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-schonwandt-kolesnikov",
+    "composers": [
+      "Paul Dukas",
+      "Saint-Saëns",
+      "Berlioz"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Michael Schønwandt (conductor)",
+      "Pavel Kolesnikov (piano)"
+    ],
+    "program": "Symphonie fantastique",
+    "price_min": 24,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:31.587Z"
+  },
+  {
+    "id": "bozar-2027-02-28-pygmalion-raphael-pichon",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Pygmalion & Raphaël Pichon",
+    "date": "2027-02-28",
+    "time": "19:00",
+    "url": "https://www.bozar.be/fr/calendrier/pygmalion-raphael-pichon",
+    "composers": [],
+    "performers": [
+      "Pygmalion (vocal ensemble and orchestra)",
+      "Raphaël Pichon (conductor)"
+    ],
+    "program": "Vertigo – Imaginary Vespers",
+    "price_min": 34,
+    "price_max": 58,
+    "scraped_at": "2026-05-09T19:53:34.270Z"
+  },
+  {
+    "id": "bozar-2027-03-02-schumann-quartett",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Schumann Quartett",
+    "date": "2027-03-02",
+    "time": "19:30",
+    "url": "https://www.bozar.be/fr/calendrier/schumann-quartett",
+    "composers": [
+      "Beethoven",
+      "Caroline Shaw",
+      "Brahms"
+    ],
+    "performers": [
+      "Schumann Quartett"
+    ],
+    "program": "Beethoven, Brahms & Shaw",
+    "price_min": 32,
+    "price_max": 32,
+    "scraped_at": "2026-05-09T19:53:34.616Z"
+  },
+  {
+    "id": "bozar-2027-03-07-belgian-national-orchestra-hermus-gavrylyuk",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Belgian National Orchestra, Hermus & Gavrylyuk",
+    "date": "2027-03-07",
+    "time": "15:00",
+    "url": "https://www.bozar.be/fr/calendrier/belgian-national-orchestra-hermus-gavrylyuk",
+    "composers": [
+      "Prokofiev",
+      "Tchaïkovski"
+    ],
+    "performers": [
+      "Belgian National Orchestra",
+      "Antony Hermus (conductor)",
+      "Alexander Gavrylyuk (piano)"
+    ],
+    "program": "Youth & Destiny",
+    "price_min": 22,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:34.634Z"
+  },
+  {
+    "id": "bozar-2027-03-19-helene-grimaud",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Hélène Grimaud",
+    "date": "2027-03-19",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/helene-grimaud",
+    "composers": [
+      "Beethoven",
+      "Schubert"
+    ],
+    "performers": [
+      "Hélène Grimaud (piano)"
+    ],
+    "program": "The last testament",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:35.189Z"
+  },
+  {
+    "id": "bozar-2027-03-20-london-symphony-orchestra-pappano-vengerov",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "London Symphony Orchestra, Pappano & Vengerov",
+    "date": "2027-03-20",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/london-symphony-orchestra-pappano-vengerov",
+    "composers": [
+      "Beethoven",
+      "Chostakovitch"
+    ],
+    "performers": [
+      "London Symphony Orchestra",
+      "Antonio Pappano (conductor)",
+      "Maxim Vengerov (violin)"
+    ],
+    "program": "Beethoven & Chostakovitch 8",
+    "price_min": 56,
+    "price_max": 138,
+    "scraped_at": "2026-05-09T19:53:35.203Z"
+  },
+  {
+    "id": "bozar-2027-04-04-budapest-festival-orchestra-fischer",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Budapest Festival Orchestra & Fischer",
+    "date": "2027-04-04",
+    "time": null,
+    "url": "https://www.bozar.be/fr/calendrier/budapest-festival-orchestra-fischer",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra",
+      "Iván Fischer (conductor)",
+      "Pan-European Chorus (choir)",
+      "Maria Bengtsson (soprano)",
+      "Olivia Vermeulen (mezzo-soprano)",
+      "Andrew Staples (tenor)",
+      "Hanno Müller-Brachmann (bass)"
+    ],
+    "program": "Beethoven 9",
+    "price_min": 42,
+    "price_max": 100,
+    "scraped_at": "2026-05-09T19:53:35.196Z"
+  },
+  {
+    "id": "bozar-2027-04-20-sheku-kanneh-mason-benjamin-grosvenor",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Sheku Kanneh-Mason & Benjamin Grosvenor",
+    "date": "2027-04-20",
+    "time": "20:00",
+    "url": "https://www.bozar.be/fr/calendrier/sheku-kanneh-mason-benjamin-grosvenor",
+    "composers": [
+      "Beethoven",
+      "Rachmaninov",
+      "Boulanger"
+    ],
+    "performers": [
+      "Sheku Kanneh-Mason (cello)",
+      "Benjamin Grosvenor (piano)"
+    ],
+    "program": "Beethoven, Boulanger & Rachmaninov",
+    "price_min": 30,
+    "price_max": 50,
+    "scraped_at": "2026-05-09T19:53:37.489Z"
+  },
+  {
+    "id": "bozar-2027-04-22-brock-rene-jacobs",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "B’Rock & René Jacobs",
+    "date": "2027-04-22",
+    "time": "19:30",
+    "url": "https://www.bozar.be/fr/calendrier/brock-rene-jacobs",
+    "composers": [
+      "Antonio Salieri"
+    ],
+    "performers": [
+      "Chœur de Chambre de Namur (choir)",
+      "B'Rock Orchestra",
+      "René Jacobs (conductor)",
+      "Krešimir Stražanac (Falstaff (bass-baritone))",
+      "Luigi De Donato (Bardolfo (bass))",
+      "Anett Fritsch (Mistress Ford (soprano))",
+      "Grégoire Mour (Master Ford (tenor))",
+      "Sophie Harmsen (Mistress Slender (mezzo-soprano))",
+      "Arttu Kataja (Master Slender (baritone))",
+      "Sunhae Im (Betty (soprano))"
+    ],
+    "program": "Salieri. Falstaff",
+    "price_min": 28,
+    "price_max": 66,
+    "scraped_at": "2026-05-09T19:53:37.500Z"
+  },
+  {
+    "id": "bozar-2027-05-02-orchestre-des-champs-elysees-philippe-herreweghe-0",
+    "source": "bozar",
+    "venue_id": "bozar",
+    "title": "Orchestre des Champs-Elysées & Philippe Herreweghe",
+    "date": "2027-05-02",
+    "time": "19:00",
+    "url": "https://www.bozar.be/fr/calendrier/orchestre-des-champs-elysees-philippe-herreweghe-0",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [
+      "Orchestre des Champs-Élysées",
+      "Collegium Vocale Gent (choir)",
+      "Philippe Herreweghe (conductor)",
+      "Nicola Boud (clarinet)",
+      "Regula Mühlemann (soprano)",
+      "Eva Zaïcik (mezzo-soprano)",
+      "Werner Güra (tenor)",
+      "Thomas E. Bauer (bass)"
+    ],
+    "program": "Mozart. Clarinet Concerto & Mass in c",
+    "price_min": 30,
+    "price_max": 80,
+    "scraped_at": "2026-05-09T19:53:35.770Z"
+  }
+]
