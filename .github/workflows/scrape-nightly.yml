@@ -1,10 +1,9 @@
 name: Nightly scrape
 
 on:
-  # 04:00 UTC = 05h Bruxelles l'hiver, 06h l'été.
-  # Décommenter cette section quand tous les scrapers seront stabilisés.
-  # schedule:
-  #   - cron: '0 4 * * *'
+  schedule:
+    # 04:00 UTC = 05h Bruxelles l'hiver, 06h l'été
+    - cron: '0 4 * * *'
   workflow_dispatch: # déclenchement manuel via l'onglet Actions
 
 permissions:
