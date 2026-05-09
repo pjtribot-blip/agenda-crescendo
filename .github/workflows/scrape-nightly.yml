@@ -1,10 +1,10 @@
 name: Nightly scrape
 
 on:
-  schedule:
-    # 04:00 UTC = 05h Bruxelles l'hiver, 06h l'été
-    # Décommenter quand le pipeline aura été testé manuellement.
-    # - cron: '0 4 * * *'
+  # 04:00 UTC = 05h Bruxelles l'hiver, 06h l'été.
+  # Décommenter cette section quand tous les scrapers seront stabilisés.
+  # schedule:
+  #   - cron: '0 4 * * *'
   workflow_dispatch: # déclenchement manuel via l'onglet Actions
 
 permissions:
