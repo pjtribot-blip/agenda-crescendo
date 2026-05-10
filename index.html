@@ -411,6 +411,52 @@
     font-weight: 500;
   }
   .festival-badge::before { content: '🎪'; font-size: 11px; }
+
+  /* Share row */
+  .share-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--rule);
+  }
+  .share-row .share-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: var(--ink-soft);
+    margin-right: 6px;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--gold-deep);
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .share-btn:hover { background: var(--ivory-soft); border-color: var(--gold-light); color: var(--ink); }
+  .share-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .share-btn svg { width: 14px; height: 14px; fill: currentColor; }
+  .share-btn.share-copied {
+    background: var(--gold);
+    color: var(--paper);
+    border-color: var(--gold);
+  }
+  .concert.highlight-flash { animation: hl-flash 1.6s ease-out; }
+  @keyframes hl-flash {
+    0%   { background: rgba(189, 152, 70, .25); }
+    100% { background: transparent; }
+  }
   .concert-footer {
     display: flex;
     align-items: center;
@@ -845,9 +891,11 @@
       const v = state.venuesById.get(c.venueId);
       const li = document.createElement('li');
       li.className = 'concert';
+      li.id = `concert-${c.id}`;
       if (state.selectedVenueId === c.venueId) li.classList.add('highlight');
       if (c.cancelled) li.classList.add('is-cancelled');
       li.dataset.venue = c.venueId;
+      li.dataset.concertId = c.id;
 
       const d = parseDate(c.date);
       const priceHtml = renderPrice(c);
@@ -868,6 +916,7 @@
             ${c.url ? `<a class="concert-link" href="${escape(c.url)}" target="_blank" rel="noopener">Voir sur le site →</a>` : ''}
             ${priceHtml}
           </div>
+          ${renderShareRow(c)}
         </div>
       `;
 
@@ -897,6 +946,196 @@
     }
     const v = c.price_min ?? c.price_max;
     return `<span class="price">${v} €</span>`;
+  }
+
+  // ---------- Share / permalink ----------
+  // Permalink scheme : `…/index.html#concert=ID`. Au boot et à chaque
+  // hashchange, on scroll vers la carte correspondante (si elle est
+  // dans la liste filtrée) et on flashe sa surbrillance ~1.5s.
+  function getPermalink(c) {
+    return `${location.origin}${location.pathname}#concert=${encodeURIComponent(c.id)}`;
+  }
+
+  function getShareText(c) {
+    const v = state.venuesById.get(c.venueId);
+    const date = parseDate(c.date);
+    const dateStr = `${date.getDate()} ${MONTH_LABEL[date.getMonth()]} ${date.getFullYear()}` + (c.time ? ` à ${c.time}` : '');
+    const venueStr = v ? `${v.name}, ${v.city}` : '';
+    return `${c.title} — ${venueStr}\n${dateStr}\n${getPermalink(c)}`;
+  }
+
+  // Format date YYYYMMDD'T'HHMM'00' (UTC ou flottant — on émet en
+  // flottant local pour respecter l'horaire affiché)
+  function icsDateTime(dateIso, timeHHMM) {
+    const ymd = dateIso.replace(/-/g, '');
+    if (!timeHHMM) return ymd; // VALUE=DATE pour all-day
+    const hm = timeHHMM.replace(':', '');
+    return `${ymd}T${hm}00`;
+  }
+
+  function icsEscape(s) {
+    return (s || '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+  }
+
+  function generateIcs(c) {
+    const v = state.venuesById.get(c.venueId);
+    const start = icsDateTime(c.date, c.time);
+    // Durée par défaut : 2h. Si pas d'heure (all-day), DTEND = +1 jour.
+    let endStr;
+    if (c.time) {
+      const [h, m] = c.time.split(':').map(Number);
+      const endH = (h + 2) % 24;
+      const endM = m;
+      const endTime = `${String(endH).padStart(2, '0')}:${String(endM).padStart(2, '0')}`;
+      endStr = icsDateTime(c.date, endTime);
+    } else {
+      const d = parseDate(c.date);
+      d.setDate(d.getDate() + 1);
+      endStr = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
+    }
+    const dtstamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+    const location = v ? `${v.name}, ${v.address || v.city}` : '';
+    const description = [c.program, c.url].filter(Boolean).join('\n');
+    const startLine = c.time ? `DTSTART:${start}` : `DTSTART;VALUE=DATE:${start}`;
+    const endLine = c.time ? `DTEND:${endStr}` : `DTEND;VALUE=DATE:${endStr}`;
+    const lines = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Crescendo Magazine//Agenda Crescendo//FR',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      `UID:${c.id}@agenda-crescendo`,
+      `DTSTAMP:${dtstamp}`,
+      startLine,
+      endLine,
+      `SUMMARY:${icsEscape(c.title)}`,
+      `LOCATION:${icsEscape(location)}`,
+      `DESCRIPTION:${icsEscape(description)}`,
+      c.url ? `URL:${c.url}` : null,
+      'END:VEVENT',
+      'END:VCALENDAR',
+    ].filter(Boolean);
+    return lines.join('\r\n') + '\r\n';
+  }
+
+  function downloadIcs(c) {
+    const blob = new Blob([generateIcs(c)], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${c.id}.ics`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }
+
+  function renderShareRow(c) {
+    return `
+      <div class="share-row" data-concert-id="${escape(c.id)}">
+        <span class="share-label">Partager</span>
+        <button class="share-btn" data-action="permalink" type="button" title="Lien direct vers ce concert" aria-label="Lien direct">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a3 3 0 0 0 4.2 0l3.5-3.5a3 3 0 1 0-4.2-4.2l-1.4 1.4 1.4 1.4 1.4-1.4a1 1 0 1 1 1.4 1.4l-3.5 3.5a1 1 0 0 1-1.4 0l-1.4-1.4-1.4 1.4 1.4 1.4Zm2.8-2.8a3 3 0 0 0-4.2 0l-3.5 3.5a3 3 0 1 0 4.2 4.2l1.4-1.4-1.4-1.4-1.4 1.4a1 1 0 1 1-1.4-1.4l3.5-3.5a1 1 0 0 1 1.4 0l1.4 1.4 1.4-1.4-1.4-1.4Z"/></svg>
+        </button>
+        <button class="share-btn" data-action="ics" type="button" title="Ajouter à mon agenda (.ics)" aria-label="Ajouter à mon agenda">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm-2 7h14v11H5V9Zm2 2v2h2v-2H7Zm4 0v2h2v-2h-2Zm4 0v2h2v-2h-2Z"/></svg>
+        </button>
+        <button class="share-btn" data-action="copy" type="button" title="Copier le lien" aria-label="Copier le lien">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+        </button>
+        <button class="share-btn" data-action="whatsapp" type="button" title="Partager sur WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10.4 10.4 0 0 0 3.5 14.7L2 22l7.5-1.4a10.4 10.4 0 0 0 11-17Zm-8.5 17a8.5 8.5 0 0 1-4.4-1.2l-.3-.2-3.7.7.7-3.6-.2-.3a8.5 8.5 0 1 1 7.9 4.6Zm5-6.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.2-.4.1-.2 0-.3 0-.5l-.9-2c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1 2.7.1.2 1.8 2.7 4.3 3.8.6.2 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z"/></svg>
+        </button>
+        <button class="share-btn" data-action="facebook" type="button" title="Partager sur Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.5V9.7c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3V22A10 10 0 0 0 22 12Z"/></svg>
+        </button>
+        <button class="share-btn" data-action="email" type="button" title="Partager par email" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0v.5l8 5 8-5V6H4Zm16 2.6-7.4 4.6a1 1 0 0 1-1.2 0L4 8.6V18h16V8.6Z"/></svg>
+        </button>
+      </div>
+    `;
+  }
+
+  function handleShareClick(ev) {
+    const btn = ev.target.closest('.share-btn');
+    if (!btn) return;
+    const row = btn.closest('.share-row');
+    if (!row) return;
+    const id = row.dataset.concertId;
+    const c = state.concerts.find(x => x.id === id);
+    if (!c) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    const action = btn.dataset.action;
+    const url = getPermalink(c);
+    const text = getShareText(c);
+
+    if (action === 'permalink') {
+      // Met à jour l'URL et déclenche le scroll/flash
+      history.replaceState(null, '', `#concert=${encodeURIComponent(c.id)}`);
+      flashConcert(c.id);
+      // Copie aussi dans le presse-papier pour confort
+      navigator.clipboard?.writeText(url).catch(() => {});
+      flashCopied(btn);
+    } else if (action === 'ics') {
+      downloadIcs(c);
+    } else if (action === 'copy') {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => flashCopied(btn)).catch(() => fallbackCopy(url, btn));
+      } else {
+        fallbackCopy(url, btn);
+      }
+    } else if (action === 'whatsapp') {
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    } else if (action === 'facebook') {
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener');
+    } else if (action === 'email') {
+      const subject = `${c.title} — Agenda Crescendo`;
+      const body = text;
+      window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+  }
+
+  function flashCopied(btn) {
+    btn.classList.add('share-copied');
+    setTimeout(() => btn.classList.remove('share-copied'), 1200);
+  }
+
+  function fallbackCopy(text, btn) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'absolute';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); flashCopied(btn); } catch {}
+    document.body.removeChild(ta);
+  }
+
+  function flashConcert(id) {
+    const el = document.getElementById(`concert-${CSS.escape(id)}`);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.remove('highlight-flash');
+    void el.offsetWidth; // reflow pour rejouer l'animation
+    el.classList.add('highlight-flash');
+    setTimeout(() => el.classList.remove('highlight-flash'), 1800);
+  }
+
+  function handleConcertHash() {
+    const m = location.hash.match(/^#concert=(.+)$/);
+    if (!m) return;
+    const id = decodeURIComponent(m[1]);
+    // Si la carte n'est pas dans le rendu courant (filtre actif), on
+    // reset et on retente.
+    const exists = state.concerts.some(c => c.id === id);
+    if (!exists) return;
+    if (!document.getElementById(`concert-${CSS.escape(id)}`)) {
+      resetFilters();
+    }
+    setTimeout(() => flashConcert(id), 50);
   }
 
   function renderFestivalBadges(c) {
@@ -963,6 +1202,16 @@
         document.getElementById(id).addEventListener('input', () => render());
       });
       document.getElementById('f-reset').addEventListener('click', resetFilters);
+
+      // Délégation : clic sur n'importe quel bouton de partage dans la
+      // liste de concerts. On l'attache une seule fois sur le UL plutôt
+      // que par carte (la liste est re-rendue à chaque filtre).
+      document.getElementById('concert-list').addEventListener('click', handleShareClick);
+
+      // Permalink #concert=ID : on saute à la carte au boot et à chaque
+      // changement de hash (clic sur le bouton "lien direct").
+      window.addEventListener('hashchange', handleConcertHash);
+      handleConcertHash();
     } catch (err) {
       console.error(err);
       document.getElementById('concert-list').innerHTML =
