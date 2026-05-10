@@ -103,7 +103,9 @@ agenda-crescendo/
 | Grand Manège (Namur) | ✅ opérationnel | HTML + cheerio (`/fr/concerts/calendrier`, mois encodé dans `class="venue-YYYYMM"` de chaque carte) | ~115 concerts sur 14 mois |
 | MARS (Mons) | ✅ opérationnel | HTML + cheerio (`/calendrier/YYYYMM` mois par mois, pré-filtre URL `/musique/` puis filtre fin sur sous-genre détail Classique / Musique d'aujourd'hui / Musique ancienne / Baroque / Lyrique) | ~17 concerts savants sur 14 mois |
 | PBA Charleroi | ✅ opérationnel | HTML + cheerio (`/notre-saison/?category=classique` + `=lyrique` × saisons découvertes via `<select name="season">`) | ~20 concerts sur les saisons en cours |
-| Les 8 autres | ⏳ à venir | À choisir source par source | — |
+| deSingel (Anvers) | ✅ opérationnel | API JSON Postgres-proxy `/api/data` (table `production__c` + `activity__c`, filtre `productiontypetext__c='Muziek'`) | ~180 représentations sur la saison |
+| De Bijloke (Gand) | ✅ opérationnel | HTML + cheerio (`/nl/programma?page=N`, dataLayer Google Analytics dans la page détail pour genres + dates par représentation) | ~135 concerts sur 14 mois |
+| Les 6 autres | ⏳ à venir | À choisir source par source | — |
 
 ### Pipeline
 
@@ -160,14 +162,16 @@ npm run scrape:orw        # idem pour Opéra Royal de Wallonie
 npm run scrape:gmanege    # idem pour Grand Manège (Namur)
 npm run scrape:mars       # idem pour MARS (Mons)
 npm run scrape:pba        # idem pour PBA Charleroi
+npm run scrape:desingel   # idem pour deSingel (Anvers)
+npm run scrape:bijloke    # idem pour De Bijloke (Gand)
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 8 scrapers supplémentaires (priorité : Philharmonie Luxembourg,
-      deSingel, De Bijloke, Maison de la Culture Tournai)
+- [ ] 6 scrapers supplémentaires (priorité : Opera Ballet Vlaanderen,
+      Philharmonie Luxembourg, ONL Lille, Opéra de Lille)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 

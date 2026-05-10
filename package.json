@@ -17,7 +17,9 @@
     "scrape:orw": "node -e \"import('./scripts/scrapers/orw.js').then(m => m.scrapeORW()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:gmanege": "node -e \"import('./scripts/scrapers/grand-manege.js').then(m => m.scrapeGrandManege()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:mars": "node -e \"import('./scripts/scrapers/mars.js').then(m => m.scrapeMARS()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:pba": "node -e \"import('./scripts/scrapers/pba.js').then(m => m.scrapePBA()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:pba": "node -e \"import('./scripts/scrapers/pba.js').then(m => m.scrapePBA()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:desingel": "node -e \"import('./scripts/scrapers/desingel.js').then(m => m.scrapeDeSingel()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:bijloke": "node -e \"import('./scripts/scrapers/debijloke.js').then(m => m.scrapeDeBijloke()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

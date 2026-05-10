@@ -18,6 +18,8 @@ import { scrapeORW } from './scrapers/orw.js';
 import { scrapeGrandManege } from './scrapers/grand-manege.js';
 import { scrapeMARS } from './scrapers/mars.js';
 import { scrapePBA } from './scrapers/pba.js';
+import { scrapeDeSingel } from './scrapers/desingel.js';
+import { scrapeDeBijloke } from './scrapers/debijloke.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -34,6 +36,8 @@ const SCRAPERS = [
   { name: 'gmanege', fn: scrapeGrandManege },
   { name: 'mars', fn: scrapeMARS },
   { name: 'pba', fn: scrapePBA },
+  { name: 'desingel', fn: scrapeDeSingel },
+  { name: 'bijloke', fn: scrapeDeBijloke },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
