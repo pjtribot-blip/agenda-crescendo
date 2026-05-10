@@ -19,7 +19,28 @@
     "program": "Concert Croissant #13",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:30:45.513Z"
+    "scraped_at": "2026-05-10T06:50:34.927Z"
+  },
+  {
+    "id": "monnaie-2026-05-12-3567-medusa",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Medusa",
+    "date": "2026-05-12",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3567-medusa",
+    "composers": [
+      "Iain Bell"
+    ],
+    "performers": [
+      "Michiel Delanghe (Direction musicale)",
+      "Lydia Steier (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Michiel Delanghe, Lydia Steier",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:10.367Z"
   },
   {
     "id": "bozar-2026-05-13-belgian-national-orchestra-montague-rendall-desandre",
@@ -42,7 +63,28 @@
     "program": "An evening with Mozart and Rossini",
     "price_min": 26,
     "price_max": 64,
-    "scraped_at": "2026-05-10T06:30:45.789Z"
+    "scraped_at": "2026-05-10T06:50:36.593Z"
+  },
+  {
+    "id": "monnaie-2026-05-15-3567-medusa",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Medusa",
+    "date": "2026-05-15",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3567-medusa",
+    "composers": [
+      "Iain Bell"
+    ],
+    "performers": [
+      "Michiel Delanghe (Direction musicale)",
+      "Lydia Steier (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Michiel Delanghe, Lydia Steier",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:10.367Z"
   },
   {
     "id": "bozar-2026-05-16-koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
@@ -66,7 +108,49 @@
     "program": "Martinu, Stravinsky & Ravel",
     "price_min": 40,
     "price_max": 98,
-    "scraped_at": "2026-05-10T06:30:45.989Z"
+    "scraped_at": "2026-05-10T06:50:36.423Z"
+  },
+  {
+    "id": "monnaie-2026-05-17-3567-medusa",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Medusa",
+    "date": "2026-05-17",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3567-medusa",
+    "composers": [
+      "Iain Bell"
+    ],
+    "performers": [
+      "Michiel Delanghe (Direction musicale)",
+      "Lydia Steier (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Michiel Delanghe, Lydia Steier",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:10.367Z"
+  },
+  {
+    "id": "monnaie-2026-05-19-3567-medusa",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Medusa",
+    "date": "2026-05-19",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3567-medusa",
+    "composers": [
+      "Iain Bell"
+    ],
+    "performers": [
+      "Michiel Delanghe (Direction musicale)",
+      "Lydia Steier (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Michiel Delanghe, Lydia Steier",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:10.367Z"
   },
   {
     "id": "bozar-2026-05-21-victor-julien-laferriere-0",
@@ -87,7 +171,37 @@
     "program": "Bach, Kodály & Casals",
     "price_min": 30,
     "price_max": 30,
-    "scraped_at": "2026-05-10T06:30:47.868Z"
+    "scraped_at": "2026-05-10T06:50:37.143Z"
+  },
+  {
+    "id": "monnaie-2026-05-22-2743-concertini",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concertini",
+    "date": "2026-05-22",
+    "time": "12:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/2743-concertini",
+    "composers": [],
+    "performers": [],
+    "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
+    "price_min": 7,
+    "price_max": 65,
+    "scraped_at": "2026-05-10T06:51:10.815Z"
+  },
+  {
+    "id": "monnaie-2026-05-29-2743-concertini",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concertini",
+    "date": "2026-05-29",
+    "time": "12:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/2743-concertini",
+    "composers": [],
+    "performers": [],
+    "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
+    "price_min": 7,
+    "price_max": 65,
+    "scraped_at": "2026-05-10T06:51:10.815Z"
   },
   {
     "id": "bozar-2026-06-02-la-fonte-musica",
@@ -115,7 +229,22 @@
     "program": "Anchor che col partire",
     "price_min": 38,
     "price_max": 38,
-    "scraped_at": "2026-05-10T06:30:48.653Z"
+    "scraped_at": "2026-05-10T06:50:39.095Z"
+  },
+  {
+    "id": "monnaie-2026-06-05-2743-concertini",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concertini",
+    "date": "2026-06-05",
+    "time": "12:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/2743-concertini",
+    "composers": [],
+    "performers": [],
+    "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
+    "price_min": 7,
+    "price_max": 65,
+    "scraped_at": "2026-05-10T06:51:10.815Z"
   },
   {
     "id": "bozar-2026-06-07-giorgi-gigashvili-echo-rising-star",
@@ -138,7 +267,7 @@
     "program": "Concert Croissant #14",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:30:48.262Z"
+    "scraped_at": "2026-05-10T06:50:38.590Z"
   },
   {
     "id": "bozar-2026-06-08-concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
@@ -153,7 +282,7 @@
     "program": null,
     "price_min": 19,
     "price_max": 96,
-    "scraped_at": "2026-05-10T06:30:50.134Z"
+    "scraped_at": "2026-05-10T06:50:39.647Z"
   },
   {
     "id": "bozar-2026-06-10-concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
@@ -168,7 +297,7 @@
     "program": null,
     "price_min": 23,
     "price_max": 108,
-    "scraped_at": "2026-05-10T06:30:50.140Z"
+    "scraped_at": "2026-05-10T06:50:39.972Z"
   },
   {
     "id": "bozar-2026-06-11-orchestra-age-enlightenment-sir-simon-rattle",
@@ -190,7 +319,22 @@
     "price_min": 40,
     "price_max": 98,
     "cancelled": true,
-    "scraped_at": "2026-05-10T06:30:50.786Z"
+    "scraped_at": "2026-05-10T06:50:40.748Z"
+  },
+  {
+    "id": "monnaie-2026-06-12-2743-concertini",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concertini",
+    "date": "2026-06-12",
+    "time": "12:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/2743-concertini",
+    "composers": [],
+    "performers": [],
+    "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
+    "price_min": 7,
+    "price_max": 65,
+    "scraped_at": "2026-05-10T06:51:10.815Z"
   },
   {
     "id": "bozar-2026-06-12-belgian-national-orchestra-hermus-vondracek",
@@ -212,7 +356,7 @@
     "program": "Flamboyance",
     "price_min": 22,
     "price_max": 56,
-    "scraped_at": "2026-05-10T06:30:52.693Z"
+    "scraped_at": "2026-05-10T06:50:41.298Z"
   },
   {
     "id": "bozar-2026-06-13-lea-desandre-jupiter-ensemble-1",
@@ -236,7 +380,106 @@
     "program": "Chasing Rainbows",
     "price_min": 32,
     "price_max": 56,
-    "scraped_at": "2026-05-10T06:30:52.782Z"
+    "scraped_at": "2026-05-10T06:50:42.197Z"
+  },
+  {
+    "id": "monnaie-2026-06-13-3589-chasing-rainbows",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Chasing Rainbows",
+    "date": "2026-06-13",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3589-chasing-rainbows",
+    "composers": [
+      "Lea Desandre & Ensemble Jupiter"
+    ],
+    "performers": [
+      "Thomas Dunford (Direction musicale)",
+      "Sophie Daneman (Mise en scène)",
+      "Lea Desandre (Mezzosoprano)"
+    ],
+    "program": "Un vibrant hommage à Julie Andrews et à la comédie musicale avec les plus belles chansons de The Sound of Music, Mary Poppins, West Side Story...",
+    "price_min": 20,
+    "price_max": 48,
+    "scraped_at": "2026-05-10T06:51:11.235Z"
+  },
+  {
+    "id": "monnaie-2026-06-17-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-17",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-18-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-18",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-19-2743-concertini",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concertini",
+    "date": "2026-06-19",
+    "time": "12:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/2743-concertini",
+    "composers": [],
+    "performers": [],
+    "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
+    "price_min": 7,
+    "price_max": 65,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-20-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-20",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
   },
   {
     "id": "bozar-2026-06-21-belgian-national-orchestra-cottis-gatto",
@@ -262,7 +505,249 @@
     "program": "Fête de la Musique",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:30:53.256Z"
+    "scraped_at": "2026-05-10T06:50:42.621Z"
+  },
+  {
+    "id": "monnaie-2026-06-21-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-21",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-23-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-23",
+    "time": "18:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-24-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-24",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-25-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-25",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-27-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-27",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-28-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-28",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-06-30-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-06-30",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-07-01-1838-tosca",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Tosca",
+    "date": "2026-07-01",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/1838-tosca",
+    "composers": [
+      "Puccini"
+    ],
+    "performers": [
+      "Jordan De Souza (Direction musicale)",
+      "Rafael R. Villalobos (Mise en scène & costumes)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Jordan De Souza, Rafael R. Villalobos",
+    "price_min": 12,
+    "price_max": 170,
+    "scraped_at": "2026-05-10T06:51:11.700Z"
+  },
+  {
+    "id": "monnaie-2026-07-05-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "L’Orchestre de la Monnaie  au Festival de Colmar",
+    "date": "2026-07-05",
+    "time": "20:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
+    "composers": [
+      "Saint-Saëns",
+      "Berlioz",
+      "Wagner",
+      "Grieg"
+    ],
+    "performers": [],
+    "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
+    "price_min": 5,
+    "price_max": 92,
+    "scraped_at": "2026-05-10T06:51:12.128Z"
+  },
+  {
+    "id": "monnaie-2026-07-06-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "L’Orchestre de la Monnaie  au Festival de Colmar",
+    "date": "2026-07-06",
+    "time": "20:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
+    "composers": [
+      "Saint-Saëns",
+      "Berlioz",
+      "Wagner",
+      "Grieg"
+    ],
+    "performers": [],
+    "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
+    "price_min": 5,
+    "price_max": 92,
+    "scraped_at": "2026-05-10T06:51:12.128Z"
+  },
+  {
+    "id": "monnaie-2026-07-29-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "L’Orchestre de la Monnaie au festival de Salzburg",
+    "date": "2026-07-29",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
+    "composers": [
+      "Massenet"
+    ],
+    "performers": [],
+    "program": "Werther (Jules Massenet)",
+    "price_min": 25,
+    "price_max": 340,
+    "scraped_at": "2026-05-10T06:51:12.569Z"
+  },
+  {
+    "id": "monnaie-2026-08-01-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "L’Orchestre de la Monnaie au festival de Salzburg",
+    "date": "2026-08-01",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
+    "composers": [
+      "Massenet"
+    ],
+    "performers": [],
+    "program": "Werther (Jules Massenet)",
+    "price_min": 25,
+    "price_max": 340,
+    "scraped_at": "2026-05-10T06:51:12.569Z"
   },
   {
     "id": "bozar-2026-09-11-belgian-national-orchestra-halls-vinnitskaya",
@@ -285,7 +770,89 @@
     "program": "Mahler's Titan",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:30:55.320Z"
+    "scraped_at": "2026-05-10T06:50:44.356Z"
+  },
+  {
+    "id": "monnaie-2026-09-12-3948-silent-stories-a-grain-of-light",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Silent Stories: A Grain of light",
+    "date": "2026-09-12",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3948-silent-stories-a-grain-of-light",
+    "composers": [],
+    "performers": [
+      "Jeanine De Bique (Soprano)",
+      "Aaron Wajnberg (Piano)"
+    ],
+    "program": "Jeanine de Bique",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:13.008Z"
+  },
+  {
+    "id": "monnaie-2026-09-13-3939-beethoven-freedom-fate",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Beethoven",
+    "date": "2026-09-13",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3939-beethoven-freedom-fate",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Seong-Jin Cho (Piano)"
+    ],
+    "program": "Alain Altinoglu",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:13.450Z"
+  },
+  {
+    "id": "monnaie-2026-09-29-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-09-29",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:13.894Z"
+  },
+  {
+    "id": "monnaie-2026-10-01-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-01",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:13.895Z"
   },
   {
     "id": "bozar-2026-10-02-la-tempete",
@@ -306,7 +873,68 @@
     "program": "Monteverdi. Vespro della Beata Vergine",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:30:55.085Z"
+    "scraped_at": "2026-05-10T06:50:43.203Z"
+  },
+  {
+    "id": "monnaie-2026-10-02-3949-a-vagabond-s-daydream",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "A Vagabond’s daydream",
+    "date": "2026-10-02",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3949-a-vagabond-s-daydream",
+    "composers": [],
+    "performers": [
+      "Malcolm Martineau (Piano)"
+    ],
+    "program": "Simon Keenlyside & Malcolm Martineau",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-03-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-03",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-04-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-04",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
   },
   {
     "id": "bozar-2026-10-04-beatrice-rana-0",
@@ -327,7 +955,29 @@
     "program": "Bach, Clementi & Schumann",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:30:54.184Z"
+    "scraped_at": "2026-05-10T06:50:43.209Z"
+  },
+  {
+    "id": "monnaie-2026-10-08-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-08",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
   },
   {
     "id": "bozar-2026-10-08-cleveland-orchestra-welser-most-schultz",
@@ -350,7 +1000,29 @@
     "program": "Brahms 2 & Strauss. Vier letzte Lieder",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T06:30:58.377Z"
+    "scraped_at": "2026-05-10T06:50:44.870Z"
+  },
+  {
+    "id": "monnaie-2026-10-09-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-09",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
   },
   {
     "id": "bozar-2026-10-11-belgian-national-orchestra-petrenko-kobekina",
@@ -372,7 +1044,117 @@
     "program": "Rachmaninov 2",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:30:58.353Z"
+    "scraped_at": "2026-05-10T06:50:44.908Z"
+  },
+  {
+    "id": "monnaie-2026-10-11-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-11",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-13-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-13",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-14-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-14",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-16-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-16",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
+  },
+  {
+    "id": "monnaie-2026-10-17-3930-romeo-et-juliette",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Roméo et Juliette",
+    "date": "2026-10-17",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3930-romeo-et-juliette",
+    "composers": [
+      "Gounod",
+      "Bach"
+    ],
+    "performers": [
+      "Valentina Peleggi (Direction musicale)",
+      "Julia Burbach (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Valentina Peleggi, Julia Burbach",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.335Z"
   },
   {
     "id": "bozar-2026-10-18-goya-quartet",
@@ -393,7 +1175,7 @@
     "program": "Ravel, Holst & Janáček",
     "price_min": 28,
     "price_max": 28,
-    "scraped_at": "2026-05-10T06:30:58.283Z"
+    "scraped_at": "2026-05-10T06:50:46.100Z"
   },
   {
     "id": "bozar-2026-10-20-janine-jansen-denis-kozhukhin-3",
@@ -414,7 +1196,7 @@
     "program": "Beethoven & Prokofiev",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:00.804Z"
+    "scraped_at": "2026-05-10T06:50:46.825Z"
   },
   {
     "id": "bozar-2026-10-23-belgian-national-orchestra-franck-kamei",
@@ -436,7 +1218,47 @@
     "program": "Brahms & Tchaikovsky",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:31:00.446Z"
+    "scraped_at": "2026-05-10T06:50:47.715Z"
+  },
+  {
+    "id": "monnaie-2026-10-24-3940-vienna-a-new-era",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Vienna",
+    "date": "2026-10-24",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3940-vienna---a-new-era",
+    "composers": [
+      "A New Era"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Maria Bengtsson (Soprano)"
+    ],
+    "program": "Alain Altinoglu",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.777Z"
+  },
+  {
+    "id": "monnaie-2026-10-25-3940-vienna-a-new-era",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Vienna",
+    "date": "2026-10-25",
+    "time": "17:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3940-vienna---a-new-era",
+    "composers": [
+      "A New Era"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Maria Bengtsson (Soprano)"
+    ],
+    "program": "Alain Altinoglu",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:14.777Z"
   },
   {
     "id": "bozar-2026-10-30-camerata-salzburg-vox-luminis",
@@ -462,7 +1284,7 @@
     "program": "Mozart. Requiem",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:00.525Z"
+    "scraped_at": "2026-05-10T06:50:46.615Z"
   },
   {
     "id": "bozar-2026-11-07-pavel-kolesnikov",
@@ -481,7 +1303,90 @@
     "program": "Chopin. Nocturnes",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:02.649Z"
+    "scraped_at": "2026-05-10T06:50:49.182Z"
+  },
+  {
+    "id": "monnaie-2026-11-08-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-08",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:15.218Z"
+  },
+  {
+    "id": "monnaie-2026-11-10-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-10",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:15.218Z"
+  },
+  {
+    "id": "monnaie-2026-11-12-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-12",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:15.218Z"
+  },
+  {
+    "id": "monnaie-2026-11-13-3950-fly-me-to-the-moon",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Fly me to the Moon",
+    "date": "2026-11-13",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3950-fly-me-to-the-moon",
+    "composers": [
+      "Lucio Gallo & Claudio Chiara Jazz Quintet"
+    ],
+    "performers": [
+      "Lucio Gallo (Baritono)",
+      "La Monnaie (Production)"
+    ],
+    "program": "Fly me to the Moon",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:15.665Z"
   },
   {
     "id": "bozar-2026-11-14-city-birmingham-symphony-orchestra-chorus",
@@ -506,7 +1411,28 @@
     "program": "Britten. War Requiem",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:31:02.532Z"
+    "scraped_at": "2026-05-10T06:50:48.262Z"
+  },
+  {
+    "id": "monnaie-2026-11-14-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-14",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:15.665Z"
   },
   {
     "id": "bozar-2026-11-15-quatuor-diotima-0",
@@ -528,7 +1454,28 @@
     "program": "Thorvaldsdottir, Saariaho, Tjøgersen & Verrières",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T06:31:02.801Z"
+    "scraped_at": "2026-05-10T06:50:49.398Z"
+  },
+  {
+    "id": "monnaie-2026-11-17-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-17",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:15.665Z"
   },
   {
     "id": "bozar-2026-11-18-apollos-fire-jeanine-de-bique",
@@ -547,7 +1494,85 @@
     "program": "Echoes Across the Atlantic",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:04.480Z"
+    "scraped_at": "2026-05-10T06:50:50.928Z"
+  },
+  {
+    "id": "monnaie-2026-11-18-3957-echoes-across-the-atlantic",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Echoes Across the Atlantic",
+    "date": "2026-11-18",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3957-echoes-across-the-atlantic",
+    "composers": [],
+    "performers": [
+      "Jeannette Sorrell (Direction musicale)",
+      "Jeanine De Bique (Soprano)"
+    ],
+    "program": "Apollo’s Fire & Jeanine de Bique",
+    "price_min": 21,
+    "price_max": 50,
+    "scraped_at": "2026-05-10T06:51:16.111Z"
+  },
+  {
+    "id": "monnaie-2026-11-19-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-19",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:16.111Z"
+  },
+  {
+    "id": "monnaie-2026-11-22-3931-wozzeck",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Wozzeck",
+    "date": "2026-11-22",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3931-wozzeck",
+    "composers": [
+      "Berg"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christophe Coppens (Mise en scène, décors, costumes & éclairages)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Christophe Coppens",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:16.111Z"
+  },
+  {
+    "id": "monnaie-2026-11-28-3941-hispanic-waves",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Hispanic Waves",
+    "date": "2026-11-28",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3941-hispanic-waves",
+    "composers": [],
+    "performers": [
+      "Diego Matheuz (Direction musicale)",
+      "Carmen Artaza (Mezzosoprano)"
+    ],
+    "program": "Diego Matheuz",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:16.553Z"
   },
   {
     "id": "bozar-2026-12-10-die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
@@ -569,7 +1594,46 @@
     "program": "Schubert & Schumann",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:04.577Z"
+    "scraped_at": "2026-05-10T06:50:51.202Z"
+  },
+  {
+    "id": "monnaie-2026-12-11-3945-erwartung",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Erwartung",
+    "date": "2026-12-11",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3945-erwartung",
+    "composers": [],
+    "performers": [
+      "Alpesh Chauhan (Direction musicale)",
+      "Ingela Brimberg (Soprano)"
+    ],
+    "program": "Alpesh Chauhan",
+    "price_min": 15,
+    "price_max": 50,
+    "scraped_at": "2026-05-10T06:51:16.999Z"
+  },
+  {
+    "id": "monnaie-2026-12-15-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-15",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:17.447Z"
   },
   {
     "id": "bozar-2026-12-15-grigory-sokolov-14",
@@ -588,7 +1652,49 @@
     "program": "* * * : programme à déterminer",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:04.406Z"
+    "scraped_at": "2026-05-10T06:50:50.909Z"
+  },
+  {
+    "id": "monnaie-2026-12-16-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-16",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:17.447Z"
+  },
+  {
+    "id": "monnaie-2026-12-17-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-17",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:17.447Z"
   },
   {
     "id": "bozar-2026-12-18-cappella-mediterranea-nederlands-kamerkoor",
@@ -613,7 +1719,246 @@
     "program": "Bach. Weihnachtsoratorium",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:31:06.316Z"
+    "scraped_at": "2026-05-10T06:50:53.164Z"
+  },
+  {
+    "id": "monnaie-2026-12-18-3951-about-last-night",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "About Last Night",
+    "date": "2026-12-18",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3951-about-last-night",
+    "composers": [],
+    "performers": [
+      "Marina Viotti (Soprano)",
+      "Todd Camburn (Piano)"
+    ],
+    "program": "Marina Viotti",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:17.891Z"
+  },
+  {
+    "id": "monnaie-2026-12-18-3984-christmas-carols",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Christmas Carols",
+    "date": "2026-12-18",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3984-christmas-carols",
+    "composers": [],
+    "performers": [
+      "Emmanuel Trenque (Direction musicale)"
+    ],
+    "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-19-3984-christmas-carols",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Christmas Carols",
+    "date": "2026-12-19",
+    "time": "18:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3984-christmas-carols",
+    "composers": [],
+    "performers": [
+      "Emmanuel Trenque (Direction musicale)"
+    ],
+    "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-19-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-19",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-20-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-20",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-22-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-22",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-23-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-23",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-27-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-27",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-29-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-29",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-30-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-30",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2026-12-31-3932-la-cenerentola",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "La Cenerentola",
+    "date": "2026-12-31",
+    "time": "17:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3932-la-cenerentola",
+    "composers": [
+      "Rossini"
+    ],
+    "performers": [
+      "Speranza Scappucci, Stefano Sarzani (16, 20, 23, 30.12) (Direction musicale)",
+      "Daniel Kramer (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:18.491Z"
+  },
+  {
+    "id": "monnaie-2027-01-09-3942-new-year-s-concert",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "New Year’s Concert",
+    "date": "2027-01-09",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3942-new-year-s-concert",
+    "composers": [
+      "Paris, Paris"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)"
+    ],
+    "program": "Alain Altinoglu",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:18.938Z"
   },
   {
     "id": "bozar-2027-01-10-freiburger-barockorchester-jeanine-de-bique",
@@ -634,7 +1979,27 @@
     "program": "Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:31:06.658Z"
+    "scraped_at": "2026-05-10T06:50:53.320Z"
+  },
+  {
+    "id": "monnaie-2027-01-10-3958-mozart",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Mozart",
+    "date": "2027-01-10",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3958-mozart",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [
+      "Gottfried Von Der Goltz (Direction musicale)",
+      "Jeanine De Bique (Soprano)"
+    ],
+    "program": "Freiburger Barockorchester & Jeanine de Bique",
+    "price_min": 20,
+    "price_max": 66,
+    "scraped_at": "2026-05-10T06:51:19.380Z"
   },
   {
     "id": "bozar-2027-01-14-london-philharmonic-orchestra-bihlmaier",
@@ -657,7 +2022,7 @@
     "program": "Grieg & Sibelius",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:31:06.455Z"
+    "scraped_at": "2026-05-10T06:50:53.283Z"
   },
   {
     "id": "bozar-2027-01-17-cuarteto-casals-0",
@@ -678,7 +2043,7 @@
     "program": "Haydn & Schubert",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T06:31:08.556Z"
+    "scraped_at": "2026-05-10T06:50:53.860Z"
   },
   {
     "id": "bozar-2027-01-21-les-talens-lyriques-christophe-rousset",
@@ -702,7 +2067,7 @@
     "program": "Pergolesi. Stabat Mater",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:31:08.593Z"
+    "scraped_at": "2026-05-10T06:50:55.078Z"
   },
   {
     "id": "bozar-2027-01-22-lithuanian-national-symphony-orchestra-grigorian-montvidas",
@@ -725,7 +2090,66 @@
     "program": "Wagner, Čiurlionis, Puccini & Ponchielli",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:08.618Z"
+    "scraped_at": "2026-05-10T06:50:54.965Z"
+  },
+  {
+    "id": "monnaie-2027-01-22-3933-lucidity",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Lucidity",
+    "date": "2027-01-22",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3933-lucidity",
+    "composers": [
+      "Laura Kaminsky"
+    ],
+    "performers": [
+      "Patrick Leterme (Direction musicale)",
+      "Mathilda Du Tillieul Mcnicol (Mise en scène)"
+    ],
+    "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:19.823Z"
+  },
+  {
+    "id": "monnaie-2027-01-22-3959-asmik-grigorian-edgaras-montvidas",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Asmik Grigorian & Edgaras Montvidas",
+    "date": "2027-01-22",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3959-asmik-grigorian-edgaras-montvidas",
+    "composers": [],
+    "performers": [
+      "Giedrė Šlekytė (Direction musicale)",
+      "Asmik Grigorian (Soprano)",
+      "Edgaras Montvidas (Tenore)"
+    ],
+    "program": "Lithuanian National Symphony Orchestra",
+    "price_min": 21,
+    "price_max": 80,
+    "scraped_at": "2026-05-10T06:51:20.262Z"
+  },
+  {
+    "id": "monnaie-2027-01-23-3933-lucidity",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Lucidity",
+    "date": "2027-01-23",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3933-lucidity",
+    "composers": [
+      "Laura Kaminsky"
+    ],
+    "performers": [
+      "Patrick Leterme (Direction musicale)",
+      "Mathilda Du Tillieul Mcnicol (Mise en scène)"
+    ],
+    "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:20.262Z"
   },
   {
     "id": "bozar-2027-01-24-belgian-national-orchestra-hermus-meeuwsen",
@@ -747,7 +2171,165 @@
     "program": "Between Fire and Faith",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:31:10.436Z"
+    "scraped_at": "2026-05-10T06:50:55.618Z"
+  },
+  {
+    "id": "monnaie-2027-01-24-3933-lucidity",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Lucidity",
+    "date": "2027-01-24",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3933-lucidity",
+    "composers": [
+      "Laura Kaminsky"
+    ],
+    "performers": [
+      "Patrick Leterme (Direction musicale)",
+      "Mathilda Du Tillieul Mcnicol (Mise en scène)"
+    ],
+    "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:20.262Z"
+  },
+  {
+    "id": "monnaie-2027-01-24-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-01-24",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:20.702Z"
+  },
+  {
+    "id": "monnaie-2027-01-25-3952-behind-the-lines",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Behind the Lines",
+    "date": "2027-01-25",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3952-behind-the-lines",
+    "composers": [],
+    "performers": [
+      "Anna Prohaska (Soprano)",
+      "Eric Schneider (Piano)"
+    ],
+    "program": "Anna Prohaska & Eric Schneider",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-01-26-3933-lucidity",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Lucidity",
+    "date": "2027-01-26",
+    "time": "14:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3933-lucidity",
+    "composers": [
+      "Laura Kaminsky"
+    ],
+    "performers": [
+      "Patrick Leterme (Direction musicale)",
+      "Mathilda Du Tillieul Mcnicol (Mise en scène)"
+    ],
+    "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-01-26-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-01-26",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-01-26-3933-lucidity",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Lucidity",
+    "date": "2027-01-26",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3933-lucidity",
+    "composers": [
+      "Laura Kaminsky"
+    ],
+    "performers": [
+      "Patrick Leterme (Direction musicale)",
+      "Mathilda Du Tillieul Mcnicol (Mise en scène)"
+    ],
+    "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-01-28-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-01-28",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-01-31-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-01-31",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
   },
   {
     "id": "bozar-2027-01-31-collegium-vocale-gent-herreweghe",
@@ -772,7 +2354,85 @@
     "program": "Bach. H-Moll Messe",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:31:10.380Z"
+    "scraped_at": "2026-05-10T06:50:55.587Z"
+  },
+  {
+    "id": "monnaie-2027-02-02-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-02-02",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.148Z"
+  },
+  {
+    "id": "monnaie-2027-02-04-3953-pleasantly-haunted",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pleasantly Haunted",
+    "date": "2027-02-04",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3953-pleasantly-haunted",
+    "composers": [],
+    "performers": [
+      "Emily D’angelo (Mezzosoprano)",
+      "Sophia Muñoz (Piano)"
+    ],
+    "program": "Emily D'Angelo",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:21.583Z"
+  },
+  {
+    "id": "monnaie-2027-02-05-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-02-05",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.583Z"
+  },
+  {
+    "id": "monnaie-2027-02-07-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-02-07",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.583Z"
   },
   {
     "id": "bozar-2027-02-09-brodsky-quartet",
@@ -791,7 +2451,45 @@
     "program": "Beethoven",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T06:31:10.458Z"
+    "scraped_at": "2026-05-10T06:50:56.890Z"
+  },
+  {
+    "id": "monnaie-2027-02-09-3934-ariadne-auf-naxos",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Ariadne auf Naxos",
+    "date": "2027-02-09",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3934-ariadne-auf-naxos",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Ariane Matiakh (Direction musicale)",
+      "Mariusz Treliński (Mise en scène)"
+    ],
+    "program": "Ariane Matiakh, Mariusz Treliński",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:21.583Z"
+  },
+  {
+    "id": "monnaie-2027-02-10-3954-our-people",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Our People",
+    "date": "2027-02-10",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3954-our-people",
+    "composers": [],
+    "performers": [
+      "Freddie Ballentine (Tenore)",
+      "Kunal Lahiry (Piano)"
+    ],
+    "program": "Freddie Ballentine & Kunal Lahiry",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:22.024Z"
   },
   {
     "id": "bozar-2027-02-12-orchestre-national-de-lyon-szeps-znaider",
@@ -813,7 +2511,64 @@
     "program": "Shostakovich & Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:31:12.271Z"
+    "scraped_at": "2026-05-10T06:50:59.120Z"
+  },
+  {
+    "id": "monnaie-2027-02-12-3954-our-people",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Our People",
+    "date": "2027-02-12",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3954-our-people",
+    "composers": [],
+    "performers": [
+      "Freddie Ballentine (Tenore)",
+      "Kunal Lahiry (Piano)"
+    ],
+    "program": "Freddie Ballentine & Kunal Lahiry",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:22.024Z"
+  },
+  {
+    "id": "monnaie-2027-02-13-3954-our-people",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Our People",
+    "date": "2027-02-13",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3954-our-people",
+    "composers": [],
+    "performers": [
+      "Freddie Ballentine (Tenore)",
+      "Kunal Lahiry (Piano)"
+    ],
+    "program": "Freddie Ballentine & Kunal Lahiry",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:22.024Z"
+  },
+  {
+    "id": "monnaie-2027-02-21-3943-beethoven-tchaikovsky-glory-destiny",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Beethoven / Tchaikovsky",
+    "date": "2027-02-21",
+    "time": "17:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3943-beethoven-tchaikovsky---glory-destiny",
+    "composers": [
+      "Tchaïkovski",
+      "Beethoven"
+    ],
+    "performers": [
+      "Alain Altinoglu (Direction musicale)",
+      "Christian Tetzlaff (Violon)"
+    ],
+    "program": "Alain Altinoglu",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:22.474Z"
   },
   {
     "id": "bozar-2027-02-23-angela-hewitt",
@@ -834,7 +2589,7 @@
     "program": "Scarlatti, Bach & Chopin",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:12.899Z"
+    "scraped_at": "2026-05-10T06:50:59.918Z"
   },
   {
     "id": "bozar-2027-02-26-belgian-national-orchestra-schonwandt-kolesnikov",
@@ -857,7 +2612,7 @@
     "program": "Symphonie fantastique",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:31:12.432Z"
+    "scraped_at": "2026-05-10T06:50:57.947Z"
   },
   {
     "id": "bozar-2027-02-28-pygmalion-raphael-pichon",
@@ -875,7 +2630,7 @@
     "program": "Vertigo – Imaginary Vespers",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:31:14.665Z"
+    "scraped_at": "2026-05-10T06:51:01.263Z"
   },
   {
     "id": "bozar-2027-03-02-schumann-quartett",
@@ -896,7 +2651,7 @@
     "program": "Beethoven, Brahms & Shaw",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T06:31:14.888Z"
+    "scraped_at": "2026-05-10T06:51:00.889Z"
   },
   {
     "id": "bozar-2027-03-07-belgian-national-orchestra-hermus-gavrylyuk",
@@ -918,7 +2673,83 @@
     "program": "Youth & Destiny",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:14.946Z"
+    "scraped_at": "2026-05-10T06:51:01.524Z"
+  },
+  {
+    "id": "monnaie-2027-03-14-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-14",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:22.935Z"
+  },
+  {
+    "id": "monnaie-2027-03-16-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-16",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:22.935Z"
+  },
+  {
+    "id": "monnaie-2027-03-18-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-18",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:22.935Z"
+  },
+  {
+    "id": "monnaie-2027-03-19-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-19",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:22.935Z"
   },
   {
     "id": "bozar-2027-03-19-helene-grimaud",
@@ -938,7 +2769,7 @@
     "program": "The last testament",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:16.679Z"
+    "scraped_at": "2026-05-10T06:51:03.096Z"
   },
   {
     "id": "bozar-2027-03-20-london-symphony-orchestra-pappano-vengerov",
@@ -960,7 +2791,158 @@
     "program": "Beethoven & Chostakovitch 8",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T06:31:16.646Z"
+    "scraped_at": "2026-05-10T06:51:02.474Z"
+  },
+  {
+    "id": "monnaie-2027-03-20-3955-loved-lost",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Loved / Lost",
+    "date": "2027-03-20",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3955-loved-lost",
+    "composers": [],
+    "performers": [
+      "Niamh O’sullivan (Mezzosoprano)",
+      "Alessandro Praticò (Piano)"
+    ],
+    "program": "Joshua Hopkins & Niamh O'Sullivan",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-21-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-21",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-23-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-23",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-24-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-24",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-26-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-26",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-27-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-27",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-30-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-30",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
+  },
+  {
+    "id": "monnaie-2027-03-31-427-cavalleria-rusticana-pagliacci",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Pietro Mascagni & Ruggero Leoncavallo",
+    "date": "2027-03-31",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/427-cavalleria-rusticana-pagliacci",
+    "composers": [],
+    "performers": [
+      "Alevtina Ioffe (Direction musicale)",
+      "Damiano Michieletto (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alevtina Ioffe, Damiano Michieletto",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:23.383Z"
   },
   {
     "id": "bozar-2027-04-04-budapest-festival-orchestra-fischer",
@@ -985,7 +2967,89 @@
     "program": "Beethoven 9",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:31:16.657Z"
+    "scraped_at": "2026-05-10T06:51:03.101Z"
+  },
+  {
+    "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Beethoven Symphony 9",
+    "date": "2027-04-04",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3946-beethoven-symphony-9",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Ivan Fischer (Direction musicale)",
+      "Maria Bengtsson (Soprano)",
+      "Olivia Vermeulen (Mezzosoprano)",
+      "Andrew Staples (Tenore)"
+    ],
+    "program": "Beethoven Symphony 9",
+    "price_min": 26,
+    "price_max": 100,
+    "scraped_at": "2026-05-10T06:51:23.825Z"
+  },
+  {
+    "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Beethoven Symphony 9",
+    "date": "2027-04-04",
+    "time": "19:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3946-beethoven-symphony-9",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Ivan Fischer (Direction musicale)",
+      "Maria Bengtsson (Soprano)",
+      "Olivia Vermeulen (Mezzosoprano)",
+      "Andrew Staples (Tenore)"
+    ],
+    "program": "Beethoven Symphony 9",
+    "price_min": 26,
+    "price_max": 100,
+    "scraped_at": "2026-05-10T06:51:23.825Z"
+  },
+  {
+    "id": "monnaie-2027-04-14-3961-winterreise",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Winterreise",
+    "date": "2027-04-14",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3961-winterreise",
+    "composers": [],
+    "performers": [
+      "Markus Hinterhäuser (Piano)"
+    ],
+    "program": "Matthias Goerne & Markus Hinterhäuser",
+    "price_min": 20,
+    "price_max": 66,
+    "scraped_at": "2026-05-10T06:51:24.270Z"
+  },
+  {
+    "id": "monnaie-2027-04-20-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-04-20",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:24.712Z"
   },
   {
     "id": "bozar-2027-04-20-sheku-kanneh-mason-benjamin-grosvenor",
@@ -1007,7 +3071,7 @@
     "program": "Beethoven, Boulanger & Rachmaninov",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:31:18.629Z"
+    "scraped_at": "2026-05-10T06:51:04.733Z"
   },
   {
     "id": "bozar-2027-04-22-brock-rene-jacobs",
@@ -1035,7 +3099,149 @@
     "program": "Salieri. Falstaff",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:31:18.517Z"
+    "scraped_at": "2026-05-10T06:51:04.764Z"
+  },
+  {
+    "id": "monnaie-2027-04-22-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-04-22",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:24.712Z"
+  },
+  {
+    "id": "monnaie-2027-04-22-3962-falstaff",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Falstaff",
+    "date": "2027-04-22",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3962-falstaff",
+    "composers": [
+      "Antonio Salieri"
+    ],
+    "performers": [
+      "René Jacobs (Direction musicale)"
+    ],
+    "program": "René Jacobs & B’Rock Orchestra",
+    "price_min": 20,
+    "price_max": 66,
+    "scraped_at": "2026-05-10T06:51:25.147Z"
+  },
+  {
+    "id": "monnaie-2027-04-25-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-04-25",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:25.147Z"
+  },
+  {
+    "id": "monnaie-2027-04-27-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-04-27",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:25.147Z"
+  },
+  {
+    "id": "monnaie-2027-04-29-3956-thousands-of-miles",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Thousands of Miles",
+    "date": "2027-04-29",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3956-thousands-of-miles",
+    "composers": [],
+    "performers": [
+      "Kate Lindsey (Mezzosoprano)",
+      "Baptiste Trotignon (Piano)"
+    ],
+    "program": "Kate Lindsey & Baptiste Trotignon",
+    "price_min": 6,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T06:51:25.586Z"
+  },
+  {
+    "id": "monnaie-2027-04-30-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-04-30",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:25.586Z"
+  },
+  {
+    "id": "monnaie-2027-05-02-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-05-02",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:25.586Z"
   },
   {
     "id": "bozar-2027-05-02-orchestre-des-champs-elysees-philippe-herreweghe-0",
@@ -1061,6 +3267,351 @@
     "program": "Mozart. Clarinet Concerto & Mass in c",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:31:18.550Z"
+    "scraped_at": "2026-05-10T06:51:04.739Z"
+  },
+  {
+    "id": "monnaie-2027-05-04-3935-m-butterfly",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "M. Butterfly",
+    "date": "2027-05-04",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3935-m-butterfly",
+    "composers": [
+      "Huang Ruo"
+    ],
+    "performers": [
+      "Carolyn Kuan (Direction musicale)",
+      "Krystian Lada (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Carolyn Kuan, Krystian Lada",
+    "price_min": 11,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:25.587Z"
+  },
+  {
+    "id": "monnaie-2027-05-09-3960-city-of-floating-sounds",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "City of Floating Sounds",
+    "date": "2027-05-09",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3960-city-of-floating-sounds",
+    "composers": [],
+    "performers": [
+      "Jessica Cottis (Direction musicale)"
+    ],
+    "program": "Huang Ruo",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T06:51:26.032Z"
+  },
+  {
+    "id": "monnaie-2027-05-20-3947-concours-reine-elisabeth",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concours Reine Elisabeth",
+    "date": "2027-05-20",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3947-concours-reine-elisabeth",
+    "composers": [
+      "2027"
+    ],
+    "performers": [],
+    "program": "Édition chant",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T06:51:26.470Z"
+  },
+  {
+    "id": "monnaie-2027-05-21-3947-concours-reine-elisabeth",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concours Reine Elisabeth",
+    "date": "2027-05-21",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3947-concours-reine-elisabeth",
+    "composers": [
+      "2027"
+    ],
+    "performers": [],
+    "program": "Édition chant",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T06:51:26.471Z"
+  },
+  {
+    "id": "monnaie-2027-05-22-3947-concours-reine-elisabeth",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Concours Reine Elisabeth",
+    "date": "2027-05-22",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3947-concours-reine-elisabeth",
+    "composers": [
+      "2027"
+    ],
+    "performers": [],
+    "program": "Édition chant",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T06:51:26.471Z"
+  },
+  {
+    "id": "monnaie-2027-06-06-3936-burmese-days",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Burmese days",
+    "date": "2027-06-06",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3936-burmese-days",
+    "composers": [],
+    "performers": [
+      "Aïda Gabriels (Mise en scène et éclairages)"
+    ],
+    "program": "Prach Boondiskulchok",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:26.913Z"
+  },
+  {
+    "id": "monnaie-2027-06-08-3936-burmese-days",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Burmese days",
+    "date": "2027-06-08",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3936-burmese-days",
+    "composers": [],
+    "performers": [
+      "Aïda Gabriels (Mise en scène et éclairages)"
+    ],
+    "program": "Prach Boondiskulchok",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:26.913Z"
+  },
+  {
+    "id": "monnaie-2027-06-09-3936-burmese-days",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Burmese days",
+    "date": "2027-06-09",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3936-burmese-days",
+    "composers": [],
+    "performers": [
+      "Aïda Gabriels (Mise en scène et éclairages)"
+    ],
+    "program": "Prach Boondiskulchok",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:26.913Z"
+  },
+  {
+    "id": "monnaie-2027-06-10-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-10",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-11-3936-burmese-days",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Burmese days",
+    "date": "2027-06-11",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3936-burmese-days",
+    "composers": [],
+    "performers": [
+      "Aïda Gabriels (Mise en scène et éclairages)"
+    ],
+    "program": "Prach Boondiskulchok",
+    "price_min": 8,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-12-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-12",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-15-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-15",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-18-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-18",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-22-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-22",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-24-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-24",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-27-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-27",
+    "time": "15:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-06-29-3937-boris-godounov",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Boris Godounov",
+    "date": "2027-06-29",
+    "time": "19:30",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3937-boris-godounov",
+    "composers": [
+      "Moussorgski"
+    ],
+    "performers": [
+      "Alain Altinoglu, Dmitry Matvienko (18.6) (Direction musicale)",
+      "Vasily Barkhatov (Mise en scène)",
+      "Emmanuel Trenque (Chef des chœurs)"
+    ],
+    "program": "Alain Altinoglu, Vasily Barkhatov",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.355Z"
+  },
+  {
+    "id": "monnaie-2027-07-03-3944-summer-delights",
+    "source": "monnaie",
+    "venue_id": "lamonnaie",
+    "title": "Summer Delights",
+    "date": "2027-07-03",
+    "time": "20:00",
+    "url": "https://www.lamonnaiedemunt.be/fr/program/3944-summer-delights",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Nicholas Carter (Direction musicale)",
+      "Antoine Tamestit (Alto)"
+    ],
+    "program": "Nicholas Carter",
+    "price_min": 6,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T06:51:27.804Z"
   }
 ]

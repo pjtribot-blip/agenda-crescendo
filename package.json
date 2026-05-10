@@ -9,7 +9,8 @@
   },
   "scripts": {
     "scrape": "node scripts/aggregate.js",
-    "scrape:bozar": "node -e \"import('./scripts/scrapers/bozar.js').then(m => m.scrapeBozar()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:bozar": "node -e \"import('./scripts/scrapers/bozar.js').then(m => m.scrapeBozar()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:monnaie": "node -e \"import('./scripts/scrapers/monnaie.js').then(m => m.scrapeMonnaie()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"
