@@ -105,7 +105,10 @@ agenda-crescendo/
 | PBA Charleroi | ✅ opérationnel | HTML + cheerio (`/notre-saison/?category=classique` + `=lyrique` × saisons découvertes via `<select name="season">`) | ~20 concerts sur les saisons en cours |
 | deSingel (Anvers) | ✅ opérationnel | API JSON Postgres-proxy `/api/data` (table `production__c` + `activity__c`, filtre `productiontypetext__c='Muziek'`) | ~180 représentations sur la saison |
 | De Bijloke (Gand) | ✅ opérationnel | HTML + cheerio (`/nl/programma?page=N`, dataLayer Google Analytics dans la page détail pour genres + dates par représentation) | ~135 concerts sur 14 mois |
-| Les 6 autres | ⏳ à venir | À choisir source par source | — |
+| Philharmonie Luxembourg | ✅ opérationnel | HTML + cheerio (`/fr/programme?month=M&page=N`, pagination mois × page, rejet des tags jeune public) | ~310 concerts sur 14 mois |
+| Opéra de Lille | ✅ opérationnel | HTML + cheerio (`/saison-XX-XX/`, calendrier global de chaque page produit pour les dates) | ~15 concerts sur la fin de saison 25-26 |
+| Atelier Lyrique de Tourcoing | ✅ opérationnel | HTML + cheerio (sous-pages catégorisées de la saison, date parsée du titre/slug) | ~10 concerts sur fin de saison |
+| Les 4 autres | ⏳ à venir | À choisir source par source | — |
 
 ### Pipeline
 
@@ -164,14 +167,18 @@ npm run scrape:mars       # idem pour MARS (Mons)
 npm run scrape:pba        # idem pour PBA Charleroi
 npm run scrape:desingel   # idem pour deSingel (Anvers)
 npm run scrape:bijloke    # idem pour De Bijloke (Gand)
+npm run scrape:phillux    # idem pour Philharmonie Luxembourg
+npm run scrape:opl        # idem pour Opéra de Lille
+npm run scrape:tourcoing  # idem pour Atelier Lyrique de Tourcoing
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 6 scrapers supplémentaires (priorité : Opera Ballet Vlaanderen,
-      Philharmonie Luxembourg, ONL Lille, Opéra de Lille)
+- [ ] 4 scrapers supplémentaires (priorité : Opera Ballet Vlaanderen,
+      ONL Lille — bloqué Cloudflare 503, Maison de la Culture Tournai,
+      Triangel, Ferme du Biéreau, Cultuurcentrum Hasselt, Muziekodroom)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 

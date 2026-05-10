@@ -20,6 +20,9 @@ import { scrapeMARS } from './scrapers/mars.js';
 import { scrapePBA } from './scrapers/pba.js';
 import { scrapeDeSingel } from './scrapers/desingel.js';
 import { scrapeDeBijloke } from './scrapers/debijloke.js';
+import { scrapePhilLuxembourg } from './scrapers/philharmonie-luxembourg.js';
+import { scrapeOperaLille } from './scrapers/opera-lille.js';
+import { scrapeTourcoing } from './scrapers/tourcoing.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -38,6 +41,9 @@ const SCRAPERS = [
   { name: 'pba', fn: scrapePBA },
   { name: 'desingel', fn: scrapeDeSingel },
   { name: 'bijloke', fn: scrapeDeBijloke },
+  { name: 'phillux', fn: scrapePhilLuxembourg },
+  { name: 'opl', fn: scrapeOperaLille },
+  { name: 'tourcoing', fn: scrapeTourcoing },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
