@@ -22,7 +22,10 @@
     "scrape:bijloke": "node -e \"import('./scripts/scrapers/debijloke.js').then(m => m.scrapeDeBijloke()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:phillux": "node -e \"import('./scripts/scrapers/philharmonie-luxembourg.js').then(m => m.scrapePhilLuxembourg()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:opl": "node -e \"import('./scripts/scrapers/opera-lille.js').then(m => m.scrapeOperaLille()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:tourcoing": "node -e \"import('./scripts/scrapers/tourcoing.js').then(m => m.scrapeTourcoing()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:tourcoing": "node -e \"import('./scripts/scrapers/tourcoing.js').then(m => m.scrapeTourcoing()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:tournai": "node -e \"import('./scripts/scrapers/tournai.js').then(m => m.scrapeTournai()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:biereau": "node -e \"import('./scripts/scrapers/ferme-du-biereau.js').then(m => m.scrapeFermeDuBiereau()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:ccha": "node -e \"import('./scripts/scrapers/ccha-hasselt.js').then(m => m.scrapeCCHA()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

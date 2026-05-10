@@ -108,7 +108,11 @@ agenda-crescendo/
 | Philharmonie Luxembourg | ✅ opérationnel | HTML + cheerio (`/fr/programme?month=M&page=N`, pagination mois × page, rejet des tags jeune public) | ~310 concerts sur 14 mois |
 | Opéra de Lille | ✅ opérationnel | HTML + cheerio (`/saison-XX-XX/`, calendrier global de chaque page produit pour les dates) | ~15 concerts sur la fin de saison 25-26 |
 | Atelier Lyrique de Tourcoing | ✅ opérationnel | HTML + cheerio (sous-pages catégorisées de la saison, date parsée du titre/slug) | ~10 concerts sur fin de saison |
-| Les 4 autres | ⏳ à venir | À choisir source par source | — |
+| Maison de la Culture Tournai | ✅ opérationnel (placeholder) | HTML + cheerio Drupal (`/programme`, filtre discipline=musique + blacklist titre chanson/jazz/world) | 0 concerts savants détectés (la programmation Tournai est essentiellement chanson/théâtre/exposition) |
+| Ferme du Biéreau (LLN) | ✅ opérationnel | HTML + cheerio Odoo (`/events`, filtre badge "Musique classique" + "Midzik") | ~2 Midzik chamber concerts visibles |
+| Cultuurcentrum Hasselt (CCHA) | ✅ opérationnel (placeholder) | HTML + cheerio Peppered (même CMS que Bijloke), filtre strict Klassiek/Symfonisch/Kamermuziek/… | ~1 concert classique sur 28 productions (Hasselt n'est pas une place classique) |
+| Triangel (Saint-Vith) | ⏸ reporté | Site hébergé sur Google Sites (SPA Angular, JS-only) | Nécessiterait Playwright |
+| Reste : ONL Lille (Cloudflare 503), Opera Ballet Vlaanderen (Nuxt minifié), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
 ### Pipeline
 
@@ -170,15 +174,22 @@ npm run scrape:bijloke    # idem pour De Bijloke (Gand)
 npm run scrape:phillux    # idem pour Philharmonie Luxembourg
 npm run scrape:opl        # idem pour Opéra de Lille
 npm run scrape:tourcoing  # idem pour Atelier Lyrique de Tourcoing
+npm run scrape:tournai    # idem pour Maison de la Culture Tournai
+npm run scrape:biereau    # idem pour Ferme du Biéreau (LLN)
+npm run scrape:ccha       # idem pour Cultuurcentrum Hasselt
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 4 scrapers supplémentaires (priorité : Opera Ballet Vlaanderen,
-      ONL Lille — bloqué Cloudflare 503, Maison de la Culture Tournai,
-      Triangel, Ferme du Biéreau, Cultuurcentrum Hasselt, Muziekodroom)
+- [ ] 2 scrapers supplémentaires en attente (Phase 2.x bis) :
+      - **Opera Ballet Vlaanderen** : Nuxt SSR avec performances dans
+        une fermeture minifiée non triviale ; nécessite un parser Nuxt
+      - **ONL Lille** : Cloudflare 503 systématique ; nécessite Playwright
+- [ ] 1 source écartée : **Triangel** (Google Sites SPA, contenu invisible)
+- [ ] 1 source hors périmètre : **Muziekodroom Hasselt** (pop/rock,
+      pas de classique)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 

@@ -23,6 +23,9 @@ import { scrapeDeBijloke } from './scrapers/debijloke.js';
 import { scrapePhilLuxembourg } from './scrapers/philharmonie-luxembourg.js';
 import { scrapeOperaLille } from './scrapers/opera-lille.js';
 import { scrapeTourcoing } from './scrapers/tourcoing.js';
+import { scrapeTournai } from './scrapers/tournai.js';
+import { scrapeFermeDuBiereau } from './scrapers/ferme-du-biereau.js';
+import { scrapeCCHA } from './scrapers/ccha-hasselt.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -44,6 +47,9 @@ const SCRAPERS = [
   { name: 'phillux', fn: scrapePhilLuxembourg },
   { name: 'opl', fn: scrapeOperaLille },
   { name: 'tourcoing', fn: scrapeTourcoing },
+  { name: 'tournai', fn: scrapeTournai },
+  { name: 'biereau', fn: scrapeFermeDuBiereau },
+  { name: 'ccha', fn: scrapeCCHA },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
