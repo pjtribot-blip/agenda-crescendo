@@ -12,6 +12,7 @@ import { dirname, resolve } from 'node:path';
 import { scrapeBozar } from './scrapers/bozar.js';
 import { scrapeMonnaie } from './scrapers/monnaie.js';
 import { scrapeFlagey } from './scrapers/flagey.js';
+import { scrapeConcertgebouwBrugge } from './scrapers/concertgebouwbrugge.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,6 +23,7 @@ const SCRAPERS = [
   { name: 'bozar', fn: scrapeBozar },
   { name: 'monnaie', fn: scrapeMonnaie },
   { name: 'flagey', fn: scrapeFlagey },
+  { name: 'cgbrugge', fn: scrapeConcertgebouwBrugge },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

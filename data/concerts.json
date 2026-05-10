@@ -19,7 +19,7 @@
     "program": "Concert Croissant #13",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:09:20.104Z"
+    "scraped_at": "2026-05-10T08:36:04.615Z"
   },
   {
     "id": "flagey-2026-05-11-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -37,7 +37,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.701Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "flagey-2026-05-11-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -55,7 +55,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "flagey-2026-05-12-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -73,7 +73,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "monnaie-2026-05-12-3567-medusa",
@@ -94,7 +94,7 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:09.752Z"
+    "scraped_at": "2026-05-10T08:36:45.861Z"
   },
   {
     "id": "flagey-2026-05-12-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -112,7 +112,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "flagey-2026-05-13-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -130,7 +130,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "bozar-2026-05-13-belgian-national-orchestra-montague-rendall-desandre",
@@ -153,7 +153,7 @@
     "program": "An evening with Mozart and Rossini",
     "price_min": 26,
     "price_max": 64,
-    "scraped_at": "2026-05-10T07:09:20.229Z"
+    "scraped_at": "2026-05-10T08:36:04.631Z"
   },
   {
     "id": "flagey-2026-05-13-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -171,7 +171,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "flagey-2026-05-14-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -189,7 +189,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "flagey-2026-05-14-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -207,7 +207,24 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-14-23626",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "The Tallis Scholars",
+    "date": "2026-05-14",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23626",
+    "composers": [],
+    "performers": [
+      "The Tallis Scholars: vocal ensemble Peter Phillips: artistic direction"
+    ],
+    "program": "Johannes Ockeghem (ca.1410-1497) Missa Ecce ancilla Domini Mort tu as navré de ton dart Josquin Desprez (ca.1450-1521) Nymphes des bois",
+    "price_min": 30,
+    "price_max": 36,
+    "scraped_at": "2026-05-10T08:37:51.445Z"
   },
   {
     "id": "flagey-2026-05-15-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -225,7 +242,24 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.702Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-15-23632",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ensemble Gamut!",
+    "date": "2026-05-15",
+    "time": "19:00",
+    "url": "https://www.concertgebouw.be/fr/page/23632",
+    "composers": [],
+    "performers": [
+      "Ensemble Gamut!: Aino Peltomaa: voice, mediaeval harp & percussion Ilkka Heinonen: jouhikko (traditional bowed lyre), voice & electronics Juho Myllylä: recorders, voice & electronics"
+    ],
+    "program": "Gregorian chants from the Graduale Romanum and the Cantus Sororum: Salve Regina, Alma redemptoris mater, Ave Maris Stella, Stabat mater dolorosa, Trina caeli hierarchia Hildegard von Bingen (1098-1179) Hodie aperuit Traditional Scandinavian folksongs",
+    "price_min": 27,
+    "price_max": 27,
+    "scraped_at": "2026-05-10T08:37:53.593Z"
   },
   {
     "id": "monnaie-2026-05-15-3567-medusa",
@@ -246,7 +280,7 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:09.752Z"
+    "scraped_at": "2026-05-10T08:36:45.862Z"
   },
   {
     "id": "flagey-2026-05-15-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -264,7 +298,24 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.703Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-15-23634",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ensemble Gamut!",
+    "date": "2026-05-15",
+    "time": "21:00",
+    "url": "https://www.concertgebouw.be/fr/page/23634",
+    "composers": [],
+    "performers": [
+      "Ensemble Gamut!: Aino Peltomaa: voice, mediaeval harp & percussion Ilkka Heinonen: jouhikko (traditional bowed lyre), voice & electronics Juho Myllylä: recorders, voice & electronics"
+    ],
+    "program": "Gregorian chants from the Graduale Romanum and the Cantus Sororum: Salve Regina, Alma redemptoris mater, Ave Maris Stella, Stabat mater dolorosa, Trina caeli hierarchia Hildegard von Bingen (1098-1179) Hodie aperuit Traditional Scandinavian folksongs",
+    "price_min": 27,
+    "price_max": 27,
+    "scraped_at": "2026-05-10T08:37:55.269Z"
   },
   {
     "id": "flagey-2026-05-16-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -282,7 +333,7 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.703Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
   },
   {
     "id": "bozar-2026-05-16-koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
@@ -306,7 +357,7 @@
     "program": "Martinu, Stravinsky & Ravel",
     "price_min": 40,
     "price_max": 98,
-    "scraped_at": "2026-05-10T07:09:22.078Z"
+    "scraped_at": "2026-05-10T08:36:02.734Z"
   },
   {
     "id": "flagey-2026-05-16-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
@@ -324,7 +375,24 @@
     "program": "Demi-finale",
     "price_min": 24,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:10:44.703Z"
+    "scraped_at": "2026-05-10T08:37:14.228Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-16-23636",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Sollazzo Ensemble",
+    "date": "2026-05-16",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23636",
+    "composers": [],
+    "performers": [
+      "Sollazzo Ensemble: ensemble Anna Danilevskaia: vielle & artistic direction"
+    ],
+    "program": "Anonymous works from the songbooks of, among others, Dijon, Copenhagen, El Escorial & Leuven",
+    "price_min": 30,
+    "price_max": 30,
+    "scraped_at": "2026-05-10T08:37:57.049Z"
   },
   {
     "id": "monnaie-2026-05-17-3567-medusa",
@@ -345,7 +413,37 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:09.752Z"
+    "scraped_at": "2026-05-10T08:36:45.862Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-17-23639",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "La doulce amour",
+    "date": "2026-05-17",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/23639",
+    "composers": [],
+    "performers": [],
+    "program": "Lara Barsacq & ClubMediéval",
+    "price_min": 27,
+    "price_max": 27,
+    "scraped_at": "2026-05-10T08:37:57.656Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-17-24869",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "La doulce amour",
+    "date": "2026-05-17",
+    "time": "19:00",
+    "url": "https://www.concertgebouw.be/fr/page/24869",
+    "composers": [],
+    "performers": [],
+    "program": "Lara Barsacq & ClubMediéval",
+    "price_min": 27,
+    "price_max": 27,
+    "scraped_at": "2026-05-10T08:37:58.283Z"
   },
   {
     "id": "monnaie-2026-05-19-3567-medusa",
@@ -366,7 +464,7 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:09.752Z"
+    "scraped_at": "2026-05-10T08:36:45.862Z"
   },
   {
     "id": "flagey-2026-05-21-12835-close-encounter-brussels-philharmonic",
@@ -386,7 +484,7 @@
     "program": "Brussels Philharmonic",
     "price_min": 5,
     "price_max": 5,
-    "scraped_at": "2026-05-10T07:10:45.787Z"
+    "scraped_at": "2026-05-10T08:37:15.179Z"
   },
   {
     "id": "bozar-2026-05-21-victor-julien-laferriere-0",
@@ -407,7 +505,27 @@
     "program": "Bach, Kodály & Casals",
     "price_min": 30,
     "price_max": 30,
-    "scraped_at": "2026-05-10T07:09:24.009Z"
+    "scraped_at": "2026-05-10T08:36:06.562Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-21-23643",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Musicians of the Budapest Festival Orchestra",
+    "date": "2026-05-21",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23643",
+    "composers": [
+      "Mendelssohn",
+      "Bartók"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra: ensemble Gergely Csikota: trumpet Mirella Hagen: soprano"
+    ],
+    "program": "Béla Bartók (1881–1945) Divertimento for String Orchestra Sz.113 BB.118 Iván Fischer (1951) Eine deutsch-jiddische Kantate Felix Mendelssohn (1809-1947) String Octet in E flat major, Op. 20",
+    "price_min": 30,
+    "price_max": 30,
+    "scraped_at": "2026-05-10T08:37:59.003Z"
   },
   {
     "id": "monnaie-2026-05-22-2743-concertini",
@@ -422,7 +540,7 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T07:10:10.337Z"
+    "scraped_at": "2026-05-10T08:36:46.441Z"
   },
   {
     "id": "flagey-2026-05-22-12673-marco-mantovani",
@@ -441,7 +559,27 @@
     "program": "Le génie mélodique de Franz Schubert, la nostalgie mélancolique de Frédéric Chopin et l’univers sonore coloré et visionnaire d’Alexandre Scriabine : tout cela émaillera le concert Piknik du pianiste italien Marco Mantova",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:46.279Z"
+    "scraped_at": "2026-05-10T08:37:15.635Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-22-23644",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Budapest Festival Orchestra",
+    "date": "2026-05-22",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23644",
+    "composers": [
+      "Schumann",
+      "Wagner"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra: orchestra Iván Fischer: conductor Ingela Brimberg: soprano Hanno Müller Brachmann: bass-baritone"
+    ],
+    "program": "Robert Schumann (1810-1856) Symphony no. 3 ‘Rheinische’, opus 97 Richard Wagner (1813-1883) Wotans Abschied und Feuerzauber from Die Walküre",
+    "price_min": 39,
+    "price_max": 73,
+    "scraped_at": "2026-05-10T08:38:01.019Z"
   },
   {
     "id": "flagey-2026-05-23-12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
@@ -459,7 +597,28 @@
     "program": "Brussels Philharmonic, Florestan Bataillie",
     "price_min": 5,
     "price_max": 9,
-    "scraped_at": "2026-05-10T07:10:46.739Z"
+    "scraped_at": "2026-05-10T08:37:16.082Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-23-23646",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Budapest Festival Orchestra",
+    "date": "2026-05-23",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23646",
+    "composers": [
+      "Mozart",
+      "Wagner",
+      "Bartók"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra: orchestra Iván Fischer: conductor Ingela Brimberg: soprano"
+    ],
+    "program": "Wolfgang Amadeus Mozart (1756-1791) Overture Die Zauberflöte Richard Wagner (1813-1883) Prelude und Liebestod from Tristan und Isolde Béla Bartók (1881-1945) The Miraculous Mandarin, opus 19, BB82",
+    "price_min": 39,
+    "price_max": 73,
+    "scraped_at": "2026-05-10T08:38:02.279Z"
   },
   {
     "id": "flagey-2026-05-23-12677-brussels-philharmonic-dvorak-8",
@@ -477,7 +636,7 @@
     "program": "Dvořák 8",
     "price_min": 5,
     "price_max": 41,
-    "scraped_at": "2026-05-10T07:10:47.650Z"
+    "scraped_at": "2026-05-10T08:37:17.002Z"
   },
   {
     "id": "flagey-2026-05-24-12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
@@ -495,7 +654,7 @@
     "program": "Brussels Philharmonic, Florestan Bataillie",
     "price_min": 5,
     "price_max": 9,
-    "scraped_at": "2026-05-10T07:10:47.650Z"
+    "scraped_at": "2026-05-10T08:37:17.003Z"
   },
   {
     "id": "flagey-2026-05-24-12678-brussels-philharmonic-matinee-dvorak-8",
@@ -513,7 +672,7 @@
     "program": "Matinee: Dvořák 8",
     "price_min": 5,
     "price_max": 31,
-    "scraped_at": "2026-05-10T07:10:48.122Z"
+    "scraped_at": "2026-05-10T08:37:17.454Z"
   },
   {
     "id": "flagey-2026-05-25-12679-musiques-nouvelles-attention-musiques-fraiches",
@@ -530,7 +689,7 @@
     "program": "Attention, Musiques Fraîches !",
     "price_min": 21,
     "price_max": 23,
-    "scraped_at": "2026-05-10T07:10:48.583Z"
+    "scraped_at": "2026-05-10T08:37:17.932Z"
   },
   {
     "id": "monnaie-2026-05-29-2743-concertini",
@@ -545,7 +704,7 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T07:10:10.341Z"
+    "scraped_at": "2026-05-10T08:36:46.441Z"
   },
   {
     "id": "flagey-2026-05-30-12890-mozart-deconstructed-brussels-philharmonic-florestan-bataillie",
@@ -563,7 +722,26 @@
     "program": "Brussels Philharmonic, Florestan Bataillie",
     "price_min": 5,
     "price_max": 9,
-    "scraped_at": "2026-05-10T07:10:49.049Z"
+    "scraped_at": "2026-05-10T08:37:18.386Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-30-23650",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Antwerp Symphony Orchestra",
+    "date": "2026-05-30",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23650",
+    "composers": [
+      "Berlioz"
+    ],
+    "performers": [
+      "Antwerp Symphony Orchestra: orchestra Octopus Symfonisch Koor & Laurens Collegium: choir Dima Slobodeniouk: conductor Kai Rüütel-Pajula: mezzo-soprano Bryan Register: tenor Nahuel di Pierro: bass Aïda Gabriëls: mise-en-espace Anne Van Es: lighting design production: Concertgebouw Brugge, Antwerp Symphony Orchestra & Muziektheater Transparant"
+    ],
+    "program": "Hector Berlioz (1803-1869) Romeo and Juliet, opus 17",
+    "price_min": 27,
+    "price_max": 45,
+    "scraped_at": "2026-05-10T08:38:04.429Z"
   },
   {
     "id": "flagey-2026-05-30-12680-vlaams-radiokoor-orkest-van-de-18e-eeuw-mozart-grosse-messe",
@@ -583,7 +761,27 @@
     "program": "Mozart: Grosse Messe",
     "price_min": 5,
     "price_max": 41,
-    "scraped_at": "2026-05-10T07:10:49.503Z"
+    "scraped_at": "2026-05-10T08:37:18.842Z"
+  },
+  {
+    "id": "cgbrugge-2026-05-31-23654",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "a nocte temporis, Choeur de Chambre de Namur & Reinoud Van Mechelen",
+    "date": "2026-05-31",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/23654",
+    "composers": [
+      "Rameau",
+      "Adès"
+    ],
+    "performers": [
+      "a nocte temporis: orchestra Choeur de Chambre de Namur: choir Reinoud Van Mechelen: tenor & artistic direction Gwendoline Blondeel: Alphise Reinoud Van Mechelen: Abaris Lisandro Abadie: Borée Tomáš Král: Adamas / Apollon Robert Getchell: Calisis Philippe Estèphe: Borilée Lore Binon: Sémire / Une nymphe / L’Amour / Polymnie"
+    ],
+    "program": "Jean-Philippe Rameau (1683-1764) Les Boréades, RCT31",
+    "price_min": 29,
+    "price_max": 53,
+    "scraped_at": "2026-05-10T08:38:06.301Z"
   },
   {
     "id": "flagey-2026-06-02-12681-leonkoro-quartet",
@@ -602,7 +800,7 @@
     "program": "Fondé en 2019 à Berlin, le Leonkoro Quartet conquiert rapidement les scènes internationales",
     "price_min": 21,
     "price_max": 23,
-    "scraped_at": "2026-05-10T07:10:50.437Z"
+    "scraped_at": "2026-05-10T08:37:19.771Z"
   },
   {
     "id": "bozar-2026-06-02-la-fonte-musica",
@@ -630,7 +828,7 @@
     "program": "Anchor che col partire",
     "price_min": 38,
     "price_max": 38,
-    "scraped_at": "2026-05-10T07:09:22.633Z"
+    "scraped_at": "2026-05-10T08:36:07.549Z"
   },
   {
     "id": "flagey-2026-06-02-12682-belcea-quartet-tabea-zimmermann",
@@ -648,7 +846,7 @@
     "program": "Avec son jeu intense et ses interprétations lumineuses, le Belcea Quartet s’impose comme une référence absolue du quatuor à cordes",
     "price_min": 27,
     "price_max": 44,
-    "scraped_at": "2026-05-10T07:10:50.888Z"
+    "scraped_at": "2026-05-10T08:37:20.255Z"
   },
   {
     "id": "flagey-2026-06-03-12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
@@ -663,7 +861,7 @@
     "program": "Violoncelle 2026",
     "price_min": 15,
     "price_max": 18,
-    "scraped_at": "2026-05-10T07:10:51.356Z"
+    "scraped_at": "2026-05-10T08:37:20.715Z"
   },
   {
     "id": "flagey-2026-06-04-12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
@@ -678,7 +876,7 @@
     "program": "Violoncelle 2026",
     "price_min": 15,
     "price_max": 18,
-    "scraped_at": "2026-05-10T07:10:51.356Z"
+    "scraped_at": "2026-05-10T08:37:20.715Z"
   },
   {
     "id": "monnaie-2026-06-05-2743-concertini",
@@ -693,7 +891,24 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T07:10:10.341Z"
+    "scraped_at": "2026-05-10T08:36:46.441Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-06-23656",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Antwerp Symphony Orchestra",
+    "date": "2026-06-06",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23656",
+    "composers": [],
+    "performers": [
+      "Antwerp Symphony Orchestra: orchestra Shiyeon Sung: conductor Laureates 4, 5 & 6 of the Queen Elisabeth Competition: cello"
+    ],
+    "program": "Works selected by the laureates",
+    "price_min": 29,
+    "price_max": 53,
+    "scraped_at": "2026-05-10T08:38:06.970Z"
   },
   {
     "id": "bozar-2026-06-07-giorgi-gigashvili-echo-rising-star",
@@ -716,7 +931,7 @@
     "program": "Concert Croissant #14",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:09:24.602Z"
+    "scraped_at": "2026-05-10T08:36:07.075Z"
   },
   {
     "id": "bozar-2026-06-08-concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
@@ -731,7 +946,7 @@
     "program": null,
     "price_min": 19,
     "price_max": 96,
-    "scraped_at": "2026-05-10T07:09:25.155Z"
+    "scraped_at": "2026-05-10T08:36:08.914Z"
   },
   {
     "id": "bozar-2026-06-10-concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
@@ -746,7 +961,7 @@
     "program": null,
     "price_min": 23,
     "price_max": 108,
-    "scraped_at": "2026-05-10T07:09:25.162Z"
+    "scraped_at": "2026-05-10T08:36:08.909Z"
   },
   {
     "id": "bozar-2026-06-11-orchestra-age-enlightenment-sir-simon-rattle",
@@ -768,7 +983,7 @@
     "price_min": 40,
     "price_max": 98,
     "cancelled": true,
-    "scraped_at": "2026-05-10T07:09:26.399Z"
+    "scraped_at": "2026-05-10T08:36:09.837Z"
   },
   {
     "id": "monnaie-2026-06-12-2743-concertini",
@@ -783,7 +998,7 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T07:10:10.341Z"
+    "scraped_at": "2026-05-10T08:36:46.441Z"
   },
   {
     "id": "flagey-2026-06-12-12667-jorge-gimenez-matteo-bevilacqua",
@@ -804,7 +1019,7 @@
     "program": "UPDATE 23.04.2026 | Malheureusement, en raison de circonstances indépendantes de notre volonté, cet événement ne pourra pas avoir lieu à la date prévue et est reporté au 13 novembre 2026",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:53.286Z"
+    "scraped_at": "2026-05-10T08:37:22.602Z"
   },
   {
     "id": "bozar-2026-06-12-belgian-national-orchestra-hermus-vondracek",
@@ -826,7 +1041,7 @@
     "program": "Flamboyance",
     "price_min": 22,
     "price_max": 56,
-    "scraped_at": "2026-05-10T07:09:28.278Z"
+    "scraped_at": "2026-05-10T08:36:12.364Z"
   },
   {
     "id": "flagey-2026-06-12-12663-arcadi-volodos",
@@ -846,7 +1061,7 @@
     "program": "Le pianiste Arcadi Volodos reste un phénomène",
     "price_min": 43,
     "price_max": 48,
-    "scraped_at": "2026-05-10T07:10:53.772Z"
+    "scraped_at": "2026-05-10T08:37:23.059Z"
   },
   {
     "id": "flagey-2026-06-13-13906-sons-de-chypre-et-5e-symphonie-de-beethoven-brussels-chamber-ensemble-au-concert-de-la-presidence-chypriote",
@@ -864,7 +1079,7 @@
     "program": "Brussels Chamber Ensemble au concert de la Présidence chypriote",
     "price_min": 15,
     "price_max": 35,
-    "scraped_at": "2026-05-10T07:10:54.277Z"
+    "scraped_at": "2026-05-10T08:37:23.508Z"
   },
   {
     "id": "bozar-2026-06-13-lea-desandre-jupiter-ensemble-1",
@@ -888,7 +1103,7 @@
     "program": "Chasing Rainbows",
     "price_min": 32,
     "price_max": 56,
-    "scraped_at": "2026-05-10T07:09:28.235Z"
+    "scraped_at": "2026-05-10T08:36:12.315Z"
   },
   {
     "id": "monnaie-2026-06-13-3589-chasing-rainbows",
@@ -909,7 +1124,24 @@
     "program": "Un vibrant hommage à Julie Andrews et à la comédie musicale avec les plus belles chansons de The Sound of Music, Mary Poppins, West Side Story...",
     "price_min": 20,
     "price_max": 48,
-    "scraped_at": "2026-05-10T07:10:10.865Z"
+    "scraped_at": "2026-05-10T08:36:47.018Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-13-23658",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Philharmonic",
+    "date": "2026-06-13",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/23658",
+    "composers": [],
+    "performers": [
+      "Brussels Philharmonic: orchestra Samy Rachid: conductor Laureates 1, 2 & 3 of the Queen Elisabeth Competition: cello"
+    ],
+    "program": "Works selected by the laureates",
+    "price_min": 29,
+    "price_max": 53,
+    "scraped_at": "2026-05-10T08:38:07.625Z"
   },
   {
     "id": "monnaie-2026-06-17-1838-tosca",
@@ -930,7 +1162,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.611Z"
   },
   {
     "id": "monnaie-2026-06-18-1838-tosca",
@@ -951,7 +1183,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.611Z"
   },
   {
     "id": "monnaie-2026-06-19-2743-concertini",
@@ -966,7 +1198,7 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-19-14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
@@ -983,7 +1215,7 @@
     "program": "sound artists foraging for wild sonic material",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:54.774Z"
+    "scraped_at": "2026-05-10T08:37:23.964Z"
   },
   {
     "id": "flagey-2026-06-19-14020-ictus-tarek-halaby-frederic-rzewski-coming-together-attica",
@@ -998,7 +1230,7 @@
     "program": "Frederic Rzewski (1938–2021) signe avec ce diptyque de 1975 l’une des œuvres avec narrateur les plus marquantes de la musique moderne",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:55.803Z"
+    "scraped_at": "2026-05-10T08:37:24.875Z"
   },
   {
     "id": "flagey-2026-06-19-14021-brussels-philharmonic-oyvind-torvund-symphony-for-kunstnernes-hus-can-you-listen-to-a-building",
@@ -1013,7 +1245,7 @@
     "program": "Can you listen to a building?",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:56.284Z"
+    "scraped_at": "2026-05-10T08:37:25.330Z"
   },
   {
     "id": "flagey-2026-06-19-14022-farida-amadou-heather-leigh",
@@ -1028,7 +1260,7 @@
     "program": "Le duo formé par Farida Amadou et Heather Leigh réunit deux voix singulières de la scène expérimentale contemporaine",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:56.761Z"
+    "scraped_at": "2026-05-10T08:37:25.783Z"
   },
   {
     "id": "flagey-2026-06-19-14023-ictus-leonie-strecker-pak-yan-lau-anita-cappuccinelli-interference",
@@ -1043,7 +1275,7 @@
     "program": "Interference",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:57.219Z"
+    "scraped_at": "2026-05-10T08:37:26.246Z"
   },
   {
     "id": "flagey-2026-06-20-14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
@@ -1058,7 +1290,7 @@
     "program": "Micro Breaths of a Blue Lung",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:57.709Z"
+    "scraped_at": "2026-05-10T08:37:26.722Z"
   },
   {
     "id": "flagey-2026-06-20-14025-vlaams-radiokoor-xenakis-scelsi-a-living-sound-sculpture",
@@ -1073,7 +1305,7 @@
     "program": "A living sound sculpture",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:58.184Z"
+    "scraped_at": "2026-05-10T08:37:27.184Z"
   },
   {
     "id": "flagey-2026-06-20-14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
@@ -1090,7 +1322,7 @@
     "program": "sound artists foraging for wild sonic material",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:58.184Z"
+    "scraped_at": "2026-05-10T08:37:27.184Z"
   },
   {
     "id": "flagey-2026-06-20-14026-jennifer-torrence",
@@ -1105,7 +1337,22 @@
     "program": "Jennifer Torrence réunit un travail développé sur plusieurs années, construit autour de sons issus de « mouvements physiques et de principes de mouvement »",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:58.651Z"
+    "scraped_at": "2026-05-10T08:37:27.645Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-20-23659",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-20",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/23659",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:08.272Z"
   },
   {
     "id": "monnaie-2026-06-20-1838-tosca",
@@ -1126,7 +1373,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-20-14027-brussels-philharmonic-maya-verlaak-cassandra-miller-music-as-social-experiment-or-as-ageing-and-forgetting",
@@ -1141,7 +1388,7 @@
     "program": "Music as social experiment - or as ageing and forgetting",
     "price_min": 15,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:10:59.251Z"
+    "scraped_at": "2026-05-10T08:37:28.100Z"
   },
   {
     "id": "flagey-2026-06-20-14028-hoda-siahtiri-shaahin-peymani-for-those-who-live-at-the-shoreline",
@@ -1156,7 +1403,7 @@
     "program": "For Those Who Live At The Shoreline",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:59.732Z"
+    "scraped_at": "2026-05-10T08:37:28.557Z"
   },
   {
     "id": "flagey-2026-06-20-14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
@@ -1171,7 +1418,7 @@
     "program": "Micro Breaths of a Blue Lung",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:59.732Z"
+    "scraped_at": "2026-05-10T08:37:28.557Z"
   },
   {
     "id": "bozar-2026-06-21-belgian-national-orchestra-cottis-gatto",
@@ -1197,7 +1444,7 @@
     "program": "Fête de la Musique",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:09:28.468Z"
+    "scraped_at": "2026-05-10T08:36:12.539Z"
   },
   {
     "id": "monnaie-2026-06-21-1838-tosca",
@@ -1218,7 +1465,39 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-21-23661",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Romina Lischka & Hathor Consort",
+    "date": "2026-06-21",
+    "time": "17:30",
+    "url": "https://www.concertgebouw.be/fr/page/23661",
+    "composers": [],
+    "performers": [
+      "Hathor Consort: Romina Lischka: dhrupad vocals, viola da gamba & artistic director Liv Ulvik: soprano – Norwegian vocals Carmen Fernandez Castillo: Cantaora (flamenco soprano) Nils Økland: Hardanger fiddle Alexander Gaviland: flamenco guitar Thor-Harald Johnsen: baroque guitar Vincent Noiret: double bass & chitarra battente (baroque guitar) Ieva Gaurilčikaitė-Sants & Krish Krišjānis: contemporary dance"
+    ],
+    "program": "Early and traditional music from Southern Europe and Scandinavia",
+    "price_min": 27,
+    "price_max": 27,
+    "scraped_at": "2026-05-10T08:38:08.886Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-21-23663",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-21",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/23663",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:09.654Z"
   },
   {
     "id": "monnaie-2026-06-23-1838-tosca",
@@ -1239,7 +1518,22 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-23-23670",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-23",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/23670",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:10.288Z"
   },
   {
     "id": "monnaie-2026-06-24-1838-tosca",
@@ -1260,7 +1554,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-25-14067-propulse-classique-debats-rencontres-professionnelles-5-concerts",
@@ -1275,7 +1569,7 @@
     "program": "La journée des rencontres professionnelles du Festival Musiq3",
     "price_min": 5,
     "price_max": 5,
-    "scraped_at": "2026-05-10T07:11:00.242Z"
+    "scraped_at": "2026-05-10T08:37:29.014Z"
   },
   {
     "id": "flagey-2026-06-25-14033-concert-d-ouverture-the-amazing-keystone-big-band-judy-garland-1",
@@ -1290,7 +1584,22 @@
     "program": "The Amazing Keystone Big Band – Judy Garland | #1",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:00.709Z"
+    "scraped_at": "2026-05-10T08:37:29.481Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-25-23672",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-25",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/23672",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:10.947Z"
   },
   {
     "id": "monnaie-2026-06-25-1838-tosca",
@@ -1311,7 +1620,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-25-14034-from-the-moon-to-the-fish-romina-lischka-hathor-consort-2",
@@ -1326,7 +1635,7 @@
     "program": "Romina Lischka & Hathor Consort | #2",
     "price_min": 6,
     "price_max": 17,
-    "scraped_at": "2026-05-10T07:11:01.195Z"
+    "scraped_at": "2026-05-10T08:37:29.933Z"
   },
   {
     "id": "flagey-2026-06-25-14037-mozart-paradox-thomas-enhco-3",
@@ -1348,7 +1657,7 @@
     "program": "Thomas Enhco | #3",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:01.655Z"
+    "scraped_at": "2026-05-10T08:37:30.421Z"
   },
   {
     "id": "flagey-2026-06-26-14051-mozart-eclat-de-jeunesse-a-nocte-temporis-anna-besson-reinoud-van-mechelen-4",
@@ -1365,7 +1674,22 @@
     "program": "A nocte temporis, Anna Besson, Reinoud van Mechelen | #4",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:02.115Z"
+    "scraped_at": "2026-05-10T08:37:30.881Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-26-23674",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-26",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/23674",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:11.558Z"
   },
   {
     "id": "flagey-2026-06-26-14052-saehyun-kim-1ere-partie-duo-post-scriptum-5",
@@ -1382,7 +1706,7 @@
     "program": "1ère partie : Duo Post Scriptum | #5",
     "price_min": 6,
     "price_max": 17,
-    "scraped_at": "2026-05-10T07:11:02.566Z"
+    "scraped_at": "2026-05-10T08:37:31.336Z"
   },
   {
     "id": "flagey-2026-06-26-14053-vassilena-serafimova-helene-escriva-quatuor-ardeo-6",
@@ -1399,7 +1723,7 @@
     "program": "#6",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:03.026Z"
+    "scraped_at": "2026-05-10T08:37:31.826Z"
   },
   {
     "id": "monnaie-2026-06-27-1838-tosca",
@@ -1420,7 +1744,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-27-14055-rio-gaelle-solal-orchestre-royal-de-chambre-de-wallonie-8",
@@ -1435,7 +1759,7 @@
     "program": "Gaëlle Solal & Orchestre Royal de Chambre de Wallonie | #8",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:03.932Z"
+    "scraped_at": "2026-05-10T08:37:32.763Z"
   },
   {
     "id": "flagey-2026-06-27-14056-100-debussy-elodie-vignon-stephanie-coerten-9",
@@ -1452,7 +1776,7 @@
     "program": "Elodie Vignon & Stéphanie Coerten| #9",
     "price_min": 6,
     "price_max": 17,
-    "scraped_at": "2026-05-10T07:11:04.380Z"
+    "scraped_at": "2026-05-10T08:37:33.224Z"
   },
   {
     "id": "flagey-2026-06-27-14132-autour-iguaran-quartet",
@@ -1467,7 +1791,7 @@
     "program": "Iguarán Quartet",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:04.840Z"
+    "scraped_at": "2026-05-10T08:37:33.682Z"
   },
   {
     "id": "flagey-2026-06-27-14057-open-road-lorenzo-gatto-ensemble-karavan-10",
@@ -1485,7 +1809,7 @@
     "program": "Lorenzo Gatto & Ensemble Karavan | #10",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:05.321Z"
+    "scraped_at": "2026-05-10T08:37:34.142Z"
   },
   {
     "id": "flagey-2026-06-27-14058-camille-el-bacha-naghib-shanbehzadeh-11",
@@ -1503,7 +1827,7 @@
     "program": "#11",
     "price_min": 6,
     "price_max": 17,
-    "scraped_at": "2026-05-10T07:11:05.783Z"
+    "scraped_at": "2026-05-10T08:37:34.596Z"
   },
   {
     "id": "monnaie-2026-06-28-1838-tosca",
@@ -1524,7 +1848,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
   },
   {
     "id": "flagey-2026-06-28-14060-laureat-prix-du-public-concours-international-reine-elisabeth-13",
@@ -1539,7 +1863,22 @@
     "program": "#13",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:06.775Z"
+    "scraped_at": "2026-05-10T08:37:35.536Z"
+  },
+  {
+    "id": "cgbrugge-2026-06-28-23676",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Carmen",
+    "date": "2026-06-28",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/23676",
+    "composers": [],
+    "performers": [],
+    "program": "Opera Ballet Vlaanderen",
+    "price_min": 37,
+    "price_max": 142,
+    "scraped_at": "2026-05-10T08:38:12.214Z"
   },
   {
     "id": "flagey-2026-06-28-14061-ca-part-en-fugue-le-live-cecile-poss-l-orchestre-du-festival-14",
@@ -1557,7 +1896,7 @@
     "program": "Cécile Poss & l’Orchestre du Festival | #14",
     "price_min": 6,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:11:07.253Z"
+    "scraped_at": "2026-05-10T08:37:35.983Z"
   },
   {
     "id": "flagey-2026-06-28-14062-because-reginald-mobley-baptiste-trotignon-15",
@@ -1574,7 +1913,7 @@
     "program": "Reginald Mobley & Baptiste Trotignon | #15",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:07.713Z"
+    "scraped_at": "2026-05-10T08:37:36.447Z"
   },
   {
     "id": "flagey-2026-06-28-14063-ensemble-satellite-16",
@@ -1589,7 +1928,7 @@
     "program": "#16",
     "price_min": 6,
     "price_max": 15,
-    "scraped_at": "2026-05-10T07:11:08.160Z"
+    "scraped_at": "2026-05-10T08:37:36.898Z"
   },
   {
     "id": "flagey-2026-06-28-14064-surtout-v-nez-pas-pierre-derhet-marie-perbost-herve-niquet-17",
@@ -1606,7 +1945,7 @@
     "program": "Pierre Derhet, Marie Perbost & Hervé Niquet | #17",
     "price_min": 6,
     "price_max": 17,
-    "scraped_at": "2026-05-10T07:11:08.628Z"
+    "scraped_at": "2026-05-10T08:37:37.359Z"
   },
   {
     "id": "flagey-2026-06-28-14133-autour-duo-altiler",
@@ -1623,7 +1962,7 @@
     "program": "Duo Altiler",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:09.080Z"
+    "scraped_at": "2026-05-10T08:37:37.850Z"
   },
   {
     "id": "flagey-2026-06-28-14065-concert-de-cloture-brussels-philharmonic-vlaams-radio-koor-joana-carneiro-18",
@@ -1641,7 +1980,7 @@
     "program": "Brussels Philharmonic, Vlaams Radio Koor & Joana Carneiro | #18",
     "price_min": 6,
     "price_max": 25,
-    "scraped_at": "2026-05-10T07:11:09.562Z"
+    "scraped_at": "2026-05-10T08:37:38.294Z"
   },
   {
     "id": "monnaie-2026-06-30-1838-tosca",
@@ -1662,7 +2001,22 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-01-23678",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2026-07-01",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/23678",
+    "composers": [],
+    "performers": [],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:13.521Z"
   },
   {
     "id": "monnaie-2026-07-01-1838-tosca",
@@ -1683,7 +2037,67 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T07:10:11.521Z"
+    "scraped_at": "2026-05-10T08:36:47.612Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-02-23680",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2026-07-02",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/23680",
+    "composers": [],
+    "performers": [],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:14.680Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-03-23682",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2026-07-03",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/23682",
+    "composers": [],
+    "performers": [],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:15.787Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-04-23684",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2026-07-04",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/23684",
+    "composers": [],
+    "performers": [],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:17.057Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-05-23686",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2026-07-05",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/23686",
+    "composers": [],
+    "performers": [],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:18.198Z"
   },
   {
     "id": "monnaie-2026-07-05-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
@@ -1703,7 +2117,7 @@
     "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
     "price_min": 5,
     "price_max": 92,
-    "scraped_at": "2026-05-10T07:10:12.051Z"
+    "scraped_at": "2026-05-10T08:36:48.174Z"
   },
   {
     "id": "monnaie-2026-07-06-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
@@ -1723,7 +2137,7 @@
     "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
     "price_min": 5,
     "price_max": 92,
-    "scraped_at": "2026-05-10T07:10:12.051Z"
+    "scraped_at": "2026-05-10T08:36:48.174Z"
   },
   {
     "id": "monnaie-2026-07-29-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
@@ -1740,7 +2154,43 @@
     "program": "Werther (Jules Massenet)",
     "price_min": 25,
     "price_max": 340,
-    "scraped_at": "2026-05-10T07:10:12.505Z"
+    "scraped_at": "2026-05-10T08:36:48.817Z"
+  },
+  {
+    "id": "cgbrugge-2026-07-31-25602",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Il Pomo d’Oro",
+    "date": "2026-07-31",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25602",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [
+      "Il Pomo d’Oro: ensemble Maxim Emelyanychev: conductor"
+    ],
+    "program": "Music by Wolfgang Amadeus Mozart (1756–1791) & Siebe Thijs (1999)",
+    "price_min": 32,
+    "price_max": 62,
+    "scraped_at": "2026-05-10T08:38:19.895Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-01-25606",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Pseudonym",
+    "date": "2026-08-01",
+    "time": "11:30",
+    "url": "https://www.concertgebouw.be/fr/page/25606",
+    "composers": [],
+    "performers": [
+      "Pseudonym: ensemble"
+    ],
+    "program": "Music by, among others, Marco Uccellini (1603-1680), Biagio Marini (1594-1663) & Giovanni Picchi (ca.1571-1643)",
+    "price_min": 22,
+    "price_max": 22,
+    "scraped_at": "2026-05-10T08:38:21.731Z"
   },
   {
     "id": "monnaie-2026-08-01-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
@@ -1757,7 +2207,109 @@
     "program": "Werther (Jules Massenet)",
     "price_min": 25,
     "price_max": 340,
-    "scraped_at": "2026-05-10T07:10:12.505Z"
+    "scraped_at": "2026-05-10T08:36:48.817Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-01-25604",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Jiaxin Min",
+    "date": "2026-08-01",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25604",
+    "composers": [
+      "Bach",
+      "Beethoven",
+      "Brahms"
+    ],
+    "performers": [
+      "Jiaxin Min: piano"
+    ],
+    "program": "Music by, among others, Johann Sebastian Bach (1685–1750), Ludwig van Beethoven (1770–1827) & Johannes Brahms (1833–1897)",
+    "price_min": 22,
+    "price_max": 42,
+    "scraped_at": "2026-05-10T08:38:23.006Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-04-25608",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "MA Competition semi-final",
+    "date": "2026-08-04",
+    "time": "09:00",
+    "url": "https://www.concertgebouw.be/fr/page/25608",
+    "composers": [
+      "Bach",
+      "Ligeti",
+      "Haydn"
+    ],
+    "performers": [
+      "Carlo Siau: presentation Korneel Bernolet (chair), Richard Egarr, Béatrice Martin, Mitzi Meyerson & Jean Rondeau: jury"
+    ],
+    "program": "Final programme: Il Gardellino: ensemble György Ligeti (1923–2006) Passacaglia Ungherese (compulsory piece) And music by Johann Sebastian Bach (1685–1750), Joseph Haydn (1732–1809) & Wilhelm Friedemann Bach (1710–1784)",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:24.384Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-06-25610",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "MA Competition final",
+    "date": "2026-08-06",
+    "time": "18:00",
+    "url": "https://www.concertgebouw.be/fr/page/25610",
+    "composers": [
+      "Bach",
+      "Ligeti",
+      "Haydn"
+    ],
+    "performers": [
+      "Carlo Siau: presentation Korneel Bernolet (chair), Richard Egarr, Béatrice Martin, Mitzi Meyerson & Jean Rondeau: jury"
+    ],
+    "program": "Final programme: Il Gardellino: ensemble György Ligeti (1923–2006) Passacaglia Ungherese (compulsory piece) And music by Johann Sebastian Bach (1685–1750), Joseph Haydn (1732–1809) & Wilhelm Friedemann Bach (1710–1784)",
+    "price_min": 32,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T08:38:25.691Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-07-25612",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "The BanXhies",
+    "date": "2026-08-07",
+    "time": "11:30",
+    "url": "https://www.concertgebouw.be/fr/page/25612",
+    "composers": [
+      "Biber",
+      "Vivaldi"
+    ],
+    "performers": [
+      "The BanXhies: ensemble"
+    ],
+    "program": "Music by, among others, Antonio Caldara (1670-1736), Antonio Vivaldi (1678-1741), Heinrich Ignaz Franz Biber (1644-1704), Nicola Porpora (1686-1768) & Jacob Froberger (1616-1667)",
+    "price_min": 22,
+    "price_max": 22,
+    "scraped_at": "2026-05-10T08:38:27.431Z"
+  },
+  {
+    "id": "cgbrugge-2026-08-08-25614",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Le Consort",
+    "date": "2026-08-08",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25614",
+    "composers": [
+      "Vivaldi"
+    ],
+    "performers": [
+      "Le Consort: ensemble Théotime Langlois de Swarte: violin & musical direction"
+    ],
+    "program": "Antonio Vivaldi (1678–1741) Le quattro stagioni",
+    "price_min": 32,
+    "price_max": 62,
+    "scraped_at": "2026-05-10T08:38:29.175Z"
   },
   {
     "id": "flagey-2026-09-10-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
@@ -1772,7 +2324,7 @@
     "program": "Star Wars: Return of the Jedi - in concert",
     "price_min": 5,
     "price_max": 61,
-    "scraped_at": "2026-05-10T07:11:10.077Z"
+    "scraped_at": "2026-05-10T08:37:38.775Z"
   },
   {
     "id": "bozar-2026-09-11-belgian-national-orchestra-halls-vinnitskaya",
@@ -1795,7 +2347,7 @@
     "program": "Mahler's Titan",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:30.182Z"
+    "scraped_at": "2026-05-10T08:36:14.417Z"
   },
   {
     "id": "flagey-2026-09-11-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
@@ -1810,7 +2362,7 @@
     "program": "Star Wars: Return of the Jedi - in concert",
     "price_min": 5,
     "price_max": 61,
-    "scraped_at": "2026-05-10T07:11:10.077Z"
+    "scraped_at": "2026-05-10T08:37:38.775Z"
   },
   {
     "id": "monnaie-2026-09-12-3948-silent-stories-a-grain-of-light",
@@ -1828,7 +2380,7 @@
     "program": "Jeanine de Bique",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:12.953Z"
+    "scraped_at": "2026-05-10T08:36:49.395Z"
   },
   {
     "id": "flagey-2026-09-12-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
@@ -1843,7 +2395,7 @@
     "program": "Star Wars: Return of the Jedi - in concert",
     "price_min": 5,
     "price_max": 61,
-    "scraped_at": "2026-05-10T07:11:10.077Z"
+    "scraped_at": "2026-05-10T08:37:38.775Z"
   },
   {
     "id": "monnaie-2026-09-13-3939-beethoven-freedom-fate",
@@ -1863,7 +2415,48 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:13.396Z"
+    "scraped_at": "2026-05-10T08:36:49.963Z"
+  },
+  {
+    "id": "cgbrugge-2026-09-18-25692",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Anima Eterna Brugge & Alexander Melnikov",
+    "date": "2026-09-18",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25692",
+    "composers": [
+      "Dvořák",
+      "Janáček",
+      "Bartók",
+      "Pärt"
+    ],
+    "performers": [
+      "Anima Eterna Brugge: orchestra Alexander Melnikov: piano Olav Grondelaers: presentation"
+    ],
+    "program": "Antonín Dvořák (1841–1904) Excerpts from Cypresses, B152 (arr. Josef Suk) Leoš Janáček (1854–1928) Concertino Vítězslava Kaprálová (1915–1940) Partita for piano and strings, Op. 20 Béla Bartók (1881–1945) Music for Strings, Percussion and Celesta, Sz106",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:38:31.422Z"
+  },
+  {
+    "id": "cgbrugge-2026-09-19-25694",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Utopia Ensemble",
+    "date": "2026-09-19",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25694",
+    "composers": [
+      "Lassus"
+    ],
+    "performers": [
+      "Utopia Ensemble: vocal ensemble Michaela Riener: mezzo-soprano Bart Uvyn: countertenor Adriaan De Koster: tenor Lieven Termont: baritone Guillaume Olry: bass"
+    ],
+    "program": "Orlandus Lassus (1532–1594) Lamentationes Hieremiae Prophetae à 5, LV 815-823",
+    "price_min": 28,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:38:33.355Z"
   },
   {
     "id": "flagey-2026-09-26-14042-verdi-deconstructed-brussels-philharmonic-florestan-bataillie",
@@ -1881,7 +2474,7 @@
     "program": "Brussels Philharmonic, Florestan Bataillie",
     "price_min": 5,
     "price_max": 9,
-    "scraped_at": "2026-05-10T07:11:10.992Z"
+    "scraped_at": "2026-05-10T08:37:39.688Z"
   },
   {
     "id": "flagey-2026-09-26-14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
@@ -1900,7 +2493,7 @@
     "program": "Verdi: Requiem",
     "price_min": 5,
     "price_max": 61,
-    "scraped_at": "2026-05-10T07:11:11.483Z"
+    "scraped_at": "2026-05-10T08:37:40.189Z"
   },
   {
     "id": "flagey-2026-09-27-14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
@@ -1919,7 +2512,7 @@
     "program": "Verdi: Requiem",
     "price_min": 5,
     "price_max": 61,
-    "scraped_at": "2026-05-10T07:11:11.483Z"
+    "scraped_at": "2026-05-10T08:37:40.189Z"
   },
   {
     "id": "monnaie-2026-09-29-3930-romeo-et-juliette",
@@ -1941,7 +2534,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:13.839Z"
+    "scraped_at": "2026-05-10T08:36:50.411Z"
   },
   {
     "id": "monnaie-2026-10-01-3930-romeo-et-juliette",
@@ -1963,7 +2556,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:13.839Z"
+    "scraped_at": "2026-05-10T08:36:50.411Z"
   },
   {
     "id": "bozar-2026-10-02-la-tempete",
@@ -1984,7 +2577,7 @@
     "program": "Monteverdi. Vespro della Beata Vergine",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:30.050Z"
+    "scraped_at": "2026-05-10T08:36:14.134Z"
   },
   {
     "id": "monnaie-2026-10-02-3949-a-vagabond-s-daydream",
@@ -2001,7 +2594,24 @@
     "program": "Simon Keenlyside & Malcolm Martineau",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.975Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-02-25700",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "ONCEIM",
+    "date": "2026-10-02",
+    "time": "20:30",
+    "url": "https://www.concertgebouw.be/fr/page/25700",
+    "composers": [],
+    "performers": [
+      "ONCEIM: ensemble Shin-Young Lee: organ Frédéric Blondy: musical direction"
+    ],
+    "program": "Ryoji Ikeda (1966) Prism [for organ], Op. 21 Espoir [for brass], Op. 22 Spectrum [for organ and brass], opus 24 Panta Rhei [for organ and brass], opus 23 Marina Rosenfeld (1968) 29 Decays (commissioned by Concertgebouw Brugge)",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:38:33.999Z"
   },
   {
     "id": "monnaie-2026-10-03-3930-romeo-et-juliette",
@@ -2023,7 +2633,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
   },
   {
     "id": "flagey-2026-10-03-13943-brussels-philharmonic-alena-baeva-kazushi-ono-shostakovich-prokofiev-6",
@@ -2042,7 +2652,7 @@
     "program": "Shostakovich & Prokofiev 6",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:11.974Z"
+    "scraped_at": "2026-05-10T08:37:40.677Z"
   },
   {
     "id": "monnaie-2026-10-04-3930-romeo-et-juliette",
@@ -2064,7 +2674,26 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-04-25706",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Gürzenich-Orchester Köln",
+    "date": "2026-10-04",
+    "time": "17:00",
+    "url": "https://www.concertgebouw.be/fr/page/25706",
+    "composers": [
+      "R. Strauss"
+    ],
+    "performers": [
+      "Gürzenich-Orchester Köln: orchestra Chor der Oper Köln: chorus Andrés Orozco-Estrada: conductor"
+    ],
+    "program": "Richard Strauss (1864–1949) Der Rosenkavalier, Opus 59",
+    "price_min": 48,
+    "price_max": 85,
+    "scraped_at": "2026-05-10T08:38:35.685Z"
   },
   {
     "id": "bozar-2026-10-04-beatrice-rana-0",
@@ -2085,7 +2714,7 @@
     "program": "Bach, Clementi & Schumann",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:30.153Z"
+    "scraped_at": "2026-05-10T08:36:14.361Z"
   },
   {
     "id": "monnaie-2026-10-08-3930-romeo-et-juliette",
@@ -2107,7 +2736,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
   },
   {
     "id": "bozar-2026-10-08-cleveland-orchestra-welser-most-schultz",
@@ -2130,7 +2759,24 @@
     "program": "Brahms 2 & Strauss. Vier letzte Lieder",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T07:09:30.732Z"
+    "scraped_at": "2026-05-10T08:36:16.147Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-08-25708",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Harvest",
+    "date": "2026-10-08",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25708",
+    "composers": [],
+    "performers": [
+      "Claron McFadden & Marcel Beekman: vocals Miles Walter: piano Annelies Van Parys, Yating Wang.: composition Gaea Schoeters et al.: libretti Cora Burggraaf: concept, artistic direction & direction Bowie Verschuuren: film Hendrik Walther: lighting design Ira Judkovskaja: dramaturgy Floor Houwink ten Cate: consultancy"
+    ],
+    "program": "Spinthout",
+    "price_min": 24,
+    "price_max": 24,
+    "scraped_at": "2026-05-10T08:38:37.373Z"
   },
   {
     "id": "monnaie-2026-10-09-3930-romeo-et-juliette",
@@ -2152,7 +2798,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
   },
   {
     "id": "bozar-2026-10-11-belgian-national-orchestra-petrenko-kobekina",
@@ -2174,7 +2820,7 @@
     "program": "Rachmaninov 2",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:32.126Z"
+    "scraped_at": "2026-05-10T08:36:16.023Z"
   },
   {
     "id": "monnaie-2026-10-11-3930-romeo-et-juliette",
@@ -2196,7 +2842,26 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-11-25712",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Le Concert d'Astrée",
+    "date": "2026-10-11",
+    "time": "16:00",
+    "url": "https://www.concertgebouw.be/fr/page/25712",
+    "composers": [
+      "Haendel"
+    ],
+    "performers": [
+      "Le Concert d'Astrée: chorus & orchestra Emmanuelle Haïm: conductor Ewelina Marciniak: director Karine Deshayes: Alcina Adèle Charvet: Ruggiero Jasmin White: Bradamante Lunga Eric Hallam: Oronte Lilit Davtyan: Morgana Camille Chopin: Oberto Ashley Riches: Melisso"
+    ],
+    "program": "George Frideric Handel (1685–1759) Alcina, HWV34",
+    "price_min": 63,
+    "price_max": 80,
+    "scraped_at": "2026-05-10T08:39:59.374Z"
   },
   {
     "id": "monnaie-2026-10-13-3930-romeo-et-juliette",
@@ -2218,7 +2883,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
   },
   {
     "id": "monnaie-2026-10-14-3930-romeo-et-juliette",
@@ -2240,7 +2905,25 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-15-25721",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Bamberger Symphoniker & Midori Goto",
+    "date": "2026-10-15",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25721",
+    "composers": [
+      "Mendelssohn",
+      "Bruckner"
+    ],
+    "performers": [],
+    "program": "Felix Mendelssohn (1809–1847) Violin Concerto in E minor, Op. 64 Anton Bruckner (1824–1896) Symphony No. 9",
+    "price_min": 41,
+    "price_max": 75,
+    "scraped_at": "2026-05-10T08:38:39.193Z"
   },
   {
     "id": "monnaie-2026-10-16-3930-romeo-et-juliette",
@@ -2262,7 +2945,26 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-16-25722",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Vox Luminis",
+    "date": "2026-10-16",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25722",
+    "composers": [
+      "Schütz"
+    ],
+    "performers": [
+      "Vox Luminis: vocal ensemble Lionel Meunier: bass & artistic director Bart Jacobs: organ"
+    ],
+    "program": "Heinrich Schütz (1585–1672) Der Schwanengesang, Opus 13",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:38:41.365Z"
   },
   {
     "id": "monnaie-2026-10-17-3930-romeo-et-juliette",
@@ -2284,7 +2986,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.287Z"
+    "scraped_at": "2026-05-10T08:36:50.976Z"
   },
   {
     "id": "bozar-2026-10-18-goya-quartet",
@@ -2305,7 +3007,47 @@
     "program": "Ravel, Holst & Janáček",
     "price_min": 28,
     "price_max": 28,
-    "scraped_at": "2026-05-10T07:09:32.028Z"
+    "scraped_at": "2026-05-10T08:36:14.969Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-19-25726",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "BRYGGEN x Refik Anadol",
+    "date": "2026-10-19",
+    "time": "18:00",
+    "url": "https://www.concertgebouw.be/fr/page/25726",
+    "composers": [
+      "Adès",
+      "Pärt"
+    ],
+    "performers": [
+      "BRYGGEN: ensemble Jolente De Maeyer: musical direction Refik Anadol: visual artist"
+    ],
+    "program": "Caroline Shaw (1982) Entr’acte Arvo Pärt (1935) Fratres Thomas Adès (1971) Shanty - Over the Sea Wojciech Kilar (1932–2013) Orawa",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:38:42.587Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-19-25728",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "BRYGGEN x Refik Anadol",
+    "date": "2026-10-19",
+    "time": "21:00",
+    "url": "https://www.concertgebouw.be/fr/page/25728",
+    "composers": [
+      "Adès",
+      "Pärt"
+    ],
+    "performers": [
+      "BRYGGEN: ensemble Jolente De Maeyer: musical direction Refik Anadol: visual artist"
+    ],
+    "program": "Caroline Shaw (1982) Entr’acte Arvo Pärt (1935) Fratres Thomas Adès (1971) Shanty - Over the Sea Wojciech Kilar (1932–2013) Orawa",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:38:43.743Z"
   },
   {
     "id": "bozar-2026-10-20-janine-jansen-denis-kozhukhin-3",
@@ -2326,7 +3068,31 @@
     "program": "Beethoven & Prokofiev",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:34.454Z"
+    "scraped_at": "2026-05-10T08:36:17.963Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-22-25730",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Octavie Dostaler-Lalonde & Artem Belogurov",
+    "date": "2026-10-22",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25730",
+    "composers": [
+      "Fanny Mendelssohn",
+      "Chopin",
+      "Schubert",
+      "Mendelssohn",
+      "Clara Schumann",
+      "Liszt"
+    ],
+    "performers": [
+      "Octavie Dostaler-Lalonde: cello Artem Belogurov: pianoforte"
+    ],
+    "program": "Fanny Mendelssohn (1805–1847) Schwanenlied Song for the Pianoforte, Opus 8 No. 1 Clara Wieck (1819–1896) Nocturne, Op. 6 No. 2 Frédéric Chopin (1810–1849) Nocturne, Op. 62 No. 1 Sonata for cello and piano in G minor, Op. 65 And music by Franz Schubert (1805–1847), Louis Moreau Gottschalk (1829–1869) & Franz Liszt (1811–1886)",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:38:45.746Z"
   },
   {
     "id": "bozar-2026-10-23-belgian-national-orchestra-franck-kamei",
@@ -2348,7 +3114,7 @@
     "program": "Brahms & Tchaikovsky",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:34.481Z"
+    "scraped_at": "2026-05-10T08:36:17.859Z"
   },
   {
     "id": "monnaie-2026-10-24-3940-vienna-a-new-era",
@@ -2368,7 +3134,26 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.739Z"
+    "scraped_at": "2026-05-10T08:36:51.534Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-25-25732",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Antwerp Symphony Orchestra & Daniel Lozakovich",
+    "date": "2026-10-25",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/25732",
+    "composers": [
+      "Brahms"
+    ],
+    "performers": [
+      "Antwerp Symphony Orchestra: orchestra Marc Albrecht: conductor Daniel Lozakovich: violin"
+    ],
+    "program": "Unsuk Chin (1961) Subito con forza Erich Wolfgang Korngold (1897–1957) Violin Concerto in D, Op. 35 Johannes Brahms (1833–1897) Symphony No. 1 in C minor, Op. 68",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:38:46.810Z"
   },
   {
     "id": "monnaie-2026-10-25-3940-vienna-a-new-era",
@@ -2388,7 +3173,7 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:14.739Z"
+    "scraped_at": "2026-05-10T08:36:51.534Z"
   },
   {
     "id": "bozar-2026-10-30-camerata-salzburg-vox-luminis",
@@ -2414,7 +3199,41 @@
     "program": "Mozart. Requiem",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:34.693Z"
+    "scraped_at": "2026-05-10T08:36:17.913Z"
+  },
+  {
+    "id": "cgbrugge-2026-10-31-25752",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Classical for everyone",
+    "date": "2026-10-31",
+    "time": "10:00",
+    "url": "https://www.concertgebouw.be/fr/page/25752",
+    "composers": [],
+    "performers": [],
+    "program": "View the full programme at concertgebouw.be/iedereenklassiek from October 2026",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:38:47.417Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-04-25754",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "SOV Young",
+    "date": "2026-11-04",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25754",
+    "composers": [
+      "Tchaïkovski"
+    ],
+    "performers": [
+      "SOV Young: orchestra Lars Corijn: conductor"
+    ],
+    "program": "Pyotr Ilyich Tchaikovsky (1840–1893) Swan Lake Johan August Halvorsen (1864–1935) Entry March of the Boyars SOV Composers' Academy Ramses Vandewalle (2001) One Minute Symphony (creation) Max Bruch (1838–1920) Kol Nidrei",
+    "price_min": 24,
+    "price_max": 24,
+    "scraped_at": "2026-05-10T08:38:48.957Z"
   },
   {
     "id": "bozar-2026-11-07-pavel-kolesnikov",
@@ -2433,7 +3252,7 @@
     "program": "Chopin. Nocturnes",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:36.279Z"
+    "scraped_at": "2026-05-10T08:36:19.678Z"
   },
   {
     "id": "monnaie-2026-11-08-3931-wozzeck",
@@ -2454,7 +3273,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:15.523Z"
+    "scraped_at": "2026-05-10T08:36:52.123Z"
   },
   {
     "id": "monnaie-2026-11-10-3931-wozzeck",
@@ -2475,7 +3294,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:15.523Z"
+    "scraped_at": "2026-05-10T08:36:52.123Z"
   },
   {
     "id": "monnaie-2026-11-12-3931-wozzeck",
@@ -2496,7 +3315,29 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:15.523Z"
+    "scraped_at": "2026-05-10T08:36:52.123Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-12-25764",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "The Allegory of Desire",
+    "date": "2026-11-12",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25764",
+    "composers": [
+      "Monteverdi",
+      "Schütz",
+      "Verdi",
+      "Bach"
+    ],
+    "performers": [
+      "Zefiro Torna: ensemble Vocalconsort Berlin: vocal ensemble Ghalia Benali: Arabic singing, composition & dance Jurgen De bruyn: musical direction Folkert Uhde: dramaturgy Jörg Bittner: set design & lighting design"
+    ],
+    "program": "Music by, among others, Johann bruin Christoph Bach (1642-1703), John Dunstable (1390-1453), Hildegard von Bingen (1098-1179), Ghalia Benali (1968), Guillaume de Machaut (1300-1377), Claudio Monteverdi (1567-1643) & Heinrich Schütz (1585-1672)",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:38:50.221Z"
   },
   {
     "id": "flagey-2026-11-13-14127-jorge-gimenez-matteo-bevilacqua",
@@ -2517,7 +3358,7 @@
     "program": "Lorsqu’on évoque le violoncelliste espagnol Jorge Giménez et le pianiste italien Matteo Bevilacqua, un plus un fait trois",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:11:13.372Z"
+    "scraped_at": "2026-05-10T08:37:42.053Z"
   },
   {
     "id": "monnaie-2026-11-13-3950-fly-me-to-the-moon",
@@ -2537,7 +3378,24 @@
     "program": "Fly me to the Moon",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:15.977Z"
+    "scraped_at": "2026-05-10T08:36:52.680Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-13-25768",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ictus, Aisha Orazbayeva & Samrattama",
+    "date": "2026-11-13",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25768",
+    "composers": [],
+    "performers": [
+      "Ictus: ensemble Aisha Orazbayeva: vocals, violin & compositions Samrattama: vocals"
+    ],
+    "program": "Traditional Kazakh music and compositions by Aqan Sery (1843-1913), Ykylas Dukenov (1843-1916) & Aisha Orazbayeva (1985)",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:38:50.895Z"
   },
   {
     "id": "bozar-2026-11-14-city-birmingham-symphony-orchestra-chorus",
@@ -2562,7 +3420,7 @@
     "program": "Britten. War Requiem",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T07:09:36.318Z"
+    "scraped_at": "2026-05-10T08:36:19.667Z"
   },
   {
     "id": "monnaie-2026-11-14-3931-wozzeck",
@@ -2583,7 +3441,26 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:15.977Z"
+    "scraped_at": "2026-05-10T08:36:52.680Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-14-25772",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Orchestre National de Lille & Lawrence Power",
+    "date": "2026-11-14",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25772",
+    "composers": [
+      "Rachmaninov"
+    ],
+    "performers": [
+      "Orchestre National de Lille: orchestra Aziz Shokhakimov: conductor Lawrence Power: viola"
+    ],
+    "program": "Sergei Rachmaninoff (1873–1943) Symphony No. 2, Op. 27 Cassandra Miller (1976) I cannot live without trembling",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:38:52.455Z"
   },
   {
     "id": "bozar-2026-11-15-quatuor-diotima-0",
@@ -2605,7 +3482,7 @@
     "program": "Thorvaldsdottir, Saariaho, Tjøgersen & Verrières",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:09:35.254Z"
+    "scraped_at": "2026-05-10T08:36:19.836Z"
   },
   {
     "id": "monnaie-2026-11-17-3931-wozzeck",
@@ -2626,7 +3503,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:15.977Z"
+    "scraped_at": "2026-05-10T08:36:52.680Z"
   },
   {
     "id": "bozar-2026-11-18-apollos-fire-jeanine-de-bique",
@@ -2645,7 +3522,7 @@
     "program": "Echoes Across the Atlantic",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:38.008Z"
+    "scraped_at": "2026-05-10T08:36:21.319Z"
   },
   {
     "id": "monnaie-2026-11-18-3957-echoes-across-the-atlantic",
@@ -2663,7 +3540,7 @@
     "program": "Apollo’s Fire & Jeanine de Bique",
     "price_min": 21,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:10:16.516Z"
+    "scraped_at": "2026-05-10T08:36:53.264Z"
   },
   {
     "id": "monnaie-2026-11-19-3931-wozzeck",
@@ -2684,7 +3561,29 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:16.516Z"
+    "scraped_at": "2026-05-10T08:36:53.264Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-21-25782",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ivo Pogorelich",
+    "date": "2026-11-21",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25782",
+    "composers": [
+      "Beethoven",
+      "Brahms",
+      "Ravel",
+      "Bach"
+    ],
+    "performers": [
+      "Ivo Pogorelich: piano"
+    ],
+    "program": "J. S. Bach (1685–1750) English Suite No. 2 in A minor, BWV 807 Maurice Ravel (1875–1937) Noble and Sentimental Waltzes Johannes Brahms (1833–1897) Three Intermezzi, Op. 117 Ludwig van Beethoven (1770–1827) Piano Sonata No. 32 in C minor, Op. 111",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:38:54.018Z"
   },
   {
     "id": "monnaie-2026-11-22-3931-wozzeck",
@@ -2705,7 +3604,27 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:16.516Z"
+    "scraped_at": "2026-05-10T08:36:53.264Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-26-25784",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "a nocte temporis & Reinoud Van Mechelen",
+    "date": "2026-11-26",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25784",
+    "composers": [
+      "Telemann",
+      "Rameau"
+    ],
+    "performers": [
+      "a nocte temporis: ensemble Reinoud Van Mechelen: artistic director & tenor Gwendoline Blondeel: soprano Sterre Decru: mezzo-soprano Damien Pass: bass"
+    ],
+    "program": "Georg Philipp Telemann (1681–1767) Die Tageszeiten, TWV20:39 Jean-Philippe Rameau (1683–1764) Music from Les Indes Galantes, Dardanus & Castor et Pollux",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:38:55.940Z"
   },
   {
     "id": "monnaie-2026-11-28-3941-hispanic-waves",
@@ -2723,7 +3642,24 @@
     "program": "Diego Matheuz",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:16.958Z"
+    "scraped_at": "2026-05-10T08:36:53.808Z"
+  },
+  {
+    "id": "cgbrugge-2026-11-28-25786",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Philharmonic, Brussels Jazz Orchestra & Vlaams Radiokoor",
+    "date": "2026-11-28",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25786",
+    "composers": [],
+    "performers": [
+      "Brussels Philharmonic: orchestra Brussels Jazz Orchestra: big band Vlaams Radiokoor: chorus Ilan Volkov: conductor"
+    ],
+    "program": "Simon Steen-Andersen (1976) TRIO Oren Boneh (1990) Creation",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:38:56.962Z"
   },
   {
     "id": "flagey-2026-12-08-14032-concert-de-la-presidence-irlandaise-de-l-ue-tresors-classiques-irlandais-par-le-brussels-chamber-ensemble",
@@ -2740,7 +3676,7 @@
     "program": "Trésors classiques irlandais par le Brussels Chamber Ensemble",
     "price_min": 15,
     "price_max": 35,
-    "scraped_at": "2026-05-10T07:11:13.858Z"
+    "scraped_at": "2026-05-10T08:37:42.554Z"
   },
   {
     "id": "bozar-2026-12-10-die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
@@ -2762,7 +3698,7 @@
     "program": "Schubert & Schumann",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:38.152Z"
+    "scraped_at": "2026-05-10T08:36:21.429Z"
   },
   {
     "id": "monnaie-2026-12-11-3945-erwartung",
@@ -2780,7 +3716,7 @@
     "program": "Alpesh Chauhan",
     "price_min": 15,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:10:17.409Z"
+    "scraped_at": "2026-05-10T08:36:54.307Z"
   },
   {
     "id": "monnaie-2026-12-15-3932-la-cenerentola",
@@ -2801,7 +3737,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:17.864Z"
+    "scraped_at": "2026-05-10T08:36:54.799Z"
   },
   {
     "id": "bozar-2026-12-15-grigory-sokolov-14",
@@ -2820,7 +3756,7 @@
     "program": "* * * : programme à déterminer",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:37.954Z"
+    "scraped_at": "2026-05-10T08:36:21.231Z"
   },
   {
     "id": "monnaie-2026-12-16-3932-la-cenerentola",
@@ -2841,7 +3777,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:17.864Z"
+    "scraped_at": "2026-05-10T08:36:54.799Z"
   },
   {
     "id": "monnaie-2026-12-17-3932-la-cenerentola",
@@ -2862,7 +3798,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:17.864Z"
+    "scraped_at": "2026-05-10T08:36:54.799Z"
   },
   {
     "id": "bozar-2026-12-18-cappella-mediterranea-nederlands-kamerkoor",
@@ -2887,7 +3823,7 @@
     "program": "Bach. Weihnachtsoratorium",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:09:38.707Z"
+    "scraped_at": "2026-05-10T08:36:23.344Z"
   },
   {
     "id": "monnaie-2026-12-18-3951-about-last-night",
@@ -2905,7 +3841,7 @@
     "program": "Marina Viotti",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:18.351Z"
+    "scraped_at": "2026-05-10T08:36:55.366Z"
   },
   {
     "id": "monnaie-2026-12-18-3984-christmas-carols",
@@ -2922,7 +3858,27 @@
     "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:18.863Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
+  },
+  {
+    "id": "cgbrugge-2026-12-18-25820",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Le Concert de l’Hostel Dieu & Choeur de Chambre de Namur",
+    "date": "2026-12-18",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25820",
+    "composers": [
+      "Pergolesi",
+      "Bach"
+    ],
+    "performers": [
+      "Le Concert de l'Hostel Dieu: orchestra Chœur de Chambre de Namur: choir Frank-Emmanuel Comte: conductor Emmanuelle De Negri: soprano Logan Lopez Gonzalez: countertenor Jean-Denis Piette: baritone"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Mass in F, BWV233 Pietro Locatelli (1695–1764) Concerto grosso in F minor, Opus 1 No. 8 ‘Per natale’ Giovanni Battista Pergolesi (1710–1736) Roman Mass",
+    "price_min": 34,
+    "price_max": 64,
+    "scraped_at": "2026-05-10T08:38:57.999Z"
   },
   {
     "id": "monnaie-2026-12-19-3984-christmas-carols",
@@ -2939,7 +3895,7 @@
     "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:18.863Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-19-3932-la-cenerentola",
@@ -2960,7 +3916,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.864Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "flagey-2026-12-19-13944-brussels-philharmonic-lukas-vondracek-kazushi-ono-scriabin-poeme-de-l-extase",
@@ -2978,7 +3934,7 @@
     "program": "Scriabin: Poème de l'extase",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:14.341Z"
+    "scraped_at": "2026-05-10T08:37:43.002Z"
   },
   {
     "id": "monnaie-2026-12-20-3932-la-cenerentola",
@@ -2999,7 +3955,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-22-3932-la-cenerentola",
@@ -3020,7 +3976,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-23-3932-la-cenerentola",
@@ -3041,7 +3997,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-27-3932-la-cenerentola",
@@ -3062,7 +4018,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-29-3932-la-cenerentola",
@@ -3083,7 +4039,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-30-3932-la-cenerentola",
@@ -3104,7 +4060,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2026-12-31-3932-la-cenerentola",
@@ -3125,7 +4081,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:18.868Z"
+    "scraped_at": "2026-05-10T08:36:55.918Z"
   },
   {
     "id": "monnaie-2027-01-09-3942-new-year-s-concert",
@@ -3144,7 +4100,30 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:19.327Z"
+    "scraped_at": "2026-05-10T08:36:56.481Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-10-25822",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Philharmonic & Aphrodite Patoulidou",
+    "date": "2027-01-10",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/25822",
+    "composers": [
+      "Donizetti",
+      "Puccini",
+      "Gounod",
+      "J. Strauss",
+      "Bizet"
+    ],
+    "performers": [
+      "Brussels Philharmonic: orchestra Julio García-Vico: conductor Aphrodite Patoulidou: vocals Greet Samyn: presentation"
+    ],
+    "program": "With music by Georges Bizet (1838–1875), Giacomo Puccini (1858–1924), Léo Delibes (1836–1891), Charles Gounod (1818–1893), Gaetano Donizetti (1797–1848) & Johann Strauss Jr. (1825–1899) After the concert, the Concertgebouw Brugge and Dirk De fauw, Mayor of Bruges, invite you to raise a glass to the new year.",
+    "price_min": 57,
+    "price_max": 89,
+    "scraped_at": "2026-05-10T08:38:58.660Z"
   },
   {
     "id": "bozar-2027-01-10-freiburger-barockorchester-jeanine-de-bique",
@@ -3165,7 +4144,7 @@
     "program": "Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:09:40.087Z"
+    "scraped_at": "2026-05-10T08:36:23.534Z"
   },
   {
     "id": "monnaie-2027-01-10-3958-mozart",
@@ -3185,7 +4164,27 @@
     "program": "Freiburger Barockorchester & Jeanine de Bique",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:10:20.070Z"
+    "scraped_at": "2026-05-10T08:36:57.050Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-13-25824",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "London Philharmonic Orchestra & Benjamin Grosvenor",
+    "date": "2027-01-13",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25824",
+    "composers": [
+      "Sibelius",
+      "Grieg"
+    ],
+    "performers": [
+      "London Philharmonic Orchestra: orchestra Anja Bihlmaier: conductor Benjamin Grosvenor: piano"
+    ],
+    "program": "Andrea Tarrodi (1981) Birds of Paradise II Edvard Grieg (1843–1907) Piano Concerto No. 1 in A minor, Op. 16 Jean Sibelius (1865–1957) Symphony No. 1, Op. 39",
+    "price_min": 41,
+    "price_max": 75,
+    "scraped_at": "2026-05-10T08:39:00.157Z"
   },
   {
     "id": "bozar-2027-01-14-london-philharmonic-orchestra-bihlmaier",
@@ -3208,7 +4207,7 @@
     "program": "Grieg & Sibelius",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T07:09:40.002Z"
+    "scraped_at": "2026-05-10T08:36:23.367Z"
   },
   {
     "id": "bozar-2027-01-17-cuarteto-casals-0",
@@ -3229,7 +4228,41 @@
     "program": "Haydn & Schubert",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T07:09:40.649Z"
+    "scraped_at": "2026-05-10T08:36:24.062Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-18-25834",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Performance",
+    "date": "2027-01-18",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25834",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Masterclass participants: voice Members of Collegium Vocale Gent: ensemble"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Selected arias from various cantatas",
+    "price_min": 12,
+    "price_max": 12,
+    "scraped_at": "2026-05-10T08:39:00.832Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-21-25835",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Open rehearsals",
+    "date": "2027-01-21",
+    "time": "16:00",
+    "url": "https://www.concertgebouw.be/fr/page/25835",
+    "composers": [],
+    "performers": [],
+    "program": "Collegium Vocale Gent",
+    "price_min": 12,
+    "price_max": 12,
+    "scraped_at": "2026-05-10T08:39:01.448Z"
   },
   {
     "id": "bozar-2027-01-21-les-talens-lyriques-christophe-rousset",
@@ -3253,7 +4286,22 @@
     "program": "Pergolesi. Stabat Mater",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:41.814Z"
+    "scraped_at": "2026-05-10T08:36:25.789Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-22-25838",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Open rehearsals",
+    "date": "2027-01-22",
+    "time": "10:30",
+    "url": "https://www.concertgebouw.be/fr/page/25838",
+    "composers": [],
+    "performers": [],
+    "program": "Collegium Vocale Gent",
+    "price_min": 12,
+    "price_max": 12,
+    "scraped_at": "2026-05-10T08:39:02.037Z"
   },
   {
     "id": "bozar-2027-01-22-lithuanian-national-symphony-orchestra-grigorian-montvidas",
@@ -3276,7 +4324,7 @@
     "program": "Wagner, Čiurlionis, Puccini & Ponchielli",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:41.750Z"
+    "scraped_at": "2026-05-10T08:36:25.801Z"
   },
   {
     "id": "monnaie-2027-01-22-3933-lucidity",
@@ -3296,7 +4344,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:20.704Z"
+    "scraped_at": "2026-05-10T08:36:57.627Z"
   },
   {
     "id": "monnaie-2027-01-22-3959-asmik-grigorian-edgaras-montvidas",
@@ -3315,7 +4363,85 @@
     "program": "Lithuanian National Symphony Orchestra",
     "price_min": 21,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:10:21.159Z"
+    "scraped_at": "2026-05-10T08:36:58.198Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-22-25839",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Collegium Vocale Gent",
+    "date": "2027-01-22",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25839",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Collegium Vocale Gent: choir & orchestra Philippe Herreweghe: artistic direction Marie Luise Werneburg: soprano Alex Potter: countertenor Guy Cutting: tenor Johannes Kammler: bass"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Ach wie flüchtig, ach wie nichtig, BWV26 Wer weiss, wie nahe mir mein Ende, BWV27 Erfreue dich, erlöste Schar, BWV30",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:39:03.278Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25848",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Bach from the belfry",
+    "date": "2027-01-23",
+    "time": "11:00",
+    "url": "https://www.concertgebouw.be/fr/page/25848",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Wim Berteloot: carillon"
+    ],
+    "program": "Works by Johann Sebastian Bach (1685–1750)",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:03.991Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25849",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "OVNI Baroque",
+    "date": "2027-01-23",
+    "time": "11:30",
+    "url": "https://www.concertgebouw.be/fr/page/25849",
+    "composers": [
+      "Bach",
+      "Buxtehude"
+    ],
+    "performers": [
+      "OVNI Baroque: ensemble Emmanuelle Dauvin: violin & pedal organ Margherita Pupulin: violin Maylis Moreau: viola da gamba"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Fantasia and Fugue in G minor, BWV542 Trio Sonata No. 5 in C, BWV529 Fantasia in C minor, BWV537 Toccata in D minor, BWV538 Dietrich Buxtehude (1637–1707) Trio Sonata in B flat, BuxWV273",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:05.618Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25843",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ensemble Diderot",
+    "date": "2027-01-23",
+    "time": "14:00",
+    "url": "https://www.concertgebouw.be/fr/page/25843",
+    "composers": [
+      "Bach",
+      "Vivaldi"
+    ],
+    "performers": [
+      "Ensemble Diderot: ensemble Johannes Pramsohler: solo violin & artistic director Philipp Bohnen: solo violin Ivan Podyomov: oboe Philippe Grisvard: harpsichord"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Concerto in G minor for oboe, BWV1056r Concerto in D minor for 2 violins, BWV 1043 Concerto in A for violin, BWV 1041 Concerto in C minor for oboe and violin, BWV 1060r Antonio Vivaldi (1678–1741) Concerto in A for 2 violins, Opus 3 No. 8",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:39:06.635Z"
   },
   {
     "id": "monnaie-2027-01-23-3933-lucidity",
@@ -3335,7 +4461,104 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:21.160Z"
+    "scraped_at": "2026-05-10T08:36:58.198Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25845",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Jan Michiels & Inge Spinette",
+    "date": "2027-01-23",
+    "time": "16:00",
+    "url": "https://www.concertgebouw.be/fr/page/25845",
+    "composers": [
+      "Bach",
+      "Brahms"
+    ],
+    "performers": [
+      "Jan Michiels & Inge Spinette: piano"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750), arr. György Kurtág (1926) Nun komm’ der Heiden Heiland, BWV599 Liebster Jesu, wir sind hier, BWV633 Aus tiefer Not schrei ich zu Dir, BWV687 Gottes Zeit ist die allerbeste Zeit, BWV106 And music by J.S. Bach in arrangements by Johannes Brahms (1833–1897) & Helmut Lachenmann (1935)",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:07.745Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25851",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "OVNI Baroque",
+    "date": "2027-01-23",
+    "time": "17:45",
+    "url": "https://www.concertgebouw.be/fr/page/25851",
+    "composers": [
+      "Bach",
+      "Buxtehude"
+    ],
+    "performers": [
+      "OVNI Baroque: ensemble Emmanuelle Dauvin: violin & pedal organ Margherita Pupulin: violin Maylis Moreau: viola da gamba"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Fantasia and Fugue in G minor, BWV542 Trio Sonata No. 5 in C, BWV529 Fantasia in C minor, BWV537 Toccata in D minor, BWV538 Dietrich Buxtehude (1637–1707) Trio Sonata in B flat, BuxWV273",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:09.431Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-23-25841",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ricercar Consort & Philippe Pierlot",
+    "date": "2027-01-23",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25841",
+    "composers": [
+      "Buxtehude"
+    ],
+    "performers": [
+      "Ricercar Consort: vocal & instrumental ensemble Philippe Pierlot: viola da gamba & artistic direction Céline Scheen, Yetzabel Arias, Daniel Folqué, Hugo Hymas & Mathias Vieweg: vocals"
+    ],
+    "program": "Dietrich Buxtehude (1637–1707) Jesu meines Lebens Leben, BuxWV62 Ich bin die Auferstehung, BuxWV44 Herzlich lieb hab' ich Dich, O Herr, BuxWV41 Herr, ich lasse dich nicht, BuxWV36 Fürwahr, er trug unsere Krankheit, BuxWV31 Befiehl dem Engel, BuxWV10",
+    "price_min": 27,
+    "price_max": 40,
+    "scraped_at": "2026-05-10T08:39:10.786Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-24-25861",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Bach from the belfry",
+    "date": "2027-01-24",
+    "time": "11:00",
+    "url": "https://www.concertgebouw.be/fr/page/25861",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Wim Berteloot: carillon"
+    ],
+    "program": "Works by Johann Sebastian Bach (1685–1750)",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:11.432Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-24-25857",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Ensemble Diderot",
+    "date": "2027-01-24",
+    "time": "14:00",
+    "url": "https://www.concertgebouw.be/fr/page/25857",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Ensemble Diderot: ensemble Johannes Pramsohler: violin & artistic director Anne Parisot: traverso Roldán Bernabé: violin & viola Gulrim Choï: cello Philippe Grisvard: harpsichord"
+    ],
+    "program": "Jean-Marie Leclair (1697–1764) Trio Sonata in D minor, Opus 4 No. 1 Johann Sebastian Bach (1685–1750) Das Musikalisches Opfer, BWV 1079",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:12.508Z"
   },
   {
     "id": "bozar-2027-01-24-belgian-national-orchestra-hermus-meeuwsen",
@@ -3357,7 +4580,7 @@
     "program": "Between Fire and Faith",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:42.368Z"
+    "scraped_at": "2026-05-10T08:36:27.811Z"
   },
   {
     "id": "monnaie-2027-01-24-3933-lucidity",
@@ -3377,7 +4600,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:21.160Z"
+    "scraped_at": "2026-05-10T08:36:58.198Z"
   },
   {
     "id": "monnaie-2027-01-24-3934-ariadne-auf-naxos",
@@ -3397,7 +4620,45 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:21.864Z"
+    "scraped_at": "2026-05-10T08:36:58.772Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-24-25855",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "a nocte temporis, Reinoud Van Mechelen & Anna Besson",
+    "date": "2027-01-24",
+    "time": "16:00",
+    "url": "https://www.concertgebouw.be/fr/page/25855",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "a nocte temporis: ensemble Reinoud Van Mechelen: tenor & musical director Anna Besson: traverso"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Ich armer Mensch, ich Sündenknecht, BWV55 Orchestral Suite No. 2 in B minor, BWV1067 Adagio from the St John Passion, BWV249 Ich habe genug, BWV82",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:39:14.522Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-24-25853",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Collegium Vocale Gent",
+    "date": "2027-01-24",
+    "time": "19:00",
+    "url": "https://www.concertgebouw.be/fr/page/25853",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Collegium Vocale Gent: choir & orchestra Philippe Herreweghe: artistic director Marie Luise Werneburg & Hana Blaziková: soprano Alex Potter: countertenor Guy Cutting: tenor Johannes Kammler: bass"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) Mass in B minor, BWV 232 ‘Hohe Messe‘",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:39:15.629Z"
   },
   {
     "id": "monnaie-2027-01-25-3952-behind-the-lines",
@@ -3415,7 +4676,7 @@
     "program": "Anna Prohaska & Eric Schneider",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:22.503Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "monnaie-2027-01-26-3933-lucidity",
@@ -3435,7 +4696,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.503Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "monnaie-2027-01-26-3934-ariadne-auf-naxos",
@@ -3455,7 +4716,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.503Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "monnaie-2027-01-26-3933-lucidity",
@@ -3475,7 +4736,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.503Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "monnaie-2027-01-28-3934-ariadne-auf-naxos",
@@ -3495,7 +4756,24 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.503Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-29-25862",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Jazz Orchestra",
+    "date": "2027-01-29",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25862",
+    "composers": [],
+    "performers": [
+      "Brussels Jazz Orchestra: big band Frank Vaganée: artistic director Bert Joris: compositions, arrangements & trumpet"
+    ],
+    "program": "The Music of Bert Joris / The Next Chapter",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:39:16.279Z"
   },
   {
     "id": "monnaie-2027-01-31-3934-ariadne-auf-naxos",
@@ -3515,7 +4793,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.504Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "bozar-2027-01-31-collegium-vocale-gent-herreweghe",
@@ -3540,7 +4818,26 @@
     "program": "Bach. H-Moll Messe",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:09:44.686Z"
+    "scraped_at": "2026-05-10T08:36:27.883Z"
+  },
+  {
+    "id": "cgbrugge-2027-01-31-25864",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Vox Luminis",
+    "date": "2027-01-31",
+    "time": "19:00",
+    "url": "https://www.concertgebouw.be/fr/page/25864",
+    "composers": [
+      "Purcell"
+    ],
+    "performers": [
+      "Vox Luminis: vocal & instrumental ensemble Lionel Meunier: bass & artistic director Carine Tinney: Dido Jacob Lawrence: Aeneas"
+    ],
+    "program": "Henry Purcell (1659–1695) Dido and Aeneas, Z626",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:39:17.884Z"
   },
   {
     "id": "monnaie-2027-02-02-3934-ariadne-auf-naxos",
@@ -3560,7 +4857,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:22.504Z"
+    "scraped_at": "2026-05-10T08:36:59.336Z"
   },
   {
     "id": "monnaie-2027-02-04-3953-pleasantly-haunted",
@@ -3578,7 +4875,7 @@
     "program": "Emily D'Angelo",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:23.136Z"
+    "scraped_at": "2026-05-10T08:36:59.887Z"
   },
   {
     "id": "monnaie-2027-02-05-3934-ariadne-auf-naxos",
@@ -3598,7 +4895,28 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:23.139Z"
+    "scraped_at": "2026-05-10T08:36:59.887Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-05-25868",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brodsky Quartet",
+    "date": "2027-02-05",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25868",
+    "composers": [
+      "Beethoven",
+      "Chostakovitch",
+      "Britten"
+    ],
+    "performers": [
+      "Brodsky Quartet: string quartet"
+    ],
+    "program": "Ludwig van Beethoven (1770–1827) String Quartet No. 16 in F, Op. 135 Benjamin Britten (1913–1976) String Quartet No. 3 in G, Op. 94 Dmitri Shostakovich (1906–1975) String Quartet No. 15 in E flat minor, Op. 144",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:39:19.010Z"
   },
   {
     "id": "flagey-2027-02-06-14071-mahler-deconstructed-brussels-philharmonic-florestan-bataillie",
@@ -3616,7 +4934,7 @@
     "program": "Brussels Philharmonic, Florestan Bataillie",
     "price_min": 5,
     "price_max": 9,
-    "scraped_at": "2026-05-10T07:11:14.836Z"
+    "scraped_at": "2026-05-10T08:37:43.452Z"
   },
   {
     "id": "flagey-2027-02-06-13945-brussels-philharmonic-kazushi-ono-mahler-9",
@@ -3634,7 +4952,7 @@
     "program": "Mahler 9",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:15.863Z"
+    "scraped_at": "2026-05-10T08:37:43.904Z"
   },
   {
     "id": "monnaie-2027-02-07-3934-ariadne-auf-naxos",
@@ -3654,7 +4972,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:23.139Z"
+    "scraped_at": "2026-05-10T08:36:59.887Z"
   },
   {
     "id": "bozar-2027-02-09-brodsky-quartet",
@@ -3673,7 +4991,7 @@
     "program": "Beethoven",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T07:09:42.346Z"
+    "scraped_at": "2026-05-10T08:36:27.871Z"
   },
   {
     "id": "monnaie-2027-02-09-3934-ariadne-auf-naxos",
@@ -3693,7 +5011,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:23.139Z"
+    "scraped_at": "2026-05-10T08:36:59.887Z"
   },
   {
     "id": "monnaie-2027-02-10-3954-our-people",
@@ -3711,7 +5029,7 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:24.553Z"
+    "scraped_at": "2026-05-10T08:37:00.481Z"
   },
   {
     "id": "bozar-2027-02-12-orchestre-national-de-lyon-szeps-znaider",
@@ -3733,7 +5051,7 @@
     "program": "Shostakovich & Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:09:47.160Z"
+    "scraped_at": "2026-05-10T08:36:29.866Z"
   },
   {
     "id": "monnaie-2027-02-12-3954-our-people",
@@ -3751,7 +5069,7 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:24.554Z"
+    "scraped_at": "2026-05-10T08:37:00.481Z"
   },
   {
     "id": "monnaie-2027-02-13-3954-our-people",
@@ -3769,7 +5087,80 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:24.554Z"
+    "scraped_at": "2026-05-10T08:37:00.481Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-13-25870",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Cappella Amsterdam & Daniel Reuss",
+    "date": "2027-02-13",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25870",
+    "composers": [
+      "Schnittke",
+      "Lassus"
+    ],
+    "performers": [
+      "Cappella Amsterdam: choir Daniel Reuss: conductor"
+    ],
+    "program": "Orlando Lassus (1532–1594) Selection from Sextus Psalmus Poenitentialis (Penitential Psalms) Alfred Schnittke (1934–1998) Stikhi Pokayanniye (Penitential Psalms)",
+    "price_min": 27,
+    "price_max": 40,
+    "scraped_at": "2026-05-10T08:39:21.636Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-20-25873",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "The magic of the seasons",
+    "date": "2027-02-20",
+    "time": "17:00",
+    "url": "https://www.concertgebouw.be/fr/page/25873",
+    "composers": [
+      "Vivaldi"
+    ],
+    "performers": [
+      "Les Talens Lyriques: orchestra Christophe Rousset: artistic direction Grégoire Pont: illustrator & live animation"
+    ],
+    "program": "Jean-Féry Rebel (1666–1747) Les élémens Antonio Vivaldi (1678–1741) The Four Seasons",
+    "price_min": 17,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T08:39:23.120Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-20-25875",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Concertgebouw 25th Anniversary Concert",
+    "date": "2027-02-20",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25875",
+    "composers": [
+      "Vivaldi"
+    ],
+    "performers": [
+      "Jimmy Kets: creation Jimmy Kets: screenplay, direction & editing David Martijn: soundtrack — Les Talens Lyriques: orchestra Christophe Rousset: artistic direction"
+    ],
+    "program": "Antonio Vivaldi (1678–1741) The Four Seasons",
+    "price_min": 29,
+    "price_max": 55,
+    "scraped_at": "2026-05-10T08:39:24.090Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-20-25922",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Late night music",
+    "date": "2027-02-20",
+    "time": "22:15",
+    "url": "https://www.concertgebouw.be/fr/page/25922",
+    "composers": [],
+    "performers": [],
+    "program": "The line-up will be announced later.",
+    "price_min": 24,
+    "price_max": 50,
+    "scraped_at": "2026-05-10T08:39:24.702Z"
   },
   {
     "id": "monnaie-2027-02-21-3943-beethoven-tchaikovsky-glory-destiny",
@@ -3790,7 +5181,24 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:25.230Z"
+    "scraped_at": "2026-05-10T08:37:01.177Z"
+  },
+  {
+    "id": "cgbrugge-2027-02-22-25876",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Concertgebouw by night",
+    "date": "2027-02-22",
+    "time": "01:00",
+    "url": "https://www.concertgebouw.be/fr/page/25876",
+    "composers": [],
+    "performers": [
+      "Matthew Barley: cello"
+    ],
+    "program": "The (film) programme will be announced later",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:25.368Z"
   },
   {
     "id": "bozar-2027-02-23-angela-hewitt",
@@ -3811,7 +5219,7 @@
     "program": "Scarlatti, Bach & Chopin",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:48.170Z"
+    "scraped_at": "2026-05-10T08:36:30.689Z"
   },
   {
     "id": "bozar-2027-02-26-belgian-national-orchestra-schonwandt-kolesnikov",
@@ -3834,7 +5242,7 @@
     "program": "Symphonie fantastique",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:47.226Z"
+    "scraped_at": "2026-05-10T08:36:30.035Z"
   },
   {
     "id": "bozar-2027-02-28-pygmalion-raphael-pichon",
@@ -3852,7 +5260,7 @@
     "program": "Vertigo – Imaginary Vespers",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T07:09:49.709Z"
+    "scraped_at": "2026-05-10T08:36:32.431Z"
   },
   {
     "id": "bozar-2027-03-02-schumann-quartett",
@@ -3873,7 +5281,26 @@
     "program": "Beethoven, Brahms & Shaw",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T07:09:49.889Z"
+    "scraped_at": "2026-05-10T08:36:33.030Z"
+  },
+  {
+    "id": "cgbrugge-2027-03-05-25384",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Philharmonic, Vlaams Radiokoor & Evelyn Glennie",
+    "date": "2027-03-05",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25384",
+    "composers": [
+      "Reich"
+    ],
+    "performers": [
+      "Brussels Philharmonic: orchestra Vlaams Radiokoor: chorus Giancarlo Guerrero: conductor Dame Evelyn Glennie: percussion"
+    ],
+    "program": "Steve Reich (1936) The Desert Music Jennifer Higdon (1962) Percussion Concerto",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:39:26.890Z"
   },
   {
     "id": "bozar-2027-03-07-belgian-national-orchestra-hermus-gavrylyuk",
@@ -3895,7 +5322,7 @@
     "program": "Youth & Destiny",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:49.870Z"
+    "scraped_at": "2026-05-10T08:36:33.017Z"
   },
   {
     "id": "monnaie-2027-03-14-427-cavalleria-rusticana-pagliacci",
@@ -3914,7 +5341,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:25.720Z"
+    "scraped_at": "2026-05-10T08:37:01.801Z"
   },
   {
     "id": "monnaie-2027-03-16-427-cavalleria-rusticana-pagliacci",
@@ -3933,7 +5360,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:25.720Z"
+    "scraped_at": "2026-05-10T08:37:01.801Z"
   },
   {
     "id": "monnaie-2027-03-18-427-cavalleria-rusticana-pagliacci",
@@ -3952,7 +5379,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:25.720Z"
+    "scraped_at": "2026-05-10T08:37:01.801Z"
   },
   {
     "id": "monnaie-2027-03-19-427-cavalleria-rusticana-pagliacci",
@@ -3971,7 +5398,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:25.720Z"
+    "scraped_at": "2026-05-10T08:37:01.801Z"
   },
   {
     "id": "bozar-2027-03-19-helene-grimaud",
@@ -3991,7 +5418,28 @@
     "program": "The last testament",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:52.038Z"
+    "scraped_at": "2026-05-10T08:36:34.958Z"
+  },
+  {
+    "id": "cgbrugge-2027-03-20-25386",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Rotterdams Philharmonisch Orkest & Jean-Yves Thibaudet",
+    "date": "2027-03-20",
+    "time": "19:30",
+    "url": "https://www.concertgebouw.be/fr/page/25386",
+    "composers": [
+      "Stravinsky",
+      "Gershwin",
+      "Sibelius"
+    ],
+    "performers": [
+      "Rotterdams Philharmonisch Orkest: orchestra Santtu-Matias Rouvali: conductor Jean-Yves Thibaudet: piano"
+    ],
+    "program": "Jean Sibelius (1865–1957) En Saga, Opus 9 George Gershwin (1898–1937) Piano Concerto in F Igor Stravinsky (1882–1971) Le sacre du printemps",
+    "price_min": 41,
+    "price_max": 75,
+    "scraped_at": "2026-05-10T08:39:28.136Z"
   },
   {
     "id": "bozar-2027-03-20-london-symphony-orchestra-pappano-vengerov",
@@ -4013,7 +5461,7 @@
     "program": "Beethoven & Chostakovitch 8",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T07:09:51.906Z"
+    "scraped_at": "2026-05-10T08:36:34.925Z"
   },
   {
     "id": "monnaie-2027-03-20-3955-loved-lost",
@@ -4031,7 +5479,7 @@
     "program": "Joshua Hopkins & Niamh O'Sullivan",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "monnaie-2027-03-21-427-cavalleria-rusticana-pagliacci",
@@ -4050,7 +5498,26 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
+  },
+  {
+    "id": "cgbrugge-2027-03-21-25387",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Il Gardellino & Olga Pashchenko",
+    "date": "2027-03-21",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/25387",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [
+      "Il Gardellino: orchestra Olga Pashchenko: pianoforte"
+    ],
+    "program": "Wolfgang Amadeus Mozart (1756–1791) Fugue VIII, from KV404a Piano Concerto No. 21 in C, KV467 Adagio and Fugue in C minor, KV546 Piano Concerto No. 24 in D minor, KV491",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:39:29.255Z"
   },
   {
     "id": "monnaie-2027-03-23-427-cavalleria-rusticana-pagliacci",
@@ -4069,7 +5536,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "monnaie-2027-03-24-427-cavalleria-rusticana-pagliacci",
@@ -4088,7 +5555,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "monnaie-2027-03-26-427-cavalleria-rusticana-pagliacci",
@@ -4107,7 +5574,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "monnaie-2027-03-27-427-cavalleria-rusticana-pagliacci",
@@ -4126,7 +5593,26 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
+  },
+  {
+    "id": "cgbrugge-2027-03-27-25389",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Collegium Vocale Gent",
+    "date": "2027-03-27",
+    "time": "19:00",
+    "url": "https://www.concertgebouw.be/fr/page/25389",
+    "composers": [
+      "Bach"
+    ],
+    "performers": [
+      "Collegium Vocale Gent: choir & orchestra Philippe Herreweghe: artistic direction Mauro Peter: Evangelist Florian Boesch: Christ Marie Luise Werneburg & Johanna Ihrig: soprano Alex Potter & Benno Schachtner: alto Samuel Boden & Hugo Bradly: tenor Samuel Hasselhorn & Jonas Müller: bass"
+    ],
+    "program": "Johann Sebastian Bach (1685–1750) St Matthew Passion, BWV244",
+    "price_min": 34,
+    "price_max": 64,
+    "scraped_at": "2026-05-10T08:39:30.543Z"
   },
   {
     "id": "monnaie-2027-03-30-427-cavalleria-rusticana-pagliacci",
@@ -4145,7 +5631,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "monnaie-2027-03-31-427-cavalleria-rusticana-pagliacci",
@@ -4164,7 +5650,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:26.179Z"
+    "scraped_at": "2026-05-10T08:37:02.418Z"
   },
   {
     "id": "bozar-2027-04-04-budapest-festival-orchestra-fischer",
@@ -4189,7 +5675,7 @@
     "program": "Beethoven 9",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T07:09:52.093Z"
+    "scraped_at": "2026-05-10T08:36:34.932Z"
   },
   {
     "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
@@ -4211,7 +5697,7 @@
     "program": "Beethoven Symphony 9",
     "price_min": 26,
     "price_max": 100,
-    "scraped_at": "2026-05-10T07:10:26.655Z"
+    "scraped_at": "2026-05-10T08:37:03.226Z"
   },
   {
     "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
@@ -4233,7 +5719,7 @@
     "program": "Beethoven Symphony 9",
     "price_min": 26,
     "price_max": 100,
-    "scraped_at": "2026-05-10T07:10:26.656Z"
+    "scraped_at": "2026-05-10T08:37:03.232Z"
   },
   {
     "id": "monnaie-2027-04-14-3961-winterreise",
@@ -4250,7 +5736,27 @@
     "program": "Matthias Goerne & Markus Hinterhäuser",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:10:28.430Z"
+    "scraped_at": "2026-05-10T08:37:03.810Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-14-25411",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Beethoven unfiltered",
+    "date": "2027-04-14",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25411",
+    "composers": [
+      "Beethoven",
+      "Schubert"
+    ],
+    "performers": [
+      "Chris Maene, Tom Beghin & Bruno Forment: panel discussion Sofie Taes: moderator Tom Beghin & Luca Montebugnoli: pianoforte"
+    ],
+    "program": "Franz Schubert (1797–1828) Variations on a French Song in E Minor, D624 Ludwig van Beethoven (1770–1827) Introduction & Fugue in B flat, Op. 106 Selection from the Diabelli Variations Cavatina: Adagio molto espressivo, from String Quartet in E flat major, Op. 130 Grande Fugue in B flat, Op. 134",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:32.705Z"
   },
   {
     "id": "monnaie-2027-04-20-3935-m-butterfly",
@@ -4271,7 +5777,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:29.444Z"
+    "scraped_at": "2026-05-10T08:37:04.388Z"
   },
   {
     "id": "bozar-2027-04-20-sheku-kanneh-mason-benjamin-grosvenor",
@@ -4293,7 +5799,41 @@
     "program": "Beethoven, Boulanger & Rachmaninov",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T07:09:54.338Z"
+    "scraped_at": "2026-05-10T08:36:37.577Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-20-25415",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Serieus Curieus #8: music & dementia",
+    "date": "2027-04-20",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25415",
+    "composers": [],
+    "performers": [
+      "Elke Poppe: conductor of the Bruges inclusive choir Cantare Continua Mathieu Vandenbulcke: geriatric psychiatrist Koen Fillet: moderator"
+    ],
+    "program": "Talks inspired by KU Leuven",
+    "price_min": 12,
+    "price_max": 12,
+    "scraped_at": "2026-05-10T08:39:33.796Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-21-25416",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "An encore in words",
+    "date": "2027-04-21",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25416",
+    "composers": [],
+    "performers": [
+      "Marco Beasley: vocals Franco Pavan: lute Katherina Lindekens: conversation"
+    ],
+    "program": "Music by, amongst others, Marco Cara (c.1465–c.1525), Ogniben Veneziano (16th century), Vincenzo Capirola (1474–after 1548) & Bartolomeo Tromboncino (c.1470–after 1534) from a manuscript belonging to the Albani family",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:34.758Z"
   },
   {
     "id": "bozar-2027-04-22-brock-rene-jacobs",
@@ -4321,7 +5861,7 @@
     "program": "Salieri. Falstaff",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:09:54.072Z"
+    "scraped_at": "2026-05-10T08:36:37.475Z"
   },
   {
     "id": "monnaie-2027-04-22-3935-m-butterfly",
@@ -4342,7 +5882,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:29.444Z"
+    "scraped_at": "2026-05-10T08:37:04.388Z"
   },
   {
     "id": "monnaie-2027-04-22-3962-falstaff",
@@ -4361,7 +5901,27 @@
     "program": "René Jacobs & B’Rock Orchestra",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T07:10:29.989Z"
+    "scraped_at": "2026-05-10T08:37:04.944Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-23-25417",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Youth Orchestra Flanders & Vlaams Radiokoor",
+    "date": "2027-04-23",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25417",
+    "composers": [
+      "Stravinsky",
+      "Ravel"
+    ],
+    "performers": [
+      "Youth Orchestra Flanders: orchestra Vlaams Radiokoor: chorus Hannah Eisendle: conductor International Opera Academy: vocals"
+    ],
+    "program": "Louis Andriessen (1939–2021) May Un beau baiser Maurice Ravel (1875–1937) La valse Igor Stravinsky (1882–1971) Mavra",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:36.225Z"
   },
   {
     "id": "monnaie-2027-04-25-3935-m-butterfly",
@@ -4382,7 +5942,24 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:29.989Z"
+    "scraped_at": "2026-05-10T08:37:04.944Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-25-25425",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Mark Fell, Kris Defoort & Pierre Slinckx",
+    "date": "2027-04-25",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/25425",
+    "composers": [],
+    "performers": [
+      "Mark Fell: electronics & concept Kris Defoort: piano Pieter Elias: accompaniment NN: piano Pierre Slinckx: electronics"
+    ],
+    "program": "Pierre Slinckx (1988) Premiere (commissioned by Concertgebouw Brugge)",
+    "price_min": 21,
+    "price_max": 21,
+    "scraped_at": "2026-05-10T08:39:36.911Z"
   },
   {
     "id": "monnaie-2027-04-27-3935-m-butterfly",
@@ -4403,7 +5980,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:29.989Z"
+    "scraped_at": "2026-05-10T08:37:04.944Z"
   },
   {
     "id": "monnaie-2027-04-29-3956-thousands-of-miles",
@@ -4421,7 +5998,27 @@
     "program": "Kate Lindsey & Baptiste Trotignon",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T07:10:30.532Z"
+    "scraped_at": "2026-05-10T08:37:05.508Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-29-25427",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Anima Eterna Brugge & Midori Seiler",
+    "date": "2027-04-29",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25427",
+    "composers": [
+      "Mozart",
+      "Beethoven"
+    ],
+    "performers": [
+      "Anima Eterna Brugge: orchestra Midori Seiler: violin & artistic director Olav Grondelaers: presentation"
+    ],
+    "program": "Maddalena Sirmen (1745–1818) Duetto, Opus 5 No. 1 in E flat Paul Wranitzky (1756–1808) Andante and Finale from Symphony in C, Opus 19 ‘The Emperor’ Wolfgang Amadeus Mozart (1756–1791) Overture to La Clemenza di Tito, K621 Regina Strinasacchi (1761–1839) Violin Concerto in B flat Ludwig van Beethoven (1770–1827) Symphony No. 5 in C minor, Op. 67",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:39:38.439Z"
   },
   {
     "id": "monnaie-2027-04-30-3935-m-butterfly",
@@ -4442,7 +6039,24 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:30.533Z"
+    "scraped_at": "2026-05-10T08:37:05.508Z"
+  },
+  {
+    "id": "cgbrugge-2027-04-30-25429",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "SPECTRA & Ensemble Multilatérale",
+    "date": "2027-04-30",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25429",
+    "composers": [],
+    "performers": [
+      "SPECTRA & Ensemble Multilatérale: ensemble Filip Rathé: conductor"
+    ],
+    "program": "Georg Friedrich Haas (1953) in vain",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:39.233Z"
   },
   {
     "id": "flagey-2027-04-30-13946-brussels-philharmonic-kazushi-ono-britten-spring-symphony",
@@ -4462,7 +6076,7 @@
     "program": "Britten: Spring Symphony",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:11:17.495Z"
+    "scraped_at": "2026-05-10T08:37:44.366Z"
   },
   {
     "id": "monnaie-2027-05-02-3935-m-butterfly",
@@ -4483,7 +6097,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:30.534Z"
+    "scraped_at": "2026-05-10T08:37:05.508Z"
   },
   {
     "id": "bozar-2027-05-02-orchestre-des-champs-elysees-philippe-herreweghe-0",
@@ -4509,7 +6123,7 @@
     "program": "Mozart. Clarinet Concerto & Mass in c",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T07:09:54.129Z"
+    "scraped_at": "2026-05-10T08:36:37.484Z"
   },
   {
     "id": "monnaie-2027-05-04-3935-m-butterfly",
@@ -4530,7 +6144,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:30.534Z"
+    "scraped_at": "2026-05-10T08:37:05.508Z"
   },
   {
     "id": "monnaie-2027-05-09-3960-city-of-floating-sounds",
@@ -4547,7 +6161,43 @@
     "program": "Huang Ruo",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:31.055Z"
+    "scraped_at": "2026-05-10T08:37:06.069Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-14-25431",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "ZAN",
+    "date": "2027-05-14",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25431",
+    "composers": [],
+    "performers": [
+      "HERMESensemble: recording Nour Darwish & Andrea Cortés-Moreno: vocals Kimia Koochakzadeh-Yazdi: music Nazli Tabatabai-Khatambakhsh: dramaturgy Fleur Khani: concept, direction & libretto"
+    ],
+    "program": "Fleur Khani",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:40:00.002Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-15-25435",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Antwerp Symphony Orchestra, Collegium Vocale Gent & Philippe Herreweghe",
+    "date": "2027-05-15",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25435",
+    "composers": [
+      "Beethoven"
+    ],
+    "performers": [
+      "Antwerp Symphony Orchestra: orchestra Collegium Vocale Gent: choir Philippe Herreweghe: conductor Serafina Starke: soprano Sophie Harmsen: mezzo-soprano Benedikt Kristjánsson: tenor Matthias Lika: baritone Martin Helmchen: piano"
+    ],
+    "program": "Ludwig van Beethoven (1770–1827) Mass in C, Op. 86 Symphony No. 1 in C, Op. 21 Fantasy for piano, vocal soloists, mixed chorus, and orchestra in C minor, Op. 80, ‘Choral Fantasy’",
+    "price_min": 31,
+    "price_max": 54,
+    "scraped_at": "2026-05-10T08:39:40.220Z"
   },
   {
     "id": "monnaie-2027-05-20-3947-concours-reine-elisabeth",
@@ -4564,7 +6214,27 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:33.207Z"
+    "scraped_at": "2026-05-10T08:37:06.564Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-20-25442",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Matthieu Idmtal",
+    "date": "2027-05-20",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25442",
+    "composers": [
+      "Schumann",
+      "Chopin"
+    ],
+    "performers": [
+      "Matthieu Idmtal: piano"
+    ],
+    "program": "Robert Schumann (1810–1856) Scenes from Childhood, Op. 15 Nikolai Medtner (1880–1951) Sonata No. 10 in E minor, Opus 38 No. 1 ‘Sonata Reminiscenza’ Frédéric Chopin (1810–1849) Sonata No. 3 in B flat minor, Op. 58",
+    "price_min": 24,
+    "price_max": 24,
+    "scraped_at": "2026-05-10T08:39:41.497Z"
   },
   {
     "id": "monnaie-2027-05-21-3947-concours-reine-elisabeth",
@@ -4581,7 +6251,27 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:33.207Z"
+    "scraped_at": "2026-05-10T08:37:06.564Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-21-25447",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Brussels Philharmonic & Simone Lamsma",
+    "date": "2027-05-21",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25447",
+    "composers": [
+      "Britten",
+      "Rachmaninov"
+    ],
+    "performers": [
+      "Brussels Philharmonic: orchestra Kristian Sallinen: conductor Simone Lamsma: violin"
+    ],
+    "program": "Sergei Rachmaninoff (1873–1943) Symphony No. 3 in A minor, Op. 44 Benjamin Britten (1913–1976) Violin Concerto in D minor, Op. 15 Grażyna Bacewicz (1909–1969) Overture",
+    "price_min": 29,
+    "price_max": 46,
+    "scraped_at": "2026-05-10T08:39:42.725Z"
   },
   {
     "id": "monnaie-2027-05-22-3947-concours-reine-elisabeth",
@@ -4598,7 +6288,85 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T07:10:33.207Z"
+    "scraped_at": "2026-05-10T08:37:06.564Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-22-25449",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Imago Mundi & Sofie Vanden Eynde",
+    "date": "2027-05-22",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25449",
+    "composers": [
+      "Dowland"
+    ],
+    "performers": [
+      "Imago Mundi: Sofie Vanden Eynde: lute & artistic direction Eugénie De Mey: vocals Vardan Hovanissian: duduk (Armenian wind instrument) Jo Thielemans: live electronics Ria Verhaeghe: visual art Fleur Pierets: texts"
+    ],
+    "program": "Music by John Dowland (1563–1626), Vladimir Gorlinsky (1984) & traditional Armenian music",
+    "price_min": 28,
+    "price_max": 28,
+    "scraped_at": "2026-05-10T08:39:43.874Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-27-25456",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Musicians of the Budapest Festival Orchestra",
+    "date": "2027-05-27",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25456",
+    "composers": [
+      "R. Strauss",
+      "Tchaïkovski"
+    ],
+    "performers": [
+      "Musicians of the Budapest Festival Orchestra: ensemble"
+    ],
+    "program": "Richard Strauss (1864–1949) Metamorphosen Pyotr Ilyich Tchaikovsky (1840–1893) Serenade for Strings in C, Op. 48",
+    "price_min": 31,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T08:39:44.516Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-28-25457",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Budapest Festival Orchestra & Nicolas Altstaedt",
+    "date": "2027-05-28",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25457",
+    "composers": [
+      "Saint-Saëns",
+      "Bruckner"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra: orchestra Iván Fischer: conductor Nicolas Altstaedt: cello"
+    ],
+    "program": "Camille Saint-Saëns (1835–1921) Cello Concerto No. 1, Op. 33 Anton Bruckner (1824–1896) Symphony No. 7 in E major",
+    "price_min": 41,
+    "price_max": 75,
+    "scraped_at": "2026-05-10T08:39:46.123Z"
+  },
+  {
+    "id": "cgbrugge-2027-05-29-25459",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Budapest Festival Orchestra & Alexandre Kantorow",
+    "date": "2027-05-29",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25459",
+    "composers": [
+      "Bartók"
+    ],
+    "performers": [
+      "Budapest Festival Orchestra: orchestra Iván Fischer: conductor Alexandre Kantorow: piano"
+    ],
+    "program": "Béla Bartók (1881–1945) Piano Concerto No. 2 in G major, Sz95, BB101 Concerto for Orchestra, Sz116, BB127",
+    "price_min": 41,
+    "price_max": 75,
+    "scraped_at": "2026-05-10T08:39:48.020Z"
   },
   {
     "id": "monnaie-2027-06-06-3936-burmese-days",
@@ -4615,7 +6383,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:33.971Z"
+    "scraped_at": "2026-05-10T08:37:07.133Z"
   },
   {
     "id": "monnaie-2027-06-08-3936-burmese-days",
@@ -4632,7 +6400,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:33.971Z"
+    "scraped_at": "2026-05-10T08:37:07.133Z"
   },
   {
     "id": "monnaie-2027-06-09-3936-burmese-days",
@@ -4649,7 +6417,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:33.971Z"
+    "scraped_at": "2026-05-10T08:37:07.133Z"
   },
   {
     "id": "monnaie-2027-06-10-3937-boris-godounov",
@@ -4670,7 +6438,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
   },
   {
     "id": "monnaie-2027-06-11-3936-burmese-days",
@@ -4687,7 +6455,24 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-11-25465",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Lucifer en De Schelde",
+    "date": "2027-06-11",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25465",
+    "composers": [],
+    "performers": [
+      "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus"
+    ],
+    "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde",
+    "price_min": 36,
+    "price_max": 140,
+    "scraped_at": "2026-05-10T08:39:48.660Z"
   },
   {
     "id": "monnaie-2027-06-12-3937-boris-godounov",
@@ -4708,7 +6493,22 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-13-25967",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Lucifer en De Schelde",
+    "date": "2027-06-13",
+    "time": "15:00",
+    "url": "https://www.concertgebouw.be/fr/page/25967",
+    "composers": [],
+    "performers": [],
+    "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde",
+    "price_min": 36,
+    "price_max": 140,
+    "scraped_at": "2026-05-10T08:39:49.283Z"
   },
   {
     "id": "monnaie-2027-06-15-3937-boris-godounov",
@@ -4729,7 +6529,37 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-15-25969",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Lucifer en De Schelde",
+    "date": "2027-06-15",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25969",
+    "composers": [],
+    "performers": [],
+    "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde",
+    "price_min": 36,
+    "price_max": 140,
+    "scraped_at": "2026-05-10T08:39:50.000Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-17-25971",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Lucifer en De Schelde",
+    "date": "2027-06-17",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25971",
+    "composers": [],
+    "performers": [],
+    "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde",
+    "price_min": 36,
+    "price_max": 140,
+    "scraped_at": "2026-05-10T08:39:50.725Z"
   },
   {
     "id": "monnaie-2027-06-18-3937-boris-godounov",
@@ -4750,7 +6580,22 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-19-25973",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Lucifer en De Schelde",
+    "date": "2027-06-19",
+    "time": "20:00",
+    "url": "https://www.concertgebouw.be/fr/page/25973",
+    "composers": [],
+    "performers": [],
+    "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde",
+    "price_min": 36,
+    "price_max": 140,
+    "scraped_at": "2026-05-10T08:39:51.433Z"
   },
   {
     "id": "monnaie-2027-06-22-3937-boris-godounov",
@@ -4771,7 +6616,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
   },
   {
     "id": "monnaie-2027-06-24-3937-boris-godounov",
@@ -4792,7 +6637,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
   },
   {
     "id": "monnaie-2027-06-27-3937-boris-godounov",
@@ -4813,7 +6658,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
   },
   {
     "id": "monnaie-2027-06-29-3937-boris-godounov",
@@ -4834,7 +6679,75 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:34.559Z"
+    "scraped_at": "2026-05-10T08:37:07.730Z"
+  },
+  {
+    "id": "cgbrugge-2027-06-30-25554",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2027-06-30",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/25554",
+    "composers": [],
+    "performers": [
+      "Registration opens in March 2027 via concertgebouw.be"
+    ],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:52.752Z"
+  },
+  {
+    "id": "cgbrugge-2027-07-01-25556",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2027-07-01",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/25556",
+    "composers": [],
+    "performers": [
+      "Registration opens in March 2027 via concertgebouw.be"
+    ],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:54.396Z"
+  },
+  {
+    "id": "cgbrugge-2027-07-02-25558",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2027-07-02",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/25558",
+    "composers": [],
+    "performers": [
+      "Registration opens in March 2027 via concertgebouw.be"
+    ],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:55.622Z"
+  },
+  {
+    "id": "cgbrugge-2027-07-03-25560",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2027-07-03",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/25560",
+    "composers": [],
+    "performers": [
+      "Registration opens in March 2027 via concertgebouw.be"
+    ],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:56.918Z"
   },
   {
     "id": "monnaie-2027-07-03-3944-summer-delights",
@@ -4854,6 +6767,23 @@
     "program": "Nicholas Carter",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T07:10:35.024Z"
+    "scraped_at": "2026-05-10T08:37:08.312Z"
+  },
+  {
+    "id": "cgbrugge-2027-07-04-25562",
+    "source": "cgbrugge",
+    "venue_id": "concertgebouwbrugge",
+    "title": "Play Here",
+    "date": "2027-07-04",
+    "time": "13:00",
+    "url": "https://www.concertgebouw.be/fr/page/25562",
+    "composers": [],
+    "performers": [
+      "Registration opens in March 2027 via concertgebouw.be"
+    ],
+    "program": "A stage for everyone",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T08:39:58.188Z"
   }
 ]
