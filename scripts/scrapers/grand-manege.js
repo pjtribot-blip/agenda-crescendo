@@ -31,6 +31,11 @@ const UA = 'Mozilla/5.0 (compatible; CrescendoMagazineBot/0.1; +https://crescend
 const TITLE_REJECT_PATTERNS = [
   /ateliers?\s+musicaux/i,
   /parent.*b[eé]b[eé]/i,
+  // Variété, jazz pur, world music — Grand Manège loue parfois la salle
+  // pour ces concerts ; hors périmètre éditorial Crescendo.
+  /goldman/i,
+  /aka moon/i,
+  /stacey kent/i,
 ];
 
 const MONTHS_FR = {
