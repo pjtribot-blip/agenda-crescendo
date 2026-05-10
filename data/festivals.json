@@ -93,5 +93,25 @@
     "date_end": "2026-08-09",
     "venues": ["ma-festival", "concertgebouwbrugge"],
     "website": "https://www.mafestival.be"
+  },
+  {
+    "id": "voix-intimes-24",
+    "name": "Festival Les Voix Intimes",
+    "edition_year": 2026,
+    "date_start": "2025-11-02",
+    "date_end": "2026-08-21",
+    "venues": ["voix-intimes-tournai", "conservatoire-tournai", "mctournai"],
+    "website": "https://proquartetto.be",
+    "notes": "24e édition Indivisible by Four (saison 25-26 + Midis du Quatuor août 2026)"
+  },
+  {
+    "id": "contrastes-2026",
+    "name": "Festival Contrastes",
+    "edition_year": 2026,
+    "date_start": "2026-06-13",
+    "date_end": "2026-06-13",
+    "venues": [],
+    "website": "https://www.festivalcontrastes.be",
+    "notes": "Placeholder — édition 2026 non encore publiée sur le site (qui montre encore l'édition 14 juin 2025)"
   }
 ]

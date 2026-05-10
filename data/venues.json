@@ -312,6 +312,30 @@
     "address": "Églises et salles liégeoises"
   },
   {
+    "id": "conservatoire-tournai",
+    "name": "Conservatoire de Tournai",
+    "fullName": "Conservatoire de Musique de la Ville de Tournai",
+    "city": "Tournai",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6062,
+    "lng": 3.3897,
+    "website": "https://conservatoire.tournai.be",
+    "address": "Place Reine Astrid 2, 7500 Tournai"
+  },
+  {
+    "id": "voix-intimes-tournai",
+    "name": "Voix Intimes — lieux festival",
+    "fullName": "Festival Les Voix Intimes — concerts hors Maison de la Culture (Maisons romanes, Chapelle, etc.)",
+    "city": "Tournai",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6066,
+    "lng": 3.3905,
+    "website": "https://proquartetto.be",
+    "address": "Lieux divers — Tournai"
+  },
+  {
     "id": "ma-festival",
     "name": "MA Festival Brugge",
     "fullName": "MA Festival Brugge — concerts hors Concertgebouw (églises, abbayes, cours intérieures)",

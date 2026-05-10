@@ -231,6 +231,7 @@ scrape directement et on attribue les concerts à un venue dédié
 | Festival Musicorum (MRBAB Bruxelles) | B (scraper dédié) | 48 concerts gratuits midis 12h15 juillet-août |
 | Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
 | MA Festival Brugge | B (scraper dédié) + tagging Concertgebouw Brugge | ~22 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
+| Festival Les Voix Intimes (Tournai, Proquartetto) | B (scraper dédié) + tagging Maison de la Culture | 24e édition "Indivisible by Four" — saison 25-26 + Midis du Quatuor août 2026 (Chapelle de la Madeleine) |
 
 ### À venir
 

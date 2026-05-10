@@ -33,7 +33,8 @@
     "scrape:mim": "node -e \"import('./scripts/scrapers/mim.js').then(m => m.scrapeMIM()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:musicorum": "node -e \"import('./scripts/scrapers/musicorum.js').then(m => m.scrapeMusicorum()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:midi-minimes": "node -e \"import('./scripts/scrapers/midi-minimes.js').then(m => m.scrapeMidiMinimes()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:ma-festival": "node -e \"import('./scripts/scrapers/ma-festival.js').then(m => m.scrapeMAFestival()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:ma-festival": "node -e \"import('./scripts/scrapers/ma-festival.js').then(m => m.scrapeMAFestival()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:voix-intimes": "node -e \"import('./scripts/scrapers/voix-intimes.js').then(m => m.scrapeVoixIntimes()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"
