@@ -96,7 +96,8 @@ agenda-crescendo/
 |---|---|---|---|
 | Bozar | ✅ opérationnel | HTML + cheerio (Drupal `section=527`, filtre taxonomique côté client) | ~50 concerts classiques sur 13 mois |
 | La Monnaie / De Munt | ✅ opérationnel | HTML + cheerio (`/fr/calendar?m=YYYY-MM` mois par mois, filtre éditorial sur la catégorie + slug) | ~130 représentations opéra + concerts sur 14 mois |
-| Les 15 autres | ⏳ à venir | À choisir source par source | — |
+| Flagey | ✅ opérationnel | HTML + cheerio (`/fr/agenda?ym=YYYY-MM`, pré-filtre Music sur la liste, filtre fin sur les tags Classique/Contemporain/Orchestre/Piano/Quatuor/Chant/… de la page détail, hard-reject Junior + sound installations) | ~70 concerts savants sur 14 mois |
+| Les 14 autres | ⏳ à venir | À choisir source par source | — |
 
 ### Pipeline
 
@@ -146,14 +147,15 @@ d'invention).
 npm install
 npm run scrape:bozar      # exporte le résultat brut sur stdout
 npm run scrape:monnaie    # idem pour La Monnaie
+npm run scrape:flagey     # idem pour Flagey
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 15 scrapers supplémentaires (priorité : Flagey, Concertgebouw
-      Brugge, Philharmonie Luxembourg, OPRL)
+- [ ] 14 scrapers supplémentaires (priorité : Concertgebouw Brugge,
+      Philharmonie Luxembourg, OPRL)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 

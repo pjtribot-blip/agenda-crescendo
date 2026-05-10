@@ -11,6 +11,7 @@ import { dirname, resolve } from 'node:path';
 
 import { scrapeBozar } from './scrapers/bozar.js';
 import { scrapeMonnaie } from './scrapers/monnaie.js';
+import { scrapeFlagey } from './scrapers/flagey.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -20,6 +21,7 @@ const OUTPUT = resolve(REPO_ROOT, 'data', 'concerts.json');
 const SCRAPERS = [
   { name: 'bozar', fn: scrapeBozar },
   { name: 'monnaie', fn: scrapeMonnaie },
+  { name: 'flagey', fn: scrapeFlagey },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

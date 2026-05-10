@@ -19,7 +19,61 @@
     "program": "Concert Croissant #13",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:50:34.927Z"
+    "scraped_at": "2026-05-10T07:09:20.104Z"
+  },
+  {
+    "id": "flagey-2026-05-11-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-11",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.701Z"
+  },
+  {
+    "id": "flagey-2026-05-11-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-11",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
+  },
+  {
+    "id": "flagey-2026-05-12-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-12",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
   },
   {
     "id": "monnaie-2026-05-12-3567-medusa",
@@ -40,7 +94,43 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:10.367Z"
+    "scraped_at": "2026-05-10T07:10:09.752Z"
+  },
+  {
+    "id": "flagey-2026-05-12-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-12",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
+  },
+  {
+    "id": "flagey-2026-05-13-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-13",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
   },
   {
     "id": "bozar-2026-05-13-belgian-national-orchestra-montague-rendall-desandre",
@@ -63,7 +153,79 @@
     "program": "An evening with Mozart and Rossini",
     "price_min": 26,
     "price_max": 64,
-    "scraped_at": "2026-05-10T06:50:36.593Z"
+    "scraped_at": "2026-05-10T07:09:20.229Z"
+  },
+  {
+    "id": "flagey-2026-05-13-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-13",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
+  },
+  {
+    "id": "flagey-2026-05-14-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-14",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
+  },
+  {
+    "id": "flagey-2026-05-14-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-14",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
+  },
+  {
+    "id": "flagey-2026-05-15-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-15",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.702Z"
   },
   {
     "id": "monnaie-2026-05-15-3567-medusa",
@@ -84,7 +246,43 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:10.367Z"
+    "scraped_at": "2026-05-10T07:10:09.752Z"
+  },
+  {
+    "id": "flagey-2026-05-15-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-15",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.703Z"
+  },
+  {
+    "id": "flagey-2026-05-16-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-16",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.703Z"
   },
   {
     "id": "bozar-2026-05-16-koninklijk-concertgebouworkest-amsterdam-rouvali-gabetta",
@@ -108,7 +306,25 @@
     "program": "Martinu, Stravinsky & Ravel",
     "price_min": 40,
     "price_max": 98,
-    "scraped_at": "2026-05-10T06:50:36.423Z"
+    "scraped_at": "2026-05-10T07:09:22.078Z"
+  },
+  {
+    "id": "flagey-2026-05-16-12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concours Reine Elisabeth 2026: violoncelle",
+    "date": "2026-05-16",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/12671-concours-reine-elisabeth-2026-violoncelle-demi-finale",
+    "composers": [
+      "M. Haydn",
+      "Haydn"
+    ],
+    "performers": [],
+    "program": "Demi-finale",
+    "price_min": 24,
+    "price_max": 32,
+    "scraped_at": "2026-05-10T07:10:44.703Z"
   },
   {
     "id": "monnaie-2026-05-17-3567-medusa",
@@ -129,7 +345,7 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:10.367Z"
+    "scraped_at": "2026-05-10T07:10:09.752Z"
   },
   {
     "id": "monnaie-2026-05-19-3567-medusa",
@@ -150,7 +366,27 @@
     "program": "Michiel Delanghe, Lydia Steier",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:10.367Z"
+    "scraped_at": "2026-05-10T07:10:09.752Z"
+  },
+  {
+    "id": "flagey-2026-05-21-12835-close-encounter-brussels-philharmonic",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Close Encounter",
+    "date": "2026-05-21",
+    "time": "12:00",
+    "url": "https://www.flagey.be/fr/activity/12835-close-encounter-brussels-philharmonic",
+    "composers": [
+      "Beethoven",
+      "Bruckner",
+      "Dvořák",
+      "Mahler"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic",
+    "price_min": 5,
+    "price_max": 5,
+    "scraped_at": "2026-05-10T07:10:45.787Z"
   },
   {
     "id": "bozar-2026-05-21-victor-julien-laferriere-0",
@@ -171,7 +407,7 @@
     "program": "Bach, Kodály & Casals",
     "price_min": 30,
     "price_max": 30,
-    "scraped_at": "2026-05-10T06:50:37.143Z"
+    "scraped_at": "2026-05-10T07:09:24.009Z"
   },
   {
     "id": "monnaie-2026-05-22-2743-concertini",
@@ -186,7 +422,115 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T06:51:10.815Z"
+    "scraped_at": "2026-05-10T07:10:10.337Z"
+  },
+  {
+    "id": "flagey-2026-05-22-12673-marco-mantovani",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Marco Mantovani",
+    "date": "2026-05-22",
+    "time": "12:30",
+    "url": "https://www.flagey.be/fr/activity/12673-marco-mantovani",
+    "composers": [
+      "Chopin",
+      "Schubert",
+      "Scriabine"
+    ],
+    "performers": [],
+    "program": "Le génie mélodique de Franz Schubert, la nostalgie mélancolique de Frédéric Chopin et l’univers sonore coloré et visionnaire d’Alexandre Scriabine : tout cela émaillera le concert Piknik du pianiste italien Marco Mantova",
+    "price_min": 16,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T07:10:46.279Z"
+  },
+  {
+    "id": "flagey-2026-05-23-12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Dvořák Deconstructed",
+    "date": "2026-05-23",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "composers": [
+      "Dvořák",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Florestan Bataillie",
+    "price_min": 5,
+    "price_max": 9,
+    "scraped_at": "2026-05-10T07:10:46.739Z"
+  },
+  {
+    "id": "flagey-2026-05-23-12677-brussels-philharmonic-dvorak-8",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic",
+    "date": "2026-05-23",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12677-brussels-philharmonic-dvorak-8",
+    "composers": [
+      "Wagner",
+      "Dvořák"
+    ],
+    "performers": [],
+    "program": "Dvořák 8",
+    "price_min": 5,
+    "price_max": 41,
+    "scraped_at": "2026-05-10T07:10:47.650Z"
+  },
+  {
+    "id": "flagey-2026-05-24-12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Dvořák Deconstructed",
+    "date": "2026-05-24",
+    "time": "13:30",
+    "url": "https://www.flagey.be/fr/activity/12889-dvorak-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "composers": [
+      "Dvořák",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Florestan Bataillie",
+    "price_min": 5,
+    "price_max": 9,
+    "scraped_at": "2026-05-10T07:10:47.650Z"
+  },
+  {
+    "id": "flagey-2026-05-24-12678-brussels-philharmonic-matinee-dvorak-8",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic",
+    "date": "2026-05-24",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/12678-brussels-philharmonic-matinee-dvorak-8",
+    "composers": [
+      "Wagner",
+      "Dvořák"
+    ],
+    "performers": [],
+    "program": "Matinee: Dvořák 8",
+    "price_min": 5,
+    "price_max": 31,
+    "scraped_at": "2026-05-10T07:10:48.122Z"
+  },
+  {
+    "id": "flagey-2026-05-25-12679-musiques-nouvelles-attention-musiques-fraiches",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Musiques Nouvelles",
+    "date": "2026-05-25",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12679-musiques-nouvelles-attention-musiques-fraiches",
+    "composers": [
+      "Ligeti"
+    ],
+    "performers": [],
+    "program": "Attention, Musiques Fraîches !",
+    "price_min": 21,
+    "price_max": 23,
+    "scraped_at": "2026-05-10T07:10:48.583Z"
   },
   {
     "id": "monnaie-2026-05-29-2743-concertini",
@@ -201,7 +545,64 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T06:51:10.815Z"
+    "scraped_at": "2026-05-10T07:10:10.341Z"
+  },
+  {
+    "id": "flagey-2026-05-30-12890-mozart-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Mozart Deconstructed",
+    "date": "2026-05-30",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/12890-mozart-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "composers": [
+      "Mozart",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Florestan Bataillie",
+    "price_min": 5,
+    "price_max": 9,
+    "scraped_at": "2026-05-10T07:10:49.049Z"
+  },
+  {
+    "id": "flagey-2026-05-30-12680-vlaams-radiokoor-orkest-van-de-18e-eeuw-mozart-grosse-messe",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Vlaams Radiokoor & Orkest van de 18e eeuw",
+    "date": "2026-05-30",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12680-vlaams-radiokoor-orkest-van-de-18e-eeuw-mozart-grosse-messe",
+    "composers": [
+      "Beethoven",
+      "Haendel",
+      "Mozart",
+      "Bach"
+    ],
+    "performers": [],
+    "program": "Mozart: Grosse Messe",
+    "price_min": 5,
+    "price_max": 41,
+    "scraped_at": "2026-05-10T07:10:49.503Z"
+  },
+  {
+    "id": "flagey-2026-06-02-12681-leonkoro-quartet",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Leonkoro Quartet",
+    "date": "2026-06-02",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/12681-leonkoro-quartet",
+    "composers": [
+      "Mendelssohn",
+      "Haydn",
+      "Beethoven"
+    ],
+    "performers": [],
+    "program": "Fondé en 2019 à Berlin, le Leonkoro Quartet conquiert rapidement les scènes internationales",
+    "price_min": 21,
+    "price_max": 23,
+    "scraped_at": "2026-05-10T07:10:50.437Z"
   },
   {
     "id": "bozar-2026-06-02-la-fonte-musica",
@@ -229,7 +630,55 @@
     "program": "Anchor che col partire",
     "price_min": 38,
     "price_max": 38,
-    "scraped_at": "2026-05-10T06:50:39.095Z"
+    "scraped_at": "2026-05-10T07:09:22.633Z"
+  },
+  {
+    "id": "flagey-2026-06-02-12682-belcea-quartet-tabea-zimmermann",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Belcea Quartet & Tabea Zimmermann",
+    "date": "2026-06-02",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12682-belcea-quartet-tabea-zimmermann",
+    "composers": [
+      "Mozart",
+      "Brahms"
+    ],
+    "performers": [],
+    "program": "Avec son jeu intense et ses interprétations lumineuses, le Belcea Quartet s’impose comme une référence absolue du quatuor à cordes",
+    "price_min": 27,
+    "price_max": 44,
+    "scraped_at": "2026-05-10T07:10:50.888Z"
+  },
+  {
+    "id": "flagey-2026-06-03-12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Lauréats Concours Reine Elisabeth 2026",
+    "date": "2026-06-03",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
+    "composers": [],
+    "performers": [],
+    "program": "Violoncelle 2026",
+    "price_min": 15,
+    "price_max": 18,
+    "scraped_at": "2026-05-10T07:10:51.356Z"
+  },
+  {
+    "id": "flagey-2026-06-04-12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Lauréats Concours Reine Elisabeth 2026",
+    "date": "2026-06-04",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12665-laureats-concours-reine-elisabeth-2026-violoncelle-2026",
+    "composers": [],
+    "performers": [],
+    "program": "Violoncelle 2026",
+    "price_min": 15,
+    "price_max": 18,
+    "scraped_at": "2026-05-10T07:10:51.356Z"
   },
   {
     "id": "monnaie-2026-06-05-2743-concertini",
@@ -244,7 +693,7 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T06:51:10.815Z"
+    "scraped_at": "2026-05-10T07:10:10.341Z"
   },
   {
     "id": "bozar-2026-06-07-giorgi-gigashvili-echo-rising-star",
@@ -267,7 +716,7 @@
     "program": "Concert Croissant #14",
     "price_min": 16,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:50:38.590Z"
+    "scraped_at": "2026-05-10T07:09:24.602Z"
   },
   {
     "id": "bozar-2026-06-08-concert-des-laureats-concours-reine-elisabeth-violoncelle-2026",
@@ -282,7 +731,7 @@
     "program": null,
     "price_min": 19,
     "price_max": 96,
-    "scraped_at": "2026-05-10T06:50:39.647Z"
+    "scraped_at": "2026-05-10T07:09:25.155Z"
   },
   {
     "id": "bozar-2026-06-10-concert-de-cloture-concours-reine-elisabeth-violoncelle-2026",
@@ -297,7 +746,7 @@
     "program": null,
     "price_min": 23,
     "price_max": 108,
-    "scraped_at": "2026-05-10T06:50:39.972Z"
+    "scraped_at": "2026-05-10T07:09:25.162Z"
   },
   {
     "id": "bozar-2026-06-11-orchestra-age-enlightenment-sir-simon-rattle",
@@ -319,7 +768,7 @@
     "price_min": 40,
     "price_max": 98,
     "cancelled": true,
-    "scraped_at": "2026-05-10T06:50:40.748Z"
+    "scraped_at": "2026-05-10T07:09:26.399Z"
   },
   {
     "id": "monnaie-2026-06-12-2743-concertini",
@@ -334,7 +783,28 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T06:51:10.815Z"
+    "scraped_at": "2026-05-10T07:10:10.341Z"
+  },
+  {
+    "id": "flagey-2026-06-12-12667-jorge-gimenez-matteo-bevilacqua",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Jorge Gimenez, Matteo Bevilacqua",
+    "date": "2026-06-12",
+    "time": "12:30",
+    "url": "https://www.flagey.be/fr/activity/12667-jorge-gimenez-matteo-bevilacqua",
+    "composers": [
+      "Mendelssohn",
+      "Beethoven",
+      "Schumann",
+      "Debussy",
+      "Falla"
+    ],
+    "performers": [],
+    "program": "UPDATE 23.04.2026 | Malheureusement, en raison de circonstances indépendantes de notre volonté, cet événement ne pourra pas avoir lieu à la date prévue et est reporté au 13 novembre 2026",
+    "price_min": 16,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T07:10:53.286Z"
   },
   {
     "id": "bozar-2026-06-12-belgian-national-orchestra-hermus-vondracek",
@@ -356,7 +826,45 @@
     "program": "Flamboyance",
     "price_min": 22,
     "price_max": 56,
-    "scraped_at": "2026-05-10T06:50:41.298Z"
+    "scraped_at": "2026-05-10T07:09:28.278Z"
+  },
+  {
+    "id": "flagey-2026-06-12-12663-arcadi-volodos",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Arcadi Volodos",
+    "date": "2026-06-12",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/12663-arcadi-volodos",
+    "composers": [
+      "Chopin",
+      "Schubert",
+      "Brahms",
+      "Liszt"
+    ],
+    "performers": [],
+    "program": "Le pianiste Arcadi Volodos reste un phénomène",
+    "price_min": 43,
+    "price_max": 48,
+    "scraped_at": "2026-05-10T07:10:53.772Z"
+  },
+  {
+    "id": "flagey-2026-06-13-13906-sons-de-chypre-et-5e-symphonie-de-beethoven-brussels-chamber-ensemble-au-concert-de-la-presidence-chypriote",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Sons de Chypre et 5ᵉ Symphonie de Beethoven",
+    "date": "2026-06-13",
+    "time": "19:30",
+    "url": "https://www.flagey.be/fr/activity/13906-sons-de-chypre-et-5e-symphonie-de-beethoven-brussels-chamber-ensemble-au-concert-de-la-presidence-chypriote",
+    "composers": [
+      "Beethoven",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Chamber Ensemble au concert de la Présidence chypriote",
+    "price_min": 15,
+    "price_max": 35,
+    "scraped_at": "2026-05-10T07:10:54.277Z"
   },
   {
     "id": "bozar-2026-06-13-lea-desandre-jupiter-ensemble-1",
@@ -380,7 +888,7 @@
     "program": "Chasing Rainbows",
     "price_min": 32,
     "price_max": 56,
-    "scraped_at": "2026-05-10T06:50:42.197Z"
+    "scraped_at": "2026-05-10T07:09:28.235Z"
   },
   {
     "id": "monnaie-2026-06-13-3589-chasing-rainbows",
@@ -401,7 +909,7 @@
     "program": "Un vibrant hommage à Julie Andrews et à la comédie musicale avec les plus belles chansons de The Sound of Music, Mary Poppins, West Side Story...",
     "price_min": 20,
     "price_max": 48,
-    "scraped_at": "2026-05-10T06:51:11.235Z"
+    "scraped_at": "2026-05-10T07:10:10.865Z"
   },
   {
     "id": "monnaie-2026-06-17-1838-tosca",
@@ -422,7 +930,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-06-18-1838-tosca",
@@ -443,7 +951,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-06-19-2743-concertini",
@@ -458,7 +966,146 @@
     "program": "Le meilleur de la musique de chambre, tous les vendredis midi à la Monnaie",
     "price_min": 7,
     "price_max": 65,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-19-14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Sonic Harvest: David Dubois, Alice Van Biesen, Livia Slegs",
+    "date": "2026-06-19",
+    "time": "18:00",
+    "url": "https://www.flagey.be/fr/activity/14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "sound artists foraging for wild sonic material",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:54.774Z"
+  },
+  {
+    "id": "flagey-2026-06-19-14020-ictus-tarek-halaby-frederic-rzewski-coming-together-attica",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ictus & Tarek Halaby: Frederic Rzewski, Coming Together / Attica",
+    "date": "2026-06-19",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14020-ictus-tarek-halaby-frederic-rzewski-coming-together-attica",
+    "composers": [],
+    "performers": [],
+    "program": "Frederic Rzewski (1938–2021) signe avec ce diptyque de 1975 l’une des œuvres avec narrateur les plus marquantes de la musique moderne",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:55.803Z"
+  },
+  {
+    "id": "flagey-2026-06-19-14021-brussels-philharmonic-oyvind-torvund-symphony-for-kunstnernes-hus-can-you-listen-to-a-building",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic: Øyvind Torvund, Symphony for Kunstnernes Hus",
+    "date": "2026-06-19",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/14021-brussels-philharmonic-oyvind-torvund-symphony-for-kunstnernes-hus-can-you-listen-to-a-building",
+    "composers": [],
+    "performers": [],
+    "program": "Can you listen to a building?",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:56.284Z"
+  },
+  {
+    "id": "flagey-2026-06-19-14022-farida-amadou-heather-leigh",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Farida Amadou + Heather Leigh",
+    "date": "2026-06-19",
+    "time": "21:00",
+    "url": "https://www.flagey.be/fr/activity/14022-farida-amadou-heather-leigh",
+    "composers": [],
+    "performers": [],
+    "program": "Le duo formé par Farida Amadou et Heather Leigh réunit deux voix singulières de la scène expérimentale contemporaine",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:56.761Z"
+  },
+  {
+    "id": "flagey-2026-06-19-14023-ictus-leonie-strecker-pak-yan-lau-anita-cappuccinelli-interference",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ictus: Leonie Strecker / Pak Yan Lau / Anita Cappuccinelli",
+    "date": "2026-06-19",
+    "time": "22:00",
+    "url": "https://www.flagey.be/fr/activity/14023-ictus-leonie-strecker-pak-yan-lau-anita-cappuccinelli-interference",
+    "composers": [],
+    "performers": [],
+    "program": "Interference",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:57.219Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ictus: Fabio Machiavelli",
+    "date": "2026-06-20",
+    "time": "17:15",
+    "url": "https://www.flagey.be/fr/activity/14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
+    "composers": [],
+    "performers": [],
+    "program": "Micro Breaths of a Blue Lung",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:57.709Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14025-vlaams-radiokoor-xenakis-scelsi-a-living-sound-sculpture",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Vlaams Radiokoor: Xenakis & Scelsi",
+    "date": "2026-06-20",
+    "time": "18:00",
+    "url": "https://www.flagey.be/fr/activity/14025-vlaams-radiokoor-xenakis-scelsi-a-living-sound-sculpture",
+    "composers": [],
+    "performers": [],
+    "program": "A living sound sculpture",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:58.184Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Sonic Harvest: David Dubois, Alice Van Biesen, Livia Slegs",
+    "date": "2026-06-20",
+    "time": "18:00",
+    "url": "https://www.flagey.be/fr/activity/14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "sound artists foraging for wild sonic material",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:58.184Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14026-jennifer-torrence",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Jennifer Torrence",
+    "date": "2026-06-20",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14026-jennifer-torrence",
+    "composers": [],
+    "performers": [],
+    "program": "Jennifer Torrence réunit un travail développé sur plusieurs années, construit autour de sons issus de « mouvements physiques et de principes de mouvement »",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:58.651Z"
   },
   {
     "id": "monnaie-2026-06-20-1838-tosca",
@@ -479,7 +1126,52 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14027-brussels-philharmonic-maya-verlaak-cassandra-miller-music-as-social-experiment-or-as-ageing-and-forgetting",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic: Maya Verlaak & Cassandra Miller",
+    "date": "2026-06-20",
+    "time": "20:30",
+    "url": "https://www.flagey.be/fr/activity/14027-brussels-philharmonic-maya-verlaak-cassandra-miller-music-as-social-experiment-or-as-ageing-and-forgetting",
+    "composers": [],
+    "performers": [],
+    "program": "Music as social experiment - or as ageing and forgetting",
+    "price_min": 15,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:10:59.251Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14028-hoda-siahtiri-shaahin-peymani-for-those-who-live-at-the-shoreline",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Hoda Siahtiri + Shaahin Peymani",
+    "date": "2026-06-20",
+    "time": "22:00",
+    "url": "https://www.flagey.be/fr/activity/14028-hoda-siahtiri-shaahin-peymani-for-those-who-live-at-the-shoreline",
+    "composers": [],
+    "performers": [],
+    "program": "For Those Who Live At The Shoreline",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:59.732Z"
+  },
+  {
+    "id": "flagey-2026-06-20-14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ictus: Fabio Machiavelli",
+    "date": "2026-06-20",
+    "time": "22:00",
+    "url": "https://www.flagey.be/fr/activity/14024-ictus-fabio-machiavelli-micro-breaths-of-a-blue-lung",
+    "composers": [],
+    "performers": [],
+    "program": "Micro Breaths of a Blue Lung",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:10:59.732Z"
   },
   {
     "id": "bozar-2026-06-21-belgian-national-orchestra-cottis-gatto",
@@ -505,7 +1197,7 @@
     "program": "Fête de la Musique",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:50:42.621Z"
+    "scraped_at": "2026-05-10T07:09:28.468Z"
   },
   {
     "id": "monnaie-2026-06-21-1838-tosca",
@@ -526,7 +1218,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-06-23-1838-tosca",
@@ -547,7 +1239,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-06-24-1838-tosca",
@@ -568,7 +1260,37 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-25-14067-propulse-classique-debats-rencontres-professionnelles-5-concerts",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Propulse Classique : Débats, rencontres professionnelles, 5 concerts",
+    "date": "2026-06-25",
+    "time": "10:00",
+    "url": "https://www.flagey.be/fr/activity/14067-propulse-classique-debats-rencontres-professionnelles-5-concerts",
+    "composers": [],
+    "performers": [],
+    "program": "La journée des rencontres professionnelles du Festival Musiq3",
+    "price_min": 5,
+    "price_max": 5,
+    "scraped_at": "2026-05-10T07:11:00.242Z"
+  },
+  {
+    "id": "flagey-2026-06-25-14033-concert-d-ouverture-the-amazing-keystone-big-band-judy-garland-1",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concert d’Ouverture",
+    "date": "2026-06-25",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14033-concert-d-ouverture-the-amazing-keystone-big-band-judy-garland-1",
+    "composers": [],
+    "performers": [],
+    "program": "The Amazing Keystone Big Band – Judy Garland | #1",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:00.709Z"
   },
   {
     "id": "monnaie-2026-06-25-1838-tosca",
@@ -589,7 +1311,95 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-25-14034-from-the-moon-to-the-fish-romina-lischka-hathor-consort-2",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "From the Moon to the Fish",
+    "date": "2026-06-25",
+    "time": "20:30",
+    "url": "https://www.flagey.be/fr/activity/14034-from-the-moon-to-the-fish-romina-lischka-hathor-consort-2",
+    "composers": [],
+    "performers": [],
+    "program": "Romina Lischka & Hathor Consort | #2",
+    "price_min": 6,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T07:11:01.195Z"
+  },
+  {
+    "id": "flagey-2026-06-25-14037-mozart-paradox-thomas-enhco-3",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Mozart Paradox",
+    "date": "2026-06-25",
+    "time": "21:30",
+    "url": "https://www.flagey.be/fr/activity/14037-mozart-paradox-thomas-enhco-3",
+    "composers": [
+      "Mozart",
+      "Schumann",
+      "Gershwin",
+      "Brahms",
+      "Ravel",
+      "Bach"
+    ],
+    "performers": [],
+    "program": "Thomas Enhco | #3",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:01.655Z"
+  },
+  {
+    "id": "flagey-2026-06-26-14051-mozart-eclat-de-jeunesse-a-nocte-temporis-anna-besson-reinoud-van-mechelen-4",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Mozart, Éclat de jeunesse",
+    "date": "2026-06-26",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14051-mozart-eclat-de-jeunesse-a-nocte-temporis-anna-besson-reinoud-van-mechelen-4",
+    "composers": [
+      "Mozart"
+    ],
+    "performers": [],
+    "program": "A nocte temporis, Anna Besson, Reinoud van Mechelen | #4",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:02.115Z"
+  },
+  {
+    "id": "flagey-2026-06-26-14052-saehyun-kim-1ere-partie-duo-post-scriptum-5",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Saehyun Kim",
+    "date": "2026-06-26",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/14052-saehyun-kim-1ere-partie-duo-post-scriptum-5",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "1ère partie : Duo Post Scriptum | #5",
+    "price_min": 6,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T07:11:02.566Z"
+  },
+  {
+    "id": "flagey-2026-06-26-14053-vassilena-serafimova-helene-escriva-quatuor-ardeo-6",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Vassilena Serafimova, Hélène Escriva & Quatuor Ardeo",
+    "date": "2026-06-26",
+    "time": "21:00",
+    "url": "https://www.flagey.be/fr/activity/14053-vassilena-serafimova-helene-escriva-quatuor-ardeo-6",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "#6",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:03.026Z"
   },
   {
     "id": "monnaie-2026-06-27-1838-tosca",
@@ -610,7 +1420,90 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-27-14055-rio-gaelle-solal-orchestre-royal-de-chambre-de-wallonie-8",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Rio",
+    "date": "2026-06-27",
+    "time": "17:00",
+    "url": "https://www.flagey.be/fr/activity/14055-rio-gaelle-solal-orchestre-royal-de-chambre-de-wallonie-8",
+    "composers": [],
+    "performers": [],
+    "program": "Gaëlle Solal & Orchestre Royal de Chambre de Wallonie | #8",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:03.932Z"
+  },
+  {
+    "id": "flagey-2026-06-27-14056-100-debussy-elodie-vignon-stephanie-coerten-9",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "100 % Debussy",
+    "date": "2026-06-27",
+    "time": "18:00",
+    "url": "https://www.flagey.be/fr/activity/14056-100-debussy-elodie-vignon-stephanie-coerten-9",
+    "composers": [
+      "Debussy"
+    ],
+    "performers": [],
+    "program": "Elodie Vignon & Stéphanie Coerten| #9",
+    "price_min": 6,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T07:11:04.380Z"
+  },
+  {
+    "id": "flagey-2026-06-27-14132-autour-iguaran-quartet",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Autour",
+    "date": "2026-06-27",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14132-autour-iguaran-quartet",
+    "composers": [],
+    "performers": [],
+    "program": "Iguarán Quartet",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:04.840Z"
+  },
+  {
+    "id": "flagey-2026-06-27-14057-open-road-lorenzo-gatto-ensemble-karavan-10",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Open Road",
+    "date": "2026-06-27",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/14057-open-road-lorenzo-gatto-ensemble-karavan-10",
+    "composers": [
+      "Vivaldi",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Lorenzo Gatto & Ensemble Karavan | #10",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:05.321Z"
+  },
+  {
+    "id": "flagey-2026-06-27-14058-camille-el-bacha-naghib-shanbehzadeh-11",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Camille El Bacha & Naghib Shanbehzadeh",
+    "date": "2026-06-27",
+    "time": "21:00",
+    "url": "https://www.flagey.be/fr/activity/14058-camille-el-bacha-naghib-shanbehzadeh-11",
+    "composers": [
+      "Ravel",
+      "Bach"
+    ],
+    "performers": [],
+    "program": "#11",
+    "price_min": 6,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T07:11:05.783Z"
   },
   {
     "id": "monnaie-2026-06-28-1838-tosca",
@@ -631,7 +1524,124 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14060-laureat-prix-du-public-concours-international-reine-elisabeth-13",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Lauréat Prix du public Concours International Reine Elisabeth",
+    "date": "2026-06-28",
+    "time": "15:00",
+    "url": "https://www.flagey.be/fr/activity/14060-laureat-prix-du-public-concours-international-reine-elisabeth-13",
+    "composers": [],
+    "performers": [],
+    "program": "#13",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:06.775Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14061-ca-part-en-fugue-le-live-cecile-poss-l-orchestre-du-festival-14",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ça part en fugue – Le live !",
+    "date": "2026-06-28",
+    "time": "16:00",
+    "url": "https://www.flagey.be/fr/activity/14061-ca-part-en-fugue-le-live-cecile-poss-l-orchestre-du-festival-14",
+    "composers": [
+      "Mozart",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Cécile Poss & l’Orchestre du Festival | #14",
+    "price_min": 6,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:11:07.253Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14062-because-reginald-mobley-baptiste-trotignon-15",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Because",
+    "date": "2026-06-28",
+    "time": "17:00",
+    "url": "https://www.flagey.be/fr/activity/14062-because-reginald-mobley-baptiste-trotignon-15",
+    "composers": [
+      "Purcell"
+    ],
+    "performers": [],
+    "program": "Reginald Mobley & Baptiste Trotignon | #15",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:07.713Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14063-ensemble-satellite-16",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Ensemble Satellite",
+    "date": "2026-06-28",
+    "time": "18:00",
+    "url": "https://www.flagey.be/fr/activity/14063-ensemble-satellite-16",
+    "composers": [],
+    "performers": [],
+    "program": "#16",
+    "price_min": 6,
+    "price_max": 15,
+    "scraped_at": "2026-05-10T07:11:08.160Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14064-surtout-v-nez-pas-pierre-derhet-marie-perbost-herve-niquet-17",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Surtout v’nez pas !",
+    "date": "2026-06-28",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/14064-surtout-v-nez-pas-pierre-derhet-marie-perbost-herve-niquet-17",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Pierre Derhet, Marie Perbost & Hervé Niquet | #17",
+    "price_min": 6,
+    "price_max": 17,
+    "scraped_at": "2026-05-10T07:11:08.628Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14133-autour-duo-altiler",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Autour",
+    "date": "2026-06-28",
+    "time": "19:00",
+    "url": "https://www.flagey.be/fr/activity/14133-autour-duo-altiler",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Duo Altiler",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:09.080Z"
+  },
+  {
+    "id": "flagey-2026-06-28-14065-concert-de-cloture-brussels-philharmonic-vlaams-radio-koor-joana-carneiro-18",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concert de Clôture",
+    "date": "2026-06-28",
+    "time": "20:00",
+    "url": "https://www.flagey.be/fr/activity/14065-concert-de-cloture-brussels-philharmonic-vlaams-radio-koor-joana-carneiro-18",
+    "composers": [
+      "Bernstein",
+      "Gershwin"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Vlaams Radio Koor & Joana Carneiro | #18",
+    "price_min": 6,
+    "price_max": 25,
+    "scraped_at": "2026-05-10T07:11:09.562Z"
   },
   {
     "id": "monnaie-2026-06-30-1838-tosca",
@@ -652,7 +1662,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-07-01-1838-tosca",
@@ -673,7 +1683,7 @@
     "program": "Jordan De Souza, Rafael R. Villalobos",
     "price_min": 12,
     "price_max": 170,
-    "scraped_at": "2026-05-10T06:51:11.700Z"
+    "scraped_at": "2026-05-10T07:10:11.521Z"
   },
   {
     "id": "monnaie-2026-07-05-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
@@ -693,7 +1703,7 @@
     "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
     "price_min": 5,
     "price_max": 92,
-    "scraped_at": "2026-05-10T06:51:12.128Z"
+    "scraped_at": "2026-05-10T07:10:12.051Z"
   },
   {
     "id": "monnaie-2026-07-06-3906-l-orchestre-symphonique-de-la-monnaie-au-festival-de-colmar",
@@ -713,7 +1723,7 @@
     "program": "Wagner, Strauss, Berlioz, Saint-Saëns & Grieg",
     "price_min": 5,
     "price_max": 92,
-    "scraped_at": "2026-05-10T06:51:12.128Z"
+    "scraped_at": "2026-05-10T07:10:12.051Z"
   },
   {
     "id": "monnaie-2026-07-29-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
@@ -730,7 +1740,7 @@
     "program": "Werther (Jules Massenet)",
     "price_min": 25,
     "price_max": 340,
-    "scraped_at": "2026-05-10T06:51:12.569Z"
+    "scraped_at": "2026-05-10T07:10:12.505Z"
   },
   {
     "id": "monnaie-2026-08-01-3858-l-orchestre-de-la-monnaie-au-festival-de-salzbourg",
@@ -747,7 +1757,22 @@
     "program": "Werther (Jules Massenet)",
     "price_min": 25,
     "price_max": 340,
-    "scraped_at": "2026-05-10T06:51:12.569Z"
+    "scraped_at": "2026-05-10T07:10:12.505Z"
+  },
+  {
+    "id": "flagey-2026-09-10-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic",
+    "date": "2026-09-10",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "composers": [],
+    "performers": [],
+    "program": "Star Wars: Return of the Jedi - in concert",
+    "price_min": 5,
+    "price_max": 61,
+    "scraped_at": "2026-05-10T07:11:10.077Z"
   },
   {
     "id": "bozar-2026-09-11-belgian-national-orchestra-halls-vinnitskaya",
@@ -770,7 +1795,22 @@
     "program": "Mahler's Titan",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:50:44.356Z"
+    "scraped_at": "2026-05-10T07:09:30.182Z"
+  },
+  {
+    "id": "flagey-2026-09-11-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic",
+    "date": "2026-09-11",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "composers": [],
+    "performers": [],
+    "program": "Star Wars: Return of the Jedi - in concert",
+    "price_min": 5,
+    "price_max": 61,
+    "scraped_at": "2026-05-10T07:11:10.077Z"
   },
   {
     "id": "monnaie-2026-09-12-3948-silent-stories-a-grain-of-light",
@@ -788,7 +1828,22 @@
     "program": "Jeanine de Bique",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:13.008Z"
+    "scraped_at": "2026-05-10T07:10:12.953Z"
+  },
+  {
+    "id": "flagey-2026-09-12-13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic",
+    "date": "2026-09-12",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13941-brussels-philharmonic-star-wars-return-of-the-jedi-in-concert",
+    "composers": [],
+    "performers": [],
+    "program": "Star Wars: Return of the Jedi - in concert",
+    "price_min": 5,
+    "price_max": 61,
+    "scraped_at": "2026-05-10T07:11:10.077Z"
   },
   {
     "id": "monnaie-2026-09-13-3939-beethoven-freedom-fate",
@@ -808,7 +1863,63 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:13.450Z"
+    "scraped_at": "2026-05-10T07:10:13.396Z"
+  },
+  {
+    "id": "flagey-2026-09-26-14042-verdi-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Verdi Deconstructed",
+    "date": "2026-09-26",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/14042-verdi-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "composers": [
+      "Verdi",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Florestan Bataillie",
+    "price_min": 5,
+    "price_max": 9,
+    "scraped_at": "2026-05-10T07:11:10.992Z"
+  },
+  {
+    "id": "flagey-2026-09-26-14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Vlaams Radiokoor & Kazushi Ono",
+    "date": "2026-09-26",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
+    "composers": [
+      "Brahms",
+      "Verdi",
+      "Mozart"
+    ],
+    "performers": [],
+    "program": "Verdi: Requiem",
+    "price_min": 5,
+    "price_max": 61,
+    "scraped_at": "2026-05-10T07:11:11.483Z"
+  },
+  {
+    "id": "flagey-2026-09-27-14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Vlaams Radiokoor & Kazushi Ono",
+    "date": "2026-09-27",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/14040-brussels-philharmonic-vlaams-radiokoor-kazushi-ono-verdi-requiem",
+    "composers": [
+      "Brahms",
+      "Verdi",
+      "Mozart"
+    ],
+    "performers": [],
+    "program": "Verdi: Requiem",
+    "price_min": 5,
+    "price_max": 61,
+    "scraped_at": "2026-05-10T07:11:11.483Z"
   },
   {
     "id": "monnaie-2026-09-29-3930-romeo-et-juliette",
@@ -830,7 +1941,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:13.894Z"
+    "scraped_at": "2026-05-10T07:10:13.839Z"
   },
   {
     "id": "monnaie-2026-10-01-3930-romeo-et-juliette",
@@ -852,7 +1963,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:13.895Z"
+    "scraped_at": "2026-05-10T07:10:13.839Z"
   },
   {
     "id": "bozar-2026-10-02-la-tempete",
@@ -873,7 +1984,7 @@
     "program": "Monteverdi. Vespro della Beata Vergine",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:43.203Z"
+    "scraped_at": "2026-05-10T07:09:30.050Z"
   },
   {
     "id": "monnaie-2026-10-02-3949-a-vagabond-s-daydream",
@@ -890,7 +2001,7 @@
     "program": "Simon Keenlyside & Malcolm Martineau",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "monnaie-2026-10-03-3930-romeo-et-juliette",
@@ -912,7 +2023,26 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
+  },
+  {
+    "id": "flagey-2026-10-03-13943-brussels-philharmonic-alena-baeva-kazushi-ono-shostakovich-prokofiev-6",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Alena Baeva & Kazushi Ono",
+    "date": "2026-10-03",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13943-brussels-philharmonic-alena-baeva-kazushi-ono-shostakovich-prokofiev-6",
+    "composers": [
+      "Chostakovitch",
+      "Prokofiev",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Shostakovich & Prokofiev 6",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:11.974Z"
   },
   {
     "id": "monnaie-2026-10-04-3930-romeo-et-juliette",
@@ -934,7 +2064,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "bozar-2026-10-04-beatrice-rana-0",
@@ -955,7 +2085,7 @@
     "program": "Bach, Clementi & Schumann",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:43.209Z"
+    "scraped_at": "2026-05-10T07:09:30.153Z"
   },
   {
     "id": "monnaie-2026-10-08-3930-romeo-et-juliette",
@@ -977,7 +2107,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "bozar-2026-10-08-cleveland-orchestra-welser-most-schultz",
@@ -1000,7 +2130,7 @@
     "program": "Brahms 2 & Strauss. Vier letzte Lieder",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T06:50:44.870Z"
+    "scraped_at": "2026-05-10T07:09:30.732Z"
   },
   {
     "id": "monnaie-2026-10-09-3930-romeo-et-juliette",
@@ -1022,7 +2152,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "bozar-2026-10-11-belgian-national-orchestra-petrenko-kobekina",
@@ -1044,7 +2174,7 @@
     "program": "Rachmaninov 2",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:44.908Z"
+    "scraped_at": "2026-05-10T07:09:32.126Z"
   },
   {
     "id": "monnaie-2026-10-11-3930-romeo-et-juliette",
@@ -1066,7 +2196,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "monnaie-2026-10-13-3930-romeo-et-juliette",
@@ -1088,7 +2218,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "monnaie-2026-10-14-3930-romeo-et-juliette",
@@ -1110,7 +2240,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "monnaie-2026-10-16-3930-romeo-et-juliette",
@@ -1132,7 +2262,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "monnaie-2026-10-17-3930-romeo-et-juliette",
@@ -1154,7 +2284,7 @@
     "program": "Valentina Peleggi, Julia Burbach",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.335Z"
+    "scraped_at": "2026-05-10T07:10:14.287Z"
   },
   {
     "id": "bozar-2026-10-18-goya-quartet",
@@ -1175,7 +2305,7 @@
     "program": "Ravel, Holst & Janáček",
     "price_min": 28,
     "price_max": 28,
-    "scraped_at": "2026-05-10T06:50:46.100Z"
+    "scraped_at": "2026-05-10T07:09:32.028Z"
   },
   {
     "id": "bozar-2026-10-20-janine-jansen-denis-kozhukhin-3",
@@ -1196,7 +2326,7 @@
     "program": "Beethoven & Prokofiev",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:46.825Z"
+    "scraped_at": "2026-05-10T07:09:34.454Z"
   },
   {
     "id": "bozar-2026-10-23-belgian-national-orchestra-franck-kamei",
@@ -1218,7 +2348,7 @@
     "program": "Brahms & Tchaikovsky",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:50:47.715Z"
+    "scraped_at": "2026-05-10T07:09:34.481Z"
   },
   {
     "id": "monnaie-2026-10-24-3940-vienna-a-new-era",
@@ -1238,7 +2368,7 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.777Z"
+    "scraped_at": "2026-05-10T07:10:14.739Z"
   },
   {
     "id": "monnaie-2026-10-25-3940-vienna-a-new-era",
@@ -1258,7 +2388,7 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:14.777Z"
+    "scraped_at": "2026-05-10T07:10:14.739Z"
   },
   {
     "id": "bozar-2026-10-30-camerata-salzburg-vox-luminis",
@@ -1284,7 +2414,7 @@
     "program": "Mozart. Requiem",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:50:46.615Z"
+    "scraped_at": "2026-05-10T07:09:34.693Z"
   },
   {
     "id": "bozar-2026-11-07-pavel-kolesnikov",
@@ -1303,7 +2433,7 @@
     "program": "Chopin. Nocturnes",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:49.182Z"
+    "scraped_at": "2026-05-10T07:09:36.279Z"
   },
   {
     "id": "monnaie-2026-11-08-3931-wozzeck",
@@ -1324,7 +2454,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:15.218Z"
+    "scraped_at": "2026-05-10T07:10:15.523Z"
   },
   {
     "id": "monnaie-2026-11-10-3931-wozzeck",
@@ -1345,7 +2475,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:15.218Z"
+    "scraped_at": "2026-05-10T07:10:15.523Z"
   },
   {
     "id": "monnaie-2026-11-12-3931-wozzeck",
@@ -1366,7 +2496,28 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:15.218Z"
+    "scraped_at": "2026-05-10T07:10:15.523Z"
+  },
+  {
+    "id": "flagey-2026-11-13-14127-jorge-gimenez-matteo-bevilacqua",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Jorge Gimenez, Matteo Bevilacqua",
+    "date": "2026-11-13",
+    "time": "12:30",
+    "url": "https://www.flagey.be/fr/activity/14127-jorge-gimenez-matteo-bevilacqua",
+    "composers": [
+      "Mendelssohn",
+      "Beethoven",
+      "Schumann",
+      "Debussy",
+      "Falla"
+    ],
+    "performers": [],
+    "program": "Lorsqu’on évoque le violoncelliste espagnol Jorge Giménez et le pianiste italien Matteo Bevilacqua, un plus un fait trois",
+    "price_min": 16,
+    "price_max": 16,
+    "scraped_at": "2026-05-10T07:11:13.372Z"
   },
   {
     "id": "monnaie-2026-11-13-3950-fly-me-to-the-moon",
@@ -1386,7 +2537,7 @@
     "program": "Fly me to the Moon",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:15.665Z"
+    "scraped_at": "2026-05-10T07:10:15.977Z"
   },
   {
     "id": "bozar-2026-11-14-city-birmingham-symphony-orchestra-chorus",
@@ -1411,7 +2562,7 @@
     "program": "Britten. War Requiem",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:50:48.262Z"
+    "scraped_at": "2026-05-10T07:09:36.318Z"
   },
   {
     "id": "monnaie-2026-11-14-3931-wozzeck",
@@ -1432,7 +2583,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:15.665Z"
+    "scraped_at": "2026-05-10T07:10:15.977Z"
   },
   {
     "id": "bozar-2026-11-15-quatuor-diotima-0",
@@ -1454,7 +2605,7 @@
     "program": "Thorvaldsdottir, Saariaho, Tjøgersen & Verrières",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T06:50:49.398Z"
+    "scraped_at": "2026-05-10T07:09:35.254Z"
   },
   {
     "id": "monnaie-2026-11-17-3931-wozzeck",
@@ -1475,7 +2626,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:15.665Z"
+    "scraped_at": "2026-05-10T07:10:15.977Z"
   },
   {
     "id": "bozar-2026-11-18-apollos-fire-jeanine-de-bique",
@@ -1494,7 +2645,7 @@
     "program": "Echoes Across the Atlantic",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:50.928Z"
+    "scraped_at": "2026-05-10T07:09:38.008Z"
   },
   {
     "id": "monnaie-2026-11-18-3957-echoes-across-the-atlantic",
@@ -1512,7 +2663,7 @@
     "program": "Apollo’s Fire & Jeanine de Bique",
     "price_min": 21,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:51:16.111Z"
+    "scraped_at": "2026-05-10T07:10:16.516Z"
   },
   {
     "id": "monnaie-2026-11-19-3931-wozzeck",
@@ -1533,7 +2684,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:16.111Z"
+    "scraped_at": "2026-05-10T07:10:16.516Z"
   },
   {
     "id": "monnaie-2026-11-22-3931-wozzeck",
@@ -1554,7 +2705,7 @@
     "program": "Alain Altinoglu, Christophe Coppens",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:16.111Z"
+    "scraped_at": "2026-05-10T07:10:16.516Z"
   },
   {
     "id": "monnaie-2026-11-28-3941-hispanic-waves",
@@ -1572,7 +2723,24 @@
     "program": "Diego Matheuz",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:16.553Z"
+    "scraped_at": "2026-05-10T07:10:16.958Z"
+  },
+  {
+    "id": "flagey-2026-12-08-14032-concert-de-la-presidence-irlandaise-de-l-ue-tresors-classiques-irlandais-par-le-brussels-chamber-ensemble",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Concert de la Présidence irlandaise de l’UE",
+    "date": "2026-12-08",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/14032-concert-de-la-presidence-irlandaise-de-l-ue-tresors-classiques-irlandais-par-le-brussels-chamber-ensemble",
+    "composers": [
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Trésors classiques irlandais par le Brussels Chamber Ensemble",
+    "price_min": 15,
+    "price_max": 35,
+    "scraped_at": "2026-05-10T07:11:13.858Z"
   },
   {
     "id": "bozar-2026-12-10-die-deutsche-kammerphilharmonie-bremen-jarvi-mork",
@@ -1594,7 +2762,7 @@
     "program": "Schubert & Schumann",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:50:51.202Z"
+    "scraped_at": "2026-05-10T07:09:38.152Z"
   },
   {
     "id": "monnaie-2026-12-11-3945-erwartung",
@@ -1612,7 +2780,7 @@
     "program": "Alpesh Chauhan",
     "price_min": 15,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:51:16.999Z"
+    "scraped_at": "2026-05-10T07:10:17.409Z"
   },
   {
     "id": "monnaie-2026-12-15-3932-la-cenerentola",
@@ -1633,7 +2801,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:17.447Z"
+    "scraped_at": "2026-05-10T07:10:17.864Z"
   },
   {
     "id": "bozar-2026-12-15-grigory-sokolov-14",
@@ -1652,7 +2820,7 @@
     "program": "* * * : programme à déterminer",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:50:50.909Z"
+    "scraped_at": "2026-05-10T07:09:37.954Z"
   },
   {
     "id": "monnaie-2026-12-16-3932-la-cenerentola",
@@ -1673,7 +2841,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:17.447Z"
+    "scraped_at": "2026-05-10T07:10:17.864Z"
   },
   {
     "id": "monnaie-2026-12-17-3932-la-cenerentola",
@@ -1694,7 +2862,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:17.447Z"
+    "scraped_at": "2026-05-10T07:10:17.864Z"
   },
   {
     "id": "bozar-2026-12-18-cappella-mediterranea-nederlands-kamerkoor",
@@ -1719,7 +2887,7 @@
     "program": "Bach. Weihnachtsoratorium",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:50:53.164Z"
+    "scraped_at": "2026-05-10T07:09:38.707Z"
   },
   {
     "id": "monnaie-2026-12-18-3951-about-last-night",
@@ -1737,7 +2905,7 @@
     "program": "Marina Viotti",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:17.891Z"
+    "scraped_at": "2026-05-10T07:10:18.351Z"
   },
   {
     "id": "monnaie-2026-12-18-3984-christmas-carols",
@@ -1754,7 +2922,7 @@
     "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.863Z"
   },
   {
     "id": "monnaie-2026-12-19-3984-christmas-carols",
@@ -1771,7 +2939,7 @@
     "program": "Emmanuel Trenque & le Chœur de femmes de la Monnaie",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.863Z"
   },
   {
     "id": "monnaie-2026-12-19-3932-la-cenerentola",
@@ -1792,7 +2960,25 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.864Z"
+  },
+  {
+    "id": "flagey-2026-12-19-13944-brussels-philharmonic-lukas-vondracek-kazushi-ono-scriabin-poeme-de-l-extase",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Lukáš Vondráček, Kazushi Ono",
+    "date": "2026-12-19",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13944-brussels-philharmonic-lukas-vondracek-kazushi-ono-scriabin-poeme-de-l-extase",
+    "composers": [
+      "Rachmaninov",
+      "Scriabine"
+    ],
+    "performers": [],
+    "program": "Scriabin: Poème de l'extase",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:14.341Z"
   },
   {
     "id": "monnaie-2026-12-20-3932-la-cenerentola",
@@ -1813,7 +2999,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-22-3932-la-cenerentola",
@@ -1834,7 +3020,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-23-3932-la-cenerentola",
@@ -1855,7 +3041,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-27-3932-la-cenerentola",
@@ -1876,7 +3062,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-29-3932-la-cenerentola",
@@ -1897,7 +3083,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-30-3932-la-cenerentola",
@@ -1918,7 +3104,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2026-12-31-3932-la-cenerentola",
@@ -1939,7 +3125,7 @@
     "program": "Speranza Scappucci / Stefano Sarzani, Daniel Kramer",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:18.491Z"
+    "scraped_at": "2026-05-10T07:10:18.868Z"
   },
   {
     "id": "monnaie-2027-01-09-3942-new-year-s-concert",
@@ -1958,7 +3144,7 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:18.938Z"
+    "scraped_at": "2026-05-10T07:10:19.327Z"
   },
   {
     "id": "bozar-2027-01-10-freiburger-barockorchester-jeanine-de-bique",
@@ -1979,7 +3165,7 @@
     "program": "Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:50:53.320Z"
+    "scraped_at": "2026-05-10T07:09:40.087Z"
   },
   {
     "id": "monnaie-2027-01-10-3958-mozart",
@@ -1999,7 +3185,7 @@
     "program": "Freiburger Barockorchester & Jeanine de Bique",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:51:19.380Z"
+    "scraped_at": "2026-05-10T07:10:20.070Z"
   },
   {
     "id": "bozar-2027-01-14-london-philharmonic-orchestra-bihlmaier",
@@ -2022,7 +3208,7 @@
     "program": "Grieg & Sibelius",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:50:53.283Z"
+    "scraped_at": "2026-05-10T07:09:40.002Z"
   },
   {
     "id": "bozar-2027-01-17-cuarteto-casals-0",
@@ -2043,7 +3229,7 @@
     "program": "Haydn & Schubert",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T06:50:53.860Z"
+    "scraped_at": "2026-05-10T07:09:40.649Z"
   },
   {
     "id": "bozar-2027-01-21-les-talens-lyriques-christophe-rousset",
@@ -2067,7 +3253,7 @@
     "program": "Pergolesi. Stabat Mater",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:50:55.078Z"
+    "scraped_at": "2026-05-10T07:09:41.814Z"
   },
   {
     "id": "bozar-2027-01-22-lithuanian-national-symphony-orchestra-grigorian-montvidas",
@@ -2090,7 +3276,7 @@
     "program": "Wagner, Čiurlionis, Puccini & Ponchielli",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:50:54.965Z"
+    "scraped_at": "2026-05-10T07:09:41.750Z"
   },
   {
     "id": "monnaie-2027-01-22-3933-lucidity",
@@ -2110,7 +3296,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:19.823Z"
+    "scraped_at": "2026-05-10T07:10:20.704Z"
   },
   {
     "id": "monnaie-2027-01-22-3959-asmik-grigorian-edgaras-montvidas",
@@ -2129,7 +3315,7 @@
     "program": "Lithuanian National Symphony Orchestra",
     "price_min": 21,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:51:20.262Z"
+    "scraped_at": "2026-05-10T07:10:21.159Z"
   },
   {
     "id": "monnaie-2027-01-23-3933-lucidity",
@@ -2149,7 +3335,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:20.262Z"
+    "scraped_at": "2026-05-10T07:10:21.160Z"
   },
   {
     "id": "bozar-2027-01-24-belgian-national-orchestra-hermus-meeuwsen",
@@ -2171,7 +3357,7 @@
     "program": "Between Fire and Faith",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:50:55.618Z"
+    "scraped_at": "2026-05-10T07:09:42.368Z"
   },
   {
     "id": "monnaie-2027-01-24-3933-lucidity",
@@ -2191,7 +3377,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:20.262Z"
+    "scraped_at": "2026-05-10T07:10:21.160Z"
   },
   {
     "id": "monnaie-2027-01-24-3934-ariadne-auf-naxos",
@@ -2211,7 +3397,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:20.702Z"
+    "scraped_at": "2026-05-10T07:10:21.864Z"
   },
   {
     "id": "monnaie-2027-01-25-3952-behind-the-lines",
@@ -2229,7 +3415,7 @@
     "program": "Anna Prohaska & Eric Schneider",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.503Z"
   },
   {
     "id": "monnaie-2027-01-26-3933-lucidity",
@@ -2249,7 +3435,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.503Z"
   },
   {
     "id": "monnaie-2027-01-26-3934-ariadne-auf-naxos",
@@ -2269,7 +3455,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.503Z"
   },
   {
     "id": "monnaie-2027-01-26-3933-lucidity",
@@ -2289,7 +3475,7 @@
     "program": "Patrick Leterme, Mathilda Du Tillieul Mcnicol",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.503Z"
   },
   {
     "id": "monnaie-2027-01-28-3934-ariadne-auf-naxos",
@@ -2309,7 +3495,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.503Z"
   },
   {
     "id": "monnaie-2027-01-31-3934-ariadne-auf-naxos",
@@ -2329,7 +3515,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.504Z"
   },
   {
     "id": "bozar-2027-01-31-collegium-vocale-gent-herreweghe",
@@ -2354,7 +3540,7 @@
     "program": "Bach. H-Moll Messe",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:50:55.587Z"
+    "scraped_at": "2026-05-10T07:09:44.686Z"
   },
   {
     "id": "monnaie-2027-02-02-3934-ariadne-auf-naxos",
@@ -2374,7 +3560,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.148Z"
+    "scraped_at": "2026-05-10T07:10:22.504Z"
   },
   {
     "id": "monnaie-2027-02-04-3953-pleasantly-haunted",
@@ -2392,7 +3578,7 @@
     "program": "Emily D'Angelo",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:21.583Z"
+    "scraped_at": "2026-05-10T07:10:23.136Z"
   },
   {
     "id": "monnaie-2027-02-05-3934-ariadne-auf-naxos",
@@ -2412,7 +3598,43 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.583Z"
+    "scraped_at": "2026-05-10T07:10:23.139Z"
+  },
+  {
+    "id": "flagey-2027-02-06-14071-mahler-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Mahler Deconstructed",
+    "date": "2027-02-06",
+    "time": "18:30",
+    "url": "https://www.flagey.be/fr/activity/14071-mahler-deconstructed-brussels-philharmonic-florestan-bataillie",
+    "composers": [
+      "Mahler",
+      "Pärt"
+    ],
+    "performers": [],
+    "program": "Brussels Philharmonic, Florestan Bataillie",
+    "price_min": 5,
+    "price_max": 9,
+    "scraped_at": "2026-05-10T07:11:14.836Z"
+  },
+  {
+    "id": "flagey-2027-02-06-13945-brussels-philharmonic-kazushi-ono-mahler-9",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Kazushi Ono",
+    "date": "2027-02-06",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13945-brussels-philharmonic-kazushi-ono-mahler-9",
+    "composers": [
+      "Scriabine",
+      "Mahler"
+    ],
+    "performers": [],
+    "program": "Mahler 9",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:15.863Z"
   },
   {
     "id": "monnaie-2027-02-07-3934-ariadne-auf-naxos",
@@ -2432,7 +3654,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.583Z"
+    "scraped_at": "2026-05-10T07:10:23.139Z"
   },
   {
     "id": "bozar-2027-02-09-brodsky-quartet",
@@ -2451,7 +3673,7 @@
     "program": "Beethoven",
     "price_min": 34,
     "price_max": 34,
-    "scraped_at": "2026-05-10T06:50:56.890Z"
+    "scraped_at": "2026-05-10T07:09:42.346Z"
   },
   {
     "id": "monnaie-2027-02-09-3934-ariadne-auf-naxos",
@@ -2471,7 +3693,7 @@
     "program": "Ariane Matiakh, Mariusz Treliński",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:21.583Z"
+    "scraped_at": "2026-05-10T07:10:23.139Z"
   },
   {
     "id": "monnaie-2027-02-10-3954-our-people",
@@ -2489,7 +3711,7 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:22.024Z"
+    "scraped_at": "2026-05-10T07:10:24.553Z"
   },
   {
     "id": "bozar-2027-02-12-orchestre-national-de-lyon-szeps-znaider",
@@ -2511,7 +3733,7 @@
     "program": "Shostakovich & Mozart",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:50:59.120Z"
+    "scraped_at": "2026-05-10T07:09:47.160Z"
   },
   {
     "id": "monnaie-2027-02-12-3954-our-people",
@@ -2529,7 +3751,7 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:22.024Z"
+    "scraped_at": "2026-05-10T07:10:24.554Z"
   },
   {
     "id": "monnaie-2027-02-13-3954-our-people",
@@ -2547,7 +3769,7 @@
     "program": "Freddie Ballentine & Kunal Lahiry",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:22.024Z"
+    "scraped_at": "2026-05-10T07:10:24.554Z"
   },
   {
     "id": "monnaie-2027-02-21-3943-beethoven-tchaikovsky-glory-destiny",
@@ -2568,7 +3790,7 @@
     "program": "Alain Altinoglu",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:22.474Z"
+    "scraped_at": "2026-05-10T07:10:25.230Z"
   },
   {
     "id": "bozar-2027-02-23-angela-hewitt",
@@ -2589,7 +3811,7 @@
     "program": "Scarlatti, Bach & Chopin",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:50:59.918Z"
+    "scraped_at": "2026-05-10T07:09:48.170Z"
   },
   {
     "id": "bozar-2027-02-26-belgian-national-orchestra-schonwandt-kolesnikov",
@@ -2612,7 +3834,7 @@
     "program": "Symphonie fantastique",
     "price_min": 24,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:50:57.947Z"
+    "scraped_at": "2026-05-10T07:09:47.226Z"
   },
   {
     "id": "bozar-2027-02-28-pygmalion-raphael-pichon",
@@ -2630,7 +3852,7 @@
     "program": "Vertigo – Imaginary Vespers",
     "price_min": 34,
     "price_max": 58,
-    "scraped_at": "2026-05-10T06:51:01.263Z"
+    "scraped_at": "2026-05-10T07:09:49.709Z"
   },
   {
     "id": "bozar-2027-03-02-schumann-quartett",
@@ -2651,7 +3873,7 @@
     "program": "Beethoven, Brahms & Shaw",
     "price_min": 32,
     "price_max": 32,
-    "scraped_at": "2026-05-10T06:51:00.889Z"
+    "scraped_at": "2026-05-10T07:09:49.889Z"
   },
   {
     "id": "bozar-2027-03-07-belgian-national-orchestra-hermus-gavrylyuk",
@@ -2673,7 +3895,7 @@
     "program": "Youth & Destiny",
     "price_min": 22,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:51:01.524Z"
+    "scraped_at": "2026-05-10T07:09:49.870Z"
   },
   {
     "id": "monnaie-2027-03-14-427-cavalleria-rusticana-pagliacci",
@@ -2692,7 +3914,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:22.935Z"
+    "scraped_at": "2026-05-10T07:10:25.720Z"
   },
   {
     "id": "monnaie-2027-03-16-427-cavalleria-rusticana-pagliacci",
@@ -2711,7 +3933,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:22.935Z"
+    "scraped_at": "2026-05-10T07:10:25.720Z"
   },
   {
     "id": "monnaie-2027-03-18-427-cavalleria-rusticana-pagliacci",
@@ -2730,7 +3952,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:22.935Z"
+    "scraped_at": "2026-05-10T07:10:25.720Z"
   },
   {
     "id": "monnaie-2027-03-19-427-cavalleria-rusticana-pagliacci",
@@ -2749,7 +3971,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:22.935Z"
+    "scraped_at": "2026-05-10T07:10:25.720Z"
   },
   {
     "id": "bozar-2027-03-19-helene-grimaud",
@@ -2769,7 +3991,7 @@
     "program": "The last testament",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:51:03.096Z"
+    "scraped_at": "2026-05-10T07:09:52.038Z"
   },
   {
     "id": "bozar-2027-03-20-london-symphony-orchestra-pappano-vengerov",
@@ -2791,7 +4013,7 @@
     "program": "Beethoven & Chostakovitch 8",
     "price_min": 56,
     "price_max": 138,
-    "scraped_at": "2026-05-10T06:51:02.474Z"
+    "scraped_at": "2026-05-10T07:09:51.906Z"
   },
   {
     "id": "monnaie-2027-03-20-3955-loved-lost",
@@ -2809,7 +4031,7 @@
     "program": "Joshua Hopkins & Niamh O'Sullivan",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-21-427-cavalleria-rusticana-pagliacci",
@@ -2828,7 +4050,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-23-427-cavalleria-rusticana-pagliacci",
@@ -2847,7 +4069,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-24-427-cavalleria-rusticana-pagliacci",
@@ -2866,7 +4088,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-26-427-cavalleria-rusticana-pagliacci",
@@ -2885,7 +4107,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-27-427-cavalleria-rusticana-pagliacci",
@@ -2904,7 +4126,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-30-427-cavalleria-rusticana-pagliacci",
@@ -2923,7 +4145,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "monnaie-2027-03-31-427-cavalleria-rusticana-pagliacci",
@@ -2942,7 +4164,7 @@
     "program": "Alevtina Ioffe, Damiano Michieletto",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:23.383Z"
+    "scraped_at": "2026-05-10T07:10:26.179Z"
   },
   {
     "id": "bozar-2027-04-04-budapest-festival-orchestra-fischer",
@@ -2967,7 +4189,7 @@
     "program": "Beethoven 9",
     "price_min": 42,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:51:03.101Z"
+    "scraped_at": "2026-05-10T07:09:52.093Z"
   },
   {
     "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
@@ -2989,7 +4211,7 @@
     "program": "Beethoven Symphony 9",
     "price_min": 26,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:51:23.825Z"
+    "scraped_at": "2026-05-10T07:10:26.655Z"
   },
   {
     "id": "monnaie-2027-04-04-3946-beethoven-symphony-9",
@@ -3011,7 +4233,7 @@
     "program": "Beethoven Symphony 9",
     "price_min": 26,
     "price_max": 100,
-    "scraped_at": "2026-05-10T06:51:23.825Z"
+    "scraped_at": "2026-05-10T07:10:26.656Z"
   },
   {
     "id": "monnaie-2027-04-14-3961-winterreise",
@@ -3028,7 +4250,7 @@
     "program": "Matthias Goerne & Markus Hinterhäuser",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:51:24.270Z"
+    "scraped_at": "2026-05-10T07:10:28.430Z"
   },
   {
     "id": "monnaie-2027-04-20-3935-m-butterfly",
@@ -3049,7 +4271,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:24.712Z"
+    "scraped_at": "2026-05-10T07:10:29.444Z"
   },
   {
     "id": "bozar-2027-04-20-sheku-kanneh-mason-benjamin-grosvenor",
@@ -3071,7 +4293,7 @@
     "program": "Beethoven, Boulanger & Rachmaninov",
     "price_min": 30,
     "price_max": 50,
-    "scraped_at": "2026-05-10T06:51:04.733Z"
+    "scraped_at": "2026-05-10T07:09:54.338Z"
   },
   {
     "id": "bozar-2027-04-22-brock-rene-jacobs",
@@ -3099,7 +4321,7 @@
     "program": "Salieri. Falstaff",
     "price_min": 28,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:51:04.764Z"
+    "scraped_at": "2026-05-10T07:09:54.072Z"
   },
   {
     "id": "monnaie-2027-04-22-3935-m-butterfly",
@@ -3120,7 +4342,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:24.712Z"
+    "scraped_at": "2026-05-10T07:10:29.444Z"
   },
   {
     "id": "monnaie-2027-04-22-3962-falstaff",
@@ -3139,7 +4361,7 @@
     "program": "René Jacobs & B’Rock Orchestra",
     "price_min": 20,
     "price_max": 66,
-    "scraped_at": "2026-05-10T06:51:25.147Z"
+    "scraped_at": "2026-05-10T07:10:29.989Z"
   },
   {
     "id": "monnaie-2027-04-25-3935-m-butterfly",
@@ -3160,7 +4382,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:25.147Z"
+    "scraped_at": "2026-05-10T07:10:29.989Z"
   },
   {
     "id": "monnaie-2027-04-27-3935-m-butterfly",
@@ -3181,7 +4403,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:25.147Z"
+    "scraped_at": "2026-05-10T07:10:29.989Z"
   },
   {
     "id": "monnaie-2027-04-29-3956-thousands-of-miles",
@@ -3199,7 +4421,7 @@
     "program": "Kate Lindsey & Baptiste Trotignon",
     "price_min": 6,
     "price_max": 16,
-    "scraped_at": "2026-05-10T06:51:25.586Z"
+    "scraped_at": "2026-05-10T07:10:30.532Z"
   },
   {
     "id": "monnaie-2027-04-30-3935-m-butterfly",
@@ -3220,7 +4442,27 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:25.586Z"
+    "scraped_at": "2026-05-10T07:10:30.533Z"
+  },
+  {
+    "id": "flagey-2027-04-30-13946-brussels-philharmonic-kazushi-ono-britten-spring-symphony",
+    "source": "flagey",
+    "venue_id": "flagey",
+    "title": "Brussels Philharmonic, Kazushi Ono",
+    "date": "2027-04-30",
+    "time": "20:15",
+    "url": "https://www.flagey.be/fr/activity/13946-brussels-philharmonic-kazushi-ono-britten-spring-symphony",
+    "composers": [
+      "Vaughan Williams",
+      "Britten",
+      "Vivaldi",
+      "Tallis"
+    ],
+    "performers": [],
+    "program": "Britten: Spring Symphony",
+    "price_min": null,
+    "price_max": null,
+    "scraped_at": "2026-05-10T07:11:17.495Z"
   },
   {
     "id": "monnaie-2027-05-02-3935-m-butterfly",
@@ -3241,7 +4483,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:25.586Z"
+    "scraped_at": "2026-05-10T07:10:30.534Z"
   },
   {
     "id": "bozar-2027-05-02-orchestre-des-champs-elysees-philippe-herreweghe-0",
@@ -3267,7 +4509,7 @@
     "program": "Mozart. Clarinet Concerto & Mass in c",
     "price_min": 30,
     "price_max": 80,
-    "scraped_at": "2026-05-10T06:51:04.739Z"
+    "scraped_at": "2026-05-10T07:09:54.129Z"
   },
   {
     "id": "monnaie-2027-05-04-3935-m-butterfly",
@@ -3288,7 +4530,7 @@
     "program": "Carolyn Kuan, Krystian Lada",
     "price_min": 11,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:25.587Z"
+    "scraped_at": "2026-05-10T07:10:30.534Z"
   },
   {
     "id": "monnaie-2027-05-09-3960-city-of-floating-sounds",
@@ -3305,7 +4547,7 @@
     "program": "Huang Ruo",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:51:26.032Z"
+    "scraped_at": "2026-05-10T07:10:31.055Z"
   },
   {
     "id": "monnaie-2027-05-20-3947-concours-reine-elisabeth",
@@ -3322,7 +4564,7 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:51:26.470Z"
+    "scraped_at": "2026-05-10T07:10:33.207Z"
   },
   {
     "id": "monnaie-2027-05-21-3947-concours-reine-elisabeth",
@@ -3339,7 +4581,7 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:51:26.471Z"
+    "scraped_at": "2026-05-10T07:10:33.207Z"
   },
   {
     "id": "monnaie-2027-05-22-3947-concours-reine-elisabeth",
@@ -3356,7 +4598,7 @@
     "program": "Édition chant",
     "price_min": null,
     "price_max": null,
-    "scraped_at": "2026-05-10T06:51:26.471Z"
+    "scraped_at": "2026-05-10T07:10:33.207Z"
   },
   {
     "id": "monnaie-2027-06-06-3936-burmese-days",
@@ -3373,7 +4615,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:26.913Z"
+    "scraped_at": "2026-05-10T07:10:33.971Z"
   },
   {
     "id": "monnaie-2027-06-08-3936-burmese-days",
@@ -3390,7 +4632,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:26.913Z"
+    "scraped_at": "2026-05-10T07:10:33.971Z"
   },
   {
     "id": "monnaie-2027-06-09-3936-burmese-days",
@@ -3407,7 +4649,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:26.913Z"
+    "scraped_at": "2026-05-10T07:10:33.971Z"
   },
   {
     "id": "monnaie-2027-06-10-3937-boris-godounov",
@@ -3428,7 +4670,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-11-3936-burmese-days",
@@ -3445,7 +4687,7 @@
     "program": "Prach Boondiskulchok",
     "price_min": 8,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-12-3937-boris-godounov",
@@ -3466,7 +4708,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-15-3937-boris-godounov",
@@ -3487,7 +4729,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-18-3937-boris-godounov",
@@ -3508,7 +4750,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-22-3937-boris-godounov",
@@ -3529,7 +4771,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-24-3937-boris-godounov",
@@ -3550,7 +4792,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-27-3937-boris-godounov",
@@ -3571,7 +4813,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-06-29-3937-boris-godounov",
@@ -3592,7 +4834,7 @@
     "program": "Alain Altinoglu, Vasily Barkhatov",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.355Z"
+    "scraped_at": "2026-05-10T07:10:34.559Z"
   },
   {
     "id": "monnaie-2027-07-03-3944-summer-delights",
@@ -3612,6 +4854,6 @@
     "program": "Nicholas Carter",
     "price_min": 6,
     "price_max": 45,
-    "scraped_at": "2026-05-10T06:51:27.804Z"
+    "scraped_at": "2026-05-10T07:10:35.024Z"
   }
 ]
