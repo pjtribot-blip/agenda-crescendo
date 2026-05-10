@@ -56,6 +56,15 @@ const MONTHS_FR = {
   aout: 8, août: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12, déc: 12, déec: 12, dec: 12,
 };
 
+// Bozar attribue parfois un interprète historique comme "compositeur"
+// dans le bloc artwork-list (ex. Julie Andrews créditée pour les
+// "Chansons" reprises par Lea Desandre dans Chasing Rainbows). On
+// liste ici les noms à NE PAS taguer comme compositeur, même quand ils
+// apparaissent dans la rubrique programme.
+const NON_COMPOSER_NAMES = new Set([
+  'julie andrews',
+]);
+
 // ------------------------------------------------------------------
 // HTTP
 // ------------------------------------------------------------------
@@ -233,12 +242,15 @@ function parseDetailPage(html, listEntry, composerIndex) {
     const composerName = $el.find('.artwork-list__artists .node--type-artist').first().text().trim();
     const work = $el.find('.artwork-list__description').first().text().trim();
     if (composerName) {
-      // canonicalize via reference
-      const matches = matchComposers(composerName, composerIndex);
-      if (matches.length) {
-        matches.forEach((c) => composersFromProgram.add(c));
-      } else {
-        composersFromProgram.add(composerName);
+      const isExcluded = NON_COMPOSER_NAMES.has(normalize(composerName).trim());
+      if (!isExcluded) {
+        // canonicalize via reference
+        const matches = matchComposers(composerName, composerIndex);
+        if (matches.length) {
+          matches.forEach((c) => composersFromProgram.add(c));
+        } else {
+          composersFromProgram.add(composerName);
+        }
       }
     }
     if (composerName && work) programLines.push(`${composerName} : ${work}`);

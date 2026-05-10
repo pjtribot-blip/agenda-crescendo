@@ -36,6 +36,8 @@ const TITLE_REJECT_PATTERNS = [
   /goldman/i,
   /aka moon/i,
   /stacey kent/i,
+  /sullivan fortner/i,
+  /ren[eé]\s+thomas/i,
 ];
 
 const MONTHS_FR = {
