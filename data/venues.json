@@ -240,6 +240,42 @@
     "address": "1 Place de l'Europe, L-1499 Luxembourg"
   },
   {
+    "id": "silly-festival",
+    "name": "Printemps Musical de Silly",
+    "fullName": "Printemps Musical de Silly — concerts dans la commune de Silly et alentours",
+    "city": "Silly",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6537,
+    "lng": 3.9292,
+    "website": "https://www.printempsmusicalsilly.be",
+    "address": "Place Communale, 7830 Silly"
+  },
+  {
+    "id": "musiq3-bw-festival",
+    "name": "Festival Musiq3 Brabant wallon",
+    "fullName": "Festival Musiq3 Brabant wallon — concerts dans plusieurs communes du BW",
+    "city": "Brabant wallon",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6892,
+    "lng": 4.5447,
+    "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/festival-musiq3-du-brabant-wallon",
+    "address": "Plusieurs communes du Brabant wallon"
+  },
+  {
+    "id": "nuits-septembre-festival",
+    "name": "Les Nuits de Septembre",
+    "fullName": "Les Nuits de Septembre — festival de musique ancienne à Liège",
+    "city": "Liège",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6450,
+    "lng": 5.5717,
+    "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/les-nuits-de-septembre",
+    "address": "Églises et salles liégeoises"
+  },
+  {
     "id": "stavelot-festival",
     "name": "Festival de Stavelot",
     "fullName": "Festival de Stavelot — concerts à l'Abbaye et dans la cité",

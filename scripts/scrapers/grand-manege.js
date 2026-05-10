@@ -208,9 +208,10 @@ function isoToday() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/concerts\/(\d+-[^/?#]+)/) || [])[1] || 'event';
-  return `gmanege-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `gmanege-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -257,7 +258,7 @@ export async function scrapeGrandManege({
     }
 
     concerts.push({
-      id: buildId(item.date, item.url),
+      id: buildId(item.date, item.url, item.time),
       source: 'gmanege',
       venue_id: 'grandmanege',
       title: detail?.title || item.title,

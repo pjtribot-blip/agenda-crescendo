@@ -304,9 +304,10 @@ function monthRange(months) {
   return out;
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/program\/([^/?#]+)/) || [])[1] || 'event';
-  return `monnaie-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `monnaie-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -369,7 +370,7 @@ export async function scrapeMonnaie({
     }
 
     concerts.push({
-      id: buildId(item.date, item.url),
+      id: buildId(item.date, item.url, item.time),
       source: 'monnaie',
       venue_id: 'lamonnaie',
       title: detail?.title || item.title,

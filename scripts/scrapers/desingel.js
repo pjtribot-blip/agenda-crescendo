@@ -162,8 +162,9 @@ function isoDateTime(s) {
   return { date: m[1], time: `${m[2]}:${m[3]}` };
 }
 
-function buildId(date, prodSfid) {
-  return `desingel-${date}-${prodSfid.slice(0, 18)}`.slice(0, 200);
+function buildId(date, prodSfid, time) {
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `desingel-${date}${t}-${prodSfid.slice(0, 18)}`.slice(0, 200);
 }
 
 function buildUrl(systemurlnl) {
@@ -206,7 +207,7 @@ export async function scrapeDeSingel({} = {}) {
     const composers = matchComposers(title, composerIndex);
 
     concerts.push({
-      id: buildId(date, prod.sfid),
+      id: buildId(date, prod.sfid, time),
       source: 'desingel',
       venue_id: 'desingel',
       title,
@@ -233,7 +234,7 @@ export async function scrapeDeSingel({} = {}) {
     const url = buildUrl(prod.systemurlnl__c);
     const composers = matchComposers(prod.name || '', composerIndex);
     concerts.push({
-      id: buildId(date, prod.sfid),
+      id: buildId(date, prod.sfid, time),
       source: 'desingel',
       venue_id: 'desingel',
       title: prod.name || '(?)',

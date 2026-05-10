@@ -211,9 +211,10 @@ function ymToYYYYMM(d) {
   return `${y}${m}`;
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/musique\/([^/?#]+)/) || [])[1] || 'event';
-  return `mars-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `mars-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -295,7 +296,7 @@ export async function scrapeMARS({
     if (decision !== 'keep') continue;
 
     concerts.push({
-      id: buildId(item.date, item.url),
+      id: buildId(item.date, item.url, item.time),
       source: 'mars',
       venue_id: 'mars',
       title: detail.title || item.title,

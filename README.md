@@ -178,6 +178,9 @@ npm run scrape:tournai    # idem pour Maison de la Culture Tournai
 npm run scrape:biereau    # idem pour Ferme du Biéreau (LLN)
 npm run scrape:ccha       # idem pour Cultuurcentrum Hasselt
 npm run scrape:stavelot   # idem pour Festival de Stavelot
+npm run scrape:silly      # idem pour Printemps Musical de Silly
+npm run scrape:musiq3-bw  # idem pour Festival Musiq3 Brabant wallon
+npm run scrape:nuits-septembre  # idem pour Les Nuits de Septembre (Liège)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
@@ -221,6 +224,10 @@ scrape directement et on attribue les concerts à un venue dédié
 | Festival Musiq3 | A (tagging Flagey) | ~10-15 concerts auto-taggés en juin |
 | Festival Musical de Namur | A (tagging Grand Manège) | ~15 concerts auto-taggés fin juin / juillet |
 | Festival de Stavelot | B (scraper dédié) | ~13 concerts d'été dans 5 lieux stavelotais |
+| Printemps Musical de Silly | B (scraper dédié) | ~15 concerts mars-novembre dans plusieurs lieux silliens |
+| Festival Musiq3 Brabant wallon | B (scraper dédié) | 12 concerts fin sept-début oct dans 11 lieux du BW |
+| Les Nuits de Septembre (Liège) | B (scraper dédié) + tagging OPRL | ~12 concerts musique ancienne en septembre-octobre |
+| Ekinox (Mons + Charleroi) | A (tagging MARS + PBA) | 20 concerts auto-taggés début octobre |
 
 ### À venir
 

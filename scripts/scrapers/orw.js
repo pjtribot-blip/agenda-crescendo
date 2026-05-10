@@ -236,9 +236,10 @@ function parseDetailPage(html, composerIndex) {
 function isoToday() {
   return new Date().toISOString().slice(0, 10);
 }
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/evenement\/([^/?#]+)/) || [])[1] || 'event';
-  return `orw-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `orw-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -321,7 +322,7 @@ export async function scrapeORW({
     for (const occ of detail.dates) {
       if (occ.date < today) continue;
       concerts.push({
-        id: buildId(occ.date, item.url),
+        id: buildId(occ.date, item.url, occ.time),
         source: 'orw',
         venue_id: 'orw',
         title: detail.title || item.title,

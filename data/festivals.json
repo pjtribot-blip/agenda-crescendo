@@ -27,5 +27,44 @@
     "date_end": "2026-09-15",
     "venues": ["stavelot-festival"],
     "website": "https://www.festivaldestavelot.be"
+  },
+  {
+    "id": "silly-2026",
+    "name": "Printemps Musical de Silly",
+    "edition_year": 2026,
+    "date_start": "2026-03-14",
+    "date_end": "2026-11-21",
+    "venues": ["silly-festival"],
+    "website": "https://www.printempsmusicalsilly.be"
+  },
+  {
+    "id": "musiq3-bw-2026",
+    "name": "Festival Musiq3 Brabant wallon",
+    "edition_year": 2026,
+    "date_start": "2026-09-25",
+    "date_end": "2026-10-04",
+    "venues": ["musiq3-bw-festival"],
+    "parent_federation": "festivals-wallonie",
+    "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/festival-musiq3-du-brabant-wallon"
+  },
+  {
+    "id": "nuits-septembre-2026",
+    "name": "Les Nuits de Septembre",
+    "edition_year": 2026,
+    "date_start": "2026-09-02",
+    "date_end": "2026-10-11",
+    "venues": ["nuits-septembre-festival", "oprl"],
+    "parent_federation": "festivals-wallonie",
+    "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/les-nuits-de-septembre"
+  },
+  {
+    "id": "ekinox-2026",
+    "name": "Ekinox",
+    "edition_year": 2026,
+    "date_start": "2026-10-02",
+    "date_end": "2026-10-22",
+    "venues": ["mars", "pba"],
+    "parent_federation": "festivals-wallonie",
+    "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/ekinox"
   }
 ]

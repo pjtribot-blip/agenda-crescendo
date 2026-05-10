@@ -216,9 +216,10 @@ function isoDateTime(s) {
   return { date: m[1], time: `${m[2]}:${m[3]}` };
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/programma\/([^/?#]+)/) || [])[1] || 'event';
-  return `bijloke-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `bijloke-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -291,7 +292,7 @@ export async function scrapeDeBijloke({
       kept++;
       for (const d of dates) {
         concerts.push({
-          id: buildId(d.date, url),
+          id: buildId(d.date, url, d.time),
           source: 'bijloke',
           venue_id: 'bijloke',
           title: detail.title,

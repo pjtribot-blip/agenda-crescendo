@@ -27,6 +27,8 @@ import { scrapeTournai } from './scrapers/tournai.js';
 import { scrapeFermeDuBiereau } from './scrapers/ferme-du-biereau.js';
 import { scrapeCCHA } from './scrapers/ccha-hasselt.js';
 import { scrapeFestivalStavelot } from './scrapers/festival-stavelot.js';
+import { scrapeFestivalSilly } from './scrapers/festival-silly.js';
+import { scrapeMusiq3BW, scrapeNuitsSeptembre } from './scrapers/festivals-de-wallonie.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -52,6 +54,9 @@ const SCRAPERS = [
   { name: 'biereau', fn: scrapeFermeDuBiereau },
   { name: 'ccha', fn: scrapeCCHA },
   { name: 'stavelot', fn: scrapeFestivalStavelot },
+  { name: 'silly', fn: scrapeFestivalSilly },
+  { name: 'musiq3-bw', fn: scrapeMusiq3BW },
+  { name: 'nuits-septembre', fn: scrapeNuitsSeptembre },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -139,6 +144,22 @@ async function main() {
       }
     }
   }
+
+  // Filet de sécurité : on dédupe les IDs en collision en suffixant -2,
+  // -3, etc. Une collision = bug dans le buildId d'un scraper qui devrait
+  // intégrer l'heure (ou un autre discriminant). On log pour qu'on puisse
+  // remonter à la source.
+  const idCounts = new Map();
+  let renamed = 0;
+  for (const c of all) {
+    const n = (idCounts.get(c.id) || 0) + 1;
+    idCounts.set(c.id, n);
+    if (n > 1) {
+      c.id = `${c.id}-${n}`;
+      renamed++;
+    }
+  }
+  if (renamed) console.log(`\n[dedup-id] ${renamed} IDs en collision suffixés (à corriger côté scraper)`);
 
   // Tagging des festivals (sur les concerts agrégés, avant écriture)
   const festivals = await loadFestivals();

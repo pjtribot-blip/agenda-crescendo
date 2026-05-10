@@ -26,7 +26,10 @@
     "scrape:tournai": "node -e \"import('./scripts/scrapers/tournai.js').then(m => m.scrapeTournai()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:biereau": "node -e \"import('./scripts/scrapers/ferme-du-biereau.js').then(m => m.scrapeFermeDuBiereau()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:ccha": "node -e \"import('./scripts/scrapers/ccha-hasselt.js').then(m => m.scrapeCCHA()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:stavelot": "node -e \"import('./scripts/scrapers/festival-stavelot.js').then(m => m.scrapeFestivalStavelot()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:stavelot": "node -e \"import('./scripts/scrapers/festival-stavelot.js').then(m => m.scrapeFestivalStavelot()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:silly": "node -e \"import('./scripts/scrapers/festival-silly.js').then(m => m.scrapeFestivalSilly()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:musiq3-bw": "node -e \"import('./scripts/scrapers/festivals-de-wallonie.js').then(m => m.scrapeMusiq3BW()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:nuits-septembre": "node -e \"import('./scripts/scrapers/festivals-de-wallonie.js').then(m => m.scrapeNuitsSeptembre()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

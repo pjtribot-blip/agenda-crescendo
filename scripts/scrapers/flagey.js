@@ -268,9 +268,10 @@ function monthRange(months) {
   return out;
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/activity\/([^/?#]+)/) || [])[1] || 'event';
-  return `flagey-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `flagey-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
@@ -346,7 +347,7 @@ export async function scrapeFlagey({
     // ambigu : on garde par défaut (cf consigne)
 
     concerts.push({
-      id: buildId(item.date, item.url),
+      id: buildId(item.date, item.url, item.time),
       source: 'flagey',
       venue_id: 'flagey',
       title: detail.title || item.title,
