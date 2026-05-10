@@ -29,6 +29,9 @@ import { scrapeCCHA } from './scrapers/ccha-hasselt.js';
 import { scrapeFestivalStavelot } from './scrapers/festival-stavelot.js';
 import { scrapeFestivalSilly } from './scrapers/festival-silly.js';
 import { scrapeMusiq3BW, scrapeNuitsSeptembre } from './scrapers/festivals-de-wallonie.js';
+import { scrapeMIM } from './scrapers/mim.js';
+import { scrapeMusicorum } from './scrapers/musicorum.js';
+import { scrapeMidiMinimes } from './scrapers/midi-minimes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -57,6 +60,9 @@ const SCRAPERS = [
   { name: 'silly', fn: scrapeFestivalSilly },
   { name: 'musiq3-bw', fn: scrapeMusiq3BW },
   { name: 'nuits-septembre', fn: scrapeNuitsSeptembre },
+  { name: 'mim', fn: scrapeMIM },
+  { name: 'musicorum', fn: scrapeMusicorum },
+  { name: 'midi-minimes', fn: scrapeMidiMinimes },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

@@ -395,6 +395,22 @@
     color: var(--ink-soft);
     letter-spacing: .02em;
   }
+  .festival-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    padding: 3px 8px;
+    margin-bottom: 6px;
+    background: rgba(189, 152, 70, .12);
+    border: 1px solid var(--gold-light);
+    border-radius: 100px;
+    color: var(--gold-deep);
+    font-weight: 500;
+  }
+  .festival-badge::before { content: '🎪'; font-size: 11px; }
   .concert-footer {
     display: flex;
     align-items: center;
@@ -560,6 +576,7 @@
     <select id="f-city"><option value="">Toutes villes</option></select>
     <select id="f-month"><option value="">Tous mois</option></select>
     <select id="f-composer"><option value="">Tous compositeurs</option></select>
+    <select id="f-festival"><option value="">Tous festivals</option></select>
     <button class="filter-reset" id="f-reset" type="button">Réinitialiser</button>
     <span class="results-count"><strong id="results-count">0</strong> résultat<span id="results-plural">s</span></span>
     <a class="back-link" href="https://www.crescendo-magazine.be" target="_blank" rel="noopener">← Retour à Crescendo Magazine</a>
@@ -605,6 +622,8 @@
   const state = {
     venues: [],
     venuesById: new Map(),
+    festivals: [],
+    festivalsById: new Map(),
     concerts: [],
     filtered: [],
     map: null,
@@ -616,14 +635,17 @@
   // Le format produit par scripts/aggregate.js est un tableau pur ; le format
   // de démo Phase 1 était { generated, concerts: [...] }. On accepte les deux.
   async function loadData() {
-    const [venuesRes, concertsRes] = await Promise.all([
+    const [venuesRes, concertsRes, festivalsRes] = await Promise.all([
       fetch('data/venues.json'),
       fetch('data/concerts.json'),
+      fetch('data/festivals.json').catch(() => null),
     ]);
     if (!venuesRes.ok) throw new Error('venues.json indisponible');
     if (!concertsRes.ok) throw new Error('concerts.json indisponible');
     state.venues = await venuesRes.json();
     state.venuesById = new Map(state.venues.map(v => [v.id, v]));
+    state.festivals = (festivalsRes && festivalsRes.ok) ? await festivalsRes.json() : [];
+    state.festivalsById = new Map(state.festivals.map(f => [f.id, f]));
     const concertsPayload = await concertsRes.json();
     const arr = Array.isArray(concertsPayload) ? concertsPayload : (concertsPayload.concerts || []);
     const generated = Array.isArray(concertsPayload) ? null : concertsPayload.generated;
@@ -736,6 +758,18 @@
     const composers = new Set();
     state.concerts.forEach(c => (c.composers || []).forEach(x => composers.add(x)));
     fillSelect('f-composer', Array.from(composers).sort().map(c => ({ value: c, label: c })));
+
+    // Festivals — uniquement ceux qui ont au moins un concert taggé
+    const usedFestivalIds = new Set();
+    state.concerts.forEach(c => {
+      if (c.festival) usedFestivalIds.add(c.festival);
+      if (c.festivals) c.festivals.forEach(f => usedFestivalIds.add(f));
+    });
+    const festivalOptions = (state.festivals || [])
+      .filter(f => usedFestivalIds.has(f.id))
+      .sort((a, b) => (a.date_start || '').localeCompare(b.date_start || ''))
+      .map(f => ({ value: f.id, label: f.name + (f.edition_year ? ' ' + f.edition_year : '') }));
+    fillSelect('f-festival', festivalOptions);
   }
 
   function fillSelect(id, options) {
@@ -757,6 +791,7 @@
     const city = document.getElementById('f-city').value;
     const month = document.getElementById('f-month').value;
     const composer = document.getElementById('f-composer').value;
+    const festival = document.getElementById('f-festival').value;
 
     state.filtered = state.concerts.filter(c => {
       const v = state.venuesById.get(c.venueId);
@@ -765,6 +800,10 @@
       if (city && v.city !== city) return false;
       if (month && !c.date.startsWith(month)) return false;
       if (composer && !(c.composers || []).includes(composer)) return false;
+      if (festival) {
+        const fests = c.festivals ? c.festivals : (c.festival ? [c.festival] : []);
+        if (!fests.includes(festival)) return false;
+      }
       if (state.selectedVenueId && c.venueId !== state.selectedVenueId) return false;
       if (q) {
         const hay = [
@@ -780,7 +819,7 @@
   }
 
   function resetFilters() {
-    ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer'].forEach(id => {
+    ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer', 'f-festival'].forEach(id => {
       document.getElementById(id).value = '';
     });
     state.selectedVenueId = null;
@@ -819,6 +858,7 @@
           ${c.time ? `<div class="time">${escape(c.time)}</div>` : ''}
         </div>
         <div class="concert-body">
+          ${renderFestivalBadges(c)}
           <h3>${c.cancelled ? '<span class="cancelled-badge">Annulé</span> ' : ''}${escape(c.title)}</h3>
           <div class="concert-venue">${escape(v.name)} <span class="sep">/</span> <span class="city">${escape(v.city)}, ${COUNTRY_LABEL[v.country] || v.country}</span></div>
           ${c.program ? `<div class="concert-program">${escape(c.program)}</div>` : ''}
@@ -857,6 +897,17 @@
     }
     const v = c.price_min ?? c.price_max;
     return `<span class="price">${v} €</span>`;
+  }
+
+  function renderFestivalBadges(c) {
+    const ids = c.festivals ? c.festivals : (c.festival ? [c.festival] : []);
+    if (ids.length === 0) return '';
+    const badges = ids.map(id => {
+      const f = state.festivalsById && state.festivalsById.get(id);
+      const label = f ? f.name : id;
+      return `<span class="festival-badge" title="${escape(id)}">${escape(label)}</span>`;
+    }).join(' ');
+    return badges;
   }
 
   function renderComposers(c) {
@@ -908,7 +959,7 @@
       buildFilterOptions();
       render();
 
-      ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer'].forEach(id => {
+      ['f-search', 'f-country', 'f-city', 'f-month', 'f-composer', 'f-festival'].forEach(id => {
         document.getElementById(id).addEventListener('input', () => render());
       });
       document.getElementById('f-reset').addEventListener('click', resetFilters);

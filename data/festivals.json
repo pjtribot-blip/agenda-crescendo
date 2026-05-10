@@ -66,5 +66,23 @@
     "venues": ["mars", "pba"],
     "parent_federation": "festivals-wallonie",
     "website": "https://www.lesfestivalsdewallonie.be/fr-be/festivals/ekinox"
+  },
+  {
+    "id": "musicorum-2026",
+    "name": "Festival Musicorum",
+    "edition_year": 2026,
+    "date_start": "2026-07-01",
+    "date_end": "2026-08-28",
+    "venues": ["mrbab-auditorium"],
+    "website": "https://www.musicorum.be"
+  },
+  {
+    "id": "midi-minimes-2026",
+    "name": "Festival Midis-Minimes",
+    "edition_year": 2026,
+    "date_start": "2026-07-01",
+    "date_end": "2026-08-31",
+    "venues": ["conservatoire-royal-bruxelles"],
+    "website": "https://midis-minimes.be"
   }
 ]

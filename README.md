@@ -227,7 +227,9 @@ scrape directement et on attribue les concerts à un venue dédié
 | Printemps Musical de Silly | B (scraper dédié) | ~15 concerts mars-novembre dans plusieurs lieux silliens |
 | Festival Musiq3 Brabant wallon | B (scraper dédié) | 12 concerts fin sept-début oct dans 11 lieux du BW |
 | Les Nuits de Septembre (Liège) | B (scraper dédié) + tagging OPRL | ~12 concerts musique ancienne en septembre-octobre |
-| Ekinox (Mons + Charleroi) | A (tagging MARS + PBA) | 20 concerts auto-taggés début octobre |
+| Ekinox (Mons + Charleroi) | A (tagging MARS + PBA) | 26 concerts auto-taggés début octobre |
+| Festival Musicorum (MRBAB Bruxelles) | B (scraper dédié) | 48 concerts gratuits midis 12h15 juillet-août |
+| Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
 
 ### À venir
 

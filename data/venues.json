@@ -240,6 +240,42 @@
     "address": "1 Place de l'Europe, L-1499 Luxembourg"
   },
   {
+    "id": "mim",
+    "name": "MIM",
+    "fullName": "Musée des Instruments de Musique — Old England",
+    "city": "Bruxelles",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8421,
+    "lng": 4.3578,
+    "website": "https://www.mim.be",
+    "address": "Rue Montagne de la Cour 2, 1000 Bruxelles"
+  },
+  {
+    "id": "mrbab-auditorium",
+    "name": "Auditorium MRBAB",
+    "fullName": "Auditorium 490 Philippe Roberts-Jones — Musées Royaux des Beaux-Arts de Belgique",
+    "city": "Bruxelles",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8423,
+    "lng": 4.3585,
+    "website": "https://www.musicorum.be",
+    "address": "Rue de la Régence 3, 1000 Bruxelles"
+  },
+  {
+    "id": "conservatoire-royal-bruxelles",
+    "name": "Conservatoire royal de Bruxelles",
+    "fullName": "Conservatoire royal de Bruxelles — CRB",
+    "city": "Bruxelles",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8409,
+    "lng": 4.3587,
+    "website": "https://www.midis-minimes.be",
+    "address": "Rue de la Régence 30, 1000 Bruxelles"
+  },
+  {
     "id": "silly-festival",
     "name": "Printemps Musical de Silly",
     "fullName": "Printemps Musical de Silly — concerts dans la commune de Silly et alentours",
