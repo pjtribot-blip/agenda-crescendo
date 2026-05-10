@@ -14,7 +14,10 @@
     "scrape:flagey": "node -e \"import('./scripts/scrapers/flagey.js').then(m => m.scrapeFlagey()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:cgbrugge": "node -e \"import('./scripts/scrapers/concertgebouwbrugge.js').then(m => m.scrapeConcertgebouwBrugge()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:oprl": "node -e \"import('./scripts/scrapers/oprl.js').then(m => m.scrapeOPRL()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:orw": "node -e \"import('./scripts/scrapers/orw.js').then(m => m.scrapeORW()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:orw": "node -e \"import('./scripts/scrapers/orw.js').then(m => m.scrapeORW()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:gmanege": "node -e \"import('./scripts/scrapers/grand-manege.js').then(m => m.scrapeGrandManege()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:mars": "node -e \"import('./scripts/scrapers/mars.js').then(m => m.scrapeMARS()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:pba": "node -e \"import('./scripts/scrapers/pba.js').then(m => m.scrapePBA()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

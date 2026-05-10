@@ -100,7 +100,10 @@ agenda-crescendo/
 | Concertgebouw Brugge | ✅ opérationnel | HTML + cheerio (`/fr/programme/term_genre_and_style=music` et `…=music+theatre`, paginé, sous-filtre rejet families/sound art) | ~105 concerts musique + opéra sur 14 mois |
 | OPRL | ✅ opérationnel | HTML + cheerio (Drupal `/fr/concerts?date=YYYY-MM`, fenêtre roulante de ~3 mois, rejet `series-symphokids` + `series-dumonde`) | ~105 concerts symphoniques + chambre + récitals sur 14 mois |
 | Opéra Royal de Wallonie | ✅ opérationnel | API JSON `/wp-json/orw/v1/calendar?saisons=ID`, parse HTML retourné (cartes WP), filtre strict sur les terms (Opéra/Ballet/Concert/Création/Spectacle uniquement) | ~80 représentations sur les saisons en cours |
-| Les 11 autres | ⏳ à venir | À choisir source par source | — |
+| Grand Manège (Namur) | ✅ opérationnel | HTML + cheerio (`/fr/concerts/calendrier`, mois encodé dans `class="venue-YYYYMM"` de chaque carte) | ~115 concerts sur 14 mois |
+| MARS (Mons) | ✅ opérationnel | HTML + cheerio (`/calendrier/YYYYMM` mois par mois, pré-filtre URL `/musique/` puis filtre fin sur sous-genre détail Classique / Musique d'aujourd'hui / Musique ancienne / Baroque / Lyrique) | ~17 concerts savants sur 14 mois |
+| PBA Charleroi | ✅ opérationnel | HTML + cheerio (`/notre-saison/?category=classique` + `=lyrique` × saisons découvertes via `<select name="season">`) | ~20 concerts sur les saisons en cours |
+| Les 8 autres | ⏳ à venir | À choisir source par source | — |
 
 ### Pipeline
 
@@ -154,14 +157,17 @@ npm run scrape:flagey     # idem pour Flagey
 npm run scrape:cgbrugge   # idem pour Concertgebouw Brugge
 npm run scrape:oprl       # idem pour OPRL
 npm run scrape:orw        # idem pour Opéra Royal de Wallonie
+npm run scrape:gmanege    # idem pour Grand Manège (Namur)
+npm run scrape:mars       # idem pour MARS (Mons)
+npm run scrape:pba        # idem pour PBA Charleroi
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 11 scrapers supplémentaires (priorité : Philharmonie Luxembourg,
-      Grand Manège, deSingel, De Bijloke)
+- [ ] 8 scrapers supplémentaires (priorité : Philharmonie Luxembourg,
+      deSingel, De Bijloke, Maison de la Culture Tournai)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 

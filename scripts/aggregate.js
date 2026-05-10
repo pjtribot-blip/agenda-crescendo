@@ -15,6 +15,9 @@ import { scrapeFlagey } from './scrapers/flagey.js';
 import { scrapeConcertgebouwBrugge } from './scrapers/concertgebouwbrugge.js';
 import { scrapeOPRL } from './scrapers/oprl.js';
 import { scrapeORW } from './scrapers/orw.js';
+import { scrapeGrandManege } from './scrapers/grand-manege.js';
+import { scrapeMARS } from './scrapers/mars.js';
+import { scrapePBA } from './scrapers/pba.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,6 +31,9 @@ const SCRAPERS = [
   { name: 'cgbrugge', fn: scrapeConcertgebouwBrugge },
   { name: 'oprl', fn: scrapeOPRL },
   { name: 'orw', fn: scrapeORW },
+  { name: 'gmanege', fn: scrapeGrandManege },
+  { name: 'mars', fn: scrapeMARS },
+  { name: 'pba', fn: scrapePBA },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
