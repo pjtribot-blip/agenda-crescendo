@@ -26,6 +26,7 @@ import { scrapeTourcoing } from './scrapers/tourcoing.js';
 import { scrapeTournai } from './scrapers/tournai.js';
 import { scrapeFermeDuBiereau } from './scrapers/ferme-du-biereau.js';
 import { scrapeCCHA } from './scrapers/ccha-hasselt.js';
+import { scrapeFestivalStavelot } from './scrapers/festival-stavelot.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -50,6 +51,7 @@ const SCRAPERS = [
   { name: 'tournai', fn: scrapeTournai },
   { name: 'biereau', fn: scrapeFermeDuBiereau },
   { name: 'ccha', fn: scrapeCCHA },
+  { name: 'stavelot', fn: scrapeFestivalStavelot },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -61,6 +63,44 @@ async function loadExisting() {
     if (Array.isArray(parsed.concerts)) return parsed.concerts;
   } catch {}
   return [];
+}
+
+async function loadFestivals() {
+  try {
+    const raw = await readFile(resolve(REPO_ROOT, 'data', 'festivals.json'), 'utf8');
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+// Pour chaque concert, on attache `festival: "ID"` si sa date tombe
+// dans la fenêtre [date_start, date_end] d'un festival ET que son
+// venue_id est listé dans festivals.json. Un concert peut être taggé
+// par plusieurs festivals (cycle dans cycle) — on émet alors `festivals`
+// (tableau) plutôt que `festival` (chaîne unique).
+function applyFestivalTags(concerts, festivals) {
+  if (!festivals.length) return { taggedCount: 0 };
+  let taggedCount = 0;
+  for (const c of concerts) {
+    if (!c.date || !c.venue_id) continue;
+    const matches = [];
+    for (const f of festivals) {
+      if (!f.venues || !f.venues.includes(c.venue_id)) continue;
+      if (f.date_start && c.date < f.date_start) continue;
+      if (f.date_end && c.date > f.date_end) continue;
+      matches.push(f.id);
+    }
+    if (matches.length === 1) {
+      c.festival = matches[0];
+      taggedCount++;
+    } else if (matches.length > 1) {
+      c.festivals = matches;
+      taggedCount++;
+    }
+  }
+  return { taggedCount };
 }
 
 async function main() {
@@ -98,6 +138,13 @@ async function main() {
         all.push(...fallback);
       }
     }
+  }
+
+  // Tagging des festivals (sur les concerts agrégés, avant écriture)
+  const festivals = await loadFestivals();
+  const tagSummary = applyFestivalTags(all, festivals);
+  if (festivals.length) {
+    console.log(`\n[festivals] ${festivals.length} festivals chargés, ${tagSummary.taggedCount} concerts taggés`);
   }
 
   // Tri chronologique

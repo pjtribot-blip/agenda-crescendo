@@ -238,5 +238,17 @@
     "lng": 6.1419,
     "website": "https://www.philharmonie.lu",
     "address": "1 Place de l'Europe, L-1499 Luxembourg"
+  },
+  {
+    "id": "stavelot-festival",
+    "name": "Festival de Stavelot",
+    "fullName": "Festival de Stavelot — concerts à l'Abbaye et dans la cité",
+    "city": "Stavelot",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.3937,
+    "lng": 5.9304,
+    "website": "https://www.festivaldestavelot.be",
+    "address": "Place Saint-Remacle, 4970 Stavelot"
   }
 ]

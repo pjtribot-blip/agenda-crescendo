@@ -177,7 +177,9 @@ npm run scrape:tourcoing  # idem pour Atelier Lyrique de Tourcoing
 npm run scrape:tournai    # idem pour Maison de la Culture Tournai
 npm run scrape:biereau    # idem pour Ferme du Biéreau (LLN)
 npm run scrape:ccha       # idem pour Cultuurcentrum Hasselt
+npm run scrape:stavelot   # idem pour Festival de Stavelot
 npm run scrape            # exécute aggregate.js → data/concerts.json
+                          #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
@@ -193,9 +195,44 @@ python3 -m http.server 8000   # voir le résultat sur localhost:8000
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 
-## Phase 3 — Élargissements
+## Phase 3 — Festivals
 
-- [ ] Cercle 2 : conservatoires, festivals d'été, séries de chambre
+### Architecture anti-doublons
+
+Les festivals classiques se déroulent souvent dans des venues **déjà
+scrapées** (Klarafestival à Bozar/Flagey/Monnaie, Musiq3 à Flagey,
+Festival Musical de Namur au Grand Manège…). Pour éviter de scraper
+les mêmes concerts deux fois, on distingue deux stratégies :
+
+**A. Tagging-only** (festival dans nos venues) — `data/festivals.json`
+liste les festivals avec leurs venues + plage de dates. À l'agrégation,
+chaque concert dont `(venue_id, date)` matche un festival reçoit un
+champ `festival: "ID"` (ou `festivals: ["ID1","ID2"]` si plusieurs).
+Aucun scraper dédié n'est nécessaire.
+
+**B. Scraper dédié** (festival hors-circuit) — quand le festival se
+joue dans des lieux non listés (églises, abbayes, châteaux), on
+scrape directement et on attribue les concerts à un venue dédié
+(ex. `stavelot-festival`). Le tag festival reste appliqué via
+`festivals.json`.
+
+| Festival | Stratégie | Couverture |
+|---|---|---|
+| Festival Musiq3 | A (tagging Flagey) | ~10-15 concerts auto-taggés en juin |
+| Festival Musical de Namur | A (tagging Grand Manège) | ~15 concerts auto-taggés fin juin / juillet |
+| Festival de Stavelot | B (scraper dédié) | ~13 concerts d'été dans 5 lieux stavelotais |
+
+### À venir
+
+- [ ] Klarafestival 2027 (mars 2027 — dates à confirmer)
+- [ ] Ars Musica 2026 (festival contemporain Bruxelles, novembre-décembre)
+- [ ] Festival van Vlaanderen Brugge / MA Festival (site en migration)
+- [ ] Festival Adolphe Sax (Dinant)
+- [ ] Festivals Mons-Charleroi-Hainaut (via Festivals de Wallonie)
+
+## Phase 4 — Élargissements
+
+- [ ] Cercle 2 : conservatoires, séries de chambre régionales
 - [ ] Newsletter : envoi hebdomadaire des concerts du week-end
 - [ ] Flux RSS / iCal par ville et par compositeur
 
