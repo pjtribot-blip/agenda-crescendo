@@ -230,6 +230,7 @@ scrape directement et on attribue les concerts à un venue dédié
 | Ekinox (Mons + Charleroi) | A (tagging MARS + PBA) | 26 concerts auto-taggés début octobre |
 | Festival Musicorum (MRBAB Bruxelles) | B (scraper dédié) | 48 concerts gratuits midis 12h15 juillet-août |
 | Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
+| MA Festival Brugge | B (scraper dédié) + tagging Concertgebouw Brugge | ~22 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
 
 ### À venir
 

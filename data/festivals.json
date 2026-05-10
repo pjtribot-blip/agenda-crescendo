@@ -84,5 +84,14 @@
     "date_end": "2026-08-31",
     "venues": ["conservatoire-royal-bruxelles"],
     "website": "https://midis-minimes.be"
+  },
+  {
+    "id": "ma-festival-2026",
+    "name": "MA Festival Brugge",
+    "edition_year": 2026,
+    "date_start": "2026-07-31",
+    "date_end": "2026-08-09",
+    "venues": ["ma-festival", "concertgebouwbrugge"],
+    "website": "https://www.mafestival.be"
   }
 ]

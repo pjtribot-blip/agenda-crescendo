@@ -32,6 +32,7 @@ import { scrapeMusiq3BW, scrapeNuitsSeptembre } from './scrapers/festivals-de-wa
 import { scrapeMIM } from './scrapers/mim.js';
 import { scrapeMusicorum } from './scrapers/musicorum.js';
 import { scrapeMidiMinimes } from './scrapers/midi-minimes.js';
+import { scrapeMAFestival } from './scrapers/ma-festival.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -63,6 +64,7 @@ const SCRAPERS = [
   { name: 'mim', fn: scrapeMIM },
   { name: 'musicorum', fn: scrapeMusicorum },
   { name: 'midi-minimes', fn: scrapeMidiMinimes },
+  { name: 'ma-festival', fn: scrapeMAFestival },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
