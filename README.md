@@ -98,7 +98,9 @@ agenda-crescendo/
 | La Monnaie / De Munt | ✅ opérationnel | HTML + cheerio (`/fr/calendar?m=YYYY-MM` mois par mois, filtre éditorial sur la catégorie + slug) | ~130 représentations opéra + concerts sur 14 mois |
 | Flagey | ✅ opérationnel | HTML + cheerio (`/fr/agenda?ym=YYYY-MM`, pré-filtre Music sur la liste, filtre fin sur les tags Classique/Contemporain/Orchestre/Piano/Quatuor/Chant/… de la page détail, hard-reject Junior + sound installations) | ~70 concerts savants sur 14 mois |
 | Concertgebouw Brugge | ✅ opérationnel | HTML + cheerio (`/fr/programme/term_genre_and_style=music` et `…=music+theatre`, paginé, sous-filtre rejet families/sound art) | ~105 concerts musique + opéra sur 14 mois |
-| Les 13 autres | ⏳ à venir | À choisir source par source | — |
+| OPRL | ✅ opérationnel | HTML + cheerio (Drupal `/fr/concerts?date=YYYY-MM`, fenêtre roulante de ~3 mois, rejet `series-symphokids` + `series-dumonde`) | ~105 concerts symphoniques + chambre + récitals sur 14 mois |
+| Opéra Royal de Wallonie | ✅ opérationnel | API JSON `/wp-json/orw/v1/calendar?saisons=ID`, parse HTML retourné (cartes WP), filtre strict sur les terms (Opéra/Ballet/Concert/Création/Spectacle uniquement) | ~80 représentations sur les saisons en cours |
+| Les 11 autres | ⏳ à venir | À choisir source par source | — |
 
 ### Pipeline
 
@@ -150,14 +152,16 @@ npm run scrape:bozar      # exporte le résultat brut sur stdout
 npm run scrape:monnaie    # idem pour La Monnaie
 npm run scrape:flagey     # idem pour Flagey
 npm run scrape:cgbrugge   # idem pour Concertgebouw Brugge
+npm run scrape:oprl       # idem pour OPRL
+npm run scrape:orw        # idem pour Opéra Royal de Wallonie
 npm run scrape            # exécute aggregate.js → data/concerts.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
 ```
 
 ### Reste à faire
 
-- [ ] 13 scrapers supplémentaires (priorité : Philharmonie Luxembourg,
-      OPRL)
+- [ ] 11 scrapers supplémentaires (priorité : Philharmonie Luxembourg,
+      Grand Manège, deSingel, De Bijloke)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
 - [ ] Activer le cron une fois 5+ sources stabilisées
 
