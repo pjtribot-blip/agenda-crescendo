@@ -63,6 +63,11 @@ const MONTHS_FR = {
 // apparaissent dans la rubrique programme.
 const NON_COMPOSER_NAMES = new Set([
   'julie andrews',
+  'lea desandre',
+  'ensemble jupiter',
+  'lucio gallo',
+  'claudio chiara',
+  'claudio chiara jazz quintet',
 ]);
 
 // ------------------------------------------------------------------

@@ -131,6 +131,14 @@
     { "name": "Hummel", "aliases": ["Hummel", "Johann Nepomuk Hummel"] },
     { "name": "Clementi", "aliases": ["Clementi", "Muzio Clementi"] },
     { "name": "Tartini", "aliases": ["Tartini", "Giuseppe Tartini"] },
-    { "name": "Sammartini", "aliases": ["Sammartini", "Giovanni Battista Sammartini"] }
+    { "name": "Sammartini", "aliases": ["Sammartini", "Giovanni Battista Sammartini"] },
+    { "name": "Correa de Arauxo", "aliases": ["Correa de Arauxo", "Francisco Correa de Arauxo"] },
+    { "name": "Cabezón", "aliases": ["Cabezón", "Cabezon", "Antonio de Cabezón", "Antonio de Cabezon"] },
+    { "name": "Cabanilles", "aliases": ["Cabanilles", "Juan Cabanilles", "Joan Cabanilles"] },
+    { "name": "Piazzolla", "aliases": ["Piazzolla", "Astor Piazzolla", "Piazzola"] },
+    { "name": "Falconieri", "aliases": ["Falconieri", "Andrea Falconieri"] },
+    { "name": "Francesca Caccini", "aliases": ["Francesca Caccini"] },
+    { "name": "Strozzi", "aliases": ["Barbara Strozzi", "Strozzi"] },
+    { "name": "Bembo", "aliases": ["Antonia Bembo", "Bembo"] }
   ]
 }

@@ -2938,7 +2938,7 @@
       "Cipriano de Rore",
       "Riccardo Rognoni",
       "Philippus De Monte",
-      "Antonio Cabezón de",
+      "Cabezón",
       "Girolamo Dalla Casa",
       "Orazio Vecchi",
       "Giovanni Battista Bovicelli",
@@ -4016,9 +4016,7 @@
     "date": "2026-06-13",
     "time": "20:00",
     "url": "https://www.lamonnaiedemunt.be/fr/program/3589-chasing-rainbows",
-    "composers": [
-      "Lea Desandre & Ensemble Jupiter"
-    ],
+    "composers": [],
     "performers": [
       "Thomas Dunford (Direction musicale)",
       "Sophie Daneman (Mise en scène)",
@@ -7260,7 +7258,9 @@
     "time": "12:15",
     "url": "https://midis-minimes.be/fr/Concerts-2026-07-15-12:15",
     "composers": [
-      "Piazzola, Brighenti, Ricardo…"
+      "Piazzolla",
+      "Brighenti",
+      "Ricardo"
     ],
     "performers": [
       "Quatuor Caliente"
@@ -8053,7 +8053,11 @@
     "time": "12:15",
     "url": "https://midis-minimes.be/fr/Concerts-2026-08-03-12:15",
     "composers": [
-      "Andrea Falconieri, Francesca Campana, Francesca Caccini, Barbara Strozzi, Antonia Bembo"
+      "Falconieri",
+      "Francesca Campana",
+      "Francesca Caccini",
+      "Strozzi",
+      "Bembo"
     ],
     "performers": [
       "Les Kapsber'girls"
@@ -8383,7 +8387,9 @@
     "time": "12:15",
     "url": "https://midis-minimes.be/fr/Concerts-2026-08-06-12:15",
     "composers": [
-      "Correa de Arauxo, Cabezón, Cabanilles"
+      "Correa de Arauxo",
+      "Cabezón",
+      "Cabanilles"
     ],
     "performers": [
       "Ricercar Consort"
@@ -14453,9 +14459,7 @@
     "date": "2026-11-13",
     "time": "20:00",
     "url": "https://www.lamonnaiedemunt.be/fr/program/3950-fly-me-to-the-moon",
-    "composers": [
-      "Lucio Gallo & Claudio Chiara Jazz Quintet"
-    ],
+    "composers": [],
     "performers": [
       "Lucio Gallo (Baritono)",
       "La Monnaie (Production)"

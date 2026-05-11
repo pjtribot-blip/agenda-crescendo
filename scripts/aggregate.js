@@ -40,6 +40,8 @@ import { scrapeChapelle } from './scrapers/chapelle-reine-elisabeth.js';
 import { scrapeArsenalMetz } from './scrapers/arsenal-metz.js';
 import { scrapeStMichel } from './scrapers/festival-st-michel.js';
 
+import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const REPO_ROOT = resolve(__dirname, '..');
@@ -180,6 +182,20 @@ async function main() {
     }
   }
   if (renamed) console.log(`\n[dedup-id] ${renamed} IDs en collision suffixés (à corriger côté scraper)`);
+
+  // Passe de nettoyage des compositeurs : filtre les ensembles/interprètes
+  // qui ont fuité depuis les CMS source, et splitte les listes virgule.
+  const composerIndex = await loadComposerIndex();
+  let composersCleaned = 0;
+  for (const c of all) {
+    if (!Array.isArray(c.composers) || !c.composers.length) continue;
+    const before = c.composers.slice();
+    c.composers = cleanComposers(before, composerIndex);
+    if (c.composers.length !== before.length || c.composers.some((x, i) => x !== before[i])) {
+      composersCleaned++;
+    }
+  }
+  console.log(`[composer-filter] ${composersCleaned} concerts dont la liste compositeurs a été nettoyée`);
 
   // Tagging des festivals (sur les concerts agrégés, avant écriture)
   const festivals = await loadFestivals();
