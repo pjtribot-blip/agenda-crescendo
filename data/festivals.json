@@ -105,6 +105,26 @@
     "notes": "24e édition Indivisible by Four (saison 25-26 + Midis du Quatuor août 2026)"
   },
   {
+    "id": "much-waterloo-2026",
+    "name": "MuCH Waterloo Festival",
+    "edition_year": 2026,
+    "date_start": "2026-06-17",
+    "date_end": "2026-06-21",
+    "venues": ["chapelle-reine-elisabeth"],
+    "website": "https://musicchapel.org",
+    "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
+  },
+  {
+    "id": "st-michel-thierache-2026",
+    "name": "Festival de l'Abbaye de Saint-Michel-en-Thiérache",
+    "edition_year": 2026,
+    "date_start": "2026-06-07",
+    "date_end": "2026-07-05",
+    "venues": ["abbaye-saint-michel-thierache"],
+    "website": "https://festival-saint-michel.fr",
+    "notes": "40e édition — 5 dimanches juin-juillet 2026, 12 concerts de musique ancienne et baroque (Monteverdi L'Orfeo, Bach Messe en Si, Jordi Savall, Concert de la Loge)"
+  },
+  {
     "id": "contrastes-2026",
     "name": "Festival Contrastes",
     "edition_year": 2026,

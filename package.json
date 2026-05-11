@@ -36,7 +36,10 @@
     "scrape:ma-festival": "node -e \"import('./scripts/scrapers/ma-festival.js').then(m => m.scrapeMAFestival()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:voix-intimes": "node -e \"import('./scripts/scrapers/voix-intimes.js').then(m => m.scrapeVoixIntimes()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:crb": "node -e \"import('./scripts/scrapers/crb.js').then(m => m.scrapeCRB()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:kbr": "node -e \"import('./scripts/scrapers/kbr.js').then(m => m.scrapeKBR()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:kbr": "node -e \"import('./scripts/scrapers/kbr.js').then(m => m.scrapeKBR()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:chapelle": "node -e \"import('./scripts/scrapers/chapelle-reine-elisabeth.js').then(m => m.scrapeChapelle()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:arsenal-metz": "node -e \"import('./scripts/scrapers/arsenal-metz.js').then(m => m.scrapeArsenalMetz()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:st-michel": "node -e \"import('./scripts/scrapers/festival-st-michel.js').then(m => m.scrapeStMichel()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

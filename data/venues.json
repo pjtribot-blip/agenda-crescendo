@@ -406,5 +406,65 @@
     "lng": 5.9304,
     "website": "https://www.festivaldestavelot.be",
     "address": "Place Saint-Remacle, 4970 Stavelot"
+  },
+  {
+    "id": "chapelle-reine-elisabeth",
+    "name": "Chapelle Musicale Reine Elisabeth",
+    "fullName": "Chapelle Musicale Reine Elisabeth — Music Chapel (Studio Haas Teichen)",
+    "city": "Waterloo",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.7110,
+    "lng": 4.3920,
+    "website": "https://musicchapel.org",
+    "address": "Chaussée de Tervuren 445, 1410 Waterloo"
+  },
+  {
+    "id": "arsenal-metz",
+    "name": "Arsenal Metz",
+    "fullName": "Arsenal Metz — Cité musicale-Metz",
+    "city": "Metz",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 49.1090,
+    "lng": 6.1722,
+    "website": "https://citemusicale-metz.fr",
+    "address": "3 avenue Ney, 57000 Metz"
+  },
+  {
+    "id": "opera-metz",
+    "name": "Opéra-Théâtre Metz Métropole",
+    "fullName": "Opéra-Théâtre de Metz Métropole",
+    "city": "Metz",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 49.1209,
+    "lng": 6.1729,
+    "website": "https://opera.eurometropolemetz.eu",
+    "address": "4 place de la Comédie, 57000 Metz"
+  },
+  {
+    "id": "grand-theatre-luxembourg",
+    "name": "Grand Théâtre de Luxembourg",
+    "fullName": "Grand Théâtre de la Ville de Luxembourg",
+    "city": "Luxembourg",
+    "country": "LU",
+    "region": "Eurorégion",
+    "lat": 49.6225,
+    "lng": 6.1233,
+    "website": "https://www.theater.lu",
+    "address": "Rond-point Schuman 1, L-2525 Luxembourg"
+  },
+  {
+    "id": "abbaye-saint-michel-thierache",
+    "name": "Abbaye de Saint-Michel-en-Thiérache",
+    "fullName": "Abbatiale de Saint-Michel-en-Thiérache — Festival de musique ancienne et baroque",
+    "city": "Saint-Michel-en-Thiérache",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 49.8975,
+    "lng": 4.1378,
+    "website": "https://festival-saint-michel.fr",
+    "address": "Place de l'Abbaye, 02830 Saint-Michel"
   }
 ]

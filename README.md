@@ -183,6 +183,9 @@ npm run scrape:musiq3-bw  # idem pour Festival Musiq3 Brabant wallon
 npm run scrape:nuits-septembre  # idem pour Les Nuits de Septembre (Liège)
 npm run scrape:crb        # idem pour Conservatoire royal de Bruxelles
 npm run scrape:kbr        # idem pour KBR — Bibliothèque royale de Belgique
+npm run scrape:chapelle   # idem pour Chapelle Musicale Reine Elisabeth (Waterloo)
+npm run scrape:arsenal-metz   # idem pour Arsenal Metz (Cité musicale-Metz)
+npm run scrape:st-michel  # idem pour Festival Saint-Michel-en-Thiérache
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
@@ -236,6 +239,13 @@ scrape directement et on attribue les concerts à un venue dédié
 | Festival Les Voix Intimes (Tournai, Proquartetto) | B (scraper dédié) + tagging Maison de la Culture | 24e édition "Indivisible by Four" — saison 25-26 + Midis du Quatuor août 2026 (Chapelle de la Madeleine) |
 | Conservatoire royal de Bruxelles (CRB) | scraper dédié | ~6 concerts publics par fenêtre rolling, dédoublonnage avec MIM + KBR |
 | KBR — Bibliothèque royale de Belgique | scraper dédié (API Tribe Events) | ~5 événements musicaux : Trésors musicaux, Concert de midi, Polyphonies improvisées, Conte en balade |
+| Chapelle Musicale Reine Elisabeth (Waterloo) | scraper dédié (WordPress, JSON-LD schema.org/Event par fiche) | ~50-65 concerts/an : récitals, marathons, MuCH Sundays, MuCH Surprise, Horizon, Artist Diploma, Garden Party, masterclasses publiques. Dédoublonnage avec MIM/Bozar/Flagey/Monnaie via `location.name` |
+| Festival Contrastes (Tournai) | placeholder festival uniquement | Édition 2025 publiée (1 jour à Esplechin) ; édition 2026 annoncée 13 juin 2026 mais pas encore détaillée sur le site |
+| Conservatoire de Tournai | venue placeholder | Pas d'agenda public exploitable sur conservatoire.tournai.be (Drupal sans rubrique événements) |
+| Arsenal Metz (Cité musicale-Metz) | scraper dédié (Nuxt SSR paginé) | ~15 concerts/saison : symphoniques (ONL), récitals, musique de chambre, jazz acoustique. Filtre venue=Arsenal+Saint-Pierre-aux-Nonnains ; reject Exposition/Atelier |
+| Festival de l'Abbaye de Saint-Michel-en-Thiérache | scraper dédié (Elementor headings parsing) | 12 concerts musique ancienne & baroque, 40e édition 5 dimanches juin-juillet 2026 (Monteverdi L'Orfeo, Bach Messe en Si, Jordi Savall, Concert de la Loge) |
+| Opéra-Théâtre Metz Métropole | venue placeholder | Productions JS-rendered sur globalflexit CMS ; billetterie externe themisweb (HTML statique vide) |
+| Grand Théâtre de Luxembourg | venue placeholder | theater.lu liste multi-venues sans accès saison complète ; filtre `data-venue=grand-theatre` ne capture que 12 événements actuels (danse+théâtre, pas d'opéra visible sur la fenêtre courante) |
 | Conservatoire royal de Liège (CRLg) | venue placeholder | site institutionnel sans agenda exploitable (annonces sous forme de news ponctuelles) |
 | Arts² Mons | venue placeholder | tous domaines testés NXDOMAIN — site officiel inaccessible |
 | IMEP Namur | venue placeholder | Cloudflare bloque tous les sous-paths (/evenements, /news, /agenda → 403) |

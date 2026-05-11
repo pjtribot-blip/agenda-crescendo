@@ -36,6 +36,9 @@ import { scrapeMAFestival } from './scrapers/ma-festival.js';
 import { scrapeVoixIntimes } from './scrapers/voix-intimes.js';
 import { scrapeCRB } from './scrapers/crb.js';
 import { scrapeKBR } from './scrapers/kbr.js';
+import { scrapeChapelle } from './scrapers/chapelle-reine-elisabeth.js';
+import { scrapeArsenalMetz } from './scrapers/arsenal-metz.js';
+import { scrapeStMichel } from './scrapers/festival-st-michel.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -71,6 +74,9 @@ const SCRAPERS = [
   { name: 'voix-intimes', fn: scrapeVoixIntimes },
   { name: 'crb', fn: scrapeCRB },
   { name: 'kbr', fn: scrapeKBR },
+  { name: 'chapelle', fn: scrapeChapelle },
+  { name: 'arsenal-metz', fn: scrapeArsenalMetz },
+  { name: 'st-michel', fn: scrapeStMichel },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
