@@ -232,6 +232,10 @@ scrape directement et on attribue les concerts à un venue dédié
 | Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
 | MA Festival Brugge | B (scraper dédié) + tagging Concertgebouw Brugge | ~22 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
 | Festival Les Voix Intimes (Tournai, Proquartetto) | B (scraper dédié) + tagging Maison de la Culture | 24e édition "Indivisible by Four" — saison 25-26 + Midis du Quatuor août 2026 (Chapelle de la Madeleine) |
+| Conservatoire royal de Bruxelles (CRB) | scraper dédié | ~6 concerts publics par fenêtre rolling, dédoublonnage avec MIM |
+| Conservatoire royal de Liège (CRLg) | venue placeholder | site institutionnel sans agenda exploitable (annonces sous forme de news ponctuelles) |
+| Arts² Mons | venue placeholder | tous domaines testés NXDOMAIN — site officiel inaccessible |
+| IMEP Namur | venue placeholder | Cloudflare bloque tous les sous-paths (/evenements, /news, /agenda → 403) |
 
 ### À venir
 

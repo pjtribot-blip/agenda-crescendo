@@ -312,6 +312,42 @@
     "address": "Églises et salles liégeoises"
   },
   {
+    "id": "crlg",
+    "name": "Conservatoire royal de Liège",
+    "fullName": "Conservatoire royal de Liège — CRLg",
+    "city": "Liège",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6378,
+    "lng": 5.5710,
+    "website": "https://www.crlg.be",
+    "address": "Boulevard Piercot 29, 4000 Liège"
+  },
+  {
+    "id": "arts2",
+    "name": "Arts² Mons",
+    "fullName": "Arts² — École supérieure des Arts (Mons), section Musique",
+    "city": "Mons",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.4527,
+    "lng": 3.9512,
+    "website": "https://www.artssquare.be",
+    "address": "Rue de Nimy 7, 7000 Mons"
+  },
+  {
+    "id": "imep",
+    "name": "IMEP",
+    "fullName": "Institut supérieur de Musique et de Pédagogie — Namur",
+    "city": "Namur",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.4685,
+    "lng": 4.8642,
+    "website": "https://www.imep.be",
+    "address": "Rue Juppin 30, 5000 Namur"
+  },
+  {
     "id": "conservatoire-tournai",
     "name": "Conservatoire de Tournai",
     "fullName": "Conservatoire de Musique de la Ville de Tournai",

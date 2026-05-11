@@ -34,6 +34,7 @@ import { scrapeMusicorum } from './scrapers/musicorum.js';
 import { scrapeMidiMinimes } from './scrapers/midi-minimes.js';
 import { scrapeMAFestival } from './scrapers/ma-festival.js';
 import { scrapeVoixIntimes } from './scrapers/voix-intimes.js';
+import { scrapeCRB } from './scrapers/crb.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -67,6 +68,7 @@ const SCRAPERS = [
   { name: 'midi-minimes', fn: scrapeMidiMinimes },
   { name: 'ma-festival', fn: scrapeMAFestival },
   { name: 'voix-intimes', fn: scrapeVoixIntimes },
+  { name: 'crb', fn: scrapeCRB },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
