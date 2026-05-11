@@ -70,7 +70,7 @@
     { "name": "Chostakovitch", "aliases": ["Chostakovitch", "Shostakovich", "Dmitri Chostakovitch", "Dmitri Shostakovich"] },
     { "name": "Dvořák", "aliases": ["Dvořák", "Dvorak", "Antonín Dvořák", "Antonin Dvorak"] },
     { "name": "Smetana", "aliases": ["Smetana", "Bedřich Smetana", "Bedrich Smetana"] },
-    { "name": "Janáček", "aliases": ["Janáček", "Janacek", "Leoš Janáček", "Leos Janacek"] },
+    { "name": "Janáček", "aliases": ["Janáček", "Janacek", "Leoš Janáček", "Leos Janacek", "Janá?ek"] },
     { "name": "Bartók", "aliases": ["Bartók", "Bartok", "Béla Bartók", "Bela Bartok"] },
     { "name": "Kodály", "aliases": ["Kodály", "Kodaly", "Zoltán Kodály", "Zoltan Kodaly"] },
     { "name": "Sibelius", "aliases": ["Sibelius", "Jean Sibelius"] },

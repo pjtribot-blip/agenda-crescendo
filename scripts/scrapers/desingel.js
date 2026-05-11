@@ -120,6 +120,8 @@ async function queryProductions(today) {
       'productionstart__c',
       'productionstop__c',
       'systemurlnl__c',
+      'systemurlfr__c',
+      'systemurlen__c',
       'productiontypetext__c',
     ],
     limit: 500,
@@ -167,11 +169,15 @@ function buildId(date, prodSfid, time) {
   return `desingel-${date}${t}-${prodSfid.slice(0, 18)}`.slice(0, 200);
 }
 
-function buildUrl(systemurlnl) {
-  if (!systemurlnl) return BASE_URL;
-  // ex: "nl/programma/muziek/echo-2025"
-  const path = systemurlnl.startsWith('/') ? systemurlnl : '/' + systemurlnl;
-  return BASE_URL + path;
+// On privilégie l'URL française pour le lien "VOIR SUR LE SITE".
+// Le contenu de la page est rendu côté client à partir du même
+// backend Salesforce (titre/description en NL même sur /fr/), mais
+// la navigation reste cohérente avec l'agenda francophone. EN en
+// fallback si FR absent.
+function buildUrl(prod) {
+  const path = prod.systemurlfr__c || prod.systemurlen__c || prod.systemurlnl__c;
+  if (!path) return BASE_URL;
+  return BASE_URL + (path.startsWith('/') ? path : '/' + path);
 }
 
 // ------------------------------------------------------------------
@@ -198,7 +204,7 @@ export async function scrapeDeSingel({} = {}) {
     if (!prod) continue;
     const { date, time } = isoDateTime(act.activitystart__c);
     if (!date) continue;
-    const url = buildUrl(prod.systemurlnl__c);
+    const url = buildUrl(prod);
     const key = `${prod.sfid}|${date}|${time || ''}`;
     if (seenKey.has(key)) continue;
     seenKey.add(key);
@@ -231,7 +237,7 @@ export async function scrapeDeSingel({} = {}) {
     if (prodsWithActivity.has(prod.sfid)) continue;
     const { date, time } = isoDateTime(prod.productionstart__c);
     if (!date || date < today) continue;
-    const url = buildUrl(prod.systemurlnl__c);
+    const url = buildUrl(prod);
     const composers = matchComposers(prod.name || '', composerIndex);
     concerts.push({
       id: buildId(date, prod.sfid, time),

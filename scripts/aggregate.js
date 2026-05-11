@@ -39,6 +39,7 @@ import { scrapeKBR } from './scrapers/kbr.js';
 import { scrapeChapelle } from './scrapers/chapelle-reine-elisabeth.js';
 import { scrapeArsenalMetz } from './scrapers/arsenal-metz.js';
 import { scrapeStMichel } from './scrapers/festival-st-michel.js';
+import { scrapeArtsAuCarre } from './scrapers/arts-au-carre.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -79,6 +80,7 @@ const SCRAPERS = [
   { name: 'chapelle', fn: scrapeChapelle },
   { name: 'arsenal-metz', fn: scrapeArsenalMetz },
   { name: 'st-michel', fn: scrapeStMichel },
+  { name: 'arts-au-carre', fn: scrapeArtsAuCarre },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -196,6 +198,29 @@ async function main() {
     }
   }
   console.log(`[composer-filter] ${composersCleaned} concerts dont la liste compositeurs a été nettoyée`);
+
+  // Mojibake textuel : certaines sources (midis-minimes.be) ont
+  // littéralement "?" à la place de diacritiques slaves dans leur
+  // CMS. On remplace les occurrences connues dans title/program.
+  // À étendre si d'autres cas apparaissent.
+  const MOJIBAKE = [
+    [/Jan[aá]\?ek/g, 'Janáček'],
+    [/Dvo\?[aá]k/g, 'Dvořák'],
+    [/Martin\?/g, 'Martinů'],
+    [/G\?recki/g, 'Górecki'],
+    [/Lutos\?awski/g, 'Lutosławski'],
+  ];
+  let textFixed = 0;
+  for (const c of all) {
+    for (const f of ['title', 'program']) {
+      const v = c[f];
+      if (!v || !v.includes('?')) continue;
+      let fixed = v;
+      for (const [re, rep] of MOJIBAKE) fixed = fixed.replace(re, rep);
+      if (fixed !== v) { c[f] = fixed; textFixed++; }
+    }
+  }
+  if (textFixed) console.log(`[mojibake] ${textFixed} title/program corrigés`);
 
   // Tagging des festivals (sur les concerts agrégés, avant écriture)
   const festivals = await loadFestivals();

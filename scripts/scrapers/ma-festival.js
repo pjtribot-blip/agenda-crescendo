@@ -25,16 +25,22 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const REPO_ROOT = resolve(__dirname, '..', '..');
 
+// Site officiel NL/EN uniquement (pas de /fr/). On scrape la version
+// EN — plus accessible aux lecteurs francophones que le NL, et
+// pertinente pour un festival international de musique ancienne.
 const BASE_URL = 'https://www.mafestival.be';
-const LIST_PATH = '/programma';
+const LIST_PATH = '/en/programma';
 
 const UA = 'Mozilla/5.0 (compatible; CrescendoMagazineBot/0.1; +https://crescendo-magazine.be) AgendaCrescendo';
 
+// Patterns en NL et EN — on scrape la version EN mais on garde
+// les variantes NL au cas où le site change.
 const TITLE_REJECT_PATTERNS = [
-  /digitale\s+(eerste\s+ronde|ronde)/i,
-  /halve\s+finale/i,
+  /digitale?\s+(eerste\s+ronde|ronde|first\s+round)/i,
+  /\b(halve\s+finale|semi[-\s]?final)\b/i,
   /davidsfonds\s+academie/i,
   /^masterclass/i,
+  /\bMA\s+Competition\b/i,
 ];
 
 // ------------------------------------------------------------------
@@ -47,7 +53,7 @@ async function fetchHtml(url, { retries = 2 } = {}) {
         headers: {
           'User-Agent': UA,
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-          'Accept-Language': 'nl-BE,nl;q=0.9,fr;q=0.8',
+          'Accept-Language': 'en;q=0.9,fr;q=0.8,nl;q=0.7',
         },
         redirect: 'follow',
       });
@@ -104,9 +110,9 @@ function matchComposers(text, index) {
 function parseListUrls(html) {
   const $ = cheerio.load(html);
   const urls = new Set();
-  $('a[href^="/programma/"]').each((_, a) => {
+  $('a[href^="/en/programma/"], a[href^="/programma/"]').each((_, a) => {
     const href = $(a).attr('href') || '';
-    if (href === '/programma' || href === '/programma/') return;
+    if (/^\/(?:en\/)?programma\/?$/.test(href)) return;
     const url = href.startsWith('http') ? href : BASE_URL + href;
     urls.add(url.replace(/\/$/, ''));
   });
@@ -163,7 +169,7 @@ function isoToday() {
   return new Date().toISOString().slice(0, 10);
 }
 function buildId(date, url, time) {
-  const slug = (url.match(/\/programma\/([^/?#]+)/) || [])[1] || 'event';
+  const slug = (url.match(/\/(?:en\/)?programma\/([^/?#]+)/) || [])[1] || 'event';
   const t = time ? `-${time.replace(':', '')}` : '';
   return `mafest-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }

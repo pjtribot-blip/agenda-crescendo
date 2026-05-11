@@ -103,7 +103,7 @@ agenda-crescendo/
 | Grand Manège (Namur) | ✅ opérationnel | HTML + cheerio (`/fr/concerts/calendrier`, mois encodé dans `class="venue-YYYYMM"` de chaque carte) | ~115 concerts sur 14 mois |
 | MARS (Mons) | ✅ opérationnel | HTML + cheerio (`/calendrier/YYYYMM` mois par mois, pré-filtre URL `/musique/` puis filtre fin sur sous-genre détail Classique / Musique d'aujourd'hui / Musique ancienne / Baroque / Lyrique) | ~17 concerts savants sur 14 mois |
 | PBA Charleroi | ✅ opérationnel | HTML + cheerio (`/notre-saison/?category=classique` + `=lyrique` × saisons découvertes via `<select name="season">`) | ~20 concerts sur les saisons en cours |
-| deSingel (Anvers) | ✅ opérationnel | API JSON Postgres-proxy `/api/data` (table `production__c` + `activity__c`, filtre `productiontypetext__c='Muziek'`) | ~180 représentations sur la saison |
+| deSingel (Anvers) | ✅ opérationnel | API JSON Postgres-proxy `/api/data` (table `production__c` + `activity__c`, filtre `productiontypetext__c='Muziek'`). URL `systemurlfr__c` privilégié sur NL/EN pour le lien externe | ~180 représentations sur la saison |
 | De Bijloke (Gand) | ✅ opérationnel | HTML + cheerio (`/nl/programma?page=N`, dataLayer Google Analytics dans la page détail pour genres + dates par représentation) | ~135 concerts sur 14 mois |
 | Philharmonie Luxembourg | ✅ opérationnel | HTML + cheerio (`/fr/programme?month=M&page=N`, pagination mois × page, rejet des tags jeune public) | ~310 concerts sur 14 mois |
 | Opéra de Lille | ✅ opérationnel | HTML + cheerio (`/saison-XX-XX/`, calendrier global de chaque page produit pour les dates) | ~15 concerts sur la fin de saison 25-26 |
@@ -186,6 +186,7 @@ npm run scrape:kbr        # idem pour KBR — Bibliothèque royale de Belgique
 npm run scrape:chapelle   # idem pour Chapelle Musicale Reine Elisabeth (Waterloo)
 npm run scrape:arsenal-metz   # idem pour Arsenal Metz (Cité musicale-Metz)
 npm run scrape:st-michel  # idem pour Festival Saint-Michel-en-Thiérache
+npm run scrape:arts-au-carre  # idem pour Arts au Carré (ARTS² Mons)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
@@ -235,7 +236,7 @@ scrape directement et on attribue les concerts à un venue dédié
 | Ekinox (Mons + Charleroi) | A (tagging MARS + PBA) | 26 concerts auto-taggés début octobre |
 | Festival Musicorum (MRBAB Bruxelles) | B (scraper dédié) | 48 concerts gratuits midis 12h15 juillet-août |
 | Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
-| MA Festival Brugge | B (scraper dédié) + tagging Concertgebouw Brugge | ~22 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
+| MA Festival Brugge | B (scraper dédié, version EN /en/programma — pas de FR officielle) + tagging Concertgebouw Brugge | ~24 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
 | Festival Les Voix Intimes (Tournai, Proquartetto) | B (scraper dédié) + tagging Maison de la Culture | 24e édition "Indivisible by Four" — saison 25-26 + Midis du Quatuor août 2026 (Chapelle de la Madeleine) |
 | Conservatoire royal de Bruxelles (CRB) | scraper dédié | ~6 concerts publics par fenêtre rolling, dédoublonnage avec MIM + KBR |
 | KBR — Bibliothèque royale de Belgique | scraper dédié (API Tribe Events) | ~5 événements musicaux : Trésors musicaux, Concert de midi, Polyphonies improvisées, Conte en balade |
@@ -247,7 +248,7 @@ scrape directement et on attribue les concerts à un venue dédié
 | Opéra-Théâtre Metz Métropole | venue placeholder | Productions JS-rendered sur globalflexit CMS ; billetterie externe themisweb (HTML statique vide) |
 | Grand Théâtre de Luxembourg | venue placeholder | theater.lu liste multi-venues sans accès saison complète ; filtre `data-venue=grand-theatre` ne capture que 12 événements actuels (danse+théâtre, pas d'opéra visible sur la fenêtre courante) |
 | Conservatoire royal de Liège (CRLg) | venue placeholder | site institutionnel sans agenda exploitable (annonces sous forme de news ponctuelles) |
-| Arts² Mons | venue placeholder | tous domaines testés NXDOMAIN — site officiel inaccessible |
+| Arts² Mons | scraper dédié (Arts au Carré, WordPress) | ~5-10 concerts publics/mois via /events/categories/musique-fr/ (CONCERT², LES MIDIS D'ARTS², Festival Studio PBA). Filtre rejet ÉVALUATION²/AUDITION/jurys |
 | IMEP Namur | venue placeholder | Cloudflare bloque tous les sous-paths (/evenements, /news, /agenda → 403) |
 
 ### À venir
