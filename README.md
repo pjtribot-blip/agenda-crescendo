@@ -181,6 +181,8 @@ npm run scrape:stavelot   # idem pour Festival de Stavelot
 npm run scrape:silly      # idem pour Printemps Musical de Silly
 npm run scrape:musiq3-bw  # idem pour Festival Musiq3 Brabant wallon
 npm run scrape:nuits-septembre  # idem pour Les Nuits de Septembre (Liège)
+npm run scrape:crb        # idem pour Conservatoire royal de Bruxelles
+npm run scrape:kbr        # idem pour KBR — Bibliothèque royale de Belgique
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
@@ -232,7 +234,8 @@ scrape directement et on attribue les concerts à un venue dédié
 | Festival Midis-Minimes (Bruxelles) | B (scraper dédié) | 42 concerts gratuits midis 12h15 juillet-août (40e édition) |
 | MA Festival Brugge | B (scraper dédié) + tagging Concertgebouw Brugge | ~22 concerts hors-Concertgebouw (églises, abbayes brugeoises) du 31 juillet au 9 août 2026 |
 | Festival Les Voix Intimes (Tournai, Proquartetto) | B (scraper dédié) + tagging Maison de la Culture | 24e édition "Indivisible by Four" — saison 25-26 + Midis du Quatuor août 2026 (Chapelle de la Madeleine) |
-| Conservatoire royal de Bruxelles (CRB) | scraper dédié | ~6 concerts publics par fenêtre rolling, dédoublonnage avec MIM |
+| Conservatoire royal de Bruxelles (CRB) | scraper dédié | ~6 concerts publics par fenêtre rolling, dédoublonnage avec MIM + KBR |
+| KBR — Bibliothèque royale de Belgique | scraper dédié (API Tribe Events) | ~5 événements musicaux : Trésors musicaux, Concert de midi, Polyphonies improvisées, Conte en balade |
 | Conservatoire royal de Liège (CRLg) | venue placeholder | site institutionnel sans agenda exploitable (annonces sous forme de news ponctuelles) |
 | Arts² Mons | venue placeholder | tous domaines testés NXDOMAIN — site officiel inaccessible |
 | IMEP Namur | venue placeholder | Cloudflare bloque tous les sous-paths (/evenements, /news, /agenda → 403) |

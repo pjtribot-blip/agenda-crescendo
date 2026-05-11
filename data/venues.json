@@ -312,6 +312,18 @@
     "address": "Églises et salles liégeoises"
   },
   {
+    "id": "kbr",
+    "name": "KBR",
+    "fullName": "Bibliothèque royale de Belgique — Auditorium Mont des Arts",
+    "city": "Bruxelles",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8434,
+    "lng": 4.3576,
+    "website": "https://www.kbr.be",
+    "address": "Mont des Arts 28, 1000 Bruxelles"
+  },
+  {
     "id": "crlg",
     "name": "Conservatoire royal de Liège",
     "fullName": "Conservatoire royal de Liège — CRLg",

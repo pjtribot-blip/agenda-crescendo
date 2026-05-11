@@ -180,11 +180,17 @@ export async function scrapeCRB({} = {}) {
   });
 
   const upcoming = listed.filter((it) => it.date >= today);
-  // Skip MIM-venue events : déjà capturés par mim.js (Concerts de Midi
-  // du mardi notamment).
-  const allowed = upcoming.filter((it) => !/^MIM\b/i.test(it.venueLocal || ''));
-  const skippedMim = upcoming.length - allowed.length;
-  console.error(`[crb] ${listed.length} listés / ${upcoming.length} à venir / ${allowed.length} retenus (skip MIM ${skippedMim})`);
+  // Dédoublonnage venues déjà scrapées par d'autres sources :
+  //  - MIM (mim.js scrape les Concerts de Midi du mardi)
+  //  - KBR / Bibliothèque royale (kbr.js scrape l'Auditorium Mont des Arts)
+  const allowed = upcoming.filter((it) => {
+    const v = it.venueLocal || '';
+    if (/^MIM\b|Mus[eé]e des Instruments de Musique/i.test(v)) return false;
+    if (/\bKBR\b|Biblioth[eè]que royale/i.test(v)) return false;
+    return true;
+  });
+  const skipped = upcoming.length - allowed.length;
+  console.error(`[crb] ${listed.length} listés / ${upcoming.length} à venir / ${allowed.length} retenus (skip MIM/KBR ${skipped})`);
 
   const concerts = allowed.map((it) => {
     const composers = matchComposers(it.title, composerIndex);
