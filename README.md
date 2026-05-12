@@ -41,6 +41,10 @@ agenda-crescendo/
 - **Données** : deux fichiers JSON statiques chargés en `fetch` au boot.
 - **Pas de framework**, pas de bundler, pas de runtime serveur.
 - **Déploiement** : Vercel (statique).
+- **Icônes web** : favicon multi-résolution (.ico 16/32/48 + PNG
+  16/32), apple-touch-icon 180×180, android-chrome 192/512, et
+  `site.webmanifest` (PWA installable). Génération à partir d'un
+  master `favicon.png` 512×512 via `node scripts/generate-favicons.js`.
 
 ---
 

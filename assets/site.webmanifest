@@ -1,0 +1,13 @@
+{
+  "name": "Agenda Crescendo",
+  "short_name": "Crescendo",
+  "description": "Concerts de musique classique en Belgique et Eurorégion — Crescendo Magazine",
+  "icons": [
+    {"src": "android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#b8893f",
+  "background_color": "#faf6ee",
+  "display": "standalone",
+  "start_url": "/"
+}

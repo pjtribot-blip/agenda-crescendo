@@ -57,5 +57,9 @@
     "cheerio": "^1.0.0"
   },
   "author": "Pierre-Jean Tribot — Crescendo Magazine",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5"
+  }
 }
