@@ -456,6 +456,18 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "midiliege",
+    "name": "Concerts de Midi Liège",
+    "fullName": "Société Royale Concerts de Midi de la Ville de Liège ASBL — Salle académique de l'ULiège",
+    "city": "Liège",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6403,
+    "lng": 5.5750,
+    "website": "https://www.midiliege.be",
+    "address": "Place du XX Août 7, 4000 Liège"
+  },
+  {
     "id": "amuz",
     "name": "AMUZ",
     "fullName": "AMUZ — Augustinus Muziekcentrum (Église Saint-Augustin)",

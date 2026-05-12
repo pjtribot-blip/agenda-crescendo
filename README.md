@@ -114,6 +114,7 @@ agenda-crescendo/
 | Triangel (Saint-Vith) | ✅ opérationnel | HTML + cheerio (`/evenements/`, CMS custom .NET propre). Filtre strict cat="Concert" + blacklist titre (Heino/Oberkrainer/Q-Revival/Musikverein/Brings) | ~8 concerts classiques sur 42 événements (CMIREB Violoncelle, BNO Romantik, Voces8, EUYWO, Primacanta, Scandinavian Night, Matinée-Konzert, Play-In). Cross-source dedup avec OBF : les concerts OBF au Triangel supersèdent leur version triangel.js |
 | OstbelgienFestival (OBF) | ✅ opérationnel (scraper dédié, Joomla + JEM) | ~22 concerts saison mai-décembre 2026 répartis sur Triangel St-Vith + Eupen (Atelier, Jünglingshaus, Pfarrkirche, monuments) + Kelmis + obf-festival umbrella (Destillerie Radermacher, Kapelle St. Hubertus, Alter Schlachthof, Kloster Heidberg, IKOB, Brauerei Eifel, sentiers Eifel). Tagging festival obf-2026 |
 | AMUZ (Anvers) | ✅ opérationnel (scraper dédié, WordPress + activity post type) | ~66 concerts/saison via `/wp-json/wp/v2/activity` paginé + détail HTML pour la date `.data h3/h4`. Filtre par activity_type (KEEP : Concert/Kamermuziek/Polyfonie/Vocaal/Instrumentaal/Klavier/Orkest/Zondag/Muziektheater). Reject titre pour les "Extern programma" non-classiques (Dotan, Lucky Star, Boekhandel, Marnixring, Flamenco). Tagging Laus Polyphoniae 2026 (21-29 août) |
+| Concerts de Midi Liège (Société Royale ASBL) | ✅ opérationnel (placeholder en intersaison) | Scraper WordPress générique (heuristique articles/h-tags + date FR). Saison 2025-2026 terminée, saison 2026-2027 pas encore publiée → 0 concert ce run. Se réveillera automatiquement à la rentrée |
 | Reste : ONL Lille (Cloudflare 503), Opera Ballet Vlaanderen (Nuxt minifié), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
 ### Pipeline
@@ -194,6 +195,7 @@ npm run scrape:hardelot   # idem pour Midsummer Festival Hardelot
 npm run scrape:triangel   # idem pour Triangel (Sankt-Vith)
 npm run scrape:obf        # idem pour OstbelgienFestival
 npm run scrape:amuz       # idem pour AMUZ (Anvers)
+npm run scrape:midiliege  # idem pour Concerts de Midi Liège (Société Royale)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
