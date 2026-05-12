@@ -785,6 +785,26 @@
     if (firstMatch) firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  // Tri compositeur : extrait le nom de famille comme clé de tri.
+  // - Mot unique → utilisé tel quel (Bach, Mozart, Salieri, Martinů).
+  // - Plusieurs mots → dernier mot, en ignorant les particules
+  //   nobiliaires/onomastiques courantes (de, du, von, van, della,
+  //   dalla, le, la, di) qui ne portent pas le tri en français.
+  //   Ex. "Cipriano de Rore" → "Rore", "Tomás Luis de Victoria" → "Victoria",
+  //   "Andrea Tarrodi" → "Tarrodi", "Clara Schumann" → "Schumann",
+  //   "R. Strauss" → "Strauss", "Vaughan Williams" → "Williams".
+  const SORT_PARTICLES = new Set(['de', 'du', 'von', 'van', 'della', 'dalla', 'le', 'la', 'di', 'd\u2019', "d'"]);
+  function composerSortKey(name) {
+    if (!name) return '';
+    const cleaned = String(name).replace(/\s+/g, ' ').trim();
+    const parts = cleaned.split(' ').filter(Boolean);
+    if (parts.length <= 1) return cleaned.toLowerCase();
+    // Dernier mot par défaut ; si c'est une particule, prendre l'avant-dernier.
+    let i = parts.length - 1;
+    while (i > 0 && SORT_PARTICLES.has(parts[i].toLowerCase())) i--;
+    return parts[i].toLowerCase();
+  }
+
   // ---------- Filters ----------
   function buildFilterOptions() {
     // Countries (from venues that actually have concerts)
@@ -800,10 +820,17 @@
     const months = Array.from(new Set(state.concerts.map(c => c.date.slice(0, 7)))).sort();
     fillSelect('f-month', months.map(m => ({ value: m, label: formatMonthLabel(m) })));
 
-    // Composers
+    // Composers — tri par nom de famille (dernier mot, en ignorant les
+    // particules "de", "von", "van", "della", "dalla", "du", "le").
+    // Cas particuliers : noms asiatiques (Huang Ruo) gardés tels quels —
+    // ils trient sur le 2e mot, ce qui est imparfait mais marginal.
     const composers = new Set();
     state.concerts.forEach(c => (c.composers || []).forEach(x => composers.add(x)));
-    fillSelect('f-composer', Array.from(composers).sort().map(c => ({ value: c, label: c })));
+    fillSelect('f-composer', Array.from(composers).sort((a, b) => {
+      const ka = composerSortKey(a), kb = composerSortKey(b);
+      const c = ka.localeCompare(kb, 'fr', { sensitivity: 'base' });
+      return c !== 0 ? c : a.localeCompare(b, 'fr');
+    }).map(c => ({ value: c, label: c })));
 
     // Festivals — uniquement ceux qui ont au moins un concert taggé
     const usedFestivalIds = new Set();

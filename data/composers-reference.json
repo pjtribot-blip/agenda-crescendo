@@ -139,6 +139,11 @@
     { "name": "Falconieri", "aliases": ["Falconieri", "Andrea Falconieri"] },
     { "name": "Francesca Caccini", "aliases": ["Francesca Caccini"] },
     { "name": "Strozzi", "aliases": ["Barbara Strozzi", "Strozzi"] },
-    { "name": "Bembo", "aliases": ["Antonia Bembo", "Bembo"] }
+    { "name": "Bembo", "aliases": ["Antonia Bembo", "Bembo"] },
+    { "name": "Salieri", "aliases": ["Salieri", "Antonio Salieri"] },
+    { "name": "Martinů", "aliases": ["Martinů", "Martinu", "Bohuslav Martinů", "Bohuslav Martinu"] },
+    { "name": "Dukas", "aliases": ["Dukas", "Paul Dukas"] },
+    { "name": "Casals", "aliases": ["Casals", "Pablo Casals"] },
+    { "name": "Vecchi", "aliases": ["Vecchi", "Orazio Vecchi"] }
   ]
 }
