@@ -456,6 +456,30 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "vrijthof-maastricht",
+    "name": "Theater aan het Vrijthof",
+    "fullName": "Theater aan het Vrijthof — Maastricht (Pays-Bas)",
+    "city": "Maastricht",
+    "country": "NL",
+    "region": "Eurorégion",
+    "lat": 50.8503,
+    "lng": 5.6889,
+    "website": "https://www.theateraanhetvrijthof.nl",
+    "address": "Vrijthof 47, 6211 LE Maastricht"
+  },
+  {
+    "id": "automne-musical-spa",
+    "name": "Automne Musical de Spa",
+    "fullName": "Automne Musical de Spa — Musique à Spa ASBL",
+    "city": "Spa",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.4928,
+    "lng": 5.8636,
+    "website": "https://automnemusical.com",
+    "address": "Rue Sauvenière 84, 4900 Spa"
+  },
+  {
     "id": "midiliege",
     "name": "Concerts de Midi Liège",
     "fullName": "Société Royale Concerts de Midi de la Ville de Liège ASBL — Salle académique de l'ULiège",

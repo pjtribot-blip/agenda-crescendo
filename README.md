@@ -116,6 +116,8 @@ agenda-crescendo/
 | AMUZ (Anvers) | ✅ opérationnel (scraper dédié, WordPress + activity post type) | ~66 concerts/saison via `/wp-json/wp/v2/activity` paginé + détail HTML pour la date `.data h3/h4`. Filtre par activity_type (KEEP : Concert/Kamermuziek/Polyfonie/Vocaal/Instrumentaal/Klavier/Orkest/Zondag/Muziektheater). Reject titre pour les "Extern programma" non-classiques (Dotan, Lucky Star, Boekhandel, Marnixring, Flamenco). Tagging Laus Polyphoniae 2026 (21-29 août) |
 | Concerts de Midi Liège (Société Royale ASBL) | ✅ opérationnel (placeholder en intersaison) | Scraper WordPress générique (heuristique articles/h-tags + date FR). Saison 2025-2026 terminée, saison 2026-2027 pas encore publiée → 0 concert ce run. Se réveillera automatiquement à la rentrée |
 | Antwerp Symphony Orchestra (Salle Reine Elisabeth, Antwerpen) | ✅ opérationnel (scraper dédié) | HTML statique propre, version FR officielle paginée (`/fr/programma?page=N`, ~11 pages). ~60 concerts/saison à Salle Reine Elisabeth + AMUZ. Filtre rejet Lectures/Répétitions/Activités Amis/Concerts familial. Dédup cross-source avec AMUZ (ASO prime, ~9 doublons) |
+| Theater aan het Vrijthof (Maastricht — Pays-Bas) | ✅ opérationnel (scraper dédié) | Premier venue NL de l'agenda. Concrete CMS, URLs encodant `/voorstellingen/{cat}/{slug}/DD-MM-YYYY-HH-MM`. Filtre par catégorie URL : KEEP klassiek-* + opera, exception ballets de répertoire (Notenkraker, Zwanenmeer, Nationale Ballet, NDT, Introdans…) ; REJECT toneel/cabaret/musical/familie/theaterconcert. Sous-filtre titre rejet Harmonie/Fanfare/Vastelaovend/André Rieu (Limburg = forte tradition harmonie). Saison 26-27 partiellement publiée → 1 concert capté au commit (PhilXmas Philzuid 20/12), croissance attendue |
+| Automne Musical de Spa | ⏸ placeholder | Site automnemusical.com resté sur édition 2024. Édition 2026 annoncée sans dates publiées. À ré-explorer juillet-août 2026 |
 | Reste : ONL Lille (Cloudflare 503), Opera Ballet Vlaanderen (Nuxt minifié), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
 ### Pipeline
@@ -198,6 +200,7 @@ npm run scrape:obf        # idem pour OstbelgienFestival
 npm run scrape:amuz       # idem pour AMUZ (Anvers)
 npm run scrape:midiliege  # idem pour Concerts de Midi Liège (Société Royale)
 npm run scrape:antwerp-symphony  # idem pour Antwerp Symphony Orchestra
+npm run scrape:vrijthof-maastricht  # idem pour Theater aan het Vrijthof (Maastricht, NL)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000

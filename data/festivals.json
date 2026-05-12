@@ -115,6 +115,26 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "musica-sacra-maastricht-2026",
+    "name": "Musica Sacra Maastricht",
+    "edition_year": 2026,
+    "date_start": "2026-09-01",
+    "date_end": "2026-09-30",
+    "venues": ["vrijthof-maastricht"],
+    "website": "https://www.theateraanhetvrijthof.nl/ons-huis/musica-sacra-maastricht",
+    "notes": "Festival annuel de musique sacrée co-organisé par Theater aan het Vrijthof. Fenêtre septembre 2026 à confirmer quand la programmation sera publiée"
+  },
+  {
+    "id": "automne-musical-spa-2026",
+    "name": "Automne Musical de Spa",
+    "edition_year": 2026,
+    "date_start": "2026-09-15",
+    "date_end": "2026-11-15",
+    "venues": ["automne-musical-spa"],
+    "website": "https://automnemusical.com",
+    "notes": "Placeholder — site automnemusical.com est resté sur l'édition 2024. Annonce d'une édition 2026 mais sans dates publiées. À ré-explorer en juillet-août 2026"
+  },
+  {
     "id": "laus-polyphoniae-2026",
     "name": "Laus Polyphoniae",
     "edition_year": 2026,
