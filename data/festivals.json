@@ -115,6 +115,26 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "laus-polyphoniae-2026",
+    "name": "Laus Polyphoniae",
+    "edition_year": 2026,
+    "date_start": "2026-08-21",
+    "date_end": "2026-08-29",
+    "venues": ["amuz"],
+    "website": "https://amuz.be",
+    "notes": "Festival international de polyphonie ancienne organisé par AMUZ (Anvers), 9 jours fin août 2026 — ~27 concerts (Vox Luminis, The Gesualdo Six, Stile Antico, Huelgas Ensemble, Collegium Vocale Gent, Cappella Mariana, Utopia Ensemble…)"
+  },
+  {
+    "id": "ars-musica-2026",
+    "name": "Ars Musica",
+    "edition_year": 2026,
+    "date_start": "2026-11-14",
+    "date_end": "2026-12-07",
+    "venues": ["bozar", "flagey", "lamonnaie", "mim", "kbr", "conservatoire-royal-bruxelles"],
+    "website": "https://www.arsmusica.be",
+    "notes": "Festival international de musique contemporaine (Bruxelles), 38e édition. Programme 2026 publié en septembre 2026 — tagging automatique des concerts dans les lieux partenaires déjà scrapés (Bozar/Flagey/Monnaie/MIM/KBR/CRB)"
+  },
+  {
     "id": "obf-2026",
     "name": "OstbelgienFestival",
     "edition_year": 2026,

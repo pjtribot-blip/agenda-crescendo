@@ -44,6 +44,7 @@ import { scrapeLillePianos } from './scrapers/lille-pianos.js';
 import { scrapeHardelot } from './scrapers/midsummer-hardelot.js';
 import { scrapeTriangel } from './scrapers/triangel.js';
 import { scrapeOBF } from './scrapers/obf.js';
+import { scrapeAMUZ } from './scrapers/amuz.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -89,6 +90,7 @@ const SCRAPERS = [
   { name: 'hardelot', fn: scrapeHardelot },
   { name: 'triangel', fn: scrapeTriangel },
   { name: 'obf', fn: scrapeOBF },
+  { name: 'amuz', fn: scrapeAMUZ },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

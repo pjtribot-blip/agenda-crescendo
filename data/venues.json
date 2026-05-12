@@ -456,6 +456,18 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "amuz",
+    "name": "AMUZ",
+    "fullName": "AMUZ — Augustinus Muziekcentrum (Église Saint-Augustin)",
+    "city": "Antwerpen",
+    "country": "BE",
+    "region": "Flandre",
+    "lat": 51.2179,
+    "lng": 4.4030,
+    "website": "https://amuz.be",
+    "address": "Kammenstraat 81, 2000 Antwerpen"
+  },
+  {
     "id": "obf-festival",
     "name": "OstbelgienFestival",
     "fullName": "OstbelgienFestival — concerts dans plusieurs lieux de la Communauté germanophone (églises, chapelles, brasseries, monuments, sentiers d'Eifel)",
