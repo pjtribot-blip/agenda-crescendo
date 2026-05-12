@@ -1,22 +1,42 @@
-// Scraper Opéra de Lille
+// Scraper Opéra de Lille — refonte Phase 3.20
 //
-// Stratégie :
-//  1. Liste : on récupère toutes les saisons publiées (`/saison-25-26/`,
-//     `/saison-26-27/` quand publié). Chaque page liste ~30-40 productions
-//     dans des <article class="spec_card"> avec catégorie, titre,
-//     sous-titre, plage de dates et URL de fiche.
-//  2. Filtre éditorial : on ne garde que les catégories musicales
-//     (opéra, opéra itinérant, concert, ballet, danse-théâtre) + les
-//     coquilles "hors les murs" / "évènement" / "performance" qui
-//     correspondent souvent à un récital ou à un opéra léger. On rejette
-//     "sieste" / "heure bleue" / "insomniaque" / "open week" /
-//     "en famille" / "danse" pure (chorégraphie sans orchestre live).
-//  3. Détail : pour chaque production gardée, on visite la page fiche
-//     pour récupérer toutes les dates individuelles. La fiche embarque
-//     un calendrier global avec des conteneurs `calendrier-YYYY-MM-DD`
-//     listant chaque représentation. On filtre les dates sur le slug
-//     du spectacle courant (date-line-link href) pour éviter de capter
-//     les autres productions affichées dans le même calendrier.
+// La saison 26-27 a apporté deux changements bloquants sur le site :
+//   1. /saison-26-27/ redirige vers une JPEG (le flyer Saison-26-27.jpg)
+//      au lieu d'une page HTML exploitable. Donc impossible de découvrir
+//      les productions par scan de la page saison comme avant.
+//   2. Les fiches /spectacle/{slug}/ ne contiennent plus les dates dans
+//      les conteneurs `calendrier-YYYY-MM-DD` (qui existent toujours mais
+//      affichent maintenant un calendrier global du lieu pointant vers
+//      d'autres productions). Le nouveau format des dates est :
+//        <div class="spectacle-details-horaires">
+//          <p>
+//            <span class="spectacle-details-date">Lundi 10 mai 2027</span>
+//            <span class="spectacle-details-heure">20h</span>
+//            <span class="spectacle-details-statut">À venir</span>
+//          </p>
+//          ...
+//        </div>
+//
+// Nouvelle stratégie :
+//   1. Source de la liste : home page / qui contient ~36 liens
+//      /spectacle/{slug}/ couvrant les saisons en cours. On dédupe par
+//      slug et on visite chaque fiche.
+//   2. Catégorie : extraite de <p class="sHeader_cat"><span> sur la
+//      fiche détail. Filtre KEEP/REJECT cohérent avec l'ancien scraper.
+//      Nouveauté : on rejette "hors-les-murs" car ces productions sont
+//      jouées chez d'autres (Opera d'Anvers, Concertgebouw Bruges) déjà
+//      captées par les sources OBV / cgbrugge.
+//   3. Dates : parsing du nouveau bloc .spectacle-details-horaires p
+//      avec ses 3 spans (date FR « Lundi 10 mai 2027 » → ISO, heure
+//      « 20h » → « 20:00 », statut « À venir » / « Complet » / « Annulé »).
+//
+// Test attendu Phase 3.20 :
+//   - Otello (9 dates 10/05 → 03/06/2027)
+//   - Ermonela – L'âme en feu (2 dates 3 + 6/12/2026)
+// → après refonte, ces 11 dates remontent côté opl. La phase ONL
+//   Phase 3.19 conserve ces productions avec marqueur co-production —
+//   le dédoublonnage cross-source (Phase 3.12+) supersède la version
+//   ONL par celle d'opl quand venue_id et (date, time) matchent.
 
 import * as cheerio from 'cheerio';
 import { readFile } from 'node:fs/promises';
@@ -31,30 +51,45 @@ const BASE_URL = 'https://www.opera-lille.fr';
 
 const UA = 'Mozilla/5.0 (compatible; CrescendoMagazineBot/0.1; +https://crescendo-magazine.be) AgendaCrescendo';
 
-// "sieste", "heure bleue", "insomniaque", "en famille" sont des FORMATS
-// (sieste musicale, concert de chambre nocturne, opéra famille…) pas
-// des genres : la programmation reste musicale/classique. On les garde.
+// On découvre les productions via la home (~36 liens /spectacle/) et
+// /programmation/ (~8 liens, productions actives).
+const DISCOVERY_PATHS = ['/', '/programmation/'];
+
+// Catégories autorisées (texte exact du span sHeader_catItem, en
+// minuscules après normalize).
 const KEEP_CATEGORIES = new Set([
   'opera', 'opera itinerant',
   'concert',
   'ballet', 'ballet symphonique',
   'recital', 'recital lyrique',
-  'evenement', 'hors-les-murs', 'hors les murs',
+  'evenement',
   'sieste', 'heure bleue', 'insomniaque',
-  'en famille',
 ]);
 
-// Catégories non musicales à écarter
+// Catégories rejetées : ateliers, conférences, soirées BAL, visites,
+// open week, danse pure, performances plasticiennes, jeune public
+// non-musical, hors-les-murs (déjà capté ailleurs).
 const REJECT_CATEGORIES = new Set([
-  'open week', // semaine portes ouvertes
-  'danse', // danse contemporaine sans orchestre live
-  'danse-theatre',
-  'performance', // performance plasticienne
-  'avec vous !', // bord de scène / discussions
+  'open week',
+  'danse', 'danse-theatre',
+  'performance',
+  'avec vous !',
+  'famille', 'en famille',  // (jeune public — souvent non-musical OPL,
+                            //  les concerts musicaux famille restent
+                            //  via les venues partenaires)
+  'hors-les-murs', 'hors les murs',
+  'atelier',
+  'visite',
+  'conference', 'rencontre',
+  'bal',
+  'sortie',
 ]);
 
-// Slugs de saisons à scanner (ordre = priorité d'affichage)
-const SEASON_SLUGS = ['saison-25-26', 'saison-26-27', 'saison-24-25'];
+const MONTHS_FR = {
+  janvier: 1, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6, juillet: 7,
+  aout: 8, septembre: 9, octobre: 10, novembre: 11, decembre: 12,
+  février: 2, août: 8, décembre: 12,
+};
 
 // ------------------------------------------------------------------
 // HTTP
@@ -83,10 +118,21 @@ async function fetchHtml(url, { retries = 2 } = {}) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function normalize(s) {
-  return s
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase();
+  return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+
+const NAMED_ENTITIES = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
+  lsquo: '\u2018', rsquo: '\u2019', ldquo: '\u201C', rdquo: '\u201D',
+  laquo: '\u00AB', raquo: '\u00BB', hellip: '\u2026',
+  ndash: '\u2013', mdash: '\u2014', eacute: 'é', egrave: 'è',
+  ecirc: 'ê', agrave: 'à', acirc: 'â', ccedil: 'ç', ocirc: 'ô',
+};
+function decodeEntities(s) {
+  return (s || '')
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)))
+    .replace(/&([a-zA-Z]+);/g, (m, name) => NAMED_ENTITIES[name] !== undefined ? NAMED_ENTITIES[name] : m);
 }
 
 // ------------------------------------------------------------------
@@ -119,61 +165,97 @@ function matchComposers(text, index) {
 }
 
 // ------------------------------------------------------------------
-// Saison page parsing
+// Discovery : récupère tous les slugs /spectacle/{slug}/ sur les
+// pages de découverte.
 // ------------------------------------------------------------------
-function parseSeasonPage(html) {
-  const $ = cheerio.load(html);
-  const items = [];
-  $('article.spec_card').each((_, el) => {
-    const $el = $(el);
-    if ($el.hasClass('passed')) return; // production passée
-    const $a = $el.find('a.spec_lien').first();
-    const href = $a.attr('href') || '';
-    if (!href || !href.includes('/spectacle/')) return;
-    const url = href.startsWith('http') ? href : BASE_URL + href;
-    const cat = $el.find('.spec_cat').first().text().trim();
-    const title = $el.find('.spec_title').first().text().trim().replace(/\s+/g, ' ');
-    const subtitle = $el.find('.spec_subtitle').first().text().trim().replace(/\s+/g, ' ');
-    const dateRange = $el.find('.spec_dates').first().text().trim().replace(/\s+/g, ' ');
-    items.push({ url, cat, title, subtitle, dateRange });
-  });
-  return items;
-}
-
-function isAllowed(item) {
-  const c = normalize(item.cat || '');
-  if (REJECT_CATEGORIES.has(c)) return false;
-  if (KEEP_CATEGORIES.has(c)) return true;
-  // Inconnu : on garde par défaut (Opéra de Lille programme rarement
-  // hors musical) mais on signale.
-  return true;
-}
-
-// ------------------------------------------------------------------
-// Detail page parsing → toutes les dates individuelles du spectacle
-// ------------------------------------------------------------------
-function parseDetailDates(html, spectacleUrl) {
-  const $ = cheerio.load(html);
-  const slug = (spectacleUrl.match(/\/spectacle\/([^/?#]+)/) || [])[1] || '';
-  const dates = new Map(); // date → time set
-  $('.calendrier-dates-container').each((_, container) => {
-    const $c = $(container);
-    const klass = $c.attr('class') || '';
-    const dm = klass.match(/calendrier-(\d{4}-\d{2}-\d{2})/);
-    if (!dm) return;
-    const date = dm[1];
-    // Ne garder que les date-line qui pointent vers notre spectacle
-    $c.find('.date-line a.date-line-link').each((_, a) => {
-      const href = $(a).attr('href') || '';
-      if (!href.includes(`/spectacle/${slug}`)) return;
-      // Évite les bord de scène / discussions (cat "avec vous !")
-      const cat = normalize($(a).find('.date-line-categorie').first().text().trim());
-      if (REJECT_CATEGORIES.has(cat)) return;
-      // L'heure n'est pas exposée dans le calendrier global ; on laisse null.
-      if (!dates.has(date)) dates.set(date, null);
+async function discoverProductionUrls() {
+  const urls = new Set();
+  for (const path of DISCOVERY_PATHS) {
+    let html;
+    try { html = await fetchHtml(`${BASE_URL}${path}`); }
+    catch (err) {
+      console.error(`[opl] découverte ${path} échec : ${err.message}`);
+      continue;
+    }
+    if (!html) continue;
+    const $ = cheerio.load(html);
+    $('a[href*="/spectacle/"]').each((_, a) => {
+      let href = $(a).attr('href') || '';
+      if (!href) return;
+      if (!href.startsWith('http')) href = BASE_URL + href;
+      // Normalise trailing slash
+      if (!href.endsWith('/')) href += '/';
+      // Garde uniquement /spectacle/{slug}/
+      if (/\/spectacle\/[^/]+\/$/.test(href)) urls.add(href);
     });
+    await sleep(180);
+  }
+  return [...urls];
+}
+
+// ------------------------------------------------------------------
+// Detail parsing
+// ------------------------------------------------------------------
+// "Lundi 10 mai 2027" → "2027-05-10".
+// Si l'année est absente (cas Ermonela : « Jeudi 3 décembre »), on
+// utilise fallbackYear (récupéré depuis .sHeader_infos ou la date du
+// premier item du bloc qui aurait une année).
+function parseFrDate(s, fallbackYear = null) {
+  if (!s) return null;
+  // Format avec année explicite
+  let m = s.match(/(\d{1,2})\s+([a-zéûô]+)\s+(\d{4})/i);
+  if (m) {
+    const month = MONTHS_FR[normalize(m[2])];
+    if (!month) return null;
+    return `${m[3]}-${String(month).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+  }
+  // Format sans année — on injecte fallbackYear
+  if (!fallbackYear) return null;
+  m = s.match(/(\d{1,2})\s+([a-zéûô]+)/i);
+  if (!m) return null;
+  const month = MONTHS_FR[normalize(m[2])];
+  if (!month) return null;
+  return `${fallbackYear}-${String(month).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+}
+
+// "20h" → "20:00", "16h30" → "16:30"
+function parseFrTime(s) {
+  if (!s) return null;
+  const m = s.match(/(\d{1,2})\s*h\s*(\d{0,2})/i);
+  if (!m) return null;
+  const hh = m[1].padStart(2, '0');
+  const mm = (m[2] || '00').padStart(2, '0');
+  return `${hh}:${mm}`;
+}
+
+function parseDetail(html) {
+  const $ = cheerio.load(html);
+  const cat = normalize($('p.sHeader_cat .sHeader_catItem').first().text());
+  const title = decodeEntities($('h1.sHeader_title').first().text().trim()).replace(/\s+/g, ' ');
+  const infos = decodeEntities($('p.sHeader_infos').first().text().trim()).replace(/\s+/g, ' ');
+
+  // Année fallback : on cherche la 1re année 4 chiffres dans infos
+  // (ex. "3 et 6 décembre 2026"). Si absente, currentYear par défaut.
+  let fallbackYear = null;
+  const ym = infos.match(/\b(20\d{2})\b/);
+  if (ym) fallbackYear = ym[1];
+  else fallbackYear = String(new Date().getFullYear());
+
+  const dates = [];
+  $('.spectacle-details-horaires p').each((_, p) => {
+    const $p = $(p);
+    const dateText = $p.find('.spectacle-details-date').first().text().trim();
+    const timeText = $p.find('.spectacle-details-heure').first().text().trim();
+    const statut = decodeEntities($p.find('.spectacle-details-statut').first().text().trim()).toLowerCase();
+    const date = parseFrDate(dateText, fallbackYear);
+    const time = parseFrTime(timeText);
+    if (!date) return;
+    // statut = "à venir" / "complet" / "annulé" — on rejette annulés
+    if (/annul/i.test(statut)) return;
+    dates.push({ date, time, statut });
   });
-  return [...dates.keys()];
+
+  return { cat, title, infos, dates };
 }
 
 // ------------------------------------------------------------------
@@ -183,84 +265,70 @@ function isoToday() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function buildId(date, url) {
+function buildId(date, url, time) {
   const slug = (url.match(/\/spectacle\/([^/?#]+)/) || [])[1] || 'event';
-  return `opl-${date}-${slug}`.replace(/--+/g, '-').slice(0, 200);
+  const t = time ? `-${time.replace(':', '')}` : '';
+  return `opl-${date}${t}-${slug}`.replace(/--+/g, '-').slice(0, 200);
 }
 
 // ------------------------------------------------------------------
 // Main
 // ------------------------------------------------------------------
 export async function scrapeOperaLille({
-  detailDelay = 350,
+  detailDelay = 250,
 } = {}) {
   const composerIndex = await loadComposerIndex();
   const today = isoToday();
 
-  // 1. Saisons
-  const productions = new Map(); // url → meta
-  for (const slug of SEASON_SLUGS) {
-    const url = `${BASE_URL}/${slug}/`;
-    try {
-      console.error(`[opl] saison ${slug}`);
-      const html = await fetchHtml(url);
-      if (!html) continue;
-      const items = parseSeasonPage(html);
-      for (const it of items) {
-        if (!productions.has(it.url)) productions.set(it.url, it);
-      }
-    } catch (err) {
-      console.error(`[opl] saison ${slug} failed: ${err.message}`);
-    }
-    await sleep(300);
-  }
-  console.error(`[opl] ${productions.size} productions distinctes`);
+  console.error(`[opl] découverte via ${DISCOVERY_PATHS.join(' + ')}`);
+  const urls = await discoverProductionUrls();
+  console.error(`[opl] ${urls.length} productions distinctes`);
 
-  // 2. Filtre éditorial
-  const allowed = [...productions.values()].filter(isAllowed);
-  const rejected = productions.size - allowed.length;
-  console.error(`[opl] ${allowed.length} retenues / ${rejected} rejetées (cat hors musique)`);
-
-  // 3. Détail (cache implicite par production)
   const concerts = [];
-  for (const item of allowed) {
-    let dates = [];
-    try {
-      const html = await fetchHtml(item.url);
-      if (html) dates = parseDetailDates(html, item.url);
-      await sleep(detailDelay);
-    } catch (err) {
-      console.error(`[opl] detail failed for ${item.url}: ${err.message}`);
-    }
-
-    if (dates.length === 0) {
-      console.error(`[opl] aucune date pour ${item.url} (${item.dateRange})`);
+  let rejectedCat = 0, noDate = 0, allPast = 0;
+  for (const url of urls) {
+    let html;
+    try { html = await fetchHtml(url); }
+    catch (err) {
+      console.error(`[opl]   détail ${url} échec : ${err.message}`);
       continue;
     }
+    if (!html) continue;
+    const d = parseDetail(html);
 
-    const composers = matchComposers([item.title, item.subtitle].join(' '), composerIndex);
+    if (REJECT_CATEGORIES.has(d.cat)) { rejectedCat++; continue; }
+    if (d.cat && !KEEP_CATEGORIES.has(d.cat)) {
+      // Catégorie inconnue : on signale + on garde par défaut (Opéra de
+      // Lille programme rarement hors-musical).
+      console.error(`[opl]   cat inconnue "${d.cat}" → keep par défaut (${url.match(/\/spectacle\/([^/]+)/)[1]})`);
+    }
 
-    for (const date of dates) {
-      if (date < today) continue;
+    if (!d.dates.length) { noDate++; continue; }
+    const futureDates = d.dates.filter((x) => x.date >= today);
+    if (!futureDates.length) { allPast++; continue; }
+
+    const composers = matchComposers(`${d.title} ${d.infos}`, composerIndex);
+    for (const { date, time, statut } of futureDates) {
       concerts.push({
-        id: buildId(date, item.url),
+        id: buildId(date, url, time),
         source: 'opl',
         venue_id: 'operalille',
-        title: item.title,
+        title: d.title,
         date,
-        time: null,
-        url: item.url,
+        time,
+        url,
         composers,
         performers: [],
-        program: item.subtitle || null,
+        program: [d.infos, statut !== 'à venir' && statut ? statut : null].filter(Boolean).join(' — ') || null,
         price_min: null,
         price_max: null,
         scraped_at: new Date().toISOString(),
       });
     }
+    await sleep(detailDelay);
   }
 
-  console.error(`[opl] ${concerts.length} concerts produits`);
+  console.error(`[opl] ${concerts.length} concerts produits | rejet catégorie ${rejectedCat} | sans dates ${noDate} | dates passées ${allPast}`);
   return concerts;
 }
 

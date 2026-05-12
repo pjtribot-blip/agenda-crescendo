@@ -114,44 +114,6 @@
   },
   "productions": [
     {
-      "production_id": "onl-2627-ermonela-jaho",
-      "title": "Ermonela Jaho : l'âme en feu",
-      "description": "Récital lyrique d'Ermonela Jaho à l'Opéra de Lille, en co-production ONL × Opéra de Lille. Vérification de couverture opera-lille au 12 mai 2026 : non captée par le scraper opl (saison 26-27 pas encore publiée). Réintégrée côté ONL avec marqueur co_production.",
-      "program": [
-        { "composer": "Programme lyrique à confirmer", "work": "L'âme en feu" }
-      ],
-      "ensemble": "Orchestre National de Lille",
-      "soloists": [
-        { "name": "Ermonela Jaho", "role": "soprano" }
-      ],
-      "co_production": "opera-de-lille",
-      "performances": [
-        { "date": "2026-12-03", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2026-12-06", "time": "16:00", "venue_id": "operalille" }
-      ]
-    },
-    {
-      "production_id": "onl-2627-otello",
-      "title": "Otello",
-      "description": "Otello de Verdi, co-production ONL × Opéra de Lille (9 représentations). Vérification de couverture opera-lille au 12 mai 2026 : non captée par le scraper opl (saison 26-27 pas encore publiée). Réintégrée côté ONL avec marqueur co_production.",
-      "program": [
-        { "composer": "Verdi", "work": "Otello" }
-      ],
-      "ensemble": "Orchestre National de Lille",
-      "co_production": "opera-de-lille",
-      "performances": [
-        { "date": "2027-05-10", "time": "16:00", "venue_id": "operalille" },
-        { "date": "2027-05-13", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-05-16", "time": "16:00", "venue_id": "operalille" },
-        { "date": "2027-05-18", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-05-22", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-05-25", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-05-28", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-05-31", "time": "20:00", "venue_id": "operalille" },
-        { "date": "2027-06-03", "time": "20:00", "venue_id": "operalille" }
-      ]
-    },
-    {
       "production_id": "onl-2627-chaise-dieu-khachatryan",
       "title": "L'ONL à La Chaise-Dieu — Khachatryan / Brahms",
       "description": "Concert d'ouverture de saison au Festival de La Chaise-Dieu. Le violoniste arménien Sergey Khachatryan, lauréat du Concours Sibelius 2000, interprète le Concerto pour violon de Sibelius, encadré par Knell de Nourbakhsh et la Symphonie n°1 de Brahms.",
@@ -1034,11 +996,12 @@
     "exclusions": [
       {
         "category": "opera-lille-coproduction",
-        "reason": "Ces concerts sont gérés par l'Opéra de Lille (billetterie séparée). À couvrir par le scraper Opéra de Lille pour éviter le doublon. À vérifier qu'ils y figurent bien, sinon réintégrer côté ONL avec co_production: 'opera-de-lille'.",
+        "reason": "Ces concerts sont gérés par l'Opéra de Lille (billetterie séparée) et désormais captés par le scraper opera-lille refondu en Phase 3.20 (parsing .spectacle-details-horaires). Suppression côté ONL pour éviter le doublon — le scraper opl capte Otello (9 dates) + Ermonela (2 dates) directement depuis https://www.opera-lille.fr/spectacle/{slug}/. Historique Phase 3.19 : réintégrées côté ONL avec marqueur co_production avant que le scraper opl ne soit refait ; supprimées d'ici Phase 3.20.",
         "count": 11,
+        "delegated_to": "opera-lille",
         "items": [
-          { "title": "Ermonela Jaho : l'âme en feu", "dates": ["2026-12-03", "2026-12-06"] },
-          { "title": "Otello (Verdi)", "dates": ["2027-05-10", "2027-05-13", "2027-05-16", "2027-05-18", "2027-05-22", "2027-05-25", "2027-05-28", "2027-05-31", "2027-06-03"] }
+          { "title": "Ermonela Jaho : l'âme en feu", "dates": ["2026-12-03", "2026-12-06"], "captured_by": "opl" },
+          { "title": "Otello (Verdi)", "dates": ["2027-05-10", "2027-05-13", "2027-05-16", "2027-05-18", "2027-05-22", "2027-05-25", "2027-05-28", "2027-05-31", "2027-06-03"], "captured_by": "opl" }
         ]
       },
       {
