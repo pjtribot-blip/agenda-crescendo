@@ -187,6 +187,8 @@ npm run scrape:chapelle   # idem pour Chapelle Musicale Reine Elisabeth (Waterlo
 npm run scrape:arsenal-metz   # idem pour Arsenal Metz (Cité musicale-Metz)
 npm run scrape:st-michel  # idem pour Festival Saint-Michel-en-Thiérache
 npm run scrape:arts-au-carre  # idem pour Arts au Carré (ARTS² Mons)
+npm run scrape:lille-pianos   # idem pour Lille Piano(s) Festival
+npm run scrape:hardelot   # idem pour Midsummer Festival Hardelot
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
@@ -245,6 +247,8 @@ scrape directement et on attribue les concerts à un venue dédié
 | Conservatoire de Tournai | venue placeholder | Pas d'agenda public exploitable sur conservatoire.tournai.be (Drupal sans rubrique événements) |
 | Arsenal Metz (Cité musicale-Metz) | scraper dédié (Nuxt SSR paginé) | ~15 concerts/saison : symphoniques (ONL), récitals, musique de chambre, jazz acoustique. Filtre venue=Arsenal+Saint-Pierre-aux-Nonnains ; reject Exposition/Atelier |
 | Festival de l'Abbaye de Saint-Michel-en-Thiérache | scraper dédié (Elementor headings parsing) | 12 concerts musique ancienne & baroque, 40e édition 5 dimanches juin-juillet 2026 (Monteverdi L'Orfeo, Bach Messe en Si, Jordi Savall, Concert de la Loge) |
+| Lille Piano(s) Festival | scraper dédié (WordPress, headings h2-h6 par concert) | 23e édition 12-14 juin 2026, ~37 concerts répartis dans plusieurs lieux lillois (Auditorium ONL, Cathédrale Notre-Dame de la Treille, Théâtre du Casino Barrière, Gare Saint Sauveur, Conservatoire de Lille…) |
+| Théâtre élisabéthain du Château d'Hardelot | scraper dédié (Drupal /agenda-6 paginé + JSON-LD détail) | ~10 concerts/opéras saison 2026 dont Midsummer Festival 10e édition fenêtre 20-27 juin (Acis Galatée Polyphème, Vivaldi Echos de Venise, Witch of Endor). Filtre rejet Théâtre/Visite/Conférence/Spectacle |
 | Opéra-Théâtre Metz Métropole | venue placeholder | Productions JS-rendered sur globalflexit CMS ; billetterie externe themisweb (HTML statique vide) |
 | Grand Théâtre de Luxembourg | venue placeholder | theater.lu liste multi-venues sans accès saison complète ; filtre `data-venue=grand-theatre` ne capture que 12 événements actuels (danse+théâtre, pas d'opéra visible sur la fenêtre courante) |
 | Conservatoire royal de Liège (CRLg) | venue placeholder | site institutionnel sans agenda exploitable (annonces sous forme de news ponctuelles) |

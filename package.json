@@ -40,7 +40,9 @@
     "scrape:chapelle": "node -e \"import('./scripts/scrapers/chapelle-reine-elisabeth.js').then(m => m.scrapeChapelle()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:arsenal-metz": "node -e \"import('./scripts/scrapers/arsenal-metz.js').then(m => m.scrapeArsenalMetz()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:st-michel": "node -e \"import('./scripts/scrapers/festival-st-michel.js').then(m => m.scrapeStMichel()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:arts-au-carre": "node -e \"import('./scripts/scrapers/arts-au-carre.js').then(m => m.scrapeArtsAuCarre()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:arts-au-carre": "node -e \"import('./scripts/scrapers/arts-au-carre.js').then(m => m.scrapeArtsAuCarre()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:lille-pianos": "node -e \"import('./scripts/scrapers/lille-pianos.js').then(m => m.scrapeLillePianos()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:hardelot": "node -e \"import('./scripts/scrapers/midsummer-hardelot.js').then(m => m.scrapeHardelot()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

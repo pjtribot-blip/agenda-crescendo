@@ -456,6 +456,30 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "lille-pianos-festival",
+    "name": "Lille Piano(s) Festival",
+    "fullName": "Lille Piano(s) Festival — concerts dans plusieurs lieux lillois (Auditorium ONL, Cathédrale Notre-Dame de la Treille, Théâtre du Casino Barrière, Gare Saint Sauveur, Conservatoire de Lille…)",
+    "city": "Lille",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 50.6388,
+    "lng": 3.0625,
+    "website": "https://www.lillepianosfestival.fr",
+    "address": "Lieux divers — Lille"
+  },
+  {
+    "id": "chateau-hardelot",
+    "name": "Théâtre élisabéthain du Château d'Hardelot",
+    "fullName": "Théâtre élisabéthain du Château d'Hardelot — Centre culturel de l'Entente cordiale",
+    "city": "Condette",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 50.5891,
+    "lng": 1.6394,
+    "website": "https://www.chateau-hardelot.fr",
+    "address": "1 rue de la Source, 62360 Condette"
+  },
+  {
     "id": "abbaye-saint-michel-thierache",
     "name": "Abbaye de Saint-Michel-en-Thiérache",
     "fullName": "Abbatiale de Saint-Michel-en-Thiérache — Festival de musique ancienne et baroque",

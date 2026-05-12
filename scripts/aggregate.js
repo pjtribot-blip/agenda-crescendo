@@ -40,6 +40,8 @@ import { scrapeChapelle } from './scrapers/chapelle-reine-elisabeth.js';
 import { scrapeArsenalMetz } from './scrapers/arsenal-metz.js';
 import { scrapeStMichel } from './scrapers/festival-st-michel.js';
 import { scrapeArtsAuCarre } from './scrapers/arts-au-carre.js';
+import { scrapeLillePianos } from './scrapers/lille-pianos.js';
+import { scrapeHardelot } from './scrapers/midsummer-hardelot.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -81,6 +83,8 @@ const SCRAPERS = [
   { name: 'arsenal-metz', fn: scrapeArsenalMetz },
   { name: 'st-michel', fn: scrapeStMichel },
   { name: 'arts-au-carre', fn: scrapeArtsAuCarre },
+  { name: 'lille-pianos', fn: scrapeLillePianos },
+  { name: 'hardelot', fn: scrapeHardelot },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

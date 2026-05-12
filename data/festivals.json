@@ -115,6 +115,26 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "lille-pianos-2026",
+    "name": "Lille Piano(s) Festival",
+    "edition_year": 2026,
+    "date_start": "2026-06-11",
+    "date_end": "2026-06-14",
+    "venues": ["lille-pianos-festival"],
+    "website": "https://www.lillepianosfestival.fr/2026/",
+    "notes": "23e édition — préludes 11/06, festival 12-13-14 juin, organisé par l'Orchestre National de Lille"
+  },
+  {
+    "id": "midsummer-hardelot-2026",
+    "name": "Midsummer Festival du Château d'Hardelot",
+    "edition_year": 2026,
+    "date_start": "2026-06-20",
+    "date_end": "2026-06-27",
+    "venues": ["chateau-hardelot"],
+    "website": "https://www.chateau-hardelot.fr/midsummer-festival-1",
+    "notes": "10e édition — festival anglo-français autour du solstice d'été. Concerts identifiés sur la fenêtre observée 20-27 juin 2026 (Acis Galatée Polyphème, Vivaldi Echos de Venise, Witch of Endor)"
+  },
+  {
     "id": "st-michel-thierache-2026",
     "name": "Festival de l'Abbaye de Saint-Michel-en-Thiérache",
     "edition_year": 2026,
