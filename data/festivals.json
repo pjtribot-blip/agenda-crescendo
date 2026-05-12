@@ -115,6 +115,38 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "klara-festival-2026",
+    "name": "Klara Festival",
+    "edition_year": 2026,
+    "edition_theme": "Where's Home?",
+    "date_start": "2026-03-21",
+    "date_end": "2026-03-29",
+    "venues": ["bozar", "flagey"],
+    "website": "https://klarafestival.be",
+    "notes": "Dernière édition sous direction Joost Fonteyne. Tagging rétroactif des concerts Bozar/Flagey déjà dans data/concerts.json"
+  },
+  {
+    "id": "klara-festival-2027",
+    "name": "Klara Festival",
+    "edition_year": 2027,
+    "date_start": "2027-03-15",
+    "date_end": "2027-03-29",
+    "venues": ["bozar", "flagey"],
+    "website": "https://klarafestival.be",
+    "notes": "Édition 2027 — dates approximatives basées sur les éditions précédentes, à confirmer fin 2026"
+  },
+  {
+    "id": "festival-laon-2026",
+    "name": "Festival de Laon",
+    "edition_year": 2026,
+    "edition_number": 38,
+    "date_start": "2026-09-10",
+    "date_end": "2026-10-11",
+    "venues": ["festival-laon", "cite-musique-soissons"],
+    "website": "https://festival-laon.org",
+    "notes": "38e édition automne 2026 — programme pas encore publié au 12 mai. Partenariat permanent avec Orchestre Philharmonique de Radio France (concert d'ouverture traditionnel à la Cathédrale de Laon). Crossover potentiel avec Festival de Saint-Michel-en-Thiérache (Phase 3.8)"
+  },
+  {
     "id": "musica-sacra-maastricht-2026",
     "name": "Musica Sacra Maastricht",
     "edition_year": 2026,

@@ -48,6 +48,7 @@ import { scrapeAMUZ } from './scrapers/amuz.js';
 import { scrapeMidiLiege } from './scrapers/midiliege.js';
 import { scrapeAntwerpSymphony } from './scrapers/antwerp-symphony.js';
 import { scrapeVrijthofMaastricht } from './scrapers/vrijthof-maastricht.js';
+import { scrapeFestivalLaon } from './scrapers/festival-laon.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -97,6 +98,7 @@ const SCRAPERS = [
   { name: 'midiliege', fn: scrapeMidiLiege },
   { name: 'antwerp-symphony', fn: scrapeAntwerpSymphony },
   { name: 'vrijthof', fn: scrapeVrijthofMaastricht },
+  { name: 'festival-laon', fn: scrapeFestivalLaon },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

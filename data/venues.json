@@ -456,6 +456,30 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "festival-laon",
+    "name": "Festival de Laon",
+    "fullName": "Festival de Laon — Cathédrale Notre-Dame et lieux patrimoniaux (Église Saint-Martin, Conservatoire du Pays de Laon, Maison des Arts et Loisirs)",
+    "city": "Laon",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 49.5641,
+    "lng": 3.6258,
+    "website": "https://festival-laon.org",
+    "address": "Cathédrale Notre-Dame, 02000 Laon"
+  },
+  {
+    "id": "cite-musique-soissons",
+    "name": "Cité de la musique et de la danse de Soissons",
+    "fullName": "Cité de la musique et de la danse de Soissons — lieu satellite du Festival de Laon",
+    "city": "Soissons",
+    "country": "FR",
+    "region": "Eurorégion",
+    "lat": 49.3818,
+    "lng": 3.3239,
+    "website": "https://festival-laon.org",
+    "address": "13 rue de la Congrégation, 02200 Soissons"
+  },
+  {
     "id": "vrijthof-maastricht",
     "name": "Theater aan het Vrijthof",
     "fullName": "Theater aan het Vrijthof — Maastricht (Pays-Bas)",
