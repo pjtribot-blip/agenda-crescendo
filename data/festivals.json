@@ -115,6 +115,16 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "obf-2026",
+    "name": "OstbelgienFestival",
+    "edition_year": 2026,
+    "date_start": "2026-05-16",
+    "date_end": "2026-12-04",
+    "venues": ["triangel", "kelmis", "eupen", "obf-festival"],
+    "website": "https://obf.be",
+    "notes": "Saison étendue mai-décembre 2026, programmation 100% classique (symphonique, chambre, musique ancienne, contemporain, chœur, viole de gambe, randonnée musicale Eifel)"
+  },
+  {
     "id": "lille-pianos-2026",
     "name": "Lille Piano(s) Festival",
     "edition_year": 2026,

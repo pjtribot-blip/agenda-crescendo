@@ -43,6 +43,7 @@ import { scrapeArtsAuCarre } from './scrapers/arts-au-carre.js';
 import { scrapeLillePianos } from './scrapers/lille-pianos.js';
 import { scrapeHardelot } from './scrapers/midsummer-hardelot.js';
 import { scrapeTriangel } from './scrapers/triangel.js';
+import { scrapeOBF } from './scrapers/obf.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -87,6 +88,7 @@ const SCRAPERS = [
   { name: 'lille-pianos', fn: scrapeLillePianos },
   { name: 'hardelot', fn: scrapeHardelot },
   { name: 'triangel', fn: scrapeTriangel },
+  { name: 'obf', fn: scrapeOBF },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -149,7 +151,7 @@ async function main() {
     existingBySource.get(c.source).push(c);
   }
 
-  const all = [];
+  let all = [];
   const summary = [];
 
   for (const { name, fn } of SCRAPERS) {
@@ -227,6 +229,26 @@ async function main() {
     }
   }
   if (textFixed) console.log(`[mojibake] ${textFixed} title/program corrigés`);
+
+  // Dédoublonnage cross-source : un concert OBF au Triangel supersède
+  // sa version captée par triangel.js (le scraper OBF a la fiche
+  // programme officielle du festival, plus complète). On match par
+  // (venue_id='triangel', date, time). On filtre le tableau en
+  // supprimant l'entrée triangel.js doublonnée.
+  const obfTriangelKeys = new Set();
+  for (const c of all) {
+    if (c.source === 'obf' && c.venue_id === 'triangel') {
+      obfTriangelKeys.add(`${c.date}|${c.time || ''}`);
+    }
+  }
+  const beforeDedupCross = all.length;
+  const filteredAll = all.filter((c) => {
+    if (c.source !== 'triangel') return true;
+    return !obfTriangelKeys.has(`${c.date}|${c.time || ''}`);
+  });
+  const removed = beforeDedupCross - filteredAll.length;
+  if (removed) console.log(`[dedup-cross] ${removed} concerts triangel supersédés par leur version OBF`);
+  all = filteredAll;
 
   // Tagging des festivals (sur les concerts agrégés, avant écriture)
   const festivals = await loadFestivals();

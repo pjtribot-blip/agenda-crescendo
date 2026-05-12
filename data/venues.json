@@ -456,6 +456,42 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "obf-festival",
+    "name": "OstbelgienFestival",
+    "fullName": "OstbelgienFestival — concerts dans plusieurs lieux de la Communauté germanophone (églises, chapelles, brasseries, monuments, sentiers d'Eifel)",
+    "city": "Saint-Vith",
+    "country": "BE",
+    "region": "Communauté germanophone",
+    "lat": 50.2812,
+    "lng": 6.1308,
+    "website": "https://obf.be",
+    "address": "Lieux divers — Communauté germanophone"
+  },
+  {
+    "id": "kelmis",
+    "name": "Kelmis / La Calamine",
+    "fullName": "Kelmis (La Calamine) — lieux divers (Communauté germanophone)",
+    "city": "Kelmis",
+    "country": "BE",
+    "region": "Communauté germanophone",
+    "lat": 50.7186,
+    "lng": 6.0058,
+    "website": "",
+    "address": "Kelmis / La Calamine"
+  },
+  {
+    "id": "eupen",
+    "name": "Eupen",
+    "fullName": "Eupen — lieux divers (Atelier, Jünglingshaus, Pfarrkirche, monuments…)",
+    "city": "Eupen",
+    "country": "BE",
+    "region": "Communauté germanophone",
+    "lat": 50.6296,
+    "lng": 6.0356,
+    "website": "",
+    "address": "Eupen"
+  },
+  {
     "id": "lille-pianos-festival",
     "name": "Lille Piano(s) Festival",
     "fullName": "Lille Piano(s) Festival — concerts dans plusieurs lieux lillois (Auditorium ONL, Cathédrale Notre-Dame de la Treille, Théâtre du Casino Barrière, Gare Saint Sauveur, Conservatoire de Lille…)",
