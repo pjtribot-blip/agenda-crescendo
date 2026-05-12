@@ -218,15 +218,27 @@ python3 -m http.server 8000   # voir le résultat sur localhost:8000
 
 ### Reste à faire
 
-- [ ] 2 scrapers supplémentaires en attente (Phase 2.x bis) :
-      - **Opera Ballet Vlaanderen** : Nuxt SSR avec performances dans
-        une fermeture minifiée non triviale ; nécessite un parser Nuxt
-      - **ONL Lille** : Cloudflare 503 systématique ; nécessite Playwright
-- [ ] 1 source écartée : **Triangel** (Google Sites SPA, contenu invisible)
-- [ ] 1 source hors périmètre : **Muziekodroom Hasselt** (pop/rock,
+- [ ] **Phase 3.20 — Refonte scraper opera-lille (dette technique,
+      non prioritaire)** : la saison 26-27 d'Opéra de Lille n'est
+      plus captée par le scraper actuel. `/saison-26-27/` redirige
+      vers une JPEG (flyer de saison), donc le scan saison renvoie 0
+      production 26-27. Les fiches `/spectacle/{slug}/` existent et
+      contiennent les dates dans un **nouveau format HTML** :
+      `<div class="spectacle-details-horaires">` avec 3 spans par
+      date (`spectacle-details-date`, `…-heure`, `…-statut`).
+      L'ancien parser cherche encore les conteneurs
+      `calendrier-YYYY-MM-DD` qui ne représentent plus les dates
+      du spectacle mais un calendrier global de la salle. À refaire :
+      source de la liste = `/programmation/` ou sitemap (au lieu des
+      pages de saison), parser le nouveau bloc `.spectacle-details-
+      horaires`. Vérifier ensuite la dédup ONL × OPL (11 dates Otello
+      + Ermonela Jaho sont pour l'instant côté ONL avec
+      `co_production: "opera-de-lille"` — voir Phase 3.19).
+- [ ] 1 source écartée : **Muziekodroom Hasselt** (pop/rock,
       pas de classique)
 - [ ] Stratégie anti-doublons inter-sources (concerts en tournée)
-- [ ] Activer le cron une fois 5+ sources stabilisées
+      — partiellement traitée via le mécanisme `dedup-cross`
+      (Phase 3.12 OBF×Triangel, Phase 3.15 ASO×AMUZ)
 
 ## Phase 3 — Festivals
 
