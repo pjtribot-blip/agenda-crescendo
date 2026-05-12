@@ -53,7 +53,7 @@ import { loadOBVManual } from './scrapers/obv-manual.js';
 import { loadONLManual } from './scrapers/onl-manual.js';
 import { scrapeWildeWesten } from './scrapers/wildewesten.js';
 
-import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
+import { cleanComposers, augmentComposers, loadComposerIndex } from './utils/composer-filter.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -222,6 +222,28 @@ async function main() {
     }
   }
   console.log(`[composer-filter] ${composersCleaned} concerts dont la liste compositeurs a été nettoyée`);
+
+  // Phase 3.24 — augment composers from title + program text via
+  // word-boundary matching, avec filtres ensemble (Cuarteto Casals,
+  // Schumann Quartett, Tallis Scholars) et hommage (Bruckner Etude,
+  // Mozartiana, Hommage à X). Récupère les compositeurs présents
+  // dans le texte mais ratés par les scrapers (Mernier dans Bartleby,
+  // Jongen dans LAPS Ensemble / Tableaux pittoresques, Peter Benoit
+  // dans Lucifer en De Schelde, etc.).
+  let composersAugmented = 0;
+  const augStats = new Map();
+  for (const c of all) {
+    const additions = augmentComposers(c, composerIndex);
+    if (additions.length) {
+      composersAugmented++;
+      c.composers = [...new Set([...(c.composers || []), ...additions])];
+      for (const a of additions) augStats.set(a, (augStats.get(a) || 0) + 1);
+    }
+  }
+  if (composersAugmented) {
+    const top = [...augStats].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([n, k]) => `${n} ×${k}`).join(', ');
+    console.log(`[composer-augment] ${composersAugmented} concerts augmentés (top: ${top})`);
+  }
 
   // Mojibake textuel : certaines sources (midis-minimes.be) ont
   // littéralement "?" à la place de diacritiques slaves dans leur

@@ -20,18 +20,33 @@ const REPO_ROOT = resolve(__dirname, '..');
 // ------------------------------------------------------------------
 const FEMALE_COMPOSERS = new Set([
   'Hildegard von Bingen', 'Clara Schumann', 'Fanny Mendelssohn',
-  'Lili Boulanger', 'Nadia Boulanger', 'Boulanger',
+  'Lili Boulanger', 'Nadia Boulanger',
   'Andrea Tarrodi', 'Anna Thorvaldsdottir', 'Caroline Shaw',
   'Laura Kaminsky', 'Kristine Tjøgersen', 'Raquel García-Tomás',
-  'Natalie Beridze', 'Francesca Caccini', 'Strozzi',
-  'Bembo', 'Francesca Campana', 'Saariaho', 'Beach',
-  'Van den Boorn-Coclet',
+  'Natalie Beridze', 'Francesca Caccini', 'Barbara Strozzi',
+  'Antonia Bembo', 'Francesca Campana', 'Kaija Saariaho', 'Amy Beach',
+  'Henriette Van den Boorn-Coclet',
 ]);
 
 const BELGIAN_COMPOSERS = new Set([
-  'Lekeu', 'Ysaÿe', 'Franck', 'Grétry', 'Vieuxtemps', 'Servais',
-  'Jongen', 'Gilson', 'Absil', 'Boesmans', 'Henderickx',
-  'Van den Boorn-Coclet', 'Swerts',
+  'César Franck',
+  'Eugène Ysaÿe',
+  'Guillaume Lekeu',
+  'Joseph Jongen',
+  'Wim Henderickx',
+  'Benoît Mernier',
+  'Philippe Boesmans',
+  'André Laporte',
+  'Henri Pousseur',
+  'Jean Absil',
+  'Marcel Poot',
+  'Joseph Ryelandt',
+  'Auguste De Boeck',
+  'Peter Benoit',
+  'François-Joseph Gossec',
+  'André Souris',
+  'Henriette Van den Boorn-Coclet',
+  'Grétry', 'Vieuxtemps', 'Servais', 'Gilson', 'Swerts',
 ]);
 
 // ------------------------------------------------------------------

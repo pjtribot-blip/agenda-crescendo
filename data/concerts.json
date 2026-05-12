@@ -292,7 +292,8 @@
     "time": "20:00",
     "url": "https://www.operaliege.be/evenement/opera-bartleby-la-voix-humaine-2026",
     "composers": [
-      "Poulenc"
+      "Poulenc",
+      "Benoît Mernier"
     ],
     "performers": [
       "Karen Kamensek (DIRECTION MUSICALE)",
@@ -552,7 +553,8 @@
     "time": "20:00",
     "url": "https://www.operaliege.be/evenement/opera-bartleby-la-voix-humaine-2026",
     "composers": [
-      "Poulenc"
+      "Poulenc",
+      "Benoît Mernier"
     ],
     "performers": [
       "Karen Kamensek (DIRECTION MUSICALE)",
@@ -924,7 +926,8 @@
     "time": "15:00",
     "url": "https://www.operaliege.be/evenement/opera-bartleby-la-voix-humaine-2026",
     "composers": [
-      "Poulenc"
+      "Poulenc",
+      "Benoît Mernier"
     ],
     "performers": [
       "Karen Kamensek (DIRECTION MUSICALE)",
@@ -1104,7 +1107,8 @@
     "time": "20:00",
     "url": "https://www.operaliege.be/evenement/opera-bartleby-la-voix-humaine-2026",
     "composers": [
-      "Poulenc"
+      "Poulenc",
+      "Benoît Mernier"
     ],
     "performers": [
       "Karen Kamensek (DIRECTION MUSICALE)",
@@ -1365,7 +1369,8 @@
     "time": "20:00",
     "url": "https://www.operaliege.be/evenement/opera-bartleby-la-voix-humaine-2026",
     "composers": [
-      "Poulenc"
+      "Poulenc",
+      "Benoît Mernier"
     ],
     "performers": [
       "Karen Kamensek (DIRECTION MUSICALE)",
@@ -1595,7 +1600,9 @@
     "date": "2026-05-22",
     "time": "19:00",
     "url": "https://www.conservatoire.be/evenements/concert-du-laps-ensemble.html",
-    "composers": [],
+    "composers": [
+      "Joseph Jongen"
+    ],
     "performers": [],
     "program": "Musique classique et contemporaine — Conservatoire royal de Bruxelles - Auditorium Joseph Jongen",
     "price_min": null,
@@ -3316,7 +3323,9 @@
     "date": "2026-06-03",
     "time": "18:30",
     "url": "https://www.oprl.be/fr/concerts/cest-compose-pres-de-chez-vous",
-    "composers": [],
+    "composers": [
+      "Joseph Jongen"
+    ],
     "performers": [
       "Pierre Solot (présentation)",
       "Orchestre Philharmonique Royal de Liège",
@@ -3410,7 +3419,9 @@
     "date": "2026-06-04",
     "time": "18:30",
     "url": "https://www.oprl.be/fr/concerts/cest-compose-pres-de-chez-vous-jeudi",
-    "composers": [],
+    "composers": [
+      "Joseph Jongen"
+    ],
     "performers": [
       "Pierre Solot (présentation)",
       "Orchestre Philharmonique Royal de Liège",
@@ -7926,7 +7937,7 @@
     "time": "12:15",
     "url": "https://midis-minimes.be/fr/Concerts-2026-07-07-12:15",
     "composers": [
-      "Van den Boorn-Coclet"
+      "Henriette Van den Boorn-Coclet"
     ],
     "performers": [
       "Duo Post Scriptum"
@@ -9197,8 +9208,8 @@
     "composers": [
       "Falconieri",
       "Francesca Caccini",
-      "Strozzi",
-      "Bembo"
+      "Barbara Strozzi",
+      "Antonia Bembo"
     ],
     "performers": [
       "Les Kapsber'girls"
@@ -9260,8 +9271,8 @@
     "time": "20:00",
     "url": "https://www.mafestival.be/en/programma/postscript-elisabeth-hetherington",
     "composers": [
-      "Strozzi",
-      "Saariaho",
+      "Barbara Strozzi",
+      "Kaija Saariaho",
       "Purcell",
       "Haendel"
     ],
@@ -14557,7 +14568,8 @@
       "Lassus",
       "Vivaldi",
       "Piazzolla",
-      "Tchaïkovski"
+      "Tchaïkovski",
+      "Caroline Shaw"
     ],
     "performers": [
       "Jean-Frédéric Molard",
@@ -15986,7 +15998,8 @@
     "url": "https://www.concertgebouw.be/fr/page/25726",
     "composers": [
       "Adès",
-      "Pärt"
+      "Pärt",
+      "Caroline Shaw"
     ],
     "performers": [
       "BRYGGEN: ensemble Jolente De Maeyer: musical direction Refik Anadol: visual artist"
@@ -16021,7 +16034,8 @@
     "url": "https://www.concertgebouw.be/fr/page/25728",
     "composers": [
       "Adès",
-      "Pärt"
+      "Pärt",
+      "Caroline Shaw"
     ],
     "performers": [
       "BRYGGEN: ensemble Jolente De Maeyer: musical direction Refik Anadol: visual artist"
@@ -18543,7 +18557,7 @@
     "url": "https://www.bozar.be/fr/calendrier/quatuor-diotima-0",
     "composers": [
       "Anna Thorvaldsdottir",
-      "Saariaho",
+      "Kaija Saariaho",
       "Kristine Tjøgersen",
       "Frédéric Verrières"
     ],
@@ -19114,11 +19128,11 @@
     "time": "11:00",
     "url": "https://www.grandmanege.be/fr/concerts/616-rio-sr9-metamorphoses",
     "composers": [
-      "Boulanger",
       "Glass",
       "Rameau",
       "Satie",
-      "Ravel"
+      "Ravel",
+      "Lili Boulanger"
     ],
     "performers": [
       "Paul Changarnier, Nicolas Cousin et Alexandre Esperet (percussions)"
@@ -19686,7 +19700,9 @@
     "date": "2026-11-27",
     "time": "15:00",
     "url": "https://www.grandmanege.be/fr/concerts/617-messe-glaces",
-    "composers": [],
+    "composers": [
+      "Anna Thorvaldsdottir"
+    ],
     "performers": [
       "Sarah Defrise (soprano)",
       "Chœur de Chambre de Namur (chœur)",
@@ -23301,7 +23317,8 @@
     "url": "https://www.concertgebouw.be/fr/page/25824",
     "composers": [
       "Sibelius",
-      "Grieg"
+      "Grieg",
+      "Andrea Tarrodi"
     ],
     "performers": [
       "London Philharmonic Orchestra: orchestra Anja Bihlmaier: conductor Benjamin Grosvenor: piano"
@@ -24183,7 +24200,9 @@
     "url": "https://www.bozar.be/fr/calendrier/lithuanian-national-symphony-orchestra-grigorian-montvidas",
     "composers": [
       "Mikalojus Konstantinas Čiurlionis",
-      "Joseph Jongen"
+      "Joseph Jongen",
+      "Puccini",
+      "Wagner"
     ],
     "performers": [
       "Lithuanian National Symphony Orchestra",
@@ -25173,7 +25192,7 @@
     "time": "11:00",
     "url": "https://www.operaballet.be",
     "composers": [
-      "Henderickx"
+      "Wim Henderickx"
     ],
     "performers": [],
     "program": "Concert",
@@ -25301,7 +25320,7 @@
     "time": "11:00",
     "url": "https://www.operaballet.be",
     "composers": [
-      "Henderickx"
+      "Wim Henderickx"
     ],
     "performers": [],
     "program": "Concert",
@@ -28043,7 +28062,9 @@
     "date": "2027-03-04",
     "time": "20:00",
     "url": "https://www.oprl.be/fr/concerts/steve-reich-desert-music",
-    "composers": [],
+    "composers": [
+      "Reich"
+    ],
     "performers": [
       "Evelyn Glennie (percussions)",
       "Vlaams Radiokoor",
@@ -31483,7 +31504,7 @@
     "composers": [
       "Beethoven",
       "Rachmaninov",
-      "Boulanger"
+      "Nadia Boulanger"
     ],
     "performers": [
       "Sheku Kanneh-Mason (cello)",
@@ -31722,7 +31743,9 @@
     "url": "https://www.grandmanege.be/fr/concerts/678-belge-au-bout-monde",
     "composers": [
       "Bach",
-      "Buxtehude"
+      "Buxtehude",
+      "Benoît Mernier",
+      "Joseph Jongen"
     ],
     "performers": [
       "Jean-Philippe Merckaert (orgue)"
@@ -32988,7 +33011,8 @@
     "time": "20:00",
     "url": "https://www.grandmanege.be/fr/concerts/647-le-belge-violoncelle",
     "composers": [
-      "Franck"
+      "César Franck",
+      "Benoît Mernier"
     ],
     "performers": [
       "Pierre Fontenelle (violoncelle)",
@@ -34197,7 +34221,7 @@
     "time": "19:00",
     "url": "https://www.grandmanege.be/fr/concerts/652-ercole-amante-cavalli",
     "composers": [
-      "Bembo",
+      "Antonia Bembo",
       "Lully",
       "Pärt"
     ],
@@ -35712,7 +35736,9 @@
     "date": "2027-06-11",
     "time": "20:00",
     "url": "https://www.concertgebouw.be/fr/page/25465",
-    "composers": [],
+    "composers": [
+      "Peter Benoit"
+    ],
     "performers": [
       "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus"
     ],
@@ -35922,7 +35948,9 @@
     "date": "2027-06-13",
     "time": "15:00",
     "url": "https://www.concertgebouw.be/fr/page/25967",
-    "composers": [],
+    "composers": [
+      "Peter Benoit"
+    ],
     "performers": [],
     "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde production: Opera Ballet Vlaanderen with the support of the Tax Shelter scheme of the Belgian Federal Government",
     "price_min": 36,
@@ -36003,7 +36031,9 @@
     "date": "2027-06-15",
     "time": "20:00",
     "url": "https://www.concertgebouw.be/fr/page/25969",
-    "composers": [],
+    "composers": [
+      "Peter Benoit"
+    ],
     "performers": [],
     "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde production: Opera Ballet Vlaanderen with the support of the Tax Shelter scheme of the Belgian Federal Government",
     "price_min": 36,
@@ -36078,7 +36108,9 @@
     "date": "2027-06-17",
     "time": "20:00",
     "url": "https://www.concertgebouw.be/fr/page/25971",
-    "composers": [],
+    "composers": [
+      "Peter Benoit"
+    ],
     "performers": [],
     "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde production: Opera Ballet Vlaanderen with the support of the Tax Shelter scheme of the Belgian Federal Government",
     "price_min": 36,
@@ -36195,7 +36227,9 @@
     "date": "2027-06-19",
     "time": "20:00",
     "url": "https://www.concertgebouw.be/fr/page/25973",
-    "composers": [],
+    "composers": [
+      "Peter Benoit"
+    ],
     "performers": [],
     "program": "Emmanuel Hiel: libretto Stephan Zilias: music direction Stef Aerts & Marie Vinck (FC Bergman): direction & set design An D'Huys: costume design Ken Hioco: lighting design Wannes Gyselinck & Tom Swaak: dramaturgy Jan Schweiger: chorus master Hendrik Derolez: children’s chorus master Esther Verheye: the girl Hugo Kampschreur: the young man Werner Van Mechelen: artist, boatman, poet & Lucifer Opera Ballet Vlaanderen Symphony Orchestra: orchestra Opera Ballet Vlaanderen Chorus: chorus Opera Ballet Vlaanderen Children’s Chorus: children’s chorus — Peter Benoit (1834–1901) Lucifer and De Schelde production: Opera Ballet Vlaanderen with the support of the Tax Shelter scheme of the Belgian Federal Government",
     "price_min": 36,
@@ -36899,7 +36933,9 @@
     "date": "2027-12-04",
     "time": "18:15",
     "url": "https://desingel.be/fr/programme/musique/koor-orkest-opera-ballet-vlaanderen-hommage-wim-henderickx",
-    "composers": [],
+    "composers": [
+      "Wim Henderickx"
+    ],
     "performers": [],
     "program": null,
     "price_min": null,
@@ -36914,7 +36950,9 @@
     "date": "2027-12-04",
     "time": "19:00",
     "url": "https://desingel.be/fr/programme/musique/koor-orkest-opera-ballet-vlaanderen-hommage-wim-henderickx",
-    "composers": [],
+    "composers": [
+      "Wim Henderickx"
+    ],
     "performers": [],
     "program": null,
     "price_min": null,

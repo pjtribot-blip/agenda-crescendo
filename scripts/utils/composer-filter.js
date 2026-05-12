@@ -108,6 +108,67 @@ export function lookupCanonical(name, composerIndex) {
   return null;
 }
 
+// Patterns d'ensembles : si l'alias d'un compositeur apparaît
+// précédé ou suivi de l'un de ces mots, c'est probablement un nom
+// d'ensemble (Cuarteto Casals, Schumann Quartett, Tallis Scholars).
+const ENSEMBLE_AFTER = /^(quartet+|quatuor|cuarteto|ensemble|trio|scholars|players|singers|quintet+(?:to|te)?|choir|orchestra|orchestre|sinfonia|soloists|consort|chamber)$/i;
+const ENSEMBLE_BEFORE = /^(quatuor|cuarteto|ensemble|quintet+(?:to|te)?|trio|orchestra|orchestre|choeur|coro|choir|sextuor|sinfonia)$/i;
+
+// Patterns d'hommage : « Bruckner Etude », « Mozartiana »,
+// « Hommage à X », « In memoriam X », « Variations sur un thème de X ».
+// L'alias est référencé comme inspiration, pas comme auteur.
+const HOMMAGE_AFTER = /^(etude|variations?|fantaisies?|memoriam|hommage)$/i;
+const HOMMAGE_BEFORE = /^(hommage|memoriam|sur|d'apres|d'après|apres|inspire|inspiré|in)$/i;
+
+// Augmentation : pour chaque alias trouvé dans title+program (avec
+// word boundary), on ajoute le canonical aux composers du concert,
+// SAUF si toutes les occurrences sont dans un contexte ensemble ou
+// hommage. Retourne la liste des canonicals à ajouter (déjà filtrés
+// contre ceux déjà présents).
+export function augmentComposers(concert, composerIndex) {
+  const blob = ((concert.title || '') + ' ' + (concert.program || ''));
+  const norm = normalize(blob);
+  const currentNorm = new Set((concert.composers || []).map(normalize));
+  const additions = new Set();
+  for (const { canonical, norm: alias } of composerIndex) {
+    if (currentNorm.has(normalize(canonical))) continue;
+    if (alias.length < 4) continue;          // trop court → trop ambigu
+    const esc = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`\\b${esc}\\b`, 'g');
+    const matches = [...norm.matchAll(re)];
+    if (!matches.length) continue;
+
+    // Pour chaque occurrence, vérifier le contexte (mot avant et
+    // après). Si TOUTES les occurrences sont dans un contexte
+    // ensemble/hommage, on rejette. Sinon on accepte.
+    let validCount = 0;
+    for (const m of matches) {
+      const start = m.index;
+      const end = start + alias.length;
+      // Mot avant : depuis le dernier séparateur jusqu'à start-1
+      let i = start - 1;
+      while (i >= 0 && /[^a-z0-9]/.test(norm[i])) i--;
+      const beforeEnd = i + 1;
+      while (i >= 0 && /[a-z0-9]/.test(norm[i])) i--;
+      const beforeWord = norm.slice(i + 1, beforeEnd);
+      // Mot après : depuis end+ jusqu'au prochain séparateur
+      let j = end;
+      while (j < norm.length && /[^a-z0-9]/.test(norm[j])) j++;
+      const afterStart = j;
+      while (j < norm.length && /[a-z0-9]/.test(norm[j])) j++;
+      const afterWord = norm.slice(afterStart, j);
+
+      if (ENSEMBLE_AFTER.test(afterWord)) continue;
+      if (ENSEMBLE_BEFORE.test(beforeWord)) continue;
+      if (HOMMAGE_AFTER.test(afterWord)) continue;
+      if (HOMMAGE_BEFORE.test(beforeWord)) continue;
+      validCount++;
+    }
+    if (validCount > 0) additions.add(canonical);
+  }
+  return [...additions];
+}
+
 // Pipeline complet : applique blacklist, split, canonicalize, dédupe.
 export function cleanComposers(rawList, composerIndex) {
   if (!Array.isArray(rawList) || !rawList.length) return [];
