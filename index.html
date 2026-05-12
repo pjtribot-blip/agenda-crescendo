@@ -395,6 +395,100 @@
     color: var(--ink-soft);
     letter-spacing: .02em;
   }
+  .stats-link {
+    color: var(--gold);
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: .03em;
+  }
+  .stats-link:hover { text-decoration: underline; }
+  .stats-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 20, 0.7);
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 40px 16px;
+  }
+  .stats-modal-overlay.active { display: block; }
+  .stats-modal {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--ivory);
+    border: 1px solid var(--rule);
+    padding: 32px 28px 28px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.25);
+  }
+  .stats-modal h2 {
+    font-family: var(--serif);
+    font-size: 30px;
+    margin: 0 0 4px;
+    color: var(--gold-dark);
+  }
+  .stats-modal .stats-date {
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: .05em;
+    margin-bottom: 24px;
+  }
+  .stats-close {
+    float: right;
+    background: none;
+    border: 0;
+    font-size: 24px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 4px;
+  }
+  .stats-close:hover { color: var(--gold-dark); }
+  .stats-block {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .stats-block:last-child { border-bottom: 0; }
+  .stats-block h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin: 0 0 12px;
+    color: var(--gold-dark);
+  }
+  .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 8px 0;
+  }
+  .stats-table th, .stats-table td {
+    padding: 6px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--rule);
+  }
+  .stats-table th {
+    font-family: var(--serif);
+    font-weight: 500;
+    color: var(--gold-dark);
+    letter-spacing: .03em;
+  }
+  .stats-table td:nth-child(2), .stats-table td:nth-child(3) {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .stats-histo {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    line-height: 1.55;
+    white-space: pre;
+    color: var(--ink-soft);
+    background: var(--paper);
+    padding: 12px;
+    overflow-x: auto;
+  }
+  .stats-histo span.bar { color: var(--gold); }
+  .stats-chip-list { font-size: 12px; line-height: 1.7; color: var(--ink-soft); }
+  .stats-chip-list strong { color: var(--ink); font-weight: 500; }
   .festival-badge {
     display: inline-flex;
     align-items: center;
@@ -609,8 +703,9 @@
     </div>
     <div class="meta">
       <div><strong id="meta-count">—</strong> concerts</div>
-      <div><strong id="meta-venues">—</strong> salles · BE · FR · LU</div>
+      <div><strong id="meta-venues">—</strong> salles · BE · FR · LU · NL</div>
       <div>Mis à jour <span id="meta-updated">—</span></div>
+      <div><a href="#" id="stats-link" class="stats-link">📊 Statistiques</a></div>
     </div>
   </div>
 </header>
@@ -649,6 +744,15 @@
     </ul>
   </section>
 </main>
+
+<div class="stats-modal-overlay" id="stats-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="stats-title">
+  <div class="stats-modal">
+    <button class="stats-close" id="stats-close" aria-label="Fermer">×</button>
+    <h2 id="stats-title">Statistiques de l'agenda</h2>
+    <div class="stats-date" id="stats-date">—</div>
+    <div id="stats-body"></div>
+  </div>
+</div>
 
 <footer>
   <div class="footer-inner">
@@ -724,6 +828,147 @@
       if (c.scraped_at && (!max || c.scraped_at > max)) max = c.scraped_at;
     }
     return max;
+  }
+
+  // ---------- Stats modal ----------
+  // Heuristiques éditoriales — alignées avec scripts/generate-stats-report.js.
+  const FEMALE_COMPOSERS = new Set([
+    'Hildegard von Bingen','Clara Schumann','Fanny Mendelssohn',
+    'Lili Boulanger','Nadia Boulanger','Boulanger',
+    'Andrea Tarrodi','Anna Thorvaldsdottir','Caroline Shaw',
+    'Laura Kaminsky','Kristine Tjøgersen','Raquel García-Tomás',
+    'Natalie Beridze','Francesca Caccini','Strozzi','Bembo',
+    'Francesca Campana','Saariaho','Beach','Van den Boorn-Coclet',
+  ]);
+  const BELGIAN_COMPOSERS = new Set([
+    'Lekeu','Ysaÿe','Franck','Grétry','Vieuxtemps','Servais',
+    'Jongen','Gilson','Absil','Boesmans','Henderickx',
+    'Van den Boorn-Coclet','Swerts',
+  ]);
+
+  function pct(n, t) { return t ? ((n/t)*100).toFixed(1) : '0.0'; }
+  function monthLabelFr(ym) {
+    const [y,m] = ym.split('-');
+    const months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+    return `${months[parseInt(m,10)-1]} ${y}`;
+  }
+
+  function computeStats() {
+    const today = new Date().toISOString().slice(0, 10);
+    const cutoff = new Date(); cutoff.setMonth(cutoff.getMonth()+12);
+    const cutoffIso = cutoff.toISOString().slice(0, 10);
+    const upcoming = state.concerts.filter(c => c.date && c.date >= today && c.date <= cutoffIso);
+
+    const sources = new Set(state.concerts.map(c => c.source));
+    const venuesUsed = new Set(state.concerts.map(c => c.venueId).filter(Boolean));
+    const allComposers = new Set();
+    for (const c of state.concerts) for (const x of (c.composers||[])) allComposers.add(x);
+    const taggedFestivals = new Set();
+    for (const c of state.concerts) {
+      if (c.festival) taggedFestivals.add(c.festival);
+      for (const f of (c.festivals||[])) taggedFestivals.add(f);
+    }
+    const countries = new Set();
+    for (const c of state.concerts) { const v = state.venuesById.get(c.venueId); if (v && v.country) countries.add(v.country); }
+
+    const byCountry = new Map(), byRegion = new Map(), byVenue = new Map(), byMonth = new Map();
+    for (const c of upcoming) {
+      const v = state.venuesById.get(c.venueId);
+      if (v) {
+        byCountry.set(v.country, (byCountry.get(v.country)||0)+1);
+        if (v.country === 'BE') byRegion.set(v.region||'(?)', (byRegion.get(v.region||'(?)')||0)+1);
+      }
+      if (c.venueId) byVenue.set(c.venueId, (byVenue.get(c.venueId)||0)+1);
+      byMonth.set(c.date.slice(0,7), (byMonth.get(c.date.slice(0,7))||0)+1);
+    }
+    const sortDesc = m => [...m].sort((a,b) => b[1]-a[1]);
+    const monthsSorted = [...byMonth.entries()].sort((a,b) => a[0].localeCompare(b[0]));
+    const maxMonth = monthsSorted.reduce((a,b)=>b[1]>a[1]?b:a, ['',0]);
+    const minMonth = monthsSorted.reduce((a,b)=>b[1]<a[1]?b:a, monthsSorted[0]||['',0]);
+
+    const composerCount = new Map();
+    for (const c of upcoming) for (const x of (c.composers||[])) composerCount.set(x,(composerCount.get(x)||0)+1);
+
+    const festivalCounts = new Map();
+    for (const c of upcoming) {
+      if (c.festival) festivalCounts.set(c.festival,(festivalCounts.get(c.festival)||0)+1);
+      for (const f of (c.festivals||[])) festivalCounts.set(f,(festivalCounts.get(f)||0)+1);
+    }
+    const inFestival = upcoming.filter(c => c.festival || (c.festivals && c.festivals.length)).length;
+
+    return {
+      today, cutoffIso, upcomingTotal: upcoming.length,
+      sources: sources.size,
+      venuesUsed: venuesUsed.size, venuesTotal: state.venues.length,
+      composersTotal: allComposers.size,
+      festivalsTagged: taggedFestivals.size, festivalsTotal: (state.festivals||[]).length,
+      countries: [...countries],
+      byCountry: sortDesc(byCountry), byRegion: sortDesc(byRegion),
+      topVenues: sortDesc(byVenue).slice(0,10),
+      monthsSorted, maxMonth, minMonth,
+      topComposers: sortDesc(composerCount).slice(0,20),
+      femaleFound: [...composerCount.keys()].filter(n=>FEMALE_COMPOSERS.has(n)).sort(),
+      belgianFound: [...composerCount.keys()].filter(n=>BELGIAN_COMPOSERS.has(n)).sort(),
+      topFestivals: sortDesc(festivalCounts).slice(0,10),
+      inFestival,
+    };
+  }
+
+  function renderStatsTable(headers, rows) {
+    return '<table class="stats-table"><thead><tr>' +
+      headers.map(h => `<th>${escape(h)}</th>`).join('') + '</tr></thead><tbody>' +
+      rows.map(r => '<tr>' + r.map(c => `<td>${escape(String(c ?? ''))}</td>`).join('') + '</tr>').join('') +
+      '</tbody></table>';
+  }
+
+  function renderStatsModal() {
+    const s = computeStats();
+    document.getElementById('stats-date').textContent = `Période : ${s.today} → ${s.cutoffIso} (12 mois roulants)`;
+    const fId = id => (state.festivals||[]).find(f => f.id === id);
+    const vId = id => state.venuesById.get(id);
+    const maxBar = Math.max(...s.monthsSorted.map(([,n])=>n), 1);
+    const histo = s.monthsSorted.map(([ym,n]) => {
+      const bar = '<span class="bar">' + '█'.repeat(Math.round((n/maxBar)*40)) + '</span>';
+      return `${monthLabelFr(ym).padEnd(16)}${String(n).padStart(5)}  ${bar}`;
+    }).join('\n');
+
+    const body = [];
+    body.push('<div class="stats-block"><h3>1. Couverture globale</h3>' + renderStatsTable(
+      ['Métrique','Valeur'],
+      [
+        ['Concerts à venir (12 mois)', s.upcomingTotal.toLocaleString('fr-BE')],
+        ['Sources actives', s.sources],
+        ['Venues (utilisés / total)', `${s.venuesUsed} / ${s.venuesTotal}`],
+        ['Festivals taggés (utilisés / définis)', `${s.festivalsTagged} / ${s.festivalsTotal}`],
+        ['Compositeurs distincts joués', s.composersTotal],
+        ['Pays couverts', `${s.countries.length} (${s.countries.join(', ')})`],
+      ]
+    ) + '</div>');
+
+    body.push('<div class="stats-block"><h3>2. Répartition géographique</h3>' +
+      '<p style="font-size:13px; color:var(--ink-soft); margin:4px 0 6px;">Par pays</p>' +
+      renderStatsTable(['Pays','Concerts','%'], s.byCountry.map(([c,n]) => [COUNTRY_LABEL[c]||c, n, `${pct(n,s.upcomingTotal)}%`])) +
+      '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Belgique par région</p>' +
+      renderStatsTable(['Région','Concerts','%'], s.byRegion.map(([r,n]) => [r, n, `${pct(n,s.upcomingTotal)}%`])) +
+      '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Top 10 venues</p>' +
+      renderStatsTable(['Venue','Concerts'], s.topVenues.map(([id,n]) => { const v = vId(id); return [v ? `${v.name} (${v.city})` : id, n]; })) +
+      '</div>');
+
+    body.push(`<div class="stats-block"><h3>3. Saison et temporalité</h3><div class="stats-histo">${histo}</div>` +
+      `<p style="font-size:13px; margin-top:10px;"><strong>Mois le plus dense</strong> : ${monthLabelFr(s.maxMonth[0])} (${s.maxMonth[1]} concerts) — <strong>le moins dense</strong> : ${monthLabelFr(s.minMonth[0])} (${s.minMonth[1]} concerts)</p></div>`);
+
+    body.push('<div class="stats-block"><h3>4. Compositeurs — top 20</h3>' +
+      renderStatsTable(['#','Compositeur','Concerts'], s.topComposers.map(([n,c],i) => [i+1, n, c])) +
+      `<p style="font-size:13px; margin-top:12px;"><strong>Compositrices identifiées (${s.femaleFound.length})</strong> : <span class="stats-chip-list">${s.femaleFound.join(' · ') || '—'}</span></p>` +
+      `<p style="font-size:13px; margin-top:8px;"><strong>Compositeurs belges identifiés (${s.belgianFound.length})</strong> : <span class="stats-chip-list">${s.belgianFound.join(' · ') || '—'}</span></p>` +
+      '</div>');
+
+    body.push('<div class="stats-block"><h3>5. Festivals — top 10</h3>' +
+      renderStatsTable(['Festival','Concerts'], s.topFestivals.map(([id,n]) => { const f = fId(id); return [f ? `${f.name} ${f.edition_year||''}`.trim() : id, n]; })) +
+      `<p style="font-size:13px; margin-top:10px;"><strong>Concerts taggés en festival</strong> : ${s.inFestival} / ${s.upcomingTotal} (${pct(s.inFestival, s.upcomingTotal)}%)</p>` +
+      '</div>');
+
+    document.getElementById('stats-body').innerHTML = body.join('');
   }
 
   // ---------- Map ----------
@@ -1229,6 +1474,19 @@
         document.getElementById(id).addEventListener('input', () => render());
       });
       document.getElementById('f-reset').addEventListener('click', resetFilters);
+
+      // Stats modal
+      const statsOverlay = document.getElementById('stats-modal-overlay');
+      document.getElementById('stats-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        renderStatsModal();
+        statsOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+      const closeStats = () => { statsOverlay.classList.remove('active'); document.body.style.overflow = ''; };
+      document.getElementById('stats-close').addEventListener('click', closeStats);
+      statsOverlay.addEventListener('click', (e) => { if (e.target === statsOverlay) closeStats(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && statsOverlay.classList.contains('active')) closeStats(); });
 
       // Délégation : clic sur n'importe quel bouton de partage dans la
       // liste de concerts. On l'attache une seule fois sur le UL plutôt

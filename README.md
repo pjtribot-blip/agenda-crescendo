@@ -279,8 +279,15 @@ scrape directement et on attribue les concerts à un venue dédié
 - [ ] Festival Adolphe Sax (Dinant)
 - [ ] Festivals Mons-Charleroi-Hainaut (via Festivals de Wallonie)
 
-## Phase 4 — Élargissements
+## Phase 4 — Élargissements et outillage éditorial
 
+- [x] **Statistiques de l'agenda** (Phase 4.1) — page UI accessible
+      depuis l'en-tête (📊 Statistiques) + script CLI
+      `npm run stats-report` qui génère `reports/stats-YYYY-MM-DD.md`
+      utilisable pour l'article fondateur de Crescendo Magazine.
+      6 blocs : couverture globale, géographie, temporalité,
+      compositeurs (top 20 + compositrices + Belges), festivals,
+      qualité éditoriale.
 - [ ] Cercle 2 : conservatoires, séries de chambre régionales
 - [ ] Newsletter : envoi hebdomadaire des concerts du week-end
 - [ ] Flux RSS / iCal par ville et par compositeur
