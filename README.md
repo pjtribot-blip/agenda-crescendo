@@ -305,6 +305,22 @@ scrape directement et on attribue les concerts à un venue dédié
       forts : NOVECENTO, TRANSIT, Festival+ itinérant. Période
       fin septembre → fin octobre. À scraper quand la
       programmation 2026 sera publiée (page actuellement vide).
+- [ ] **Phase 3.22 — Bozar saison 26-27** (à déclencher semaine
+      du 19 mai 2026). Bozar publie sa saison complète 26-27
+      la semaine prochaine. État des lieux au 12 mai 2026 :
+      `scripts/scrapers/bozar.js` existe et fonctionne, 48
+      concerts captés, fenêtre 13/05/2026 → 05/05/2027 (donc
+      saison 26-27 déjà partiellement couverte par anticipation).
+      Stratégie : `/fr/calendar?section=527&from=…&to=…&page=N`
+      paginé + filtre taxonomique (keep classique/ancienne/
+      récital/chambre/orchestres ; reject jazz/global/électro)
+      + visite fiche détail pour date+heure+programme+composers.
+      **À faire** : lancer un test après publication officielle
+      pour valider que la pagination + le filtre récupèrent
+      bien la masse complète de la nouvelle saison. Refonte
+      seulement si le format HTML a changé (cf. cas opera-lille
+      Phase 3.20 où `/saison-26-27/` redirigeait vers une JPEG
+      et le bloc dates avait été restructuré).
 
 ## Phase 4 — Élargissements et outillage éditorial
 
