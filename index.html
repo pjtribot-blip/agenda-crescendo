@@ -497,6 +497,54 @@
   .stats-histo span.bar { color: var(--gold); }
   .stats-chip-list { font-size: 12px; line-height: 1.7; color: var(--ink-soft); }
   .stats-chip-list strong { color: var(--ink); font-weight: 500; }
+
+  /* ---------- Back to top ---------- */
+  #back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--paper);
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms,
+                transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+  }
+  #back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  #back-to-top:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+    background: var(--gold-deep);
+  }
+  #back-to-top:focus-visible {
+    outline: 2px solid var(--gold-deep);
+    outline-offset: 3px;
+  }
+  @media (max-width: 768px) {
+    #back-to-top {
+      bottom: 16px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+    }
+  }
   .festival-badge {
     display: inline-flex;
     align-items: center;
@@ -769,6 +817,13 @@
     <div class="footer-legal">Mentions légales et politique de confidentialité — à venir</div>
   </div>
 </footer>
+
+<button id="back-to-top" aria-label="Retour en haut" title="Retour en haut" type="button">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
@@ -1482,6 +1537,24 @@
         document.getElementById(id).addEventListener('input', () => render());
       });
       document.getElementById('f-reset').addEventListener('click', resetFilters);
+
+      // Back to top button — apparaît après 300px de scroll
+      const backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        const SCROLL_THRESHOLD = 300;
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(() => {
+            backToTopBtn.classList.toggle('visible', window.scrollY > SCROLL_THRESHOLD);
+            ticking = false;
+          });
+        }, { passive: true });
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
 
       // Stats modal
       const statsOverlay = document.getElementById('stats-modal-overlay');
