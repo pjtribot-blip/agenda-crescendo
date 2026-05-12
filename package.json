@@ -46,7 +46,8 @@
     "scrape:triangel": "node -e \"import('./scripts/scrapers/triangel.js').then(m => m.scrapeTriangel()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:obf": "node -e \"import('./scripts/scrapers/obf.js').then(m => m.scrapeOBF()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:amuz": "node -e \"import('./scripts/scrapers/amuz.js').then(m => m.scrapeAMUZ()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:midiliege": "node -e \"import('./scripts/scrapers/midiliege.js').then(m => m.scrapeMidiLiege()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:midiliege": "node -e \"import('./scripts/scrapers/midiliege.js').then(m => m.scrapeMidiLiege()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:antwerp-symphony": "node -e \"import('./scripts/scrapers/antwerp-symphony.js').then(m => m.scrapeAntwerpSymphony()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

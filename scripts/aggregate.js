@@ -46,6 +46,7 @@ import { scrapeTriangel } from './scrapers/triangel.js';
 import { scrapeOBF } from './scrapers/obf.js';
 import { scrapeAMUZ } from './scrapers/amuz.js';
 import { scrapeMidiLiege } from './scrapers/midiliege.js';
+import { scrapeAntwerpSymphony } from './scrapers/antwerp-symphony.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -93,6 +94,7 @@ const SCRAPERS = [
   { name: 'obf', fn: scrapeOBF },
   { name: 'amuz', fn: scrapeAMUZ },
   { name: 'midiliege', fn: scrapeMidiLiege },
+  { name: 'antwerp-symphony', fn: scrapeAntwerpSymphony },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -239,20 +241,29 @@ async function main() {
   // programme officielle du festival, plus complète). On match par
   // (venue_id='triangel', date, time). On filtre le tableau en
   // supprimant l'entrée triangel.js doublonnée.
-  const obfTriangelKeys = new Set();
-  for (const c of all) {
-    if (c.source === 'obf' && c.venue_id === 'triangel') {
-      obfTriangelKeys.add(`${c.date}|${c.time || ''}`);
+  // Règle générique : pour chaque paire (source prioritaire, source
+  // dédoublonnée) on supprime de la 2e les concerts dont (venue_id,
+  // date, time) matche un concert de la 1re. La 1re est conservée
+  // car elle a typiquement plus de contexte (programme, prix).
+  const DEDUP_CROSS = [
+    { primary: 'obf', secondary: 'triangel', label: 'OBF' },
+    { primary: 'antwerp-symphony', secondary: 'amuz', label: 'Antwerp Symphony' },
+  ];
+  for (const { primary, secondary, label } of DEDUP_CROSS) {
+    const keys = new Set();
+    for (const c of all) {
+      if (c.source === primary && c.venue_id === secondary) {
+        keys.add(`${c.date}|${c.time || ''}`);
+      }
     }
+    const before = all.length;
+    all = all.filter((c) => {
+      if (c.source !== secondary) return true;
+      return !keys.has(`${c.date}|${c.time || ''}`);
+    });
+    const removed = before - all.length;
+    if (removed) console.log(`[dedup-cross] ${removed} concerts ${secondary} supersédés par leur version ${label}`);
   }
-  const beforeDedupCross = all.length;
-  const filteredAll = all.filter((c) => {
-    if (c.source !== 'triangel') return true;
-    return !obfTriangelKeys.has(`${c.date}|${c.time || ''}`);
-  });
-  const removed = beforeDedupCross - filteredAll.length;
-  if (removed) console.log(`[dedup-cross] ${removed} concerts triangel supersédés par leur version OBF`);
-  all = filteredAll;
 
   // Tagging des festivals (sur les concerts agrégés, avant écriture)
   const festivals = await loadFestivals();

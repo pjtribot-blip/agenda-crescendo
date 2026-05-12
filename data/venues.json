@@ -468,6 +468,18 @@
     "address": "Place du XX Août 7, 4000 Liège"
   },
   {
+    "id": "reine-elisabeth-antwerpen",
+    "name": "Salle Reine Elisabeth",
+    "fullName": "Koningin Elisabethzaal — siège de l'Antwerp Symphony Orchestra",
+    "city": "Antwerpen",
+    "country": "BE",
+    "region": "Flandre",
+    "lat": 51.2168,
+    "lng": 4.4180,
+    "website": "https://www.antwerpsymphonyorchestra.be",
+    "address": "Koningin Astridplein 23, 2018 Antwerpen"
+  },
+  {
     "id": "amuz",
     "name": "AMUZ",
     "fullName": "AMUZ — Augustinus Muziekcentrum (Église Saint-Augustin)",
