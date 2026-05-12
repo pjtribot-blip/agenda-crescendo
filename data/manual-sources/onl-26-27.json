@@ -15,12 +15,6 @@
       "country": "FR",
       "address": "Place Mendès France, 59000 Lille"
     },
-    "abbatiale-saint-robert-chaise-dieu": {
-      "name": "Abbatiale Saint-Robert",
-      "city": "La Chaise-Dieu",
-      "country": "FR",
-      "festival": "Festival de La Chaise-Dieu"
-    },
     "eglise-notre-dame-fillievres": {
       "name": "Église Notre-Dame",
       "city": "Fillièvres",
@@ -86,11 +80,6 @@
       "city": "Carvin",
       "country": "FR"
     },
-    "philharmonie-paris": {
-      "name": "Philharmonie de Paris",
-      "city": "Paris",
-      "country": "FR"
-    },
     "eglise-saint-martin-saint-amand": {
       "name": "Église Saint-Martin",
       "city": "Saint-Amand-les-Eaux",
@@ -113,56 +102,6 @@
     }
   },
   "productions": [
-    {
-      "production_id": "onl-2627-chaise-dieu-khachatryan",
-      "title": "L'ONL à La Chaise-Dieu — Khachatryan / Brahms",
-      "description": "Concert d'ouverture de saison au Festival de La Chaise-Dieu. Le violoniste arménien Sergey Khachatryan, lauréat du Concours Sibelius 2000, interprète le Concerto pour violon de Sibelius, encadré par Knell de Nourbakhsh et la Symphonie n°1 de Brahms.",
-      "program": [
-        { "composer": "Nourbakhsh", "work": "Knell" },
-        { "composer": "Sibelius", "work": "Concerto pour violon" },
-        { "composer": "Brahms", "work": "Symphonie n°1" }
-      ],
-      "conductor": "Joshua Weilerstein",
-      "soloists": [
-        { "name": "Sergey Khachatryan", "instrument": "violon" }
-      ],
-      "ensemble": "Orchestre National de Lille",
-      "duration_minutes": 105,
-      "with_intermission": true,
-      "performances": [
-        {
-          "date": "2026-08-26",
-          "time": "21:00",
-          "venue_id": "abbatiale-saint-robert-chaise-dieu",
-          "ticketing": "Festival de La Chaise-Dieu"
-        }
-      ]
-    },
-    {
-      "production_id": "onl-2627-chaise-dieu-neuburger",
-      "title": "L'ONL à La Chaise-Dieu — Neuburger / Schumann",
-      "description": "Deuxième concert au Festival de La Chaise-Dieu : Danse macabre de Saint-Saëns, la Rhapsodie sur un thème de Paganini de Rachmaninov avec le pianiste Jean-Frédéric Neuburger, et la Symphonie n°2 de Schumann.",
-      "program": [
-        { "composer": "Saint-Saëns", "work": "Danse macabre" },
-        { "composer": "Rachmaninov", "work": "Rhapsodie sur un thème de Paganini" },
-        { "composer": "Schumann", "work": "Symphonie n°2" }
-      ],
-      "conductor": "Joshua Weilerstein",
-      "soloists": [
-        { "name": "Jean-Frédéric Neuburger", "instrument": "piano" }
-      ],
-      "ensemble": "Orchestre National de Lille",
-      "duration_minutes": 100,
-      "with_intermission": true,
-      "performances": [
-        {
-          "date": "2026-08-27",
-          "time": "15:00",
-          "venue_id": "abbatiale-saint-robert-chaise-dieu",
-          "ticketing": "Festival de La Chaise-Dieu"
-        }
-      ]
-    },
     {
       "production_id": "onl-2627-itinerances-cuivres",
       "title": "Les Itinérances — Cuivres et percussions",
@@ -640,29 +579,6 @@
       ]
     },
     {
-      "production_id": "onl-2627-pecheurs-perles-paris",
-      "title": "Les Pêcheurs de perles (Philharmonie de Paris)",
-      "description": "Reprise des Pêcheurs de perles à la Philharmonie de Paris dans le cadre des Grandes Voix. Joshua Weilerstein dirige avec la même distribution qu'à Lille.",
-      "program": [
-        { "composer": "Bizet", "work": "Les Pêcheurs de perles" }
-      ],
-      "conductor": "Joshua Weilerstein",
-      "soloists": [
-        { "name": "Manon Lamaison", "role": "soprano (Leïla)" },
-        { "name": "Sahy Ratia", "role": "ténor (Nadir)" },
-        { "name": "Önay Köse", "role": "baryton (Zurga)" },
-        { "name": "Louis Morvan", "role": "basse (Nourabad)" }
-      ],
-      "ensemble": "Orchestre National de Lille",
-      "with_ensemble": "Vlaams Radiokoor (chef de chœur : Bart Van Reyn)",
-      "duration_minutes": 155,
-      "with_intermission": true,
-      "tour_group": "pecheurs-perles-2027",
-      "performances": [
-        { "date": "2027-01-17", "time": "16:00", "venue_id": "philharmonie-paris" }
-      ]
-    },
-    {
       "production_id": "onl-2627-familissimo-bal-petites-betes",
       "title": "Le bal des petites bêtes",
       "description": "Concert dessiné sans paroles : l'illustratrice Amandine Meyer (dessin direct et animation) et Julia Dantonnet (création vidéo) donnent vie à deux chefs-d'œuvre — Ma mère l'Oye de Ravel et Le Festin de l'araignée de Roussel.",
@@ -994,6 +910,16 @@
   "excluded_concerts": {
     "summary": "Concerts présents dans la brochure ONL 26-27 mais non encodés dans cette source. Voir conventions Phase 3.18 OBV pour la justification.",
     "exclusions": [
+      {
+        "category": "hors-perimetre-geographique",
+        "reason": "Périmètre éditorial Agenda Crescendo : Belgique francophone + Hauts-de-France + Eurorégion. Les 3 dates suivantes sont géographiquement hors-périmètre (Auvergne et Île-de-France) et créaient des points isolés incohérents sur la carte. Supprimées en Phase 3.22.1 (correctif périmètre géographique).",
+        "count": 3,
+        "items": [
+          { "title": "L'ONL à La Chaise-Dieu — Khachatryan / Brahms", "date": "2026-08-26", "venue": "Abbatiale Saint-Robert (La Chaise-Dieu, Auvergne)", "festival": "Festival de La Chaise-Dieu" },
+          { "title": "L'ONL à La Chaise-Dieu — Neuburger / Schumann", "date": "2026-08-27", "venue": "Abbatiale Saint-Robert (La Chaise-Dieu, Auvergne)", "festival": "Festival de La Chaise-Dieu" },
+          { "title": "Les Pêcheurs de perles (Philharmonie de Paris)", "date": "2027-01-17", "venue": "Philharmonie de Paris", "note": "Reprise du même Pêcheurs de perles que Lille (2 dates 14-15/01/2027) — celles-ci restent dans l'agenda côté venue nouveausiecle"}
+        ]
+      },
       {
         "category": "opera-lille-coproduction",
         "reason": "Ces concerts sont gérés par l'Opéra de Lille (billetterie séparée) et désormais captés par le scraper opera-lille refondu en Phase 3.20 (parsing .spectacle-details-horaires). Suppression côté ONL pour éviter le doublon — le scraper opl capte Otello (9 dates) + Ermonela (2 dates) directement depuis https://www.opera-lille.fr/spectacle/{slug}/. Historique Phase 3.19 : réintégrées côté ONL avec marqueur co_production avant que le scraper opl ne soit refait ; supprimées d'ici Phase 3.20.",
