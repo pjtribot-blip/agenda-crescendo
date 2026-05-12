@@ -124,6 +124,7 @@ agenda-crescendo/
 | Automne Musical de Spa | ⏸ placeholder | Site automnemusical.com resté sur édition 2024. Édition 2026 annoncée sans dates publiées. À ré-explorer juillet-août 2026 |
 | Festival de Laon | ✅ opérationnel (placeholder en intersaison) | Scraper WordPress/Elementor (même CMS et webmaster Maxime Delalande que Festival St-Michel-en-Thiérache). Hub `/programme-billetterie/` + pages détail `{jour}-{DD}-{mois}-{YYYY}/`. 38e édition automne 2026 pas encore publiée → 0 concert ce run. Tagging festival-laon-2026 prêt (fenêtre 10/09→11/10). Partenariat Orchestre Philharmonique de Radio France |
 | Opera Ballet Vlaanderen | ✅ intégration manuelle (dossier de presse) | Site obv.be utilise Nuxt avec données obfusquées impossibles à scraper. Saison 26-27 encodée à la main depuis le dossier de presse officiel (24 avril 2026, pages 35-37) dans `data/manual-sources/obv-26-27.json`. 33 productions × ~4-10 représentations = ~135 dates ; ~14 venues OBV (Opera Antwerpen, Capitole Gent, Stadsschouwburg Antwerpen, NTGent, De Vooruit, Theater 't Eilandje…). Mise à jour annuelle au lancement de la nouvelle saison |
+| Wilde Westen (Kortrijk) | ✅ opérationnel | Centre de musique pointu, accueille le volet courtraisien du Festival van Vlaanderen. HTML + JSON-LD schema.org/Event par fiche. Filtre serveur `?genres[]=klassiek-jazz&genres[]=geluidskunst` puis title-reject (DJ set, party, workshop). ~5 concerts au 12 mai 2026 (Terry Riley In C, Nenia Revue Blanche, Sonic City 2026, Pool of Sound, Tuur Florizoone) |
 | Orchestre National de Lille (ONL) | ✅ intégration manuelle (dossier de presse cinquantenaire) | Saison 26-27 encodée dans `data/manual-sources/onl-26-27.json`. 43 productions × ~1-3 dates = ~75 représentations. Lieux : Nouveau Siècle (siège), tournée régionale (Somain, Seclin, Valenciennes, Dainville, Carvin, Hem, Dunkerque, Mouchin, Saint-Amand, Gravelines), transfrontalière (Concertgebouw Bruges, De Spil Roulers, Philharmonie de Paris), festivals (Festival de La Chaise-Dieu). Couvre aussi les 11 dates Verdi *Otello* + Ermonela Jaho à l'Opéra de Lille (co-production marquée, opl scraper ne les capte pas). Productions exclues (3 Concerts Mystère, Belles Sorties non datées, OPUS/OMJ pédagogiques, 9 scolaires, ~30 péri-concert) documentées dans `excluded_concerts` du JSON |
 | Reste : ONL Lille (Cloudflare 503), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
@@ -211,6 +212,7 @@ npm run scrape:vrijthof-maastricht  # idem pour Theater aan het Vrijthof (Maastr
 npm run scrape:festival-laon  # idem pour Festival de Laon (38e éd. automne 2026)
 npm run scrape:obv-manual # charge data/manual-sources/obv-*.json (Opera Ballet Vlaanderen)
 npm run scrape:onl-manual # charge data/manual-sources/onl-*.json (Orchestre National de Lille)
+npm run scrape:wildewesten # idem pour Wilde Westen (Kortrijk)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000

@@ -51,6 +51,7 @@ import { scrapeVrijthofMaastricht } from './scrapers/vrijthof-maastricht.js';
 import { scrapeFestivalLaon } from './scrapers/festival-laon.js';
 import { loadOBVManual } from './scrapers/obv-manual.js';
 import { loadONLManual } from './scrapers/onl-manual.js';
+import { scrapeWildeWesten } from './scrapers/wildewesten.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -103,6 +104,7 @@ const SCRAPERS = [
   { name: 'festival-laon', fn: scrapeFestivalLaon },
   { name: 'obv', fn: loadOBVManual },
   { name: 'onl', fn: loadONLManual },
+  { name: 'wildewesten', fn: scrapeWildeWesten },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
