@@ -42,7 +42,8 @@
     "scrape:st-michel": "node -e \"import('./scripts/scrapers/festival-st-michel.js').then(m => m.scrapeStMichel()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:arts-au-carre": "node -e \"import('./scripts/scrapers/arts-au-carre.js').then(m => m.scrapeArtsAuCarre()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:lille-pianos": "node -e \"import('./scripts/scrapers/lille-pianos.js').then(m => m.scrapeLillePianos()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
-    "scrape:hardelot": "node -e \"import('./scripts/scrapers/midsummer-hardelot.js').then(m => m.scrapeHardelot()).then(r => console.log(JSON.stringify(r, null, 2)))\""
+    "scrape:hardelot": "node -e \"import('./scripts/scrapers/midsummer-hardelot.js').then(m => m.scrapeHardelot()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:triangel": "node -e \"import('./scripts/scrapers/triangel.js').then(m => m.scrapeTriangel()).then(r => console.log(JSON.stringify(r, null, 2)))\""
   },
   "dependencies": {
     "cheerio": "^1.0.0"

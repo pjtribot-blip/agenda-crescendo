@@ -111,7 +111,7 @@ agenda-crescendo/
 | Maison de la Culture Tournai | ✅ opérationnel (placeholder) | HTML + cheerio Drupal (`/programme`, filtre discipline=musique + blacklist titre chanson/jazz/world) | 0 concerts savants détectés (la programmation Tournai est essentiellement chanson/théâtre/exposition) |
 | Ferme du Biéreau (LLN) | ✅ opérationnel | HTML + cheerio Odoo (`/events`, filtre badge "Musique classique" + "Midzik") | ~2 Midzik chamber concerts visibles |
 | Cultuurcentrum Hasselt (CCHA) | ✅ opérationnel (placeholder) | HTML + cheerio Peppered (même CMS que Bijloke), filtre strict Klassiek/Symfonisch/Kamermuziek/… | ~1 concert classique sur 28 productions (Hasselt n'est pas une place classique) |
-| Triangel (Saint-Vith) | ⏸ reporté | Site hébergé sur Google Sites (SPA Angular, JS-only) | Nécessiterait Playwright |
+| Triangel (Saint-Vith) | ✅ opérationnel | HTML + cheerio (`/evenements/`, CMS custom .NET propre). Filtre strict cat="Concert" + blacklist titre (Heino/Oberkrainer/Q-Revival/Musikverein/Brings) | ~8 concerts classiques sur 42 événements (CMIREB Violoncelle, BNO Romantik, Voces8, EUYWO, Primacanta, Scandinavian Night, Matinée-Konzert, Play-In) |
 | Reste : ONL Lille (Cloudflare 503), Opera Ballet Vlaanderen (Nuxt minifié), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
 ### Pipeline
@@ -189,6 +189,7 @@ npm run scrape:st-michel  # idem pour Festival Saint-Michel-en-Thiérache
 npm run scrape:arts-au-carre  # idem pour Arts au Carré (ARTS² Mons)
 npm run scrape:lille-pianos   # idem pour Lille Piano(s) Festival
 npm run scrape:hardelot   # idem pour Midsummer Festival Hardelot
+npm run scrape:triangel   # idem pour Triangel (Sankt-Vith)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
