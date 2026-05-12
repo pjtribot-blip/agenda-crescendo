@@ -298,6 +298,13 @@ scrape directement et on attribue les concerts à un venue dédié
 - [ ] Festival van Vlaanderen Brugge / MA Festival (site en migration)
 - [ ] Festival Adolphe Sax (Dinant)
 - [ ] Festivals Mons-Charleroi-Hainaut (via Festivals de Wallonie)
+- [ ] **Festival 20·21** (Louvain, Brabant flamand) —
+      https://www.festival2021.be/nl/agenda
+      Volet musiques XXe/XXIe du Festival van Vlaanderen Vlaams-
+      Brabant. Direction Pieter Bergé / Maarten Beirens. Temps
+      forts : NOVECENTO, TRANSIT, Festival+ itinérant. Période
+      fin septembre → fin octobre. À scraper quand la
+      programmation 2026 sera publiée (page actuellement vide).
 
 ## Phase 4 — Élargissements et outillage éditorial
 
