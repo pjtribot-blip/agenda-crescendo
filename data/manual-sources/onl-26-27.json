@@ -1,0 +1,1089 @@
+{
+  "source": {
+    "id": "onl",
+    "name": "Orchestre National de Lille",
+    "season": "2026-2027",
+    "website": "https://www.onlille.com",
+    "encoded_at": "2026-05-12",
+    "encoded_by": "manual-pdf-extraction",
+    "notes": "Saison du cinquantenaire de l'ONL. Retour au Nouveau Siècle après saison hors-les-murs. Directeur musical : Joshua Weilerstein. Directeur général : Jean-Baptiste Henriat. Président : François Decoster."
+  },
+  "venues": {
+    "onl-nouveau-siecle-lille": {
+      "name": "Auditorium Jean-Claude Casadesus, Nouveau Siècle",
+      "city": "Lille",
+      "country": "FR",
+      "address": "Place Mendès France, 59000 Lille"
+    },
+    "abbatiale-saint-robert-chaise-dieu": {
+      "name": "Abbatiale Saint-Robert",
+      "city": "La Chaise-Dieu",
+      "country": "FR",
+      "festival": "Festival de La Chaise-Dieu"
+    },
+    "eglise-notre-dame-fillievres": {
+      "name": "Église Notre-Dame",
+      "city": "Fillièvres",
+      "country": "FR"
+    },
+    "eglise-notre-dame-bavay": {
+      "name": "Église Notre-Dame de l'Assomption",
+      "city": "Bavay",
+      "country": "FR"
+    },
+    "salle-fetes-avesnes-les-aubert": {
+      "name": "Salle des fêtes",
+      "city": "Avesnes-les-Aubert",
+      "country": "FR"
+    },
+    "salle-communale-chemy": {
+      "name": "Salle communale",
+      "city": "Chemy",
+      "country": "FR"
+    },
+    "theatre-municipal-somain": {
+      "name": "Théâtre municipal",
+      "city": "Somain",
+      "country": "FR"
+    },
+    "nouveau-chapitre-seclin": {
+      "name": "Le Nouveau Chapitre",
+      "city": "Seclin",
+      "country": "FR"
+    },
+    "phenix-valenciennes": {
+      "name": "Le phénix",
+      "city": "Valenciennes",
+      "country": "FR"
+    },
+    "salle-polyvalente-dainville": {
+      "name": "Salle polyvalente",
+      "city": "Dainville",
+      "country": "FR"
+    },
+    "concertgebouw-bruges": {
+      "name": "Concertgebouw",
+      "city": "Bruges",
+      "country": "BE"
+    },
+    "de-spil-roulers": {
+      "name": "De Spil",
+      "city": "Roulers",
+      "country": "BE"
+    },
+    "bateau-feu-dunkerque": {
+      "name": "Le Bateau Feu",
+      "city": "Dunkerque",
+      "country": "FR"
+    },
+    "zephyr-hem": {
+      "name": "Le Zéphyr",
+      "city": "Hem",
+      "country": "FR"
+    },
+    "salle-rabelais-carvin": {
+      "name": "Salle Rabelais",
+      "city": "Carvin",
+      "country": "FR"
+    },
+    "philharmonie-paris": {
+      "name": "Philharmonie de Paris",
+      "city": "Paris",
+      "country": "FR"
+    },
+    "eglise-saint-martin-saint-amand": {
+      "name": "Église Saint-Martin",
+      "city": "Saint-Amand-les-Eaux",
+      "country": "FR"
+    },
+    "salle-sports-mouchin": {
+      "name": "Salle de sports",
+      "city": "Mouchin",
+      "country": "FR"
+    },
+    "scene-vauban-gravelines": {
+      "name": "Scène Vauban",
+      "city": "Gravelines",
+      "country": "FR"
+    },
+    "cite-musique-danse-soissons": {
+      "name": "Cité de la Musique et de la Danse",
+      "city": "Soissons",
+      "country": "FR"
+    }
+  },
+  "productions": [
+    {
+      "production_id": "onl-2627-ermonela-jaho",
+      "title": "Ermonela Jaho : l'âme en feu",
+      "description": "Récital lyrique d'Ermonela Jaho à l'Opéra de Lille, en co-production ONL × Opéra de Lille. Vérification de couverture opera-lille au 12 mai 2026 : non captée par le scraper opl (saison 26-27 pas encore publiée). Réintégrée côté ONL avec marqueur co_production.",
+      "program": [
+        { "composer": "Programme lyrique à confirmer", "work": "L'âme en feu" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "soloists": [
+        { "name": "Ermonela Jaho", "role": "soprano" }
+      ],
+      "co_production": "opera-de-lille",
+      "performances": [
+        { "date": "2026-12-03", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2026-12-06", "time": "16:00", "venue_id": "operalille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-otello",
+      "title": "Otello",
+      "description": "Otello de Verdi, co-production ONL × Opéra de Lille (9 représentations). Vérification de couverture opera-lille au 12 mai 2026 : non captée par le scraper opl (saison 26-27 pas encore publiée). Réintégrée côté ONL avec marqueur co_production.",
+      "program": [
+        { "composer": "Verdi", "work": "Otello" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "co_production": "opera-de-lille",
+      "performances": [
+        { "date": "2027-05-10", "time": "16:00", "venue_id": "operalille" },
+        { "date": "2027-05-13", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-05-16", "time": "16:00", "venue_id": "operalille" },
+        { "date": "2027-05-18", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-05-22", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-05-25", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-05-28", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-05-31", "time": "20:00", "venue_id": "operalille" },
+        { "date": "2027-06-03", "time": "20:00", "venue_id": "operalille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-chaise-dieu-khachatryan",
+      "title": "L'ONL à La Chaise-Dieu — Khachatryan / Brahms",
+      "description": "Concert d'ouverture de saison au Festival de La Chaise-Dieu. Le violoniste arménien Sergey Khachatryan, lauréat du Concours Sibelius 2000, interprète le Concerto pour violon de Sibelius, encadré par Knell de Nourbakhsh et la Symphonie n°1 de Brahms.",
+      "program": [
+        { "composer": "Nourbakhsh", "work": "Knell" },
+        { "composer": "Sibelius", "work": "Concerto pour violon" },
+        { "composer": "Brahms", "work": "Symphonie n°1" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Sergey Khachatryan", "instrument": "violon" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "performances": [
+        {
+          "date": "2026-08-26",
+          "time": "21:00",
+          "venue_id": "abbatiale-saint-robert-chaise-dieu",
+          "ticketing": "Festival de La Chaise-Dieu"
+        }
+      ]
+    },
+    {
+      "production_id": "onl-2627-chaise-dieu-neuburger",
+      "title": "L'ONL à La Chaise-Dieu — Neuburger / Schumann",
+      "description": "Deuxième concert au Festival de La Chaise-Dieu : Danse macabre de Saint-Saëns, la Rhapsodie sur un thème de Paganini de Rachmaninov avec le pianiste Jean-Frédéric Neuburger, et la Symphonie n°2 de Schumann.",
+      "program": [
+        { "composer": "Saint-Saëns", "work": "Danse macabre" },
+        { "composer": "Rachmaninov", "work": "Rhapsodie sur un thème de Paganini" },
+        { "composer": "Schumann", "work": "Symphonie n°2" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Jean-Frédéric Neuburger", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 100,
+      "with_intermission": true,
+      "performances": [
+        {
+          "date": "2026-08-27",
+          "time": "15:00",
+          "venue_id": "abbatiale-saint-robert-chaise-dieu",
+          "ticketing": "Festival de La Chaise-Dieu"
+        }
+      ]
+    },
+    {
+      "production_id": "onl-2627-itinerances-cuivres",
+      "title": "Les Itinérances — Cuivres et percussions",
+      "description": "Tournée en milieu rural des cuivres et percussions de l'ONL sous la direction d'Ivan Meylemans (chef principal de l'Orchestre de Zélande, ancien trombone solo du Concertgebouw d'Amsterdam). Voyage musical de la Renaissance à Piazzolla.",
+      "program": [
+        { "composer": "Byrd", "work": "The Earl of Oxford's March" },
+        { "composer": "Gabrieli / Crees", "work": "Canzon in echo duodecimi toni à 10" },
+        { "composer": "Crespo", "work": "Bruckner Etude" },
+        { "composer": "Tomasi", "work": "Fanfares liturgiques" },
+        { "composer": "Piazzolla / Verhelst", "work": "Suite, extrait de Maria de Buenos Aires" }
+      ],
+      "conductor": "Ivan Meylemans",
+      "ensemble": "Cuivres et percussions de l'Orchestre National de Lille",
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "tour_group": "itinerances-2026",
+      "performances": [
+        { "date": "2026-09-15", "time": "20:00", "venue_id": "eglise-notre-dame-fillievres" },
+        { "date": "2026-09-16", "time": "20:00", "venue_id": "eglise-notre-dame-bavay" },
+        { "date": "2026-09-17", "time": "20:00", "venue_id": "salle-fetes-avesnes-les-aubert" },
+        { "date": "2026-09-18", "time": "20:00", "venue_id": "salle-communale-chemy" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-gala-trois-chefs",
+      "title": "Gala des trois chefs",
+      "description": "Concert exceptionnel pour les 50 ans de l'ONL : les trois directeurs musicaux de l'histoire de l'orchestre — Jean-Claude Casadesus (fondateur), Alexandre Bloch (retour pour la première fois) et Joshua Weilerstein (actuel) — partagent la baguette. Soirée unique célébrant l'identité de l'ONL.",
+      "program": [
+        { "composer": "Chostakovitch", "work": "Ouverture de fête", "conductor": "Jean-Claude Casadesus" },
+        { "composer": "Ravel", "work": "Boléro", "conductor": "Jean-Claude Casadesus" },
+        { "composer": "R. Strauss", "work": "Le Chevalier à la rose, suite", "conductor": "Alexandre Bloch" },
+        { "composer": "Scriabine", "work": "Poème de l'Extase", "conductor": "Joshua Weilerstein" }
+      ],
+      "conductors": ["Jean-Claude Casadesus", "Alexandre Bloch", "Joshua Weilerstein"],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 110,
+      "with_intermission": true,
+      "is_anniversary_event": true,
+      "performances": [
+        { "date": "2026-09-24", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-09-25", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-familissimo-violon-magique",
+      "title": "Le violon magique",
+      "description": "Conte musical balkanique avec la conteuse Élodie Fondacci (Radio Classique) : l'aventure du jeune Sacha à la recherche d'un soleil disparu, guidé par un violon magique. Musique klezmer et tzigane, dialogue entre l'ONL et le Sirba Octet sur des arrangements de Cyrille Lehn.",
+      "program": [
+        { "composer": "Sirba Octet", "work": "Le violon magique (arrangements de Cyrille Lehn)" }
+      ],
+      "conductor": "Jean-François Verdier",
+      "soloists": [
+        { "name": "Élodie Fondacci", "role": "autrice et récitante" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "with_ensemble": "Sirba Octet",
+      "duration_minutes": 55,
+      "with_intermission": false,
+      "is_family_concert": true,
+      "age_recommendation": "Dès 6 ans",
+      "performances": [
+        { "date": "2026-10-03", "time": "11:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-10-03", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-sacre-printemps",
+      "title": "Le Sacre du Printemps",
+      "description": "Soirée monumentale autour de la nature : Orpheus' Comet de la compositrice britanno-bulgare Dobrinka Tabakova (commande BBC/UER), le Concerto pour piano n°2 de Rachmaninov avec Alexandre Kantorow, et Le Sacre du Printemps de Stravinsky. Initiative Unanim·e·s pour la promotion des compositrices.",
+      "program": [
+        { "composer": "Tabakova", "work": "Orpheus' Comet" },
+        { "composer": "Rachmaninov", "work": "Concerto pour piano n°2" },
+        { "composer": "Stravinsky", "work": "Le Sacre du Printemps" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Alexandre Kantorow", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "performances": [
+        { "date": "2026-10-08", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-10-09", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-grimal-ravel-lille",
+      "title": "Grimal & Ravel",
+      "description": "David Grimal dirige du violon, sans baguette : Apollon Musagète de Stravinsky, Tzigane de Ravel, trois pièces d'Enesco (Pastorale, Menuet triste, Nocturne) et la Symphonie n°25 de Mozart, l'une des deux seules en mode mineur du compositeur.",
+      "program": [
+        { "composer": "Stravinsky", "work": "Apollon Musagète" },
+        { "composer": "Ravel", "work": "Tzigane — Rhapsodie de concert pour violon et orchestre" },
+        { "composer": "Enesco", "work": "Pastorale, Menuet triste et Nocturne" },
+        { "composer": "Mozart", "work": "Symphonie n°25" }
+      ],
+      "conductor": "David Grimal",
+      "soloists": [
+        { "name": "David Grimal", "instrument": "violon, direction" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "grimal-ravel-2026",
+      "performances": [
+        { "date": "2026-10-14", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-grimal-ravel-tournee",
+      "title": "Grimal & Ravel (tournée région)",
+      "description": "Tournée en région du programme Grimal & Ravel : David Grimal dirige du violon Stravinsky, Ravel, Enesco et la Symphonie n°25 de Mozart.",
+      "program": [
+        { "composer": "Stravinsky", "work": "Apollon Musagète" },
+        { "composer": "Ravel", "work": "Tzigane — Rhapsodie de concert pour violon et orchestre" },
+        { "composer": "Enesco", "work": "Pastorale, Menuet triste et Nocturne" },
+        { "composer": "Mozart", "work": "Symphonie n°25" }
+      ],
+      "conductor": "David Grimal",
+      "soloists": [
+        { "name": "David Grimal", "instrument": "violon, direction" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "grimal-ravel-2026",
+      "performances": [
+        { "date": "2026-10-15", "time": "20:00", "venue_id": "theatre-municipal-somain" },
+        { "date": "2026-10-16", "time": "20:00", "venue_id": "nouveau-chapitre-seclin" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-1-cuivres",
+      "title": "Flash — Musique de chambre avec les musiciens de l'ONL #1",
+      "description": "Concert de musique de chambre en pause déjeuner : cor, trompette, trombone et piano dans un programme français et américain — Poulenc, Enesco, Sinigaglia, Brubeck, Gabaye.",
+      "program": [
+        { "composer": "Poulenc", "work": "Trio pour cor, trompette et trombone" },
+        { "composer": "Enesco", "work": "Légende pour trompette et piano" },
+        { "composer": "Sinigaglia", "work": "Deux pièces pour cor et piano op. 28" },
+        { "composer": "Brubeck", "work": "Concerto pour trombone basse et piano" },
+        { "composer": "Gabaye", "work": "Récréation pour trompette, cor, trombone et piano" }
+      ],
+      "soloists": [
+        { "name": "Frédéric Hasbroucq", "instrument": "cor" },
+        { "name": "Clément Formatché", "instrument": "trompette" },
+        { "name": "Yves Bauer", "instrument": "trombone" },
+        { "name": "Mireille Méraud", "instrument": "piano" }
+      ],
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2026-10-16", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-tous-a-l-onl",
+      "title": "Tous à l'ONL !",
+      "description": "Concert participatif pour les 50 ans de l'ONL : plus de 70 musiciens amateurs (étudiants en conservatoire, passionnés) rejoignent une trentaine de musiciens de l'ONL sur scène sous la direction de Joshua Weilerstein. Création de Memento Vivo d'Olivier Calmel, commande de l'ONL.",
+      "program": [
+        { "composer": "Rossini", "work": "Guillaume Tell, ouverture, Finale" },
+        { "composer": "Bizet", "work": "Carmen, Prélude & L'Arlésienne Suite n°2, Farandole" },
+        { "composer": "Dvořák", "work": "Symphonie n°9, « Du Nouveau Monde », 4ème mouvement" },
+        { "composer": "Calmel", "work": "Memento Vivo (création, commande ONL)" },
+        { "composer": "Grieg", "work": "Peer Gynt, Dans l'Antre du Roi de la Montagne" },
+        { "composer": "Márquez", "work": "Danzon n°2" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "ensemble": "70 musiciens amateurs + 30 musiciens de l'Orchestre National de Lille",
+      "duration_minutes": 60,
+      "with_intermission": false,
+      "is_anniversary_event": true,
+      "is_participatory": true,
+      "performances": [
+        { "date": "2026-10-18", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-ankama",
+      "title": "Ankama — 25 ans",
+      "description": "Concert symphonique pour les 25 ans d'Ankama : musiques cultes de DOFUS, WAKFU et WAVEN et des séries/films d'animation, composées par Guillaume Pladys, Guillaume Houzé et Pierre-Jean Beaudoin. Arrangements de Clément Joubert, projections vidéo, finale inédit autour des musiques des 6 Dofus. Invitée spéciale : Canine (BO de WAVEN).",
+      "program": [
+        { "composer": "Pladys / Houzé / Beaudoin", "work": "Musiques de DOFUS, WAKFU, WAVEN et séries d'animation Ankama (arrangements Clément Joubert)" }
+      ],
+      "conductor": "Frank Strobel",
+      "soloists": [
+        { "name": "Charlotte Bozzi", "role": "voix" },
+        { "name": "Canine", "role": "voix" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "with_ensemble": "Jeune Chœur des Hauts-de-France (direction Pascale Diéval-Wils)",
+      "duration_minutes": 90,
+      "with_intermission": true,
+      "ticketing_note": "Mis en vente en décembre 2025 — très peu de places disponibles",
+      "performances": [
+        { "date": "2026-10-23", "time": "20:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-cine-concert-coco",
+      "title": "Ciné-concert : Coco",
+      "description": "Ciné-concert du film d'animation Disney/Pixar Coco (2017) de Lee Unkrich et Adrian Molina, musique originale de Michael Giacchino. L'ONL interprète en live la bande originale du conte musical mexicain. En version française.",
+      "program": [
+        { "composer": "Michael Giacchino", "work": "Coco — bande originale (film de Lee Unkrich, coréalisé par Adrian Molina)" }
+      ],
+      "conductor": "David Mahoney",
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 135,
+      "with_intermission": true,
+      "is_cine_concert": true,
+      "age_recommendation": "Dès 6 ans",
+      "language": "Version française",
+      "performances": [
+        { "date": "2026-10-29", "time": "18:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-10-30", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-casadesus-meeuwsen-lille",
+      "title": "Jean-Claude Casadesus & Nikola Meeuwsen",
+      "description": "Le chef fondateur Jean-Claude Casadesus, bientôt 90 ans, célèbre les 50 ans de l'ONL avec le jeune pianiste Nikola Meeuwsen (vainqueur du Concours Reine Elisabeth 2025). Création de Matière, Espace, Temps de Graciane Finzi, Concerto pour piano de Grieg, et extraits de Roméo et Juliette de Prokofiev. Initiative Unanim·e·s.",
+      "program": [
+        { "composer": "Finzi", "work": "Matière, Espace, Temps" },
+        { "composer": "Grieg", "work": "Concerto pour piano et orchestre" },
+        { "composer": "Prokofiev", "work": "Roméo et Juliette, extraits" }
+      ],
+      "conductor": "Jean-Claude Casadesus",
+      "soloists": [
+        { "name": "Nikola Meeuwsen", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 90,
+      "with_intermission": true,
+      "tour_group": "casadesus-meeuwsen-2026",
+      "is_anniversary_event": true,
+      "performances": [
+        { "date": "2026-11-04", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-11-05", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-casadesus-meeuwsen-tournee",
+      "title": "Jean-Claude Casadesus & Nikola Meeuwsen (tournée région)",
+      "description": "Tournée en région du programme Casadesus & Meeuwsen : Finzi, Concerto pour piano de Grieg, extraits de Roméo et Juliette de Prokofiev.",
+      "program": [
+        { "composer": "Finzi", "work": "Matière, Espace, Temps" },
+        { "composer": "Grieg", "work": "Concerto pour piano et orchestre" },
+        { "composer": "Prokofiev", "work": "Roméo et Juliette, extraits" }
+      ],
+      "conductor": "Jean-Claude Casadesus",
+      "soloists": [
+        { "name": "Nikola Meeuwsen", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 90,
+      "with_intermission": true,
+      "tour_group": "casadesus-meeuwsen-2026",
+      "performances": [
+        { "date": "2026-11-06", "time": "20:00", "venue_id": "phenix-valenciennes" },
+        { "date": "2026-11-07", "time": "20:00", "venue_id": "salle-polyvalente-dainville" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-2-cordes",
+      "title": "Flash — Musique de chambre avec les musiciens de l'ONL #2",
+      "description": "Concert de musique de chambre en pause déjeuner : quintette à cordes avec deux altos. Phantasy Quintet de Vaughan Williams (1912) et Quintette à cordes en do majeur op. 29 de Beethoven (1801).",
+      "program": [
+        { "composer": "Vaughan Williams", "work": "Phantasy Quintet" },
+        { "composer": "Beethoven", "work": "Quintette à cordes en do majeur, op. 29" }
+      ],
+      "soloists": [
+        { "name": "Konstanze Heinicke", "instrument": "violon" },
+        { "name": "François Marat", "instrument": "violon" },
+        { "name": "Laurent Grillet-Kim", "instrument": "alto" },
+        { "name": "Cécile Costa-Coquelard", "instrument": "alto" },
+        { "name": "Loris Sikora", "instrument": "violoncelle" }
+      ],
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2026-11-09", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-shokhakimov-power-lille",
+      "title": "Aziz Shokhakimov & Lawrence Power",
+      "description": "Aziz Shokhakimov (directeur musical de l'Orchestre philharmonique de Strasbourg) dirige la version de référence du concerto pour alto I cannot love without trembling de Cassandra Miller (créé en 2023 par Lawrence Power, titre inspiré de Simone Weil), suivie de la Symphonie n°2 de Rachmaninov.",
+      "program": [
+        { "composer": "Miller", "work": "I cannot love without trembling — Concerto pour alto" },
+        { "composer": "Rachmaninov", "work": "Symphonie n°2" }
+      ],
+      "conductor": "Aziz Shokhakimov",
+      "soloists": [
+        { "name": "Lawrence Power", "instrument": "alto" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 115,
+      "with_intermission": true,
+      "tour_group": "shokhakimov-power-2026",
+      "performances": [
+        { "date": "2026-11-13", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-shokhakimov-power-bruges",
+      "title": "Aziz Shokhakimov & Lawrence Power (Bruges)",
+      "description": "Concert transfrontalier au Concertgebouw de Bruges : Aziz Shokhakimov dirige Miller (concerto pour alto avec Lawrence Power) et la Symphonie n°2 de Rachmaninov.",
+      "program": [
+        { "composer": "Miller", "work": "I cannot love without trembling — Concerto pour alto" },
+        { "composer": "Rachmaninov", "work": "Symphonie n°2" }
+      ],
+      "conductor": "Aziz Shokhakimov",
+      "soloists": [
+        { "name": "Lawrence Power", "instrument": "alto" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 115,
+      "with_intermission": true,
+      "tour_group": "shokhakimov-power-2026",
+      "performances": [
+        { "date": "2026-11-14", "time": "20:00", "venue_id": "concertgebouw-bruges" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-familissimo-anna-leo",
+      "title": "Anna, Léo et le gros ours de l'armoire",
+      "description": "Conte musical de Bernard Friot (éditions Actes Sud Junior) sur une musique de Jean-François Verdier. Anna et Léo explorent le grenier de leur maison de vacances et rencontrent toute une galerie de jouets aux personnages attachants. Coproduction avec l'Orchestre Victor Hugo Franche-Comté et le CDN de Besançon Franche-Comté.",
+      "program": [
+        { "composer": "Jean-François Verdier", "work": "Anna, Léo et le gros ours de l'armoire (texte de Bernard Friot)" }
+      ],
+      "conductor": "Laurent Comte",
+      "soloists": [
+        { "name": "Nicolas Dufour", "role": "récitant" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 60,
+      "with_intermission": false,
+      "is_family_concert": true,
+      "age_recommendation": "Dès 3 ans",
+      "performances": [
+        { "date": "2026-11-21", "time": "11:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-11-21", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-bruckner-7-lille",
+      "title": "La Symphonie n°7 de Bruckner",
+      "description": "Hartmut Haenchen dirige l'incandescente Symphonie n°7 de Bruckner, sans doute la plus populaire du compositeur (entendue notamment dans Senso de Visconti). En première partie, le Concerto pour hautbois de Mozart avec Claire Bagot, hautbois solo de l'ONL.",
+      "program": [
+        { "composer": "Mozart", "work": "Concerto pour hautbois" },
+        { "composer": "Bruckner", "work": "Symphonie n°7" }
+      ],
+      "conductor": "Hartmut Haenchen",
+      "soloists": [
+        { "name": "Claire Bagot", "instrument": "hautbois" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 115,
+      "with_intermission": true,
+      "tour_group": "bruckner-7-2026",
+      "performances": [
+        { "date": "2026-11-26", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-bruckner-7-roulers",
+      "title": "La Symphonie n°7 de Bruckner (Roulers)",
+      "description": "Concert transfrontalier à De Spil (Roulers, Belgique) : Hartmut Haenchen dirige le Concerto pour hautbois de Mozart (avec Claire Bagot) et la Symphonie n°7 de Bruckner.",
+      "program": [
+        { "composer": "Mozart", "work": "Concerto pour hautbois" },
+        { "composer": "Bruckner", "work": "Symphonie n°7" }
+      ],
+      "conductor": "Hartmut Haenchen",
+      "soloists": [
+        { "name": "Claire Bagot", "instrument": "hautbois" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 115,
+      "with_intermission": true,
+      "tour_group": "bruckner-7-2026",
+      "performances": [
+        { "date": "2026-11-27", "time": "20:00", "venue_id": "de-spil-roulers" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-3-quatuor-filia",
+      "title": "Flash — Musique de chambre avec les musiciens de l'ONL #3",
+      "description": "Quatuor à cordes Filia : 150 ans de musique entre romantisme allemand, minimalisme américain et tango argentin. Mendelssohn (Capriccio et Fugue), Glass (Quatuor n°2 « Company »), Prokofiev (Quatuor n°1) et Piazzolla (Four for Tango).",
+      "program": [
+        { "composer": "Mendelssohn", "work": "Capriccio et Fugue" },
+        { "composer": "Glass", "work": "Quatuor à cordes n°2, « Company »" },
+        { "composer": "Prokofiev", "work": "Quatuor à cordes n°1" },
+        { "composer": "Piazzolla", "work": "Four for Tango" }
+      ],
+      "soloists": [
+        { "name": "Sébastien Greliak", "instrument": "violon" },
+        { "name": "Thierry Koehl", "instrument": "violon" },
+        { "name": "Cécile Vindrios", "instrument": "alto" },
+        { "name": "Sophie Broïon", "instrument": "violoncelle" }
+      ],
+      "ensemble": "Quatuor Filia",
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2026-12-08", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-a-la-carte-lille",
+      "title": "À la carte !",
+      "description": "Concert de fin d'année dont le programme est composé par le vote du public à l'automne. Les œuvres choisies ne sont révélées qu'une fois le public installé dans la salle. Cosette Justo Valdés à la direction, Camille de Rijck en maître de cérémonie.",
+      "program": [
+        { "composer": "Programme à déterminer", "work": "Œuvres choisies par vote du public" }
+      ],
+      "conductor": "Cosette Justo Valdés",
+      "soloists": [
+        { "name": "Camille de Rijck", "role": "maître de cérémonie" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 110,
+      "with_intermission": true,
+      "is_anniversary_event": true,
+      "tour_group": "a-la-carte-2026",
+      "performances": [
+        { "date": "2026-12-11", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-12-13", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2026-12-15", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-a-la-carte-tournee",
+      "title": "À la carte ! (tournée région)",
+      "description": "Tournée en région du concert participatif À la carte ! Programme composé par vote du public, dirigé par Cosette Justo Valdés.",
+      "program": [
+        { "composer": "Programme à déterminer", "work": "Œuvres choisies par vote du public" }
+      ],
+      "conductor": "Cosette Justo Valdés",
+      "soloists": [
+        { "name": "Camille de Rijck", "role": "maître de cérémonie" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 110,
+      "with_intermission": true,
+      "tour_group": "a-la-carte-2026",
+      "performances": [
+        { "date": "2026-12-16", "time": "20:00", "venue_id": "bateau-feu-dunkerque" },
+        { "date": "2026-12-17", "time": "20:00", "venue_id": "zephyr-hem" },
+        { "date": "2026-12-18", "time": "20:00", "venue_id": "salle-rabelais-carvin" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-pecheurs-perles-lille",
+      "title": "Les Pêcheurs de perles",
+      "description": "L'autre grand opéra de Bizet, composé en 1863 à 25 ans pour le Théâtre-Lyrique de Paris. Histoire exotique à Ceylan (Sri Lanka) entre Zurga, Nadir et la prêtresse Leïla. Distribution lyrique de haut vol et chœur flamand. En collaboration avec les Grandes Voix.",
+      "program": [
+        { "composer": "Bizet", "work": "Les Pêcheurs de perles" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Manon Lamaison", "role": "soprano (Leïla)" },
+        { "name": "Sahy Ratia", "role": "ténor (Nadir)" },
+        { "name": "Önay Köse", "role": "baryton (Zurga)" },
+        { "name": "Louis Morvan", "role": "basse (Nourabad)" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "with_ensemble": "Vlaams Radiokoor (chef de chœur : Bart Van Reyn)",
+      "duration_minutes": 155,
+      "with_intermission": true,
+      "tour_group": "pecheurs-perles-2027",
+      "performances": [
+        { "date": "2027-01-14", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-01-15", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-pecheurs-perles-paris",
+      "title": "Les Pêcheurs de perles (Philharmonie de Paris)",
+      "description": "Reprise des Pêcheurs de perles à la Philharmonie de Paris dans le cadre des Grandes Voix. Joshua Weilerstein dirige avec la même distribution qu'à Lille.",
+      "program": [
+        { "composer": "Bizet", "work": "Les Pêcheurs de perles" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Manon Lamaison", "role": "soprano (Leïla)" },
+        { "name": "Sahy Ratia", "role": "ténor (Nadir)" },
+        { "name": "Önay Köse", "role": "baryton (Zurga)" },
+        { "name": "Louis Morvan", "role": "basse (Nourabad)" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "with_ensemble": "Vlaams Radiokoor (chef de chœur : Bart Van Reyn)",
+      "duration_minutes": 155,
+      "with_intermission": true,
+      "tour_group": "pecheurs-perles-2027",
+      "performances": [
+        { "date": "2027-01-17", "time": "16:00", "venue_id": "philharmonie-paris" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-familissimo-bal-petites-betes",
+      "title": "Le bal des petites bêtes",
+      "description": "Concert dessiné sans paroles : l'illustratrice Amandine Meyer (dessin direct et animation) et Julia Dantonnet (création vidéo) donnent vie à deux chefs-d'œuvre — Ma mère l'Oye de Ravel et Le Festin de l'araignée de Roussel.",
+      "program": [
+        { "composer": "Ravel", "work": "Ma mère l'Oye, 5 pièces enfantines" },
+        { "composer": "Roussel", "work": "Le Festin de l'araignée, Fragments symphoniques" }
+      ],
+      "conductor": "William Le Sage",
+      "soloists": [
+        { "name": "Amandine Meyer", "role": "adaptation, dessin direct et animation" },
+        { "name": "Julia Dantonnet", "role": "création et vidéo" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 40,
+      "with_intermission": false,
+      "is_family_concert": true,
+      "age_recommendation": "Dès 5 ans",
+      "performances": [
+        { "date": "2027-01-23", "time": "11:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-01-23", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-just-play",
+      "title": "Just Play — Dans les coulisses de la musique symphonique",
+      "description": "Répétition commentée par le chef Swann Van Rechem autour d'une œuvre surprise : exploration des nuances, du rythme, des couleurs et des intentions d'interprétation, avant l'exécution intégrale. Immersion rare dans la fabrique musicale.",
+      "program": [
+        { "composer": "Œuvre surprise", "work": "Répétition commentée puis exécution intégrale" }
+      ],
+      "conductor": "Swann Van Rechem",
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 90,
+      "with_intermission": false,
+      "is_educational_format": true,
+      "performances": [
+        { "date": "2027-02-04", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-mahler-1-lille",
+      "title": "La Symphonie n°1 de Mahler",
+      "description": "Joshua Weilerstein dirige la violoniste lettone Baiba Skride dans le Concerto pour violon « À la mémoire d'un ange » de Berg (dodécaphonisme lyrique inspiré par la mort de la petite Manon Gropius), suivi de la Symphonie n°1 « Titan » de Mahler, monde musical mêlant Frère Jacques, marche funèbre et nature qui s'éveille.",
+      "program": [
+        { "composer": "Berg", "work": "Concerto pour violon et orchestre, « À la mémoire d'un ange »" },
+        { "composer": "Mahler", "work": "Symphonie n°1, « Titan »" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Baiba Skride", "instrument": "violon" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "mahler-1-2027",
+      "performances": [
+        { "date": "2027-02-10", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-02-11", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-mahler-1-tournee",
+      "title": "La Symphonie n°1 de Mahler (tournée région)",
+      "description": "Tournée en région du programme Berg / Mahler : Joshua Weilerstein dirige avec la violoniste Baiba Skride.",
+      "program": [
+        { "composer": "Berg", "work": "Concerto pour violon et orchestre, « À la mémoire d'un ange »" },
+        { "composer": "Mahler", "work": "Symphonie n°1, « Titan »" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Baiba Skride", "instrument": "violon" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "mahler-1-2027",
+      "performances": [
+        { "date": "2027-02-12", "time": "20:30", "venue_id": "eglise-saint-martin-saint-amand" },
+        { "date": "2027-02-13", "time": "20:00", "venue_id": "salle-sports-mouchin" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-avishai-cohen",
+      "title": "An evening with Avishai Cohen",
+      "description": "Rencontre entre jazz et symphonique : le contrebassiste et compositeur Avishai Cohen, figure majeure du jazz contemporain, se produit en trio (Itay Simhovich au piano, Eviatar Slivnik à la batterie) tout en dialoguant avec l'ONL sous la direction de Bastien Stil. En collaboration avec Tourcoing Jazz et L'Aéronef.",
+      "program": [
+        { "composer": "Avishai Cohen", "work": "An evening with Avishai Cohen (jazz + symphonique)" }
+      ],
+      "conductor": "Bastien Stil",
+      "soloists": [
+        { "name": "Avishai Cohen", "instrument": "contrebasse" },
+        { "name": "Itay Simhovich", "instrument": "piano" },
+        { "name": "Eviatar Slivnik", "instrument": "batterie" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 90,
+      "with_intermission": false,
+      "performances": [
+        { "date": "2027-02-19", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-cine-concert-shrek-2",
+      "title": "Ciné-concert : Shrek 2",
+      "description": "Ciné-concert du chef-d'œuvre DreamWorks Shrek 2 (Andrew Adamson, Kelly Asbury, Conrad Vernon, 2004) sur la musique d'Harry Gregson-Williams (Le Monde de Narnia, Kingdom of Heaven, Gladiator 2). Ernst van Tiel à la direction. En version française.",
+      "program": [
+        { "composer": "Harry Gregson-Williams", "work": "Shrek 2 — bande originale (film de Andrew Adamson, Kelly Asbury et Conrad Vernon)" }
+      ],
+      "conductor": "Ernst van Tiel",
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": false,
+      "is_cine_concert": true,
+      "age_recommendation": "Dès 8 ans",
+      "language": "Version française",
+      "performances": [
+        { "date": "2027-02-25", "time": "18:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-02-26", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-nott-julien-laferriere",
+      "title": "Jonathan Nott & Victor Julien-Laferrière",
+      "description": "Jonathan Nott dirige la Symphonie concertante pour violoncelle et orchestre de Prokofiev (écrite pour Rostropovitch) avec Victor Julien-Laferrière, et la rare Symphonie n°3 « Polonaise » de Tchaïkovski.",
+      "program": [
+        { "composer": "Prokofiev", "work": "Symphonie concertante pour violoncelle et orchestre" },
+        { "composer": "Tchaïkovski", "work": "Symphonie n°3, « Polonaise »" }
+      ],
+      "conductor": "Jonathan Nott",
+      "soloists": [
+        { "name": "Victor Julien-Laferrière", "instrument": "violoncelle" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 115,
+      "with_intermission": true,
+      "performances": [
+        { "date": "2027-03-10", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-03-11", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-series-mania",
+      "title": "Voyage symphonique au cœur des séries",
+      "description": "Dans le cadre du festival Série Mania : générique cultes de l'histoire de la télévision et du streaming, des premières grandes heures jusqu'aux plateformes contemporaines. Bastien Stil à la direction.",
+      "program": [
+        { "composer": "Divers compositeurs", "work": "Génériques de séries TV et streaming en version symphonique" }
+      ],
+      "conductor": "Bastien Stil",
+      "ensemble": "Orchestre National de Lille",
+      "with_intermission": null,
+      "performances": [
+        { "date": "2027-03-14", "time": "16:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-nouveau-monde-lille",
+      "title": "La Symphonie « Du Nouveau Monde »",
+      "description": "Joshua Weilerstein renoue avec ses origines américaines : Symphonie n°1 Afro-American Symphony de William Grant Still (1930, hommage au blues), Concerto pour clarinette de Copland (commande de Benny Goodman) avec le suédois Martin Fröst, et la Symphonie n°9 « Du Nouveau Monde » de Dvořák.",
+      "program": [
+        { "composer": "Still", "work": "Symphonie n°1, Afro-American Symphony" },
+        { "composer": "Copland", "work": "Concerto pour clarinette" },
+        { "composer": "Dvořák", "work": "Symphonie n°9, « Du Nouveau Monde »" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Martin Fröst", "instrument": "clarinette" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 110,
+      "with_intermission": true,
+      "tour_group": "nouveau-monde-2027",
+      "performances": [
+        { "date": "2027-04-01", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-nouveau-monde-tournee",
+      "title": "La Symphonie « Du Nouveau Monde » (tournée région)",
+      "description": "Tournée en région du programme américain : Still, Copland (avec Martin Fröst) et Dvořák, sous la direction de Joshua Weilerstein.",
+      "program": [
+        { "composer": "Still", "work": "Symphonie n°1, Afro-American Symphony" },
+        { "composer": "Copland", "work": "Concerto pour clarinette" },
+        { "composer": "Dvořák", "work": "Symphonie n°9, « Du Nouveau Monde »" }
+      ],
+      "conductor": "Joshua Weilerstein",
+      "soloists": [
+        { "name": "Martin Fröst", "instrument": "clarinette" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 110,
+      "with_intermission": true,
+      "tour_group": "nouveau-monde-2027",
+      "performances": [
+        { "date": "2027-04-02", "time": "20:00", "venue_id": "scene-vauban-gravelines" },
+        { "date": "2027-04-03", "time": "20:00", "venue_id": "phenix-valenciennes" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-4-weiliang",
+      "title": "Flash — Récital de flûtes chinoises",
+      "description": "Voyage musical avec Zhang Weiliang, maître des flûtes chinoises : xun (flûte globulaire), xiao (flûte verticale en bambou), dizi (flûte traversière en bambou). Dialogue entre tradition chinoise et répertoire occidental — Ravel, Schubert, Saint-Saëns.",
+      "program": [
+        { "composer": "Weiliang", "work": "Vent du Chu (solo de xun)" },
+        { "composer": "Ravel", "work": "Pavane (solo de xiao)" },
+        { "composer": "Schubert", "work": "Ave Maria (solo de xiao)" },
+        { "composer": "Saint-Saëns", "work": "Le Cygne (solo de xiao)" },
+        { "composer": "Musique traditionnelle", "work": "Flûte au soleil couchant et tambours du soir (arrangements Weiliang)" },
+        { "composer": "Dake", "work": "Sur le champ de bataille (solo de dizi)" },
+        { "composer": "Xianglai", "work": "Récit de la fin d'automne (solo de dizi)" }
+      ],
+      "soloists": [
+        { "name": "Zhang Weiliang", "instrument": "flûtes chinoises (xun, xiao, dizi)" }
+      ],
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2027-04-05", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-walkyrie",
+      "title": "La Walkyrie — Acte I",
+      "description": "Premier acte de La Walkyrie de Wagner sous la direction de Cornelius Meister. Sigmund (Benjamin Bruns) trouve refuge dans la maison de Hunding (Sami Luttinen) où il rencontre Sieglinde (Catherine Foster). Tempête prodigieuse, leitmotivs et amour interdit entre frère et sœur.",
+      "program": [
+        { "composer": "Wagner", "work": "La Walkyrie, Acte I" }
+      ],
+      "conductor": "Cornelius Meister",
+      "soloists": [
+        { "name": "Catherine Foster", "role": "soprano (Sieglinde)" },
+        { "name": "Benjamin Bruns", "role": "ténor (Sigmund)" },
+        { "name": "Sami Luttinen", "role": "basse (Hunding)" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 80,
+      "with_intermission": false,
+      "performances": [
+        { "date": "2027-04-08", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" },
+        { "date": "2027-04-09", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-dvorak-8-lille",
+      "title": "La Symphonie n°8 de Dvořák",
+      "description": "Diego Ceretta dirige l'arrangement pour orchestre à cordes du Langsamer Satz de Webern, le Concerto pour piano en la mineur de Schumann avec Federico Colli, et la souriante Symphonie n°8 de Dvořák.",
+      "program": [
+        { "composer": "Webern / Schwarz", "work": "Langsamer Satz" },
+        { "composer": "Schumann", "work": "Concerto pour piano en la mineur" },
+        { "composer": "Dvořák", "work": "Symphonie n°8" }
+      ],
+      "conductor": "Diego Ceretta",
+      "soloists": [
+        { "name": "Federico Colli", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "dvorak-8-2027",
+      "performances": [
+        { "date": "2027-04-15", "time": "20:00", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-dvorak-8-soissons",
+      "title": "La Symphonie n°8 de Dvořák (Soissons)",
+      "description": "Concert à la Cité de la Musique et de la Danse de Soissons : Diego Ceretta dirige Webern, Schumann (avec Federico Colli) et la Symphonie n°8 de Dvořák.",
+      "program": [
+        { "composer": "Webern / Schwarz", "work": "Langsamer Satz" },
+        { "composer": "Schumann", "work": "Concerto pour piano en la mineur" },
+        { "composer": "Dvořák", "work": "Symphonie n°8" }
+      ],
+      "conductor": "Diego Ceretta",
+      "soloists": [
+        { "name": "Federico Colli", "instrument": "piano" }
+      ],
+      "ensemble": "Orchestre National de Lille",
+      "duration_minutes": 105,
+      "with_intermission": true,
+      "tour_group": "dvorak-8-2027",
+      "performances": [
+        { "date": "2027-04-16", "time": "20:00", "venue_id": "cite-musique-danse-soissons" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-5-britten",
+      "title": "Flash — Musique de chambre avec les musiciens de l'ONL #4",
+      "description": "Bijoux méconnus du 20ème siècle pour effectifs étonnants — célébration des 50 ans de la disparition de Britten. Phantasy Quartet op. 2 de Britten (1932, œuvre de jeunesse à 19 ans), 9'30 de Graciane Finzi (1994, clarinette basse et violoncelle), Quintette op. 39 de Prokofiev (1924, musique pour le ballet-cirque Trapèze).",
+      "program": [
+        { "composer": "Britten", "work": "Phantasy Quartet op. 2 pour hautbois et trio à cordes" },
+        { "composer": "Finzi", "work": "9'30 pour clarinette basse et violoncelle" },
+        { "composer": "Prokofiev", "work": "Quintette en sol mineur op. 39 pour hautbois, clarinette, violon, alto et contrebasse" }
+      ],
+      "soloists": [
+        { "name": "Lucia Baráthová", "instrument": "violon" },
+        { "name": "Julie Le Gac", "instrument": "alto" },
+        { "name": "Morgane de Lafforest", "instrument": "violoncelle" },
+        { "name": "Julia Petitjean", "instrument": "contrebasse" },
+        { "name": "Claire Bagot", "instrument": "hautbois" },
+        { "name": "Jorge Gaona Ros", "instrument": "clarinette et clarinette basse" }
+      ],
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2027-05-13", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    },
+    {
+      "production_id": "onl-2627-flash-6-ravel-borodin",
+      "title": "Flash — Musique de chambre avec les musiciens de l'ONL #5",
+      "description": "Programme en duo et trio : Sonate pour violon et violoncelle de Ravel (1920, dédiée à Debussy), Duos pour violon et flûte op. 34 de Muczynski (1973, néoclassique américain), et le Trio inachevé en sol majeur de Borodine (redécouvert en 1949).",
+      "program": [
+        { "composer": "Ravel", "work": "Sonate pour violon et violoncelle" },
+        { "composer": "Muczynski", "work": "Duos pour violon et flûte op. 34" },
+        { "composer": "Borodine", "work": "Unfinished, trio pour violon, flûte et violoncelle" }
+      ],
+      "soloists": [
+        { "name": "Xin Guérinet", "instrument": "violon" },
+        { "name": "Morgane de Lafforest", "instrument": "violoncelle" },
+        { "name": "Elias Saintot", "instrument": "flûte" }
+      ],
+      "duration_minutes": 45,
+      "with_intermission": false,
+      "is_chamber_concert": true,
+      "performances": [
+        { "date": "2027-06-04", "time": "12:30", "venue_id": "onl-nouveau-siecle-lille" }
+      ]
+    }
+  ],
+  "excluded_concerts": {
+    "summary": "Concerts présents dans la brochure ONL 26-27 mais non encodés dans cette source. Voir conventions Phase 3.18 OBV pour la justification.",
+    "exclusions": [
+      {
+        "category": "opera-lille-coproduction",
+        "reason": "Ces concerts sont gérés par l'Opéra de Lille (billetterie séparée). À couvrir par le scraper Opéra de Lille pour éviter le doublon. À vérifier qu'ils y figurent bien, sinon réintégrer côté ONL avec co_production: 'opera-de-lille'.",
+        "count": 11,
+        "items": [
+          { "title": "Ermonela Jaho : l'âme en feu", "dates": ["2026-12-03", "2026-12-06"] },
+          { "title": "Otello (Verdi)", "dates": ["2027-05-10", "2027-05-13", "2027-05-16", "2027-05-18", "2027-05-22", "2027-05-25", "2027-05-28", "2027-05-31", "2027-06-03"] }
+        ]
+      },
+      {
+        "category": "concerts-mystere",
+        "reason": "Les 3 Concerts Mystère de la saison ont une date, un lieu et un programme révélés à la dernière minute par mail et SMS aux acheteurs. Aucune donnée publique encodable. À intégrer manuellement quand les détails seront annoncés.",
+        "count": 3,
+        "items": [
+          { "title": "Concert Mystère #1", "tarif": "20€", "date": "à révéler", "venue": "à révéler (métropole lilloise)" },
+          { "title": "Concert Mystère #2", "tarif": "20€", "date": "à révéler", "venue": "à révéler (métropole lilloise)" },
+          { "title": "Concert Mystère #3", "tarif": "20€", "date": "à révéler", "venue": "à révéler (métropole lilloise)" }
+        ]
+      },
+      {
+        "category": "belles-sorties",
+        "reason": "Les Belles Sorties (20-26 mars 2027, en métropole lilloise, cheffe Mojca Lavrenčič — 1er prix La Maestra 2026, programme Fanny Mendelssohn + Amy Beach). Dates précises et lieux non communiqués dans la brochure. À encoder manuellement quand le calendrier détaillé sera publié.",
+        "count": 1,
+        "items": [
+          { "title": "Les Belles Sorties — Mojca Lavrenčič", "period": "2027-03-20 → 2027-03-26", "conductor": "Mojca Lavrenčič", "program": ["Fanny Mendelssohn — Ouverture en do majeur", "Amy Beach — Symphonie gaélique"] }
+        ]
+      },
+      {
+        "category": "concerts-pedagogiques",
+        "reason": "Concert grand public mais à dimension principalement pédagogique : Orchestre Pédagogique d'Utilité Sociale (OPUS, réseau Démos, 10 ans) + Orchestre Métropolitain des Jeunes (OMJ, 5 ans). Gratuit sur réservation. Périmètre éditorial : hors agenda Crescendo.",
+        "count": 1,
+        "items": [
+          { "title": "Joyeux anniversaire OPUS et OMJ !", "date": "2027-05-23", "time": "16:00", "venue": "Nouveau Siècle Lille" }
+        ]
+      },
+      {
+        "category": "concerts-scolaires",
+        "reason": "Séances réservées aux établissements scolaires. Hors périmètre grand public.",
+        "count": 9,
+        "items": [
+          { "title": "Le violon magique (scolaires)", "dates": ["2026-10-01", "2026-10-02"], "sessions": 4 },
+          { "title": "Anna, Léo et le gros ours de l'armoire (scolaires)", "dates": ["2026-11-19", "2026-11-20"], "sessions": 3 },
+          { "title": "Le bal des petites bêtes (scolaires)", "dates": ["2027-01-21", "2027-01-22"], "sessions": 3 },
+          { "title": "La musique classique dans les jeux vidéos (scolaires)", "date": "2027-05-14", "sessions": 2, "note": "Orchestre de Picardie, pas ONL — co-programmation" }
+        ]
+      },
+      {
+        "category": "activites-peri-concert",
+        "reason": "Avant-concerts, bords de scène, préludes ESMD, répétitions publiques, visites coulisses, ateliers familles (Ludorama, Polissons, Exploranotes, Croquinotes) : activités péri-concert ou éducatives, pas des concerts en soi.",
+        "count": "non chiffré (≥ 30 activités)",
+        "items": []
+      }
+    ]
+  }
+}

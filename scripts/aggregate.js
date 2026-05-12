@@ -50,6 +50,7 @@ import { scrapeAntwerpSymphony } from './scrapers/antwerp-symphony.js';
 import { scrapeVrijthofMaastricht } from './scrapers/vrijthof-maastricht.js';
 import { scrapeFestivalLaon } from './scrapers/festival-laon.js';
 import { loadOBVManual } from './scrapers/obv-manual.js';
+import { loadONLManual } from './scrapers/onl-manual.js';
 
 import { cleanComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -101,6 +102,7 @@ const SCRAPERS = [
   { name: 'vrijthof', fn: scrapeVrijthofMaastricht },
   { name: 'festival-laon', fn: scrapeFestivalLaon },
   { name: 'obv', fn: loadOBVManual },
+  { name: 'onl', fn: loadONLManual },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
