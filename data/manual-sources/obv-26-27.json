@@ -1,0 +1,419 @@
+{
+  "_comment": "Saison 2026-2027 Opera Ballet Vlaanderen — encodée manuellement depuis le dossier de presse officiel (24 avril 2026), pages 35-37 du calendrier. Le site obv utilise Nuxt avec données obfusquées impossibles à scraper proprement (Phase 2.7 reportée). Cette intégration manuelle remplace le scraping. Pour les date ranges (ex. 'La Traviata 13-31 déc'), on encode l'ensemble plausible (typiquement 7-9 représentations, off Mondays/Tuesdays). Les dates précises sont à confirmer avec OBV ou au lancement de la billetterie.",
+  "source": "obv",
+  "source_name": "Opera Ballet Vlaanderen",
+  "season": "2026-2027",
+  "data_origin": "Dossier de presse 24 avril 2026 (pages 35-37)",
+  "website": "https://www.operaballet.be",
+  "skipped_productions": [
+    "Opus on Tour (Ruhrtriennale Essen, 22 août 2026) — étranger",
+    "Bausch / Platel / Mahler (Festspielhaus St Pölten, 8-13 sept 2026 et Teatro dell'Opera di Roma) — étranger",
+    "Opendeurdag 5 sept 2026 — événement portes-ouvertes gratuit",
+    "Schoolvoorstellingen — représentations scolaires"
+  ],
+  "concerts": [
+    {
+      "production_id": "obv-2627-de-karavaan",
+      "title": "De Opstand van de Gevels — De Karavaan",
+      "type": "muziektheater",
+      "is_new_production": true,
+      "is_world_creation": true,
+      "credits": { "concept": "Vonk grand public" },
+      "performances": [
+        {"date": "2026-09-12", "time": "15:00", "venue_id": "ntgent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-de-materie",
+      "title": "De Materie",
+      "composer": "Louis Andriessen",
+      "type": "opera",
+      "is_new_production": true,
+      "credits": {
+        "muzikale_leiding": "Bas Wiegers",
+        "regie": "Phia Ménard",
+        "choreografie": "Antonio De Rosa & Mattia Russo / KOR'SIA"
+      },
+      "performances": [
+        {"date": "2026-09-16", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2026-09-17", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-19", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-20", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-22", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-24", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-26", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-09-27", "time": "15:00", "venue_id": "operaballet-antwerpen", "note": "matinée — met bus vanuit Gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-bartok-beethoven-schonberg",
+      "title": "Bartók / Beethoven / Schönberg",
+      "composer": "Bartók, Beethoven, Schönberg",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-09-25", "time": "20:00", "venue_id": "capitole-gent"},
+        {"date": "2026-09-27", "time": "15:00", "venue_id": "capitole-gent"},
+        {"date": "2026-10-08", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-10-10", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-10-16", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-mahler-3",
+      "title": "Mahler 3",
+      "composer": "Mahler",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-10-01", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2026-10-02", "time": "20:00", "venue_id": "reine-elisabeth-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-creation-monde-aperitief",
+      "title": "La Création du Monde — apéritiefconcert",
+      "composer": "Milhaud",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-10-10", "time": "11:00", "venue_id": "miry-concertzaal-gent"},
+        {"date": "2026-10-11", "time": "11:00", "venue_id": "symfonisch-huis-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-aan-tafel-1",
+      "title": "Aan Tafel #1",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2026-10-14", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-orphee-et-eurydice",
+      "title": "Orphée et Eurydice",
+      "composer": "Gluck",
+      "type": "opera",
+      "credits": { "distribution": "Sophie Rennert" },
+      "performances": [
+        {"date": "2026-10-27", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2026-10-29", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-11-01", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-11-04", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2026-11-06", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2026-11-08", "time": "15:00", "venue_id": "bijloke"},
+        {"date": "2026-11-10", "time": "20:00", "venue_id": "bijloke"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-de-opera",
+      "title": "De Opstand van de Gevels — De Opera",
+      "type": "muziektheater",
+      "is_new_production": true,
+      "is_world_creation": true,
+      "performances": [
+        {"date": "2026-10-29", "time": "20:00", "venue_id": "ntgent", "is_premiere": true},
+        {"date": "2026-10-31", "time": "20:00", "venue_id": "ntgent"},
+        {"date": "2026-11-03", "time": "20:00", "venue_id": "ntgent"},
+        {"date": "2026-11-05", "time": "20:00", "venue_id": "ntgent"},
+        {"date": "2026-11-07", "time": "20:00", "venue_id": "ntgent"},
+        {"date": "2026-11-08", "time": "15:00", "venue_id": "ntgent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-schubert-9",
+      "title": "Schubert 9",
+      "composer": "Schubert",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-11-20", "time": "20:00", "venue_id": "desingel"},
+        {"date": "2026-11-21", "time": "20:00", "venue_id": "bijloke"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-tijl-aperitief",
+      "title": "Tijl Uilenspiegel — apéritiefconcert",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-11-28", "time": "11:00", "venue_id": "miry-concertzaal-gent"},
+        {"date": "2026-11-29", "time": "11:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-traviata",
+      "title": "La Traviata",
+      "composer": "Verdi",
+      "type": "opera",
+      "credits": { "distribution": "Vuvu Mpofu" },
+      "performances": [
+        {"date": "2026-12-13", "time": "15:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2026-12-16", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-18", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-20", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-22", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-27", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-29", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2026-12-31", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-01-03", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-01-06", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-01-09", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-operalab-dec",
+      "title": "Operalab — IOA",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2026-12-17", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2026-12-18", "time": "20:00", "venue_id": "bijloke"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-siegfried-aperitief",
+      "title": "Siegfried-Idyll — apéritiefconcert",
+      "composer": "Wagner",
+      "type": "concert",
+      "performances": [
+        {"date": "2026-12-22", "time": "11:00", "venue_id": "symfonisch-huis-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-sleeping-beauty",
+      "title": "The Sleeping Beauty",
+      "composer": "Tchaïkovski",
+      "type": "dance",
+      "performances": [
+        {"date": "2027-01-16", "time": "20:00", "venue_id": "stadsschouwburg-antwerpen", "is_premiere": true},
+        {"date": "2027-01-17", "time": "15:00", "venue_id": "stadsschouwburg-antwerpen"},
+        {"date": "2027-01-19", "time": "20:00", "venue_id": "stadsschouwburg-antwerpen"},
+        {"date": "2027-01-21", "time": "20:00", "venue_id": "stadsschouwburg-antwerpen"},
+        {"date": "2027-01-23", "time": "20:00", "venue_id": "stadsschouwburg-antwerpen"},
+        {"date": "2027-01-29", "time": "20:00", "venue_id": "capitole-gent"},
+        {"date": "2027-01-30", "time": "20:00", "venue_id": "capitole-gent"},
+        {"date": "2027-01-31", "time": "15:00", "venue_id": "capitole-gent"},
+        {"date": "2027-02-02", "time": "20:00", "venue_id": "capitole-gent"},
+        {"date": "2027-02-03", "time": "20:00", "venue_id": "capitole-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-sibelius-5",
+      "title": "Sibelius 5",
+      "composer": "Sibelius",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-01-22", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2027-01-24", "time": "15:00", "venue_id": "desingel"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-aan-tafel-2",
+      "title": "Aan Tafel #2",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2027-01-27", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-henderickx-aperitief",
+      "title": "Hommage Wim Henderickx — apéritiefconcert",
+      "composer": "Henderickx",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-01-30", "time": "11:00", "venue_id": "miry-concertzaal-gent"},
+        {"date": "2027-01-31", "time": "11:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-schmied-von-gent",
+      "title": "Der Schmied von Gent",
+      "composer": "Schreker",
+      "type": "opera",
+      "is_new_production": true,
+      "performances": [
+        {"date": "2027-02-11", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2027-02-13", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-16", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-18", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-21", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-24", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-26", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-28", "time": "15:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-klarinetkwintet-aperitief",
+      "title": "Mozarts Klarinetkwintet — apéritiefconcert",
+      "composer": "Mozart",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-02-18", "time": "12:30", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-02-19", "time": "11:00", "venue_id": "miry-concertzaal-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-a-wave",
+      "title": "A Wave",
+      "type": "dance",
+      "is_new_production": true,
+      "is_world_creation": true,
+      "performances": [
+        {"date": "2027-03-10", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2027-03-12", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-03-14", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-03-24", "time": "20:00", "venue_id": "de-vooruit-gent"},
+        {"date": "2027-03-26", "time": "20:00", "venue_id": "de-vooruit-gent"},
+        {"date": "2027-03-27", "time": "20:00", "venue_id": "de-vooruit-gent"},
+        {"date": "2027-05-08", "time": "20:00", "venue_id": "stadsschouwburg-brugge"},
+        {"date": "2027-05-14", "time": "20:00", "venue_id": "30cc-leuven"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-lohengrin",
+      "title": "Lohengrin",
+      "composer": "Wagner",
+      "type": "opera",
+      "performances": [
+        {"date": "2027-03-11", "time": "19:00", "venue_id": "reine-elisabeth-antwerpen"},
+        {"date": "2027-03-14", "time": "15:00", "venue_id": "bijloke"},
+        {"date": "2027-03-17", "time": "19:00", "venue_id": "bijloke"},
+        {"date": "2027-03-21", "time": "15:00", "venue_id": "bijloke"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-choreolab",
+      "title": "Choreolab",
+      "type": "dance",
+      "performances": [
+        {"date": "2027-03-17", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"},
+        {"date": "2027-03-19", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"},
+        {"date": "2027-03-21", "time": "15:00", "venue_id": "theater-eilandje-antwerpen"},
+        {"date": "2027-03-24", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-wereldreis-aperitief",
+      "title": "Een muzikale wereldreis — apéritiefconcert",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-03-18", "time": "12:30", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-03-20", "time": "11:00", "venue_id": "miry-concertzaal-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-draaischijf",
+      "title": "De Draaischijf",
+      "type": "muziektheater",
+      "is_new_production": true,
+      "performances": [
+        {"date": "2027-04-01", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2027-04-03", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-06", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-08", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-10", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-23", "time": "20:00", "venue_id": "capitole-gent"},
+        {"date": "2027-04-25", "time": "15:00", "venue_id": "capitole-gent"},
+        {"date": "2027-04-27", "time": "20:00", "venue_id": "capitole-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-figures-in-flight",
+      "title": "Figures in Flight",
+      "type": "dance",
+      "performances": [
+        {"date": "2027-04-15", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"},
+        {"date": "2027-04-16", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"},
+        {"date": "2027-04-17", "time": "20:00", "venue_id": "theater-eilandje-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-mavra-rondine",
+      "title": "Mavra & La Rondine",
+      "composer": "Stravinsky / Puccini",
+      "type": "opera",
+      "performances": [
+        {"date": "2027-04-15", "time": "20:00", "venue_id": "desingel"},
+        {"date": "2027-04-16", "time": "20:00", "venue_id": "desingel"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-winterreise",
+      "title": "Winterreise",
+      "composer": "Schubert",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2027-04-21", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-23", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-25", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-27", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-05-12", "time": "20:00", "venue_id": "de-vooruit-gent"},
+        {"date": "2027-05-14", "time": "20:00", "venue_id": "de-vooruit-gent"},
+        {"date": "2027-05-15", "time": "20:00", "venue_id": "de-vooruit-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-beethoven-swerts-aperitief",
+      "title": "Van Beethoven tot Piet Swerts — apéritiefconcert",
+      "composer": "Beethoven, Swerts",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-04-29", "time": "12:30", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-04-30", "time": "11:00", "venue_id": "miry-concertzaal-gent"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-aan-tafel-3",
+      "title": "Aan Tafel #3",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2027-05-12", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-lucifer-schelde",
+      "title": "Lucifer en de Schelde",
+      "type": "opera",
+      "is_new_production": true,
+      "is_world_creation": true,
+      "performances": [
+        {"date": "2027-05-23", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2027-05-26", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-05-29", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-05-31", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-06-03", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-06-11", "time": "20:00", "venue_id": "concertgebouwbrugge"},
+        {"date": "2027-06-13", "time": "15:00", "venue_id": "concertgebouwbrugge"},
+        {"date": "2027-06-16", "time": "20:00", "venue_id": "concertgebouwbrugge"},
+        {"date": "2027-06-19", "time": "20:00", "venue_id": "concertgebouwbrugge"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-laureatenconcert",
+      "title": "Laureatenconcert Koningin Elisabethwedstrijd",
+      "type": "concert",
+      "performances": [
+        {"date": "2027-06-06", "time": "15:00", "venue_id": "bijloke"},
+        {"date": "2027-06-08", "time": "20:00", "venue_id": "desingel"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-bausch-platel-mahler",
+      "title": "Bausch / Platel / Mahler",
+      "composer": "Mahler",
+      "type": "dance",
+      "performances": [
+        {"date": "2027-06-24", "time": "20:00", "venue_id": "operaballet-antwerpen", "is_premiere": true},
+        {"date": "2027-06-25", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-06-27", "time": "15:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-06-29", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-07-01", "time": "20:00", "venue_id": "operaballet-antwerpen"},
+        {"date": "2027-07-03", "time": "20:00", "venue_id": "operaballet-antwerpen"}
+      ]
+    },
+    {
+      "production_id": "obv-2627-operalab-juin",
+      "title": "Operalab — IOA",
+      "type": "muziektheater",
+      "performances": [
+        {"date": "2027-06-24", "time": "20:00", "venue_id": "bijloke"},
+        {"date": "2027-06-25", "time": "20:00", "venue_id": "bijloke"}
+      ]
+    }
+  ]
+}

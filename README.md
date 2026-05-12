@@ -119,7 +119,8 @@ agenda-crescendo/
 | Theater aan het Vrijthof (Maastricht — Pays-Bas) | ✅ opérationnel (scraper dédié) | Premier venue NL de l'agenda. Concrete CMS, URLs encodant `/voorstellingen/{cat}/{slug}/DD-MM-YYYY-HH-MM`. Filtre par catégorie URL : KEEP klassiek-* + opera, exception ballets de répertoire (Notenkraker, Zwanenmeer, Nationale Ballet, NDT, Introdans…) ; REJECT toneel/cabaret/musical/familie/theaterconcert. Sous-filtre titre rejet Harmonie/Fanfare/Vastelaovend/André Rieu (Limburg = forte tradition harmonie). Saison 26-27 partiellement publiée → 1 concert capté au commit (PhilXmas Philzuid 20/12), croissance attendue |
 | Automne Musical de Spa | ⏸ placeholder | Site automnemusical.com resté sur édition 2024. Édition 2026 annoncée sans dates publiées. À ré-explorer juillet-août 2026 |
 | Festival de Laon | ✅ opérationnel (placeholder en intersaison) | Scraper WordPress/Elementor (même CMS et webmaster Maxime Delalande que Festival St-Michel-en-Thiérache). Hub `/programme-billetterie/` + pages détail `{jour}-{DD}-{mois}-{YYYY}/`. 38e édition automne 2026 pas encore publiée → 0 concert ce run. Tagging festival-laon-2026 prêt (fenêtre 10/09→11/10). Partenariat Orchestre Philharmonique de Radio France |
-| Reste : ONL Lille (Cloudflare 503), Opera Ballet Vlaanderen (Nuxt minifié), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
+| Opera Ballet Vlaanderen | ✅ intégration manuelle (dossier de presse) | Site obv.be utilise Nuxt avec données obfusquées impossibles à scraper. Saison 26-27 encodée à la main depuis le dossier de presse officiel (24 avril 2026, pages 35-37) dans `data/manual-sources/obv-26-27.json`. 33 productions × ~4-10 représentations = ~135 dates ; ~14 venues OBV (Opera Antwerpen, Capitole Gent, Stadsschouwburg Antwerpen, NTGent, De Vooruit, Theater 't Eilandje…). Mise à jour annuelle au lancement de la nouvelle saison |
+| Reste : ONL Lille (Cloudflare 503), Muziekodroom (pop/rock, hors périmètre) | ⏸ reportés / hors périmètre | — | — |
 
 ### Pipeline
 
@@ -203,6 +204,7 @@ npm run scrape:midiliege  # idem pour Concerts de Midi Liège (Société Royale)
 npm run scrape:antwerp-symphony  # idem pour Antwerp Symphony Orchestra
 npm run scrape:vrijthof-maastricht  # idem pour Theater aan het Vrijthof (Maastricht, NL)
 npm run scrape:festival-laon  # idem pour Festival de Laon (38e éd. automne 2026)
+npm run scrape:obv-manual # charge data/manual-sources/obv-*.json (Opera Ballet Vlaanderen)
 npm run scrape            # exécute aggregate.js → data/concerts.json
                           #  ↳ applique aussi les tags festivals.json
 python3 -m http.server 8000   # voir le résultat sur localhost:8000
