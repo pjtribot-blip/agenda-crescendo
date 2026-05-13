@@ -321,6 +321,17 @@ scrape directement et on attribue les concerts à un venue dédié
       seulement si le format HTML a changé (cf. cas opera-lille
       Phase 3.20 où `/saison-26-27/` redirigeait vers une JPEG
       et le bloc dates avait été restructuré).
+- [ ] **Carte — labels en français** (Phase ultérieure, non
+      prioritaire). Fond actuel CartoDB Positron : rendu gris épuré
+      idéal pour mettre en valeur les marqueurs concerts, mais
+      labels en anglais (Brussels, Antwerp, Upper France, Greater
+      East, Limburg…). Alternative envisagée : **Stadia Maps
+      Alidade Smooth** avec paramètre `?lang=fr`. Nécessite
+      création d'un compte Stadia Maps gratuit (~5 min) et ajout
+      d'une clé API dans le tileLayer. Quota gratuit 200 000
+      tuiles/mois — largement suffisant pour le trafic agenda.
+      Documentation : https://docs.stadiamaps.com/themes/. À
+      traiter quand temps disponible.
 
 ## Phase 4 — Élargissements et outillage éditorial
 
