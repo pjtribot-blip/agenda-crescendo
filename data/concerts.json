@@ -626,7 +626,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:39.001Z",
-    "category": "chambre-recital"
+    "category": "hors-categorie"
   },
   {
     "id": "obf-2026-05-16-1900-packbier26",
@@ -1003,7 +1003,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:36:33.515Z",
-    "category": "chambre-recital"
+    "category": "symphonique"
   },
   {
     "id": "monnaie-2026-05-19-2000-3567-medusa",
@@ -1452,7 +1452,7 @@
     "price_min": 7,
     "price_max": 65,
     "scraped_at": "2026-05-13T15:17:43.565Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "flagey-2026-05-22-1230-12673-marco-mantovani",
@@ -1647,7 +1647,7 @@
     "price_min": 8,
     "price_max": 26,
     "scraped_at": "2026-05-13T15:24:43.829Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2026-05-22-2000-sylvain-rifflet-ts3m",
@@ -1810,7 +1810,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:39.714Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "cgbrugge-2026-05-23-23646",
@@ -2520,7 +2520,7 @@
     "price_min": 7,
     "price_max": 65,
     "scraped_at": "2026-05-13T15:17:43.565Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "bijloke-2026-05-29-2000-de-bromance-die-cellogeschiedenis-werd-m51j",
@@ -3618,7 +3618,7 @@
     "price_min": 7,
     "price_max": 65,
     "scraped_at": "2026-05-13T15:17:43.565Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "chapelle-2026-06-05-1400-marathon-violoncelle-session-2",
@@ -3981,7 +3981,7 @@
     "price_max": null,
     "scraped_at": "2026-05-13T15:36:26.601Z",
     "festival": "st-michel-thierache-2026",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "obf-2026-06-07-1900-dirkvdm2",
@@ -4224,7 +4224,7 @@
     "price_min": 7,
     "price_max": 65,
     "scraped_at": "2026-05-13T15:17:43.565Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "flagey-2026-06-12-1230-12667-jorge-gimenez-matteo-bevilacqua",
@@ -4656,7 +4656,7 @@
     "price_min": 5,
     "price_max": 5,
     "scraped_at": "2026-05-13T15:17:44.109Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "lille-pianos-2026-06-13-1830-hella",
@@ -4791,7 +4791,7 @@
     "price_min": 32,
     "price_max": 56,
     "scraped_at": "2026-05-13T15:17:00.602Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "monnaie-2026-06-13-2000-3589-chasing-rainbows",
@@ -4864,7 +4864,7 @@
     "price_min": 5,
     "price_max": 5,
     "scraped_at": "2026-05-13T15:17:44.673Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "lille-pianos-2026-06-13-2030-edouard-ferlet",
@@ -5167,7 +5167,7 @@
     "price_min": 9,
     "price_max": 19,
     "scraped_at": "2026-05-13T15:20:51.308Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "lille-pianos-2026-06-14-1600-zeyu-shen-premier-prix-du-concours-de-piano-de-lyon-2025",
@@ -5589,7 +5589,7 @@
     "price_min": 7,
     "price_max": 65,
     "scraped_at": "2026-05-13T15:17:45.125Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "flagey-2026-06-19-1800-14029-sonic-harvest-david-dubois-alice-van-biesen-livia-slegs-sound-artists-foraging-for-wild-sonic-material",
@@ -6869,7 +6869,7 @@
     "price_max": 25,
     "scraped_at": "2026-05-13T15:18:36.376Z",
     "festival": "musiq3-2026",
-    "category": "chambre-recital"
+    "category": "baroque-ancienne"
   },
   {
     "id": "cgbrugge-2026-06-26-23674",
@@ -7600,7 +7600,7 @@
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:43.170Z",
     "festival": "festival-musical-namur-2026",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "phillux-2026-06-28-orchestre-place-de-l-europe-000000e9001b255c",
@@ -8474,7 +8474,7 @@
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:47.910Z",
     "festival": "festival-musical-namur-2026",
-    "category": "symphonique"
+    "category": "opera"
   },
   {
     "id": "musicorum-2026-07-09-laureats-concours-forte",
@@ -11417,7 +11417,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:03.583Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "amuz-2026-08-22-2000-les-meslanges",
@@ -11753,7 +11753,7 @@
     "price_max": null,
     "scraped_at": "2026-05-13T15:34:55.690Z",
     "festival": "midi-minimes-2026",
-    "category": "chambre-recital"
+    "category": "baroque-ancienne"
   },
   {
     "id": "gmanege-2026-08-26-2000-601-in-the-brain",
@@ -12198,7 +12198,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.909Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "oprl-2026-09-06-journee-decouverte-2026",
@@ -12697,7 +12697,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.274Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "obv-2627-de-materie-2026-09-16-2000-occ1",
@@ -13464,7 +13464,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:54.288Z",
-    "category": "baroque-ancienne"
+    "category": "opera"
   },
   {
     "id": "obv-2627-de-materie-2026-09-24-2000-occ6",
@@ -16102,7 +16102,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "phillux-2026-10-11-d-un-meme-souffle-000000e9001d0a6b",
@@ -17229,7 +17229,7 @@
     "price_min": 9,
     "price_max": 19,
     "scraped_at": "2026-05-13T15:21:01.739Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "onl-2627-tous-a-l-onl-2026-10-18-1600-occ1",
@@ -19615,7 +19615,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:03.965Z",
-    "category": "chambre-recital"
+    "category": "opera"
   },
   {
     "id": "phillux-2026-11-11-huelgas-ensemble-000000e9001d37e0",
@@ -20588,7 +20588,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:05.691Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2026-11-19-2000-la-dolce-stravaganza-nr4n",
@@ -20627,7 +20627,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:05.691Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "oprl-2026-11-20-event",
@@ -20648,7 +20648,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:07.824Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "amuz-2026-11-20-2000-air4six-2",
@@ -20756,7 +20756,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:08.468Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "bijloke-2026-11-21-1100-ark-symfonisch-rybl",
@@ -20958,7 +20958,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:06.235Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "gmanege-2026-11-22-1100-659-okapi",
@@ -20981,7 +20981,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:06.235Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "gmanege-2026-11-22-1100-616-rio-sr9-metamorphoses",
@@ -21026,7 +21026,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:08.892Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "monnaie-2026-11-22-1500-3931-wozzeck",
@@ -21102,7 +21102,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:06.771Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "desingel-2026-11-22-1900-a0JQx000003LtsbMAC",
@@ -21313,7 +21313,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:21:09.557Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "desingel-2026-11-25-1600-a0JQx000002KgLJMA0",
@@ -21833,7 +21833,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:21:10.151Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "bijloke-2026-11-28-1900-aguas-da-amazonia-8g95",
@@ -21960,7 +21960,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:07.988Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "phillux-2026-11-29-loopino-an-de-klenge-waassermann-000000e9001d4a2f",
@@ -21992,7 +21992,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "gmanege-2026-11-29-1100-663-le-sacre-printemps",
@@ -22016,7 +22016,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:07.988Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "gmanege-2026-11-29-1100-664-ofira",
@@ -22135,7 +22135,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:08.577Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "oprl-2026-11-29-ali-baba-et-les-quarante-voleurs-Namur",
@@ -22156,7 +22156,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:21:10.795Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "oprl-2026-11-29-benjamin-grosvenor",
@@ -22798,7 +22798,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:10.758Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "gmanege-2026-12-06-1100-660-ylitys",
@@ -22820,7 +22820,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:10.758Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "bijloke-2026-12-06-1100-fabels-zvrx",
@@ -23549,7 +23549,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:13.045Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "phillux-2026-12-12-jazz-at-lincoln-center-orchestra-with-wynton-marsalis-000000e9001d22ed",
@@ -23613,7 +23613,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2026-12-13-1500-der-messias-f7p1",
@@ -24633,7 +24633,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:37:49.820Z",
-    "category": "opera"
+    "category": "chambre-recital"
   },
   {
     "id": "monnaie-2026-12-22-1930-3932-la-cenerentola",
@@ -25100,7 +25100,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:37:46.328Z",
-    "category": "symphonique"
+    "category": "baroque-ancienne"
   },
   {
     "id": "bijloke-2027-01-08-0930-ark-nieuwe-muziek-51p8",
@@ -25453,7 +25453,7 @@
     "price_min": 20,
     "price_max": 66,
     "scraped_at": "2026-05-13T15:17:54.305Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "phillux-2027-01-11-la-morte-della-ragione-000000e9001cd4af",
@@ -26222,7 +26222,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.390Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "phillux-2027-01-18-chicago-symphony-orchestra-klaus-maekelae-000000e9001aabcc",
@@ -30029,7 +30029,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "amuz-2027-02-21-1500-naruhiko-kawaguchi-2",
@@ -31985,7 +31985,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2027-03-14-1100-nordic-spring-f7wr",
@@ -32475,7 +32475,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.446Z",
-    "category": "chambre-recital"
+    "category": "symphonique"
   },
   {
     "id": "obv-2627-wereldreis-aperitief-2027-03-18-1230-occ1",
@@ -32614,7 +32614,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.446Z",
-    "category": "chambre-recital"
+    "category": "symphonique"
   },
   {
     "id": "desingel-2027-03-19-0800-a0JQx000003PVq5MAG",
@@ -32646,7 +32646,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.447Z",
-    "category": "chambre-recital"
+    "category": "symphonique"
   },
   {
     "id": "monnaie-2027-03-19-1900-427-cavalleria-rusticana-pagliacci",
@@ -32705,7 +32705,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.447Z",
-    "category": "chambre-recital"
+    "category": "symphonique"
   },
   {
     "id": "phillux-2027-03-19-dhafer-youssef-000000e9001d108d",
@@ -34131,7 +34131,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:39.085Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "onl-2627-walkyrie-2027-04-09-2000-occ2",
@@ -34180,7 +34180,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:39.739Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "obv-2627-draaischijf-2027-04-10-1500-occ5",
@@ -34245,7 +34245,7 @@
     "price_min": 16,
     "price_max": 18,
     "scraped_at": "2026-05-13T15:21:40.399Z",
-    "category": "opera"
+    "category": "symphonique"
   },
   {
     "id": "orw-2027-04-11-1500-opera-roberto-devereux-2027",
@@ -35369,7 +35369,7 @@
     "price_min": 28,
     "price_max": 66,
     "scraped_at": "2026-05-13T15:17:36.102Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "monnaie-2027-04-22-1930-3935-m-butterfly",
@@ -35842,7 +35842,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2027-04-25-1100-ark-oude-muziek-51z1",
@@ -37884,7 +37884,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "bijloke-2027-05-16-1100-benchmark-beethoven-5137",
@@ -38266,7 +38266,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:33.541Z",
-    "category": "chambre-recital"
+    "category": "opera"
   },
   {
     "id": "philzuid-2027-05-20-2000-198843",
@@ -38819,7 +38819,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:23:35.207Z",
-    "category": "opera"
+    "category": "baroque-ancienne"
   },
   {
     "id": "opl-2027-05-25-2000-otello",
@@ -40062,7 +40062,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:22:05.910Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "phillux-2027-06-13-vents-slaves-000000e9001d0a63",
@@ -40762,7 +40762,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.492Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "orw-2027-06-26-2000-opera-turandot-2027",
@@ -41163,7 +41163,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.493Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "desingel-2027-12-04-1900-a0JQx000003LdB7MAK",
@@ -41181,7 +41181,7 @@
     "price_min": null,
     "price_max": null,
     "scraped_at": "2026-05-13T15:24:50.497Z",
-    "category": "opera"
+    "category": "hors-categorie"
   },
   {
     "id": "gmanege-2027-12-14-2000-649-la-truite-festival-resonances",

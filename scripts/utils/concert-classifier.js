@@ -117,21 +117,49 @@ const HORS_CATEGORIE_PATTERNS = [
 // Phase 3.31 round 2 — exclusions élargies pour Monnaie/OBV qui hébergent
 // aussi des concerts symphoniques et hommages contemporains.
 const OPERA_SOURCES = new Set(['orw', 'opl', 'obv', 'monnaie']);
-const OPERA_SOURCE_EXCLUSIONS = new RegExp([
+// Phase 3.38 — OPERA_HARD_NEGATIVE s'applique à LA FOIS au source-default
+// ET à title-match (un titre qui matche \bopéra\b dans le program mais
+// dont le titre lui-même contient "Concert d'ouverture" ne doit PAS être
+// classé opéra). C'est ce qui filtrait avant uniquement le source-default.
+const OPERA_HARD_NEGATIVE = new RegExp([
+  // Phase 3.31 round 2 (origine source-default)
   /\br[ée]cital\b/.source,
-  /\bconcert de midi\b/.source,
-  /\bconcert symphonique\b/.source,
-  /\bconcert de chambre\b/.source,
-  /\borchestre\b/.source,                              // "L'Orchestre de la Monnaie au festival …"
-  /\bnew\s+year\b|\bnouvel\s+an\b/.source,             // Concerts du Nouvel An
-  /\bhommage\b/.source,                                // Hommage Henderickx etc.
-  /\bsymphonique\b/.source,                            // Concert symphonique explicit
-  /\bconcert\s+(de\s+)?fin\s+d['']?ann[ée]e\b/.source, // Concert de fin d'année
-  /\bap[ée]ro|aperitief|ap[ée]ritief/.source,          // Apéro-concerts
+  /\bconcert\s+de\s+midi\b/.source,
+  /\bconcert\s+symphonique\b/.source,
+  /\bconcert\s+de\s+chambre\b/.source,
+  /\borchestre\b/.source,
+  /\bnew\s+year\b|\bnouvel\s+an\b/.source,
+  /\bhommage\b/.source,
+  /\bsymphonique\b/.source,
+  /\bconcert\s+(de\s+)?fin\s+d['']?ann[ée]e\b/.source,
+  /\bap[ée]ro|aperitief|ap[ée]ritief/.source,
+  // Phase 3.38 — extensions audit opera
+  /\bmusica\s+da\s+camera\b/.source,
+  /\bmusique\s+de\s+chambre\b/.source,
+  /\bconcert\s+d['']?ouverture\b/.source,
+  /\bconcert\s+de\s+cl[ôo]ture\b/.source,
+  /\bconcertini\b/.source,
+  /\bs[ée]r[ée]nade\b/.source,
+  /\bch[œo]ur\b.{0,30}\bkoor\b/.source,                // chœur ... koor (Monnaie)
+  /\bcomposant[ee]?n?\s*dag\b/.source,                 // Componistendag (déjà OK ailleurs)
 ].join('|'), 'i');
 
+// Alias rétro-compat : utilisé seulement via la cascade ci-dessous.
+const OPERA_SOURCE_EXCLUSIONS = OPERA_HARD_NEGATIVE;
+
 const OPERA_TITLE_PATTERNS = [
-  /\bop[ée]ra\b/i, /\bopera\b/i, /\bversion concert\b/i, /\bmise en sc[èe]ne\b/i,
+  // Phase 3.38 — `\bmise en scène\b` retiré (trop générique, matchait des
+  // descriptifs de présentation/installation type "Les Saisons dansées",
+  // "Chasing Rainbows" de Lea Desandre, etc.). Remplacé par 3 patterns
+  // qui réservent l'opéra à un contexte vraiment opératique.
+  /\bop[ée]ra\b/i, /\bopera\b/i,
+  /\bversion\s+(de\s+)?concert\b/i,
+  /\bdrame\s+lyrique\b/i,
+  /\btrag[ée]die\s+lyrique\b/i,
+  /\bop[ée]ra\s+en\s+\d+\s+actes?\b/i,
+  /\bop[ée]ra[- ]ballet\b/i,
+  /\bop[ée]ra-comique\b/i,
+  /\bsinger\s*spiel\b|\bsingspiel\b/i,
   // Italiens canon
   /\botello\b/i, /\bfalstaff\b/i, /\baida\b/i, /\btosca\b/i, /\bboh[èe]me\b/i,
   /\btraviata\b/i, /\brigoletto\b/i, /\bnorma\b/i, /\blucia di lammermoor\b/i,
@@ -160,7 +188,28 @@ const OPERA_TITLE_PATTERNS = [
   /\bwozzeck\b/i, /\blulu\b/i,
   /\byvonne princesse de bourgogne\b/i, /\blessons in love and violence\b/i,
   /\bmar[íi]a de buenos aires\b/i, /\bmonsieur v[ée]nus\b/i,
+  // Phase 3.38 — opéras baroques français (Rameau, Lully, Marais, Charpentier)
+  /\bbor[ée]ades\b/i, /\bplat[ée]e\b/i, /\bdardanus\b/i, /\bzoroastre\b/i,
+  /\bhippolyte\s+et\s+aricie\b/i, /\bcastor\s+et\s+pollux\b/i,
+  /\bles\s+indes\s+galantes\b/i, /\bnaissance\s+d['']?osiris\b/i,
+  /\barmide\b/i, /\batys\b/i, /\bpers[ée]e\b/i, /\bisis\b/i,
+  /\bphaeton\b/i, /\balceste\b/i, /\bproserpine\b/i, /\bb[ée]ll[ée]rophon\b/i,
+  /\bacis\s+et\s+galat[ée]e\b/i, /\bm[ée]d[ée]e\b/i,
+  // Haendel (déjà partiel)
+  /\bariodante\b/i, /\balcina\b/i, /\bgiulio\s+cesare\b/i, /\brinaldo\b/i,
+  /\bserse\b/i, /\bxerxes\b/i, /\btamerlano\b/i, /\borlando\b/i,
+  /\bsemele\b/i, /\bjephtha\b/i, /\btheodora\b/i,
+  // Cherubini, Gluck, Spohr…
+  /\biphig[ée]nie\b/i,
 ];
+
+// Phase 3.38 — règle ballet hors maison lyrique
+// Si le titre contient "ballet" / "dansé(e)(s)" / "chorégraphie" ET que
+// la source N'EST PAS une maison lyrique → hors-catégorie. Les ballets
+// produits par OBV / La Monnaie / ORW / OPL restent en opera (décision
+// éditoriale validée). Un ballet dans une salle généraliste type
+// Grand Manège tombe en hors-catégorie (cas "Les Saisons Dansées").
+const BALLET_HORS_LYRIQUE = /\bballet\b|\bdans[ée]ées?\b|\bdans[ée]\b|\bch[ôo]r[ée]graphi/iu;
 
 // ---------------------------------------------------------------
 // Règle 2 — baroque & ancienne (basé sur ENSEMBLE)
@@ -182,6 +231,10 @@ const BAROQUE_ENSEMBLES = [
   'currende', 'cappella sancti michaelis', 'hathor consort', 'klein wien orkest',
   'le banquet céleste', 'graindelavoix', 'cantatrix', 'utopia ensemble',
   'inalto', 'in alto', 'cantus firmus belgica', 'bach society',
+  // Phase 3.38 — ensembles baroques régulièrement programmés en BE
+  // (vus dans les régressions audit opera : a nocte temporis avec
+  // Reinoud Van Mechelen, Cappella Amsterdam avec Daniel Reuss).
+  'a nocte temporis', 'reinoud van mechelen', 'cappella amsterdam',
   // International fréquents en BE
   'akademie für alte musik', 'concerto köln', 'le concert lorrain',
   'le concert de la loge', 'café zimmermann', 'les arts florissants',
@@ -291,6 +344,24 @@ const SYMPHONIC_TITLE_HINTS = [
   /\bsymphonie\s*n[°o]?\s*\d/i, /\bsymphony\s*no\.?\s*\d/i,
   /\bconcerto pour (piano|violon|violoncelle|alto|hautbois|cor|trompette|fl[ûu]te|clarinette)\b/i,
   /\b(piano|violin|cello) concerto\b/i,
+];
+
+// Phase 3.38 mini-correction — concerts choraux comme ENTITÉ
+// principale (grand effectif vocal) → symphonique. Distingue l'entité
+// chorale du simple format (titre "Pièces pour chœur" reste chambre).
+// Les ensembles baroques (Pygmalion, Vox Luminis, Collegium Vocale)
+// priment toujours via règle 1. Ces patterns sont matchés sur le
+// TITRE SEUL (pas le program) pour éviter les false positives sur
+// les programs descriptifs qui mentionnent "chorus" ou "chœur"
+// comme contexte (cas Budapest Festival Orchestra & Fischer, Songs
+// of Travel, Passion selon St-Matthieu).
+const CHORAL_TITLE_HINTS = [
+  /^ch[œo]ur\b/i,                                   // titre commence par Chœur
+  /\bch[œo]ur\s+(du|de|des|of|der|symphonique)\b/i, // Chœur du Pôle hainuyer
+  /\bkoor\s*&|&\s*koor\b/i,                         // Koor & Orkest
+  /\borchestra\s*&\s*choir\b|\bchoir\s*&\s*orchestra\b/i,
+  /\b&\s*chorus\b|\bsymphony\s+chorus\b/i,          // "& Chorus" en fin de titre
+  /\bk[ao]mmerchor\b/i,                              // Kammerchor (DE)
 ];
 const SYMPHONIC_SOURCES = new Set(['oprl', 'antwerp-symphony', 'philzuid']);
 
@@ -437,22 +508,25 @@ export function classify(concert, ctx = {}) {
     return { category: 'hors-categorie', signals };
   }
 
-  // Règle 1 — opéra
-  const operaTitle = anyMatch(OPERA_TITLE_PATTERNS, blob);
-  if (operaTitle) {
-    signals.push(`opera-title=${operaTitle}`);
-    return { category: 'opera', signals };
-  }
-  if (OPERA_SOURCES.has(source) && !OPERA_SOURCE_EXCLUSIONS.test(title)) {
-    signals.push(`opera-source=${source}`);
-    return { category: 'opera', signals };
+  // Règle 0.5 — ballet hors maison lyrique → hors-catégorie
+  // Phase 3.38 — un ballet (titre contient "ballet" / "dansé(es)" /
+  // "chorégraphie") qui n'est PAS produit par une maison lyrique
+  // (ORW / OPL / OBV / Monnaie) tombe en hors-catégorie. Les ballets
+  // de ces 4 maisons restent classés opera per arbitrage utilisateur.
+  if (BALLET_HORS_LYRIQUE.test(title) && !OPERA_SOURCES.has(source)) {
+    signals.push('ballet-non-lyrical');
+    return { category: 'hors-categorie', signals };
   }
 
-  // Règle 2 — baroque & ancienne (ensemble prime)
-  // Q3 round 2 — garde-fou AMUZ : skip source-default si ≥1 composer
-  // post-Bach (Bruckner, Mahler, Stravinsky, Poulenc, etc.). Les
-  // festivals 100% baroque (ma-festival, st-michel) gardent leur
-  // source-default sans garde-fou.
+  // Règle 1 — baroque & ancienne (ENSEMBLE / FESTIVAL prime sur tout
+  // sauf hors-cat hard & ballet)
+  // Phase 3.38 — réordonné AVANT l'opéra per arbitrage utilisateur
+  // Round 2 (Q8 "Vox Luminis joue Brahms → baroque, ensemble prime
+  // sur répertoire"). Conséquence : un ensemble baroque jouant un
+  // opéra-baroque (a nocte temporis, Concert d'Astrée, Cappella
+  // Amsterdam…) est classifié baroque-ancienne plutôt qu'opera,
+  // même si le titre/programme mentionne Médée / Alcina / Orlando /
+  // Boréades / Dardanus / etc.
   if (BAROQUE_SOURCES.has(source)) {
     const hasModern = composers.some((c) =>
       NON_BAROQUE_COMPOSERS.has(c) || CONTEMPORARY_COMPOSERS.has(c)
@@ -479,6 +553,27 @@ export function classify(concert, ctx = {}) {
     signals.push(`baroque-program=${baroqueProg}`);
     return { category: 'baroque-ancienne', signals };
   }
+
+  // Règle 2 — opéra (Phase 3.38 — réordonné APRÈS la baroque-ensemble
+  // pour respecter l'arbitrage "ensemble baroque prime sur répertoire").
+  // OPERA_HARD_NEGATIVE s'applique aux DEUX paths (title-match +
+  // source-default). Évite que "Concert d'ouverture", "Concertini",
+  // "Musica da camera" tombent en opera.
+  const operaNegative = OPERA_HARD_NEGATIVE.test(title);
+  if (!operaNegative) {
+    const operaTitle = anyMatch(OPERA_TITLE_PATTERNS, blob);
+    if (operaTitle) {
+      signals.push(`opera-title=${operaTitle}`);
+      return { category: 'opera', signals };
+    }
+    if (OPERA_SOURCES.has(source)) {
+      signals.push(`opera-source=${source}`);
+      return { category: 'opera', signals };
+    }
+  }
+  // Si OPERA_HARD_NEGATIVE matche le titre, on saute la règle opéra
+  // entière (laisse passer aux règles suivantes : contemporaine,
+  // symphonique, chambre/récital, era-based fallback).
 
   // Règle 3 — contemporaine
   const contTitle = anyMatch(CONTEMPORARY_TITLE_HINTS, blob);
@@ -518,6 +613,12 @@ export function classify(concert, ctx = {}) {
   const symTitle = anyMatch(SYMPHONIC_TITLE_HINTS, blob);
   if (symTitle) {
     signals.push(`sym-title=${symTitle}`);
+    return { category: 'symphonique', signals };
+  }
+  // Phase 3.38 mini — entité chorale dans le titre seul → symphonique.
+  const choralTitle = anyMatch(CHORAL_TITLE_HINTS, title);
+  if (choralTitle) {
+    signals.push(`sym-choral=${choralTitle}`);
     return { category: 'symphonique', signals };
   }
   if (SYMPHONIC_SOURCES.has(source)) {
