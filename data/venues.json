@@ -468,18 +468,6 @@
     "address": "Conservatoriumplein 1, 8500 Kortrijk"
   },
   {
-    "id": "abbatiale-saint-robert-chaise-dieu",
-    "name": "Abbatiale Saint-Robert",
-    "fullName": "Abbatiale Saint-Robert — Festival de La Chaise-Dieu",
-    "city": "La Chaise-Dieu",
-    "country": "FR",
-    "region": "Eurorégion",
-    "lat": 45.3194,
-    "lng": 3.6989,
-    "website": "https://www.chaise-dieu.com",
-    "address": "Place de l'Écho, 43160 La Chaise-Dieu"
-  },
-  {
     "id": "eglise-notre-dame-fillievres",
     "name": "Église Notre-Dame",
     "fullName": "Église Notre-Dame de Fillièvres",
@@ -622,18 +610,6 @@
     "lng": 2.9608,
     "website": "",
     "address": "62220 Carvin"
-  },
-  {
-    "id": "philharmonie-paris",
-    "name": "Philharmonie de Paris",
-    "fullName": "Philharmonie de Paris — Cité de la musique",
-    "city": "Paris",
-    "country": "FR",
-    "region": "Eurorégion",
-    "lat": 48.8896,
-    "lng": 2.3917,
-    "website": "https://philharmoniedeparis.fr",
-    "address": "221 avenue Jean-Jaurès, 75019 Paris"
   },
   {
     "id": "eglise-saint-martin-saint-amand",
