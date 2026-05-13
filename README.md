@@ -141,6 +141,18 @@ agenda-crescendo/
 - `data/composers-reference.json` fournit la liste de référence
   (~115 entrées avec aliases) pour canoniser et matcher les compositeurs
   cités dans les programmes.
+- `scripts/utils/concert-classifier.js` classe chaque concert en 6
+  catégories éditoriales (Phase 3.33) : opera, symphonique,
+  chambre-recital, baroque-ancienne, contemporaine, hors-categorie.
+  Cascade priorisée (opera prime, baroque suit selon ensemble période-
+  instruments, contemporaine selon création/composers post-1950,
+  symphonique selon orchestre, chambre selon quatuor/récital, fallback
+  era-based + venue récital-friendly + blacklist artistes jazz/world).
+  La méthode et les arbitrages éditoriaux sont détaillés dans le module
+  source. Le champ `category` est calculé à l'agrégation et persisté
+  dans `data/concerts.json`. La page Stats expose le panorama Belgique
+  par catégorie (top venues / compositeurs / interprètes / distribution
+  mensuelle pour chacune des 6 catégories).
 - `.github/workflows/scrape-weekly.yml` lance `node scripts/aggregate.js`,
   puis commit `data/concerts.json` si le diff est non vide. Cron
   hebdomadaire **dimanche 03h UTC** (04h Bruxelles l'hiver, 05h l'été) —
@@ -169,7 +181,8 @@ agenda-crescendo/
   "price_min": 26,
   "price_max": 64,
   "cancelled": false,
-  "scraped_at": "2026-05-09T04:00:00Z"
+  "scraped_at": "2026-05-09T04:00:00Z",
+  "category": "symphonique"
 }
 ```
 
@@ -177,6 +190,10 @@ Champs obligatoires : `id`, `source`, `venue_id`, `title`, `date`, `url`.
 Champs best-effort : `time`, `composers`, `performers`, `program`,
 `price_min`, `price_max`. Si un champ n'est pas trouvable, `null` (pas
 d'invention).
+Champ dérivé (Phase 3.33) : `category` (`opera` | `symphonique` |
+`chambre-recital` | `baroque-ancienne` | `contemporaine` |
+`hors-categorie`) — calculé à l'agrégation par
+`scripts/utils/concert-classifier.js`.
 
 ### Tester un scraper en local
 

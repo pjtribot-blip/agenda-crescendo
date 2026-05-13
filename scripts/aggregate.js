@@ -56,6 +56,7 @@ import { scrapeValDieu } from './scrapers/concerts-printemps-valdieu.js';
 import { scrapeSenghor } from './scrapers/senghor.js';
 
 import { cleanComposers, augmentComposers, loadComposerIndex } from './utils/composer-filter.js';
+import { classify as classifyConcert } from './utils/concert-classifier.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -307,6 +308,28 @@ async function main() {
   if (festivals.length) {
     console.log(`\n[festivals] ${festivals.length} festivals chargés, ${tagSummary.taggedCount} concerts taggés`);
   }
+
+  // Classification 6 catégories (Phase 3.33). Le classifier exploite
+  // venuesById (heuristique récital-friendly) et composerIndex (détection
+  // de compositeurs dans les titres/programmes même si composers[] vide).
+  const venuesRaw = JSON.parse(await readFile(resolve(REPO_ROOT, 'data', 'venues.json'), 'utf8'));
+  const venuesById = new Map(venuesRaw.map((v) => [v.id, v]));
+  const classifyCtx = { venuesById, composerIndex };
+  const catCount = new Map();
+  for (const c of all) {
+    const r = classifyConcert(c, classifyCtx);
+    c.category = r.category;
+    catCount.set(r.category, (catCount.get(r.category) || 0) + 1);
+  }
+  const beCount = all.filter((c) => venuesById.get(c.venue_id)?.country === 'BE').length;
+  const catBE = new Map();
+  for (const c of all) {
+    if (venuesById.get(c.venue_id)?.country !== 'BE') continue;
+    catBE.set(c.category, (catBE.get(c.category) || 0) + 1);
+  }
+  const order = ['opera', 'symphonique', 'chambre-recital', 'baroque-ancienne', 'contemporaine', 'hors-categorie'];
+  const beStr = order.map((k) => `${k}=${catBE.get(k) || 0}(${((catBE.get(k) || 0) / beCount * 100).toFixed(1)}%)`).join(' ');
+  console.log(`[classify] ${all.length} concerts catégorisés (BE=${beCount}) : ${beStr}`);
 
   // Tri chronologique
   all.sort((a, b) => {
