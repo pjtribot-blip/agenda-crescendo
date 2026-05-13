@@ -456,6 +456,18 @@
     "address": "Rond-point Schuman 1, L-2525 Luxembourg"
   },
   {
+    "id": "abbaye-val-dieu",
+    "name": "Abbaye de Val-Dieu",
+    "fullName": "Basilique de l'Abbaye de Val-Dieu — Concerts du Printemps (Aubel)",
+    "city": "Aubel",
+    "country": "BE",
+    "region": "Wallonie",
+    "lat": 50.6878,
+    "lng": 5.8908,
+    "website": "https://concertsduprintemps.be",
+    "address": "Val-Dieu 227, 4880 Aubel"
+  },
+  {
     "id": "wilde-westen-kortrijk",
     "name": "Wilde Westen",
     "fullName": "Wilde Westen — centre de musique pointu (Concertstudio, Bolwerk, Depart, Zwembad Kuurne)",

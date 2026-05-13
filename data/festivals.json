@@ -115,6 +115,17 @@
     "notes": "Festival intensif (5 jours) : musique de chambre, récitals, marathons, Garden Party clôture le dimanche"
   },
   {
+    "id": "concerts-printemps-valdieu-2026",
+    "name": "Concerts du Printemps de Val-Dieu",
+    "edition_year": 2026,
+    "edition_number": 58,
+    "date_start": "2026-05-22",
+    "date_end": "2026-06-19",
+    "venues": ["abbaye-val-dieu"],
+    "website": "https://concertsduprintemps.be",
+    "notes": "58e édition — 5 concerts de musique de chambre, tous les vendredis à 20h à la Basilique de l'Abbaye de Val-Dieu (Aubel). Programmation 2026 : Valère Burnon, Trio Jenlis, Vlaams Radiokoor + Le Concert d'Anvers (Bart Van Reyn), ORCW (Robert Ortman), Ensemble L'Arpeggiata (Christina Pluhar / Céline Scheen)"
+  },
+  {
     "id": "klara-festival-2026",
     "name": "Klara Festival",
     "edition_year": 2026,
