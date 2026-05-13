@@ -829,6 +829,64 @@
 <script>
 (() => {
   const COUNTRY_LABEL = { BE: 'Belgique', FR: 'France', LU: 'Luxembourg', NL: 'Pays-Bas' };
+
+  // Normalisation des noms de villes à l'affichage. venues.json garde le
+  // nom canonique (souvent en NL pour les villes flamandes : Antwerpen,
+  // Gent, Brugge, Leuven, Kortrijk, Roeselare). Ici on traduit vers les
+  // exonymes français de Crescendo Magazine + on fusionne les 19 communes
+  // bruxelloises dans "Bruxelles". Une ville non listée reste telle quelle.
+  //
+  // ⚠ Ambiguïté à connaître : "Forest" peut désigner soit la commune de
+  // Bruxelles (à fusionner), soit un village du Brabant flamand (à garder).
+  // Pour l'instant, aucun venue n'utilise "Forest" — si un venue apparaît,
+  // utiliser directement city="Bruxelles" dans venues.json plutôt que
+  // d'introduire une ambiguïté dans cette map.
+  const CITY_FR = {
+    // Villes flamandes — exonymes français
+    Antwerpen: 'Anvers',
+    Brugge: 'Bruges',
+    Gent: 'Gand',
+    Leuven: 'Louvain',
+    Kortrijk: 'Courtrai',
+    Mechelen: 'Malines',
+    Oostende: 'Ostende',
+    Veurne: 'Furnes',
+    Ieper: 'Ypres',
+    Roeselare: 'Roulers',
+    Aalst: 'Alost',
+    Diksmuide: 'Dixmude',
+    Halle: 'Hal',
+    Vilvoorde: 'Vilvorde',
+    Geraardsbergen: 'Grammont',
+    Ronse: 'Renaix',
+    Lier: 'Lierre',
+    // Villes wallonnes en NL → FR
+    Doornik: 'Tournai',
+    Luik: 'Liège',
+    Bergen: 'Mons',
+    Namen: 'Namur',
+    // 19 communes bruxelloises → "Bruxelles"
+    Anderlecht: 'Bruxelles',
+    Auderghem: 'Bruxelles',
+    'Berchem-Sainte-Agathe': 'Bruxelles',
+    'Bruxelles-Ville': 'Bruxelles',
+    Etterbeek: 'Bruxelles',
+    Evere: 'Bruxelles',
+    Ganshoren: 'Bruxelles',
+    Ixelles: 'Bruxelles',
+    Jette: 'Bruxelles',
+    Koekelberg: 'Bruxelles',
+    'Molenbeek-Saint-Jean': 'Bruxelles',
+    'Saint-Gilles': 'Bruxelles',
+    'Saint-Josse-ten-Noode': 'Bruxelles',
+    Schaerbeek: 'Bruxelles',
+    Uccle: 'Bruxelles',
+    'Watermael-Boitsfort': 'Bruxelles',
+    'Woluwe-Saint-Lambert': 'Bruxelles',
+    'Woluwe-Saint-Pierre': 'Bruxelles',
+  };
+  const normalizeCity = (s) => (s && CITY_FR[s]) || s || '';
+
   const MONTH_LABEL = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
   const MONTH_FULL = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 
@@ -1030,7 +1088,7 @@
       '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Belgique par région</p>' +
       renderStatsTable(['Région','Concerts','%'], s.byRegion.map(([r,n]) => [r, n, `${pct(n,s.upcomingTotal)}%`])) +
       '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Top 10 venues</p>' +
-      renderStatsTable(['Venue','Concerts'], s.topVenues.map(([id,n]) => { const v = vId(id); return [v ? `${v.name} (${v.city})` : id, n]; })) +
+      renderStatsTable(['Venue','Concerts'], s.topVenues.map(([id,n]) => { const v = vId(id); return [v ? `${v.name} (${normalizeCity(v.city)})` : id, n]; })) +
       '</div>');
 
     body.push(`<div class="stats-block"><h3>3. Saison et temporalité</h3><div class="stats-histo">${histo}</div>` +
@@ -1097,7 +1155,7 @@
     const next = upcoming[0];
     return `
       <div>
-        <div class="pop-meta">${COUNTRY_LABEL[venue.country] || venue.country} · ${venue.city}</div>
+        <div class="pop-meta">${COUNTRY_LABEL[venue.country] || venue.country} · ${normalizeCity(venue.city)}</div>
         <h4>${escape(venue.name)}</h4>
         <div class="pop-count">${upcoming.length} concert${upcoming.length > 1 ? 's' : ''} programmé${upcoming.length > 1 ? 's' : ''}</div>
         ${next ? `<div style="margin-top:6px;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:14px">Prochain : ${escape(next.title)} (${formatDateShort(next.date)})</div>` : ''}
@@ -1143,8 +1201,12 @@
     const countries = Array.from(used).sort();
     fillSelect('f-country', countries.map(c => ({ value: c, label: COUNTRY_LABEL[c] || c })));
 
-    // Cities
-    const cities = Array.from(new Set(state.concerts.map(c => state.venuesById.get(c.venueId)?.city).filter(Boolean))).sort();
+    // Cities — normalisées en FR (et 19 communes bruxelloises fusionnées
+    // sous "Bruxelles"). Tri alphabétique avec collation française pour
+    // que les caractères accentués s'ordonnent correctement.
+    const cities = Array.from(new Set(
+      state.concerts.map(c => normalizeCity(state.venuesById.get(c.venueId)?.city)).filter(Boolean)
+    )).sort((a, b) => a.localeCompare(b, 'fr'));
     fillSelect('f-city', cities.map(c => ({ value: c, label: c })));
 
     // Months (sorted by date, deduped to YYYY-MM)
@@ -1201,7 +1263,7 @@
       const v = state.venuesById.get(c.venueId);
       if (!v) return false;
       if (country && v.country !== country) return false;
-      if (city && v.city !== city) return false;
+      if (city && normalizeCity(v.city) !== city) return false;
       if (month && !c.date.startsWith(month)) return false;
       if (composer && !(c.composers || []).includes(composer)) return false;
       if (festival) {
@@ -1214,7 +1276,7 @@
           c.title, c.program, c.ensemble, c.conductor,
           (c.soloists || []).join(' '),
           (c.composers || []).join(' '),
-          v.name, v.city,
+          v.name, v.city, normalizeCity(v.city),
         ].filter(Boolean).join(' ').toLowerCase();
         if (!hay.includes(q)) return false;
       }
@@ -1266,7 +1328,7 @@
         <div class="concert-body">
           ${renderFestivalBadges(c)}
           <h3>${c.cancelled ? '<span class="cancelled-badge">Annulé</span> ' : ''}${escape(c.title)}</h3>
-          <div class="concert-venue">${escape(v.name)} <span class="sep">/</span> <span class="city">${escape(v.city)}, ${COUNTRY_LABEL[v.country] || v.country}</span></div>
+          <div class="concert-venue">${escape(v.name)} <span class="sep">/</span> <span class="city">${escape(normalizeCity(v.city))}, ${COUNTRY_LABEL[v.country] || v.country}</span></div>
           ${c.program ? `<div class="concert-program">${escape(c.program)}</div>` : ''}
           ${renderPerformers(c)}
           ${renderComposers(c)}
@@ -1318,7 +1380,7 @@
     const v = state.venuesById.get(c.venueId);
     const date = parseDate(c.date);
     const dateStr = `${date.getDate()} ${MONTH_LABEL[date.getMonth()]} ${date.getFullYear()}` + (c.time ? ` à ${c.time}` : '');
-    const venueStr = v ? `${v.name}, ${v.city}` : '';
+    const venueStr = v ? `${v.name}, ${normalizeCity(v.city)}` : '';
     return `${c.title} — ${venueStr}\n${dateStr}\n${getPermalink(c)}`;
   }
 
@@ -1352,7 +1414,7 @@
       endStr = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
     }
     const dtstamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
-    const location = v ? `${v.name}, ${v.address || v.city}` : '';
+    const location = v ? `${v.name}, ${v.address || normalizeCity(v.city)}` : '';
     const description = [c.program, c.url].filter(Boolean).join('\n');
     const startLine = c.time ? `DTSTART:${start}` : `DTSTART;VALUE=DATE:${start}`;
     const endLine = c.time ? `DTEND:${endStr}` : `DTEND;VALUE=DATE:${endStr}`;
