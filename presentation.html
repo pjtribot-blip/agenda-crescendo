@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agenda Crescendo — Présentation</title>
+<meta name="description" content="Agenda de référence des concerts classiques en Belgique francophone, Hauts-de-France et Eurorégion. Édité par Crescendo Magazine." />
+<link rel="canonical" href="https://agenda.crescendo-magazine.be/presentation.html" />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
+<meta name="theme-color" content="#b8893f">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ivory: #faf6ee;
+    --ivory-soft: #f3ecdb;
+    --paper: #fffaf0;
+    --gold: #b8893f;
+    --gold-deep: #8e6624;
+    --gold-light: #d9b97a;
+    --ink: #1f1a13;
+    --ink-soft: #4a4136;
+    --rule: #d6c9aa;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--gold-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; text-decoration-color: var(--gold-light); text-underline-offset: 3px; }
+
+  /* Header — repris d'index.html en simplifié */
+  header.masthead {
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 24px 32px 18px;
+  }
+  .masthead-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 20px; }
+  .brand-logo {
+    display: inline-flex; align-items: center; flex-shrink: 0;
+    border-right: 1px solid var(--rule); padding-right: 20px;
+  }
+  .brand-logo img { display: block; height: 50px; width: auto; }
+  .brand-text { display: flex; flex-direction: column; justify-content: center; }
+  .title-row { display: flex; align-items: center; gap: 12px; }
+  h1.title {
+    margin: 0; font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 34px; font-weight: 700; letter-spacing: .01em; line-height: 1.1;
+  }
+  h1.title em { font-style: italic; color: var(--gold-deep); font-weight: 500; }
+  .beta-badge {
+    display: inline-block; font-family: "Inter", sans-serif;
+    font-size: 10px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--gold-deep); background: rgba(184, 137, 63, .08);
+    border: 1px solid var(--gold-light); padding: 3px 8px;
+    border-radius: 2px; line-height: 1; align-self: center;
+  }
+  .subtitle {
+    margin: 4px 0 0; font-family: "Cormorant Garamond", serif;
+    font-style: italic; font-size: 17px; color: var(--ink-soft);
+  }
+  .header-nav {
+    text-align: right; font-size: 12px; letter-spacing: .04em;
+  }
+  .header-nav a {
+    color: var(--gold); text-decoration: none;
+  }
+  .header-nav a:hover { text-decoration: underline; }
+
+  /* Prose */
+  main.prose {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+  }
+  main.prose h1 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: .005em;
+    margin: 0 0 8px;
+    line-height: 1.15;
+  }
+  main.prose .lede {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft);
+    margin: 0 0 40px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  main.prose h2 {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 40px 0 14px;
+    line-height: 1.2;
+  }
+  main.prose p { margin: 0 0 16px; font-size: 16px; }
+  main.prose strong { color: var(--ink); font-weight: 600; }
+  main.prose ul {
+    margin: 0 0 18px;
+    padding-left: 22px;
+  }
+  main.prose ul li {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+  main.prose ul li::marker { color: var(--gold); }
+
+  .signature {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .signature a { color: var(--gold-deep); }
+  .back-link {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: .04em;
+  }
+  .back-link::before { content: "← "; }
+
+  @media (max-width: 720px) {
+    header.masthead { padding: 18px 20px 14px; }
+    .masthead-inner { gap: 14px; }
+    h1.title { font-size: 28px; }
+    .brand-logo img { height: 42px; }
+    .brand-logo { padding-right: 14px; }
+    main.prose { padding: 32px 22px 60px; }
+    main.prose h1 { font-size: 34px; }
+    main.prose h2 { font-size: 22px; margin: 32px 0 12px; }
+    main.prose .lede { font-size: 17px; margin-bottom: 28px; }
+    main.prose p, main.prose ul li { font-size: 15.5px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <a class="brand-logo" href="https://www.crescendo-magazine.be" target="_blank" rel="noopener" aria-label="Crescendo Magazine">
+        <img src="assets/logo-crescendo.jpg" alt="Crescendo Magazine" />
+      </a>
+      <div class="brand-text">
+        <div class="title-row">
+          <h1 class="title"><a href="index.html" style="color:inherit;">Agenda <em>Crescendo</em></a></h1>
+          <span class="beta-badge" aria-label="version bêta">Beta</span>
+        </div>
+        <p class="subtitle">Concerts de musique classique — Belgique &amp; Eurorégion</p>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">Retour à l'agenda</a>
+    </nav>
+  </div>
+</header>
+
+<main class="prose">
+  <h1>Agenda Crescendo</h1>
+  <p class="lede">L'agenda de référence des concerts classiques en Belgique francophone, élargi aux Hauts-de-France et à l'Eurorégion. Édité par Crescendo Magazine.</p>
+
+  <h2>Le périmètre</h2>
+  <p>Agenda Crescendo couvre la programmation classique de quatre zones :</p>
+  <ul>
+    <li><strong>Belgique francophone</strong> dans son intégralité : Bruxelles, Wallonie.</li>
+    <li><strong>Hauts-de-France</strong> dans son intégralité : Lille métropole, Nord, Pas-de-Calais, Aisne, Oise, Somme.</li>
+    <li><strong>Flandre belge</strong> dans ses places fortes culturelles proches : Bruges, Anvers, Courtrai, Gand, Louvain.</li>
+    <li><strong>Grand Est</strong> limité à Metz (Arsenal, Opéra-Théâtre de l'Eurométropole), seule scène lorraine régulièrement couverte par Crescendo Magazine.</li>
+  </ul>
+  <p>Une exception transfrontalière est faite pour Maastricht, ville culturelle de proximité immédiate.</p>
+  <p>Le critère éditorial est simple : un lieu intègre l'agenda dès lors que Crescendo Magazine couvre régulièrement sa programmation.</p>
+
+  <h2>Ce que l'agenda recense</h2>
+  <p>Agenda Crescendo agrège les concerts relevant du classique au sens large :</p>
+  <ul>
+    <li>Opéra et formes lyriques.</li>
+    <li>Musique symphonique.</li>
+    <li>Musique de chambre et récitals.</li>
+    <li>Musique baroque et ancienne.</li>
+    <li>Musique contemporaine et créations.</li>
+    <li>Quelques formats hybrides liés au classique, notamment les ciné-concerts symphoniques.</li>
+  </ul>
+  <p>Sont exclus le jazz mainstream, la pop, la variété, les musiques du monde commerciales, le théâtre et la danse pure, ainsi que les activités péri-concert (avant-concerts, ateliers, conférences, visites).</p>
+
+  <h2>Méthodologie</h2>
+  <p>L'agenda agrège une cinquantaine de sources : scrapers automatiques pour les institutions disposant d'un agenda en ligne structuré, intégrations manuelles à partir des brochures de saison pour les autres.</p>
+  <p>Les concerts sont classés par genre selon une méthode hybride croisant le format de l'ensemble (orchestre symphonique, ensemble baroque, formation de chambre, etc.) et le répertoire programmé. La classification est éditoriale : un ensemble jouant sur instruments d'époque prime sur le répertoire affiché, les ballets des maisons lyriques sont rattachés à l'opéra.</p>
+  <p>La mise à jour est hebdomadaire (dimanche), complétée par des saisies manuelles à la publication des grandes saisons.</p>
+
+  <h2>Limites</h2>
+  <p>L'agenda dépend du calendrier de publication des saisons par les institutions. Certaines programmations majeures n'apparaissent qu'à des dates précises de l'année (Bozar en mai, Opéra de Lille en juin, festivals tardifs en été). Le périmètre évolue à mesure que Crescendo Magazine élargit sa couverture éditoriale.</p>
+  <p>Toute erreur ou omission peut être signalée à la rédaction.</p>
+
+  <div class="signature">
+    Crescendo Magazine<br>
+    <a href="https://www.crescendo-magazine.be" target="_blank" rel="noopener">crescendo-magazine.be</a>
+  </div>
+
+  <a href="index.html" class="back-link">Retour à l'agenda</a>
+</main>
+
+</body>
+</html>
