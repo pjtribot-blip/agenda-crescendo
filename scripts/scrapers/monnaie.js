@@ -20,6 +20,7 @@ import * as cheerio from 'cheerio';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { matchComposersFromText as matchComposers } from '../utils/composer-filter.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -113,16 +114,6 @@ function normalize(s) {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
-}
-
-function matchComposers(text, index) {
-  const found = new Set();
-  if (!text) return [];
-  const norm = normalize(text);
-  for (const { canonical, norm: alias } of index) {
-    if (norm.includes(alias)) found.add(canonical);
-  }
-  return Array.from(found);
 }
 
 // ------------------------------------------------------------------

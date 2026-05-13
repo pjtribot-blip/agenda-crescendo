@@ -120,43 +120,58 @@ const ENSEMBLE_BEFORE = /^(quatuor|cuarteto|ensemble|quintet+(?:to|te)?|trio|orc
 const HOMMAGE_AFTER = /^(etude|variations?|fantaisies?|memoriam|hommage)$/i;
 const HOMMAGE_BEFORE = /^(hommage|memoriam|sur|d'apres|d'après|apres|inspire|inspiré|in)$/i;
 
-// Augmentation : pour chaque alias trouvé dans title+program (avec
-// word boundary), on ajoute le canonical aux composers du concert,
-// SAUF si toutes les occurrences sont dans un contexte ensemble ou
-// hommage. Retourne la liste des canonicals à ajouter (déjà filtrés
-// contre ceux déjà présents).
-export function augmentComposers(concert, composerIndex) {
-  const blob = ((concert.title || '') + ' ' + (concert.program || ''));
-  const norm = normalize(blob);
-  const currentNorm = new Set((concert.composers || []).map(normalize));
-  const additions = new Set();
-  for (const { canonical, norm: alias } of composerIndex) {
-    if (currentNorm.has(normalize(canonical))) continue;
-    if (alias.length < 4) continue;          // trop court → trop ambigu
+// Détection des composers mentionnés dans un texte libre (titre,
+// description, programme). Utilise un boundary Unicode-aware
+// `(?<!\p{L}\p{N}_)ALIAS(?!\p{L}\p{N}_)` (et non un naïf `includes`)
+// — sans ça, l'alias "Pärt" matcherait dans "partie", "partition",
+// "départ", "partita" etc. (Phase 3.31).
+//
+// Pourquoi pas `\b` ? `\b` est ASCII-only en JS regex, même avec
+// le flag `u` : il considère "é" comme non-word, donc `\bFauré\b`
+// échoue à matcher "Fauré" (boundary trailing inexistant entre "é"
+// et l'espace, tous deux non-word). La solution est lookbehind +
+// lookahead avec `\p{L}` (lettres Unicode), qui couvre correctement
+// les caractères accentués.
+//
+// Le matching est case-insensitive MAIS PRÉSERVE les diacritiques :
+// l'alias "Pärt" matche "Pärt"/"PÄRT" mais PAS "Part"/"PART" (mot
+// français/anglais courant). Sans cette règle, "Beethoven 4 Strings:
+// Part I" matcherait Pärt par confusion.
+//
+// Règles :
+//   - alias.length < 4 → skip (trop ambigu : éviterait "Wu" ou "Sor")
+//   - boundary Unicode-aware case-insensitive sur le texte brut
+//   - les contextes ensemble/hommage (ENSEMBLE_*, HOMMAGE_*) rejettent
+//     l'occurrence ; si toutes les occurrences d'un alias sont rejetées,
+//     le compositeur n'est PAS ajouté
+//
+// L'index `composerIndex` est un tableau d'objets `{canonical, alias}`
+// où `alias` est la forme brute (ex. "Arvo Pärt", "Bach", "J.S. Bach").
+export function matchComposersFromText(text, composerIndex) {
+  if (!text) return [];
+  const textLower = text.toLowerCase();
+  const found = new Set();
+  for (const { canonical, alias } of composerIndex) {
+    if (alias.length < 4) continue;
     const esc = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const re = new RegExp(`\\b${esc}\\b`, 'g');
-    const matches = [...norm.matchAll(re)];
+    const re = new RegExp(`(?<![\\p{L}\\p{N}_])${esc}(?![\\p{L}\\p{N}_])`, 'giu');
+    const matches = [...text.matchAll(re)];
     if (!matches.length) continue;
 
-    // Pour chaque occurrence, vérifier le contexte (mot avant et
-    // après). Si TOUTES les occurrences sont dans un contexte
-    // ensemble/hommage, on rejette. Sinon on accepte.
     let validCount = 0;
     for (const m of matches) {
       const start = m.index;
       const end = start + alias.length;
-      // Mot avant : depuis le dernier séparateur jusqu'à start-1
       let i = start - 1;
-      while (i >= 0 && /[^a-z0-9]/.test(norm[i])) i--;
+      while (i >= 0 && /[^a-z0-9]/.test(textLower[i])) i--;
       const beforeEnd = i + 1;
-      while (i >= 0 && /[a-z0-9]/.test(norm[i])) i--;
-      const beforeWord = norm.slice(i + 1, beforeEnd);
-      // Mot après : depuis end+ jusqu'au prochain séparateur
+      while (i >= 0 && /[a-z0-9]/.test(textLower[i])) i--;
+      const beforeWord = textLower.slice(i + 1, beforeEnd);
       let j = end;
-      while (j < norm.length && /[^a-z0-9]/.test(norm[j])) j++;
+      while (j < textLower.length && /[^a-z0-9]/.test(textLower[j])) j++;
       const afterStart = j;
-      while (j < norm.length && /[a-z0-9]/.test(norm[j])) j++;
-      const afterWord = norm.slice(afterStart, j);
+      while (j < textLower.length && /[a-z0-9]/.test(textLower[j])) j++;
+      const afterWord = textLower.slice(afterStart, j);
 
       if (ENSEMBLE_AFTER.test(afterWord)) continue;
       if (ENSEMBLE_BEFORE.test(beforeWord)) continue;
@@ -164,9 +179,19 @@ export function augmentComposers(concert, composerIndex) {
       if (HOMMAGE_BEFORE.test(beforeWord)) continue;
       validCount++;
     }
-    if (validCount > 0) additions.add(canonical);
+    if (validCount > 0) found.add(canonical);
   }
-  return [...additions];
+  return [...found];
+}
+
+// Augmentation : applique matchComposersFromText sur title+program,
+// puis retire les canonicals déjà présents dans concert.composers.
+// Retourne la liste des canonicals à ajouter.
+export function augmentComposers(concert, composerIndex) {
+  const blob = ((concert.title || '') + ' ' + (concert.program || ''));
+  const currentNorm = new Set((concert.composers || []).map(normalize));
+  return matchComposersFromText(blob, composerIndex)
+    .filter((canonical) => !currentNorm.has(normalize(canonical)));
 }
 
 // Pipeline complet : applique blacklist, split, canonicalize, dédupe.

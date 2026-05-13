@@ -16,6 +16,7 @@ import * as cheerio from 'cheerio';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { matchComposersFromText as matchComposers } from '../utils/composer-filter.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -84,16 +85,6 @@ async function loadComposerIndex() {
   entries.sort((a, b) => b.norm.length - a.norm.length);
   _composerIndex = entries;
   return entries;
-}
-
-function matchComposers(text, index) {
-  const found = new Set();
-  if (!text) return [];
-  const norm = normalize(text);
-  for (const { canonical, norm: alias } of index) {
-    if (norm.includes(alias)) found.add(canonical);
-  }
-  return Array.from(found);
 }
 
 // ------------------------------------------------------------------
