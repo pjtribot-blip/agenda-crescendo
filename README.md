@@ -26,7 +26,7 @@ agenda-crescendo/
 │   ├── scrapers/           # Phase 2 — un fichier par source
 │   └── aggregate.js        # Phase 2 — fusion des scrapers
 ├── .github/workflows/
-│   └── scrape-nightly.yml  # Phase 2 — cron quotidien à 04h UTC
+│   └── scrape-weekly.yml   # Phase 2 — cron hebdomadaire (dimanche 03h UTC)
 ├── package.json
 ├── README.md
 └── .gitignore
@@ -141,10 +141,16 @@ agenda-crescendo/
 - `data/composers-reference.json` fournit la liste de référence
   (~115 entrées avec aliases) pour canoniser et matcher les compositeurs
   cités dans les programmes.
-- `.github/workflows/scrape-nightly.yml` lance `node scripts/aggregate.js`,
-  puis commit `data/concerts.json` si le diff est non vide. Cron à 04h UTC
-  désactivé tant que tous les scrapers ne sont pas validés ; lancement
-  manuel via l'onglet **Actions → Run workflow**.
+- `.github/workflows/scrape-weekly.yml` lance `node scripts/aggregate.js`,
+  puis commit `data/concerts.json` si le diff est non vide. Cron
+  hebdomadaire **dimanche 03h UTC** (04h Bruxelles l'hiver, 05h l'été) —
+  les saisons classiques se publient 2-4 fois par an, donc inutile de
+  scraper tous les jours. Déclenchement manuel à la demande via
+  l'onglet **Actions → Weekly scrape → Run workflow** (ou
+  `gh workflow run scrape-weekly.yml`) quand une saison majeure est
+  publiée. Le commit + push intègre un retry avec `git rebase -X ours`
+  pour gérer les rares conflits sur `data/concerts.json` quand un push
+  humain arrive pendant le scrape.
 
 ### Schéma d'un concert
 
