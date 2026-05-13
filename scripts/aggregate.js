@@ -54,6 +54,7 @@ import { loadONLManual } from './scrapers/onl-manual.js';
 import { scrapeWildeWesten } from './scrapers/wildewesten.js';
 import { scrapeValDieu } from './scrapers/concerts-printemps-valdieu.js';
 import { scrapeSenghor } from './scrapers/senghor.js';
+import { scrapePhilzuid } from './scrapers/philzuid.js';
 
 import { cleanComposers, augmentComposers, loadComposerIndex } from './utils/composer-filter.js';
 import { classify as classifyConcert } from './utils/concert-classifier.js';
@@ -110,6 +111,7 @@ const SCRAPERS = [
   { name: 'wildewesten', fn: scrapeWildeWesten },
   { name: 'valdieu', fn: scrapeValDieu },
   { name: 'senghor', fn: scrapeSenghor },
+  { name: 'philzuid', fn: scrapePhilzuid },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 
@@ -282,20 +284,26 @@ async function main() {
   // dédoublonnée) on supprime de la 2e les concerts dont (venue_id,
   // date, time) matche un concert de la 1re. La 1re est conservée
   // car elle a typiquement plus de contexte (programme, prix).
+  // venueId : venue partagé où la déduplication s'applique. Convention
+  // historique : secondary source name = venue id (triangel, amuz).
+  // Pour Phase 3.34 (philzuid × vrijthof), Philzuid émet venue_id
+  // 'vrijthof-maastricht' donc on précise explicitement.
   const DEDUP_CROSS = [
-    { primary: 'obf', secondary: 'triangel', label: 'OBF' },
-    { primary: 'antwerp-symphony', secondary: 'amuz', label: 'Antwerp Symphony' },
+    { primary: 'obf', secondary: 'triangel', venueId: 'triangel', label: 'OBF' },
+    { primary: 'antwerp-symphony', secondary: 'amuz', venueId: 'amuz', label: 'Antwerp Symphony' },
+    { primary: 'philzuid', secondary: 'vrijthof', venueId: 'vrijthof-maastricht', label: 'Philzuid' },
   ];
-  for (const { primary, secondary, label } of DEDUP_CROSS) {
+  for (const { primary, secondary, venueId, label } of DEDUP_CROSS) {
     const keys = new Set();
     for (const c of all) {
-      if (c.source === primary && c.venue_id === secondary) {
+      if (c.source === primary && c.venue_id === venueId) {
         keys.add(`${c.date}|${c.time || ''}`);
       }
     }
     const before = all.length;
     all = all.filter((c) => {
       if (c.source !== secondary) return true;
+      if (c.venue_id !== venueId) return true;
       return !keys.has(`${c.date}|${c.time || ''}`);
     });
     const removed = before - all.length;

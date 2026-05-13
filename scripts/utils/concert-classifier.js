@@ -278,6 +278,7 @@ const SYMPHONIC_ENSEMBLES = [
   'orchestre royal de chambre de wallonie', 'orcw',
   'brussels sinfonietta', 'brussels chamber orchestra',
   'casco phil', 'casco philharmonic',
+  'philzuid', 'philharmonie zuid', 'philharmonie zuid-nederland',
   // Orchestres de chambre — inclus dans symphonique (arbitrage B)
   'chamber orchestra', 'kammerorchester', 'orchestre de chambre',
   'philharmonia',
@@ -291,7 +292,7 @@ const SYMPHONIC_TITLE_HINTS = [
   /\bconcerto pour (piano|violon|violoncelle|alto|hautbois|cor|trompette|fl[ûu]te|clarinette)\b/i,
   /\b(piano|violin|cello) concerto\b/i,
 ];
-const SYMPHONIC_SOURCES = new Set(['oprl', 'antwerp-symphony']);
+const SYMPHONIC_SOURCES = new Set(['oprl', 'antwerp-symphony', 'philzuid']);
 
 // ---------------------------------------------------------------
 // Règle 5 — chambre & récital

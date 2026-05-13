@@ -828,6 +828,18 @@
     "address": "Vrijthof 47, 6211 LE Maastricht"
   },
   {
+    "id": "opus9-theresiakerk-maastricht",
+    "name": "Opus 9 Theresiakerk",
+    "fullName": "Opus 9 — Sint-Theresiakerk (Maastricht, Pays-Bas)",
+    "city": "Maastricht",
+    "country": "NL",
+    "region": "Eurorégion",
+    "lat": 50.8426,
+    "lng": 5.6760,
+    "website": "https://opus9.nl",
+    "address": "Sint Theresiaplein, 6213 CG Maastricht"
+  },
+  {
     "id": "automne-musical-spa",
     "name": "Automne Musical de Spa",
     "fullName": "Automne Musical de Spa — Musique à Spa ASBL",
