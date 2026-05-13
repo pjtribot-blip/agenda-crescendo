@@ -480,6 +480,18 @@
     "address": "Conservatoriumplein 1, 8500 Kortrijk"
   },
   {
+    "id": "espace-senghor-etterbeek",
+    "name": "Espace Senghor",
+    "fullName": "Espace Senghor — centre culturel d'Etterbeek (Bruxelles)",
+    "city": "Etterbeek",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8366,
+    "lng": 4.3804,
+    "website": "https://www.senghor.be",
+    "address": "Chaussée de Wavre 366, 1040 Etterbeek"
+  },
+  {
     "id": "eglise-notre-dame-fillievres",
     "name": "Église Notre-Dame",
     "fullName": "Église Notre-Dame de Fillièvres",

@@ -53,6 +53,7 @@ import { loadOBVManual } from './scrapers/obv-manual.js';
 import { loadONLManual } from './scrapers/onl-manual.js';
 import { scrapeWildeWesten } from './scrapers/wildewesten.js';
 import { scrapeValDieu } from './scrapers/concerts-printemps-valdieu.js';
+import { scrapeSenghor } from './scrapers/senghor.js';
 
 import { cleanComposers, augmentComposers, loadComposerIndex } from './utils/composer-filter.js';
 
@@ -107,6 +108,7 @@ const SCRAPERS = [
   { name: 'onl', fn: loadONLManual },
   { name: 'wildewesten', fn: scrapeWildeWesten },
   { name: 'valdieu', fn: scrapeValDieu },
+  { name: 'senghor', fn: scrapeSenghor },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

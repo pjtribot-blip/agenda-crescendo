@@ -54,6 +54,7 @@
     "scrape:onl-manual": "node -e \"import('./scripts/scrapers/onl-manual.js').then(m => m.loadONLManual()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:wildewesten": "node -e \"import('./scripts/scrapers/wildewesten.js').then(m => m.scrapeWildeWesten()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:valdieu": "node -e \"import('./scripts/scrapers/concerts-printemps-valdieu.js').then(m => m.scrapeValDieu()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:senghor": "node -e \"import('./scripts/scrapers/senghor.js').then(m => m.scrapeSenghor()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "stats-report": "node scripts/generate-stats-report.js"
   },
   "dependencies": {
