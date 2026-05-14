@@ -410,129 +410,11 @@
     letter-spacing: .03em;
   }
   .stats-link:hover { text-decoration: underline; }
-  .stats-modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(20, 20, 20, 0.7);
-    z-index: 10000;
-    overflow-y: auto;
-    padding: 40px 16px;
-  }
-  .stats-modal-overlay.active { display: block; }
-  .stats-modal {
-    max-width: 880px;
-    margin: 0 auto;
-    background: var(--ivory);
-    border: 1px solid var(--rule);
-    padding: 32px 28px 28px;
-    box-shadow: 0 30px 80px rgba(0,0,0,.25);
-  }
-  .stats-modal h2 {
-    font-family: var(--serif);
-    font-size: 30px;
-    margin: 0 0 4px;
-    color: var(--gold-dark);
-  }
-  .stats-modal .stats-date {
-    font-size: 12px;
-    color: var(--ink-soft);
-    letter-spacing: .05em;
-    margin-bottom: 24px;
-  }
-  .stats-close {
-    float: right;
-    background: none;
-    border: 0;
-    font-size: 24px;
-    color: var(--ink-soft);
-    cursor: pointer;
-    line-height: 1;
-    padding: 0 4px;
-  }
-  .stats-close:hover { color: var(--gold-dark); }
-  .stats-block {
-    margin-bottom: 28px;
-    padding-bottom: 22px;
-    border-bottom: 1px solid var(--rule);
-  }
-  .stats-block:last-child { border-bottom: 0; }
-  .stats-block h3 {
-    font-family: var(--serif);
-    font-size: 20px;
-    margin: 0 0 12px;
-    color: var(--gold-dark);
-  }
-  .stats-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-    margin: 8px 0;
-  }
-  .stats-table th, .stats-table td {
-    padding: 6px 10px;
-    text-align: left;
-    border-bottom: 1px solid var(--rule);
-  }
-  .stats-table th {
-    font-family: var(--serif);
-    font-weight: 500;
-    color: var(--gold-dark);
-    letter-spacing: .03em;
-  }
-  .stats-table td:nth-child(2), .stats-table td:nth-child(3) {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-  }
-  .stats-histo {
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 11px;
-    line-height: 1.55;
-    white-space: pre;
-    color: var(--ink-soft);
-    background: var(--paper);
-    padding: 12px;
-    overflow-x: auto;
-  }
-  .stats-histo span.bar { color: var(--gold); }
-  .stats-chip-list { font-size: 12px; line-height: 1.7; color: var(--ink-soft); }
-  .stats-chip-list strong { color: var(--ink); font-weight: 500; }
-
-  /* ---------- Stats : panorama Belgique par catégorie (Phase 3.33) ---------- */
-  .category-bars { display: flex; flex-direction: column; gap: 4px; margin: 10px 0 14px; }
-  .category-row { border-bottom: 1px dotted rgba(0,0,0,.08); }
-  .category-row[open] { background: rgba(0,0,0,.015); }
-  .category-row summary {
-    cursor: pointer;
-    list-style: none;
-    display: grid;
-    grid-template-columns: minmax(120px, 180px) 1fr auto;
-    gap: 12px;
-    align-items: center;
-    padding: 6px 4px;
-  }
-  .category-row summary::-webkit-details-marker { display: none; }
-  .category-row summary:hover { background: rgba(0,0,0,.02); }
-  .cat-label { font-family: 'Cormorant Garamond', serif; font-size: 15px; }
-  .cat-bar-wrap { background: rgba(0,0,0,.04); border-radius: 2px; height: 18px; position: relative; overflow: hidden; }
-  .cat-bar { display: block; height: 100%; border-radius: 2px; transition: width 300ms cubic-bezier(0.4,0,0.2,1); }
-  .cat-count { font-variant-numeric: tabular-nums; font-size: 12.5px; color: var(--ink-soft); min-width: 90px; text-align: right; }
-  .cat-detail { padding: 8px 10px 14px 14px; border-left: 2px solid var(--gold); margin: 0 6px 6px 22px; font-size: 12.5px; }
-  .cat-detail p { margin: 4px 0; line-height: 1.55; }
-  .cat-detail strong { color: var(--ink); font-weight: 500; }
-  .cat-detail pre.cat-histo {
-    font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 10.5px; line-height: 1.5;
-    white-space: pre; color: var(--ink-soft); background: var(--paper);
-    padding: 8px 10px; margin: 4px 0 0; overflow-x: auto; border-radius: 2px;
-  }
-  .category-note {
-    font-size: 11.5px; color: var(--ink-soft); font-style: italic; line-height: 1.55;
-    margin-top: 14px; padding: 10px 0 0; border-top: 1px dotted rgba(0,0,0,.1);
-  }
-  @media (max-width: 600px) {
-    .category-row summary { grid-template-columns: 1fr auto; gap: 8px; }
-    .category-row summary .cat-bar-wrap { grid-column: 1 / -1; order: 3; }
-  }
+  /* Note : Phase 3.40 — la modale Stats a été remplacée par la page
+     dédiée /statistiques.html. Tous les styles .stats-modal, .stats-block,
+     .stats-table, .stats-histo, .category-bars, .category-row ont migré
+     dans cette page autonome. Le .stats-link reste utilisé pour le lien
+     du header (cf. plus haut). */
 
   /* ---------- Back to top ---------- */
   #back-to-top {
@@ -797,7 +679,7 @@
       <div><strong id="meta-count">—</strong> concerts</div>
       <div><strong id="meta-venues">—</strong> salles · BE · FR · LU · NL</div>
       <div>Mis à jour <span id="meta-updated">—</span></div>
-      <div><a href="presentation.html" class="stats-link">À propos</a> · <a href="#" id="stats-link" class="stats-link">📊 Statistiques</a></div>
+      <div><a href="presentation.html" class="stats-link">À propos</a> · <a href="statistiques.html" class="stats-link">📊 Statistiques</a></div>
     </div>
   </div>
 </header>
@@ -836,15 +718,6 @@
     </ul>
   </section>
 </main>
-
-<div class="stats-modal-overlay" id="stats-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="stats-title">
-  <div class="stats-modal">
-    <button class="stats-close" id="stats-close" aria-label="Fermer">×</button>
-    <h2 id="stats-title">Statistiques de l'agenda</h2>
-    <div class="stats-date" id="stats-date">—</div>
-    <div id="stats-body"></div>
-  </div>
-</div>
 
 <footer>
   <div class="footer-inner">
@@ -987,249 +860,11 @@
     return max;
   }
 
-  // ---------- Stats modal ----------
-  // Heuristiques éditoriales — alignées avec scripts/generate-stats-report.js.
-  const CATEGORY_LABELS = {
-    'opera': 'Opéra',
-    'symphonique': 'Symphonique',
-    'chambre-recital': 'Chambre & récital',
-    'baroque-ancienne': 'Baroque & ancienne',
-    'contemporaine': 'Contemporaine',
-    'hors-categorie': 'Hors catégorie',
-  };
-  const CATEGORY_COLORS = {
-    'opera': '#7a1a3a',          // bordeaux/violet
-    'symphonique': '#1a3a7a',    // bleu profond
-    'chambre-recital': '#c75d3a', // terracotta
-    'baroque-ancienne': '#b08d3a', // ocre doré
-    'contemporaine': '#2e5b3e',   // vert sapin
-    'hors-categorie': '#8a8a8a',  // gris
-  };
-  const CATEGORY_ORDER = ['opera', 'symphonique', 'chambre-recital', 'baroque-ancienne', 'contemporaine', 'hors-categorie'];
+  // Phase 3.40 — la modale Stats a migré vers /statistiques.html.
+  // Le code stats (constantes CATEGORY_*, FEMALE/BELGIAN_COMPOSERS,
+  // pct, monthLabelFr, computeStats, renderStatsTable, renderStatsModal)
+  // est désormais hébergé dans la page autonome statistiques.html.
 
-  const FEMALE_COMPOSERS = new Set([
-    'Hildegard von Bingen','Clara Schumann','Fanny Mendelssohn',
-    'Lili Boulanger','Nadia Boulanger',
-    'Andrea Tarrodi','Anna Thorvaldsdottir','Caroline Shaw',
-    'Laura Kaminsky','Kristine Tjøgersen','Raquel García-Tomás',
-    'Natalie Beridze','Francesca Caccini','Barbara Strozzi',
-    'Antonia Bembo','Francesca Campana','Kaija Saariaho','Amy Beach',
-    'Henriette Van den Boorn-Coclet',
-  ]);
-  const BELGIAN_COMPOSERS = new Set([
-    'César Franck',
-    'Eugène Ysaÿe',
-    'Guillaume Lekeu',
-    'Joseph Jongen',
-    'Wim Henderickx',
-    'Benoît Mernier',
-    'Philippe Boesmans',
-    'André Laporte',
-    'Henri Pousseur',
-    'Jean Absil',
-    'Marcel Poot',
-    'Joseph Ryelandt',
-    'Auguste De Boeck',
-    'Peter Benoit',
-    'François-Joseph Gossec',
-    'André Souris',
-    'Henriette Van den Boorn-Coclet',
-    'Grétry','Vieuxtemps','Servais','Gilson','Swerts',
-  ]);
-
-  function pct(n, t) { return t ? ((n/t)*100).toFixed(1) : '0.0'; }
-  function monthLabelFr(ym) {
-    const [y,m] = ym.split('-');
-    const months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-    return `${months[parseInt(m,10)-1]} ${y}`;
-  }
-
-  function computeStats() {
-    const today = new Date().toISOString().slice(0, 10);
-    const cutoff = new Date(); cutoff.setMonth(cutoff.getMonth()+12);
-    const cutoffIso = cutoff.toISOString().slice(0, 10);
-    const upcoming = state.concerts.filter(c => c.date && c.date >= today && c.date <= cutoffIso);
-
-    const sources = new Set(state.concerts.map(c => c.source));
-    const venuesUsed = new Set(state.concerts.map(c => c.venueId).filter(Boolean));
-    const allComposers = new Set();
-    for (const c of state.concerts) for (const x of (c.composers||[])) allComposers.add(x);
-    const taggedFestivals = new Set();
-    for (const c of state.concerts) {
-      if (c.festival) taggedFestivals.add(c.festival);
-      for (const f of (c.festivals||[])) taggedFestivals.add(f);
-    }
-    const countries = new Set();
-    for (const c of state.concerts) { const v = state.venuesById.get(c.venueId); if (v && v.country) countries.add(v.country); }
-
-    const byCountry = new Map(), byRegion = new Map(), byVenue = new Map(), byMonth = new Map();
-    for (const c of upcoming) {
-      const v = state.venuesById.get(c.venueId);
-      if (v) {
-        byCountry.set(v.country, (byCountry.get(v.country)||0)+1);
-        if (v.country === 'BE') byRegion.set(v.region||'(?)', (byRegion.get(v.region||'(?)')||0)+1);
-      }
-      if (c.venueId) byVenue.set(c.venueId, (byVenue.get(c.venueId)||0)+1);
-      byMonth.set(c.date.slice(0,7), (byMonth.get(c.date.slice(0,7))||0)+1);
-    }
-    const sortDesc = m => [...m].sort((a,b) => b[1]-a[1]);
-    const monthsSorted = [...byMonth.entries()].sort((a,b) => a[0].localeCompare(b[0]));
-    const maxMonth = monthsSorted.reduce((a,b)=>b[1]>a[1]?b:a, ['',0]);
-    const minMonth = monthsSorted.reduce((a,b)=>b[1]<a[1]?b:a, monthsSorted[0]||['',0]);
-
-    const composerCount = new Map();
-    for (const c of upcoming) for (const x of (c.composers||[])) composerCount.set(x,(composerCount.get(x)||0)+1);
-
-    const festivalCounts = new Map();
-    for (const c of upcoming) {
-      if (c.festival) festivalCounts.set(c.festival,(festivalCounts.get(c.festival)||0)+1);
-      for (const f of (c.festivals||[])) festivalCounts.set(f,(festivalCounts.get(f)||0)+1);
-    }
-    const inFestival = upcoming.filter(c => c.festival || (c.festivals && c.festivals.length)).length;
-
-    // Panorama Belgique par catégorie (Phase 3.33)
-    const upcomingBE = upcoming.filter(c => {
-      const v = state.venuesById.get(c.venueId);
-      return v && v.country === 'BE';
-    });
-    const categoryBE = new Map();
-    const categoryDrilldown = new Map();
-    for (const cat of CATEGORY_ORDER) {
-      categoryDrilldown.set(cat, { venues: new Map(), composers: new Map(), performers: new Map(), months: new Map() });
-    }
-    for (const c of upcomingBE) {
-      const cat = c.category || 'hors-categorie';
-      categoryBE.set(cat, (categoryBE.get(cat) || 0) + 1);
-      const d = categoryDrilldown.get(cat) || categoryDrilldown.get('hors-categorie');
-      if (c.venueId) d.venues.set(c.venueId, (d.venues.get(c.venueId) || 0) + 1);
-      for (const x of (c.composers || [])) d.composers.set(x, (d.composers.get(x) || 0) + 1);
-      const firstPerf = (c.performers && c.performers[0]) || null;
-      if (firstPerf) d.performers.set(firstPerf, (d.performers.get(firstPerf) || 0) + 1);
-      d.months.set(c.date.slice(0,7), (d.months.get(c.date.slice(0,7)) || 0) + 1);
-    }
-
-    return {
-      today, cutoffIso, upcomingTotal: upcoming.length,
-      sources: sources.size,
-      venuesUsed: venuesUsed.size, venuesTotal: state.venues.length,
-      composersTotal: allComposers.size,
-      festivalsTagged: taggedFestivals.size, festivalsTotal: (state.festivals||[]).length,
-      countries: [...countries],
-      byCountry: sortDesc(byCountry), byRegion: sortDesc(byRegion),
-      topVenues: sortDesc(byVenue).slice(0,10),
-      monthsSorted, maxMonth, minMonth,
-      topComposers: sortDesc(composerCount).slice(0,20),
-      femaleFound: [...composerCount.keys()].filter(n=>FEMALE_COMPOSERS.has(n)).sort(),
-      belgianFound: [...composerCount.keys()].filter(n=>BELGIAN_COMPOSERS.has(n)).sort(),
-      topFestivals: sortDesc(festivalCounts).slice(0,10),
-      inFestival,
-      upcomingBEtotal: upcomingBE.length, categoryBE, categoryDrilldown,
-    };
-  }
-
-  function renderStatsTable(headers, rows) {
-    return '<table class="stats-table"><thead><tr>' +
-      headers.map(h => `<th>${escape(h)}</th>`).join('') + '</tr></thead><tbody>' +
-      rows.map(r => '<tr>' + r.map(c => `<td>${escape(String(c ?? ''))}</td>`).join('') + '</tr>').join('') +
-      '</tbody></table>';
-  }
-
-  function renderStatsModal() {
-    const s = computeStats();
-    document.getElementById('stats-date').textContent = `Période : ${s.today} → ${s.cutoffIso} (12 mois roulants)`;
-    const fId = id => (state.festivals||[]).find(f => f.id === id);
-    const vId = id => state.venuesById.get(id);
-    const maxBar = Math.max(...s.monthsSorted.map(([,n])=>n), 1);
-    const histo = s.monthsSorted.map(([ym,n]) => {
-      const bar = '<span class="bar">' + '█'.repeat(Math.round((n/maxBar)*40)) + '</span>';
-      return `${monthLabelFr(ym).padEnd(16)}${String(n).padStart(5)}  ${bar}`;
-    }).join('\n');
-
-    const body = [];
-
-    // Block 1 — Panorama classique en Belgique (Phase 3.33)
-    const maxCatCount = Math.max(...CATEGORY_ORDER.map(cat => s.categoryBE.get(cat) || 0), 1);
-    const panoramaRows = CATEGORY_ORDER.map(cat => {
-      const n = s.categoryBE.get(cat) || 0;
-      const pctVal = s.upcomingBEtotal ? pct(n, s.upcomingBEtotal) : '0.0';
-      const widthPct = (n / maxCatCount * 100).toFixed(1);
-      const d = s.categoryDrilldown.get(cat);
-      const top5 = (m, fmt) => [...m.entries()].sort((a,b) => b[1]-a[1]).slice(0,5).map(fmt).join(' · ') || '—';
-      const topVenues = top5(d.venues, ([id,c]) => { const v = vId(id); return `${escape(v?.name||id)} <span style="color:var(--ink-soft)">(${c})</span>`; });
-      const topComposers = top5(d.composers, ([n_,c]) => `${escape(n_)} <span style="color:var(--ink-soft)">(${c})</span>`);
-      const topPerformers = top5(d.performers, ([n_,c]) => `${escape(n_.slice(0,55))} <span style="color:var(--ink-soft)">(${c})</span>`);
-      const monthsSorted = [...d.months.entries()].sort((a,b) => a[0].localeCompare(b[0]));
-      const maxM = Math.max(...monthsSorted.map(([,n_])=>n_), 1);
-      const histo = monthsSorted.map(([ym,n_]) =>
-        `${monthLabelFr(ym).padEnd(16)}${String(n_).padStart(4)}  ${'▆'.repeat(Math.round(n_/maxM*28))}`
-      ).join('\n') || '—';
-      return `
-        <details class="category-row">
-          <summary>
-            <span class="cat-label">${CATEGORY_LABELS[cat]}</span>
-            <span class="cat-bar-wrap"><span class="cat-bar" style="background:${CATEGORY_COLORS[cat]}; width:${widthPct}%"></span></span>
-            <span class="cat-count">${n} <span style="opacity:.7">(${pctVal}%)</span></span>
-          </summary>
-          <div class="cat-detail">
-            <p><strong>Top 5 venues</strong> — ${topVenues}</p>
-            <p><strong>Top 5 compositeurs</strong> — ${topComposers}</p>
-            <p><strong>Top 5 interprètes / ensembles</strong> — ${topPerformers}</p>
-            <p style="margin-top:8px;"><strong>Distribution mensuelle</strong> :</p>
-            <pre class="cat-histo">${escape(histo)}</pre>
-          </div>
-        </details>`;
-    }).join('');
-
-    body.push(
-      '<div class="stats-block"><h3>1. Panorama classique en Belgique</h3>' +
-      `<p style="font-size:13px; color:var(--ink-soft); margin:4px 0 8px;">${s.upcomingBEtotal} concerts à venir (12 mois roulants) en Wallonie, Bruxelles et Flandre. Cliquer sur une catégorie pour le détail.</p>` +
-      `<div class="category-bars">${panoramaRows}</div>` +
-      '<p class="category-note">' +
-      'Classification éditoriale Crescendo. Périmètre Belgique (Wallonie + Bruxelles + Flandre). ' +
-      "Méthode hybride format + répertoire. Les ballets de l'Opera Ballet Vlaanderen et de La Monnaie sont " +
-      'inclus dans la catégorie Opéra (décision éditoriale). Les ensembles sur instruments d&rsquo;époque ' +
-      'priment sur le répertoire (Vox Luminis jouant Brahms = baroque-ancienne).' +
-      '</p>' +
-      '</div>'
-    );
-
-    body.push('<div class="stats-block"><h3>2. Couverture globale</h3>' + renderStatsTable(
-      ['Métrique','Valeur'],
-      [
-        ['Concerts à venir (12 mois)', s.upcomingTotal.toLocaleString('fr-BE')],
-        ['Sources actives', s.sources],
-        ['Venues (utilisés / total)', `${s.venuesUsed} / ${s.venuesTotal}`],
-        ['Festivals taggés (utilisés / définis)', `${s.festivalsTagged} / ${s.festivalsTotal}`],
-        ['Compositeurs distincts joués', s.composersTotal],
-        ['Pays couverts', `${s.countries.length} (${s.countries.join(', ')})`],
-      ]
-    ) + '</div>');
-
-    body.push('<div class="stats-block"><h3>3. Répartition géographique</h3>' +
-      '<p style="font-size:13px; color:var(--ink-soft); margin:4px 0 6px;">Par pays</p>' +
-      renderStatsTable(['Pays','Concerts','%'], s.byCountry.map(([c,n]) => [COUNTRY_LABEL[c]||c, n, `${pct(n,s.upcomingTotal)}%`])) +
-      '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Belgique par région</p>' +
-      renderStatsTable(['Région','Concerts','%'], s.byRegion.map(([r,n]) => [r, n, `${pct(n,s.upcomingTotal)}%`])) +
-      '<p style="font-size:13px; color:var(--ink-soft); margin:14px 0 6px;">Top 10 venues</p>' +
-      renderStatsTable(['Venue','Concerts'], s.topVenues.map(([id,n]) => { const v = vId(id); return [v ? `${v.name} (${normalizeCity(v.city)})` : id, n]; })) +
-      '</div>');
-
-    body.push(`<div class="stats-block"><h3>4. Saison et temporalité</h3><div class="stats-histo">${histo}</div>` +
-      `<p style="font-size:13px; margin-top:10px;"><strong>Mois le plus dense</strong> : ${monthLabelFr(s.maxMonth[0])} (${s.maxMonth[1]} concerts) — <strong>le moins dense</strong> : ${monthLabelFr(s.minMonth[0])} (${s.minMonth[1]} concerts)</p></div>`);
-
-    body.push('<div class="stats-block"><h3>5. Compositeurs — top 20</h3>' +
-      renderStatsTable(['#','Compositeur','Concerts'], s.topComposers.map(([n,c],i) => [i+1, n, c])) +
-      `<p style="font-size:13px; margin-top:12px;"><strong>Compositrices identifiées (${s.femaleFound.length})</strong> : <span class="stats-chip-list">${s.femaleFound.join(' · ') || '—'}</span></p>` +
-      `<p style="font-size:13px; margin-top:8px;"><strong>Compositeurs belges identifiés (${s.belgianFound.length})</strong> : <span class="stats-chip-list">${s.belgianFound.join(' · ') || '—'}</span></p>` +
-      '</div>');
-
-    body.push('<div class="stats-block"><h3>6. Festivals — top 10</h3>' +
-      renderStatsTable(['Festival','Concerts'], s.topFestivals.map(([id,n]) => { const f = fId(id); return [f ? `${f.name} ${f.edition_year||''}`.trim() : id, n]; })) +
-      `<p style="font-size:13px; margin-top:10px;"><strong>Concerts taggés en festival</strong> : ${s.inFestival} / ${s.upcomingTotal} (${pct(s.inFestival, s.upcomingTotal)}%)</p>` +
-      '</div>');
-
-    document.getElementById('stats-body').innerHTML = body.join('');
-  }
 
   // ---------- Map ----------
   function initMap() {
@@ -1764,18 +1399,9 @@
         });
       }
 
-      // Stats modal
-      const statsOverlay = document.getElementById('stats-modal-overlay');
-      document.getElementById('stats-link').addEventListener('click', (e) => {
-        e.preventDefault();
-        renderStatsModal();
-        statsOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-      const closeStats = () => { statsOverlay.classList.remove('active'); document.body.style.overflow = ''; };
-      document.getElementById('stats-close').addEventListener('click', closeStats);
-      statsOverlay.addEventListener('click', (e) => { if (e.target === statsOverlay) closeStats(); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && statsOverlay.classList.contains('active')) closeStats(); });
+      // Phase 3.40 — la modale Stats a migré vers /statistiques.html.
+      // Le lien header "📊 Statistiques" pointe directement vers
+      // statistiques.html (navigation native), plus aucun JS modale ici.
 
       // Délégation : clic sur n'importe quel bouton de partage dans la
       // liste de concerts. On l'attache une seule fois sur le UL plutôt

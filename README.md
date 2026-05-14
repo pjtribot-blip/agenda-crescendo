@@ -18,7 +18,9 @@ Approche cohérente avec les projets précédents :
 
 ```
 agenda-crescendo/
-├── index.html              # Application complète — single-file
+├── index.html              # Application principale (carte + agenda)
+├── presentation.html       # Page éditoriale (Phase 3.36)
+├── statistiques.html       # Page Stats dédiée (Phase 3.40)
 ├── data/
 │   ├── venues.json         # 20 lieux statiques géocodés (édité à la main)
 │   └── concerts.json       # Régénéré chaque nuit (Phase 2)
