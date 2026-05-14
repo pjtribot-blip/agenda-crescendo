@@ -56,6 +56,7 @@
     "scrape:valdieu": "node -e \"import('./scripts/scrapers/concerts-printemps-valdieu.js').then(m => m.scrapeValDieu()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:senghor": "node -e \"import('./scripts/scrapers/senghor.js').then(m => m.scrapeSenghor()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "scrape:philzuid": "node -e \"import('./scripts/scrapers/philzuid.js').then(m => m.scrapePhilzuid()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
+    "scrape:cathedralis": "node -e \"import('./scripts/scrapers/cathedralis-bruxellensis.js').then(m => m.scrapeCathedralisBruxellensis()).then(r => console.log(JSON.stringify(r, null, 2)))\"",
     "stats-report": "node scripts/generate-stats-report.js"
   },
   "dependencies": {

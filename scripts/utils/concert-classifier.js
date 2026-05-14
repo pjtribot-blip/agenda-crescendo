@@ -408,6 +408,7 @@ const VENUES_RECITAL_FRIENDLY = new Set([
   // Round 3 — venues additionnelles
   'amuz', 'triangel', 'obf-festival',
   'grandmanege', 'oprl', 'lamonnaie',
+  'cathedrale-saint-michel-bruxelles',
   'stavelot-festival', 'silly-festival',
   '30cc-leuven', 'cchasselt', 'arts2',
   'miry-concertzaal-gent', 'de-vooruit-gent',

@@ -55,6 +55,7 @@ import { scrapeWildeWesten } from './scrapers/wildewesten.js';
 import { scrapeValDieu } from './scrapers/concerts-printemps-valdieu.js';
 import { scrapeSenghor } from './scrapers/senghor.js';
 import { scrapePhilzuid } from './scrapers/philzuid.js';
+import { scrapeCathedralisBruxellensis } from './scrapers/cathedralis-bruxellensis.js';
 
 import { cleanComposers, augmentComposers, loadComposerIndex } from './utils/composer-filter.js';
 import { classify as classifyConcert } from './utils/concert-classifier.js';
@@ -112,6 +113,7 @@ const SCRAPERS = [
   { name: 'valdieu', fn: scrapeValDieu },
   { name: 'senghor', fn: scrapeSenghor },
   { name: 'philzuid', fn: scrapePhilzuid },
+  { name: 'cathedralis', fn: scrapeCathedralisBruxellensis },
   // Phase 2.x : ajouter ici les scrapers suivants.
 ];
 

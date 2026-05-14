@@ -828,6 +828,18 @@
     "address": "Vrijthof 47, 6211 LE Maastricht"
   },
   {
+    "id": "cathedrale-saint-michel-bruxelles",
+    "name": "Cathédrale Saints-Michel-et-Gudule",
+    "fullName": "Cathédrale Saints-Michel-et-Gudule — Cathedralis Bruxellensis (Bruxelles)",
+    "city": "Bruxelles",
+    "country": "BE",
+    "region": "Bruxelles",
+    "lat": 50.8478,
+    "lng": 4.3601,
+    "website": "https://cathedralisbruxellensis.be",
+    "address": "Place Sainte-Gudule, 1000 Bruxelles"
+  },
+  {
     "id": "opus9-theresiakerk-maastricht",
     "name": "Opus 9 Theresiakerk",
     "fullName": "Opus 9 — Sint-Theresiakerk (Maastricht, Pays-Bas)",
